@@ -34,6 +34,9 @@ bindsym XF86AudioPrev exec playerctl previous
 # toggle between list of audio output devices to use
 bindsym $mod+F9  exec ~/.config/i3/toggle_sink.sh
 
+bindsym Control+Shift+Escape exec --no-startup-id gnome-system-monitor
+
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
