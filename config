@@ -215,6 +215,9 @@ assign [class="VirtualBox Manager"] $ws7
 assign [class="Cursor"] $ws8
 assign [class="Nemo"] $ws9
 assign [class="Com.cisco.secureclient.gui"] $ws10
+assign [class="Surfshark"] $ws10
+for_window [class="Surfshark"] floating disable
+
 
 exec --no-startup-id firefox
 exec --no-startup-id alacritty
@@ -225,7 +228,9 @@ exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --clas
 exec --no-startup-id VirtualBox Manager
 exec --no-startup-id /opt/cursor.appimage
 exec --no-startup-id nemo
-# exec --no-startup-id /opt/cisco/secureclient/bin/vpnui
+exec --no-startup-id /opt/cisco/secureclient/bin/vpnui
+exec --no-startup-id /opt/cisco/secureclient/bin/vpnui
+exec --no-startup-id surfshark
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
