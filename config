@@ -133,7 +133,7 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Firefox"
+set $ws1 "1: Chrome"
 set $ws2 "2: Terminal"
 set $ws3 "3: Spotify"
 set $ws4 "4: Okular"
@@ -205,8 +205,8 @@ bindsym $mod+r mode "resize"
 bindsym $mod+x exec nemo
 exec_always feh --bg-scale ~/Documents/wallpapers/neonoir.png
 
-assign [class="firefox"] $ws1
-assign [class="Alacritty"] $ws2
+assign [class="Google-chrome"] $ws1
+# assign [class="Alacritty"] $ws2
 assign [class="Spotify"] $ws3
 assign [class="okular"] $ws4
 assign [class="obsidian"] $ws5
@@ -220,19 +220,19 @@ for_window [class="Surfshark"] floating disable
 
 bindsym Mod1+Tab  workspace back_and_forth
 
-exec --no-startup-id firefox
-exec --no-startup-id alacritty
+exec_always --no-startup-id google-chrome --password-store=gnome-libsecret
+# exec --no-startup-id alacritty
 exec --no-startup-id spotify
 exec --no-startup-id flatpak run org.kde.okular
 exec --no-startup-id flatpak run md.obsidian.Obsidian
-exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp3505 --name=WebApp-WhatsApp3505 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp3505 --start-maximized
-exec --no-startup-id VirtualBox Manager
-exec --no-startup-id /opt/cursor.appimage
+# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp3505 --name=WebApp-WhatsApp3505 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp3505 --start-maximized
+# exec --no-startup-id VirtualBox Manager
+# exec --no-startup-id /opt/cursor.appimage
 exec --no-startup-id nemo
-exec --no-startup-id /opt/cisco/secureclient/bin/vpnui
 exec --no-startup-id /opt/cisco/secureclient/bin/vpnui
 exec --no-startup-id surfshark
 
+bindsym $mod+Shift+Return exec google-chrome --password-store=gnome-libsecret
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
