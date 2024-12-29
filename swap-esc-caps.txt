@@ -1,0 +1,1 @@
+I modified /usr/share/X11/xkb/symbols/pc to swap escape and capslock for i3wm. hope it doesn't break anything.
