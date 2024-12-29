@@ -47,6 +47,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
+exec --no-startup-id playerctld daemon
 exec --no-startup-id bluetoothctl connect 08:EB:ED:4C:ED:1F
 exec --no-startup-id bluetoothctl connect 4C:FE:2E:28:70:72
 
@@ -220,7 +222,7 @@ for_window [class="Surfshark"] floating disable
 
 bindsym Mod1+Tab  workspace back_and_forth
 
-exec_always --no-startup-id google-chrome --password-store=gnome-libsecret
+exec --no-startup-id google-chrome --password-store=gnome-libsecret
 # exec --no-startup-id alacritty
 exec --no-startup-id spotify
 exec --no-startup-id flatpak run org.kde.okular
@@ -228,7 +230,7 @@ exec --no-startup-id flatpak run md.obsidian.Obsidian
 # exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp3505 --name=WebApp-WhatsApp3505 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp3505 --start-maximized
 # exec --no-startup-id VirtualBox Manager
 # exec --no-startup-id /opt/cursor.appimage
-exec --no-startup-id nemo
+# exec --no-startup-id nemo
 exec --no-startup-id /opt/cisco/secureclient/bin/vpnui
 exec --no-startup-id surfshark
 
