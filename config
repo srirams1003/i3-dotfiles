@@ -139,16 +139,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Chrome"
-set $ws2 "2: Terminal"
-set $ws3 "3: Spotify"
-set $ws4 "4: Okular"
-set $ws5 "5: Obsidian"
-set $ws6 "6: WhatsApp"
-set $ws7 "7: VirtualBox"
-set $ws8 "8: Cursor"
-set $ws9 "9: Files"
-set $ws10 "10: VPN"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
+set $ws5 "5: 󰎚"
+set $ws6 "6: 󰖣"
+set $ws7 "7: "
+set $ws8 "8: "
+set $ws9 "9: "
+set $ws10 "10: 󰖂"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -244,7 +244,9 @@ bindsym $mod+Shift+Return exec google-chrome --password-store=gnome-libsecret
 # finds out, if available)
 bar {
         # status_command i3status
-        status_command i3blocks
+        # status_command i3blocks
+        status_command SCRIPT_DIR=~/.config/i3/i3blocks-contrib/ i3blocks
         wheel_up_cmd nop
         wheel_down_cmd nop
+        separator_symbol " "
 }

@@ -24,131 +24,106 @@
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-# command=/usr/share/i3blocks/$BLOCK_NAME
+# Change $SCRIPT_DIR to the location of your scripts!
 command=$SCRIPT_DIR/$BLOCK_NAME
-separator_block_width=20
+separator_block_width=15
 markup=none
-# export SCRIPT_DIR=/home/sriram/.config/i3/i3blocks-contrib
 
 # Volume indicator
 #
 # The first parameter sets the step (and units to display)
 # The second parameter overrides the mixer selection
 # See the script for details.
+
 [volume]
-label=󰕾
 #label=♪
-command=$SCRIPT_DIR/volume/volume
-instance=Master
-#instance=PCM
-color=#8f52f8
+label=VOL
 interval=once
 signal=10
+#STEP=5%
 
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-label=󰍛
-# command=$SCRIPT_DIR/memory/memory
-command=python3 ~/.config/i3/get_used_ram.py
-color=#1affc6
-# command=/usr/share/i3blocks/memory
-separator=true
+label=MEM
+separator=false
 interval=30
 
-# commenting out swap stuff cuz i have enough ram and don't care
-# [memory]
-# label=SWAP
-# instance=swap
-# separator=false
-# interval=30
+[memory]
+label=SWAP
+instance=swap
+separator=false
+interval=30
 
 # Disk usage
 #
 # The directory defaults to $HOME if the instance is not specified.
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
-# [disk]
-# label=
-# instance=/
-# #instance=/mnt/data
-# interval=30
-
-[disk_usage]
-label=
-instance=/
+[disk]
+label=HOME
+#DIR=/mnt/data
 interval=30
-color=#f87921
-# command=python3 $SCRIPT_DIR/disk_usage/disk_usage format="{used:.1f}G used of {total:.1f}G" warn_color=#90ce00
-command=/usr/share/i3blocks/disk
 
 # Network interface monitoring
 #
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
-#instance=wlan0
-command=$SCRIPT_DIR/iface/iface
-label=󰈀
+#IFACE=wlan0
 color=#00FF00
 interval=10
-separator=true
+separator=false
 
-# [wifi]
-# #instance=wlp3s0
-# label=
-# color=#ebb24a
-# interval=10
-# separator=false
+[wifi]
+#INTERFACE=wlp3s0
+label=wifi:
+interval=10
+separator=false
 
-# [bandwidth]
-# #instance=eth0
-# interval=5
+[bandwidth]
+#INTERFACE=eth0
+interval=5
 
 # CPU usage
 #
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [cpu_usage]
-command=$SCRIPT_DIR/cpu_usage/cpu_usage
-label= 
+label=CPU
 interval=10
-# min_width=CPU: 100.00%
+min_width=CPU 100.00%
 #separator=false
 
+[load_average]
+label=LOAD
+interval=10
 
+# Battery indicator
+#
+# The battery instance defaults to 0.
+[battery]
+label=BAT
+#label=⚡
+interval=30
 
-#[load_average]
-#interval=10
-
-# # Battery indicator
-# #
-# # The battery instance defaults to 0.
-# [battery]
-# label=BAT
-# #label=⚡
-# #instance=1
-# interval=30
+# Date Time
+#
+[time]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=5
 
 # Generic media player support
 #
 # This displays "ARTIST - SONG" if a music is playing.
 # Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
-# [mediaplayer]
-# label=󰝚 :
-# color=#ebb24a
-# instance=spotify
-# interval=5
-# signal=10
-
-[mediaplayer]
-instance=spotify
-command=$SCRIPT_DIR/mediaplayer/mediaplayer
-label=󰝚 
-color=#37cd1d
-interval=5
-signal=10
+# Set to %any to automatically pick (Requires playerctl >=2.1.1)
+#[mediaplayer]
+# This picks any player, with vlc as first, and spotify as last choice
+#instance=vlc,%any,spotify
+#interval=5
+#signal=10
 
 # OpenVPN support
 #
@@ -161,26 +136,9 @@ signal=10
 # Support multiple chips, though lm-sensors.
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
-[temperature]
-label=
-command=$SCRIPT_DIR/temperature/temperature
-color=#f8d401
-interval=10
-
-[weather_NOAA]
-command=$SCRIPT_DIR/weather_NOAA/weather_NOAA -lat 30.6299 -lon -96.3595
-color=#69c3ff
-interval=600
-
-
-# Date Time
-#
-[time]
-# label=
-command=date '+%A   %Y-%m-%d   %H:%M:%S'
-interval=5
-color=#00ff9e
-
+#[temperature]
+#label=TEMP
+#interval=10
 
 # Key indicators
 #
@@ -189,11 +147,13 @@ color=#00ff9e
 # bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 #[keyindicator]
-#instance=CAPS
+#KEY=CAPS
+#markup=pango
 #interval=once
 #signal=11
 
 #[keyindicator]
-#instance=NUM
+#KEY=NUM
+#markup=pango
 #interval=once
 #signal=11
