@@ -36,6 +36,7 @@ bindsym $mod+F9  exec ~/.config/i3/toggle_sink.sh
 
 bindsym Control+Shift+Escape exec --no-startup-id gnome-system-monitor
 bindsym $mod+b exec --no-startup-id blueman-manager
+bindsym $mod+m exec --no-startup-id cinnamon-settings sound
 bindsym $mod+g exec --no-startup-id simplescreenrecorder
 
 
