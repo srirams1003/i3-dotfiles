@@ -23,8 +23,9 @@ font pango:DejaVu Sans Mono 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
-exec --no-startup-id xrandr --output DP-1 --brightness 0.7
+# exec --no-startup-id xrandr --output DP-1 --brightness 0.7
 exec --no-startup-id picom -b
+exec --no-startup-id ~/.config/i3/startup.sh
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -54,8 +55,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 exec --no-startup-id playerctld daemon
-exec --no-startup-id bluetoothctl connect 08:EB:ED:4C:ED:1F
-exec --no-startup-id bluetoothctl connect 4C:FE:2E:28:70:72
+# exec --no-startup-id bluetoothctl connect 08:EB:ED:4C:ED:1F
+# exec --no-startup-id bluetoothctl connect 4C:FE:2E:28:70:72
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
