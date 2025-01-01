@@ -41,6 +41,11 @@ bindsym $mod+b exec --no-startup-id blueman-manager
 bindsym $mod+m exec --no-startup-id cinnamon-settings sound
 bindsym $mod+g exec --no-startup-id simplescreenrecorder
 bindsym $mod+n exec --no-startup-id psensor
+# Increase brightness
+bindsym $mod+equal exec --no-startup-id ~/.config/i3/increase_brightness.sh
+# Decrease brightness
+bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness.sh
+
 
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
