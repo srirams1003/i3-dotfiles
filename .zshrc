@@ -186,6 +186,8 @@ alias grep='grep -i'
 alias cdd='cd ~/Downloads/'
 alias dp='docker ps -a'
 alias di='docker images -a'
+alias bat='batcat --color=always'
+alias seek='fzf --preview="batcat --color=always {}"'
 
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 export QT_QPA_PLATFORM="xcb"
