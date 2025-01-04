@@ -235,7 +235,7 @@ assign [class="Google-chrome"] $ws1
 assign [class="Spotify"] $ws3
 assign [class="okular"] $ws4
 assign [class="obsidian"] $ws5
-assign [class="WebApp-WhatsApp3505"] $ws6
+assign [class="WebApp-WhatsApp9840"] $ws6
 assign [class="VirtualBox Manager"] $ws7
 assign [class="Cursor"] $ws8
 assign [class="Nemo"] $ws9
@@ -250,12 +250,12 @@ exec --no-startup-id google-chrome --password-store=gnome-libsecret
 exec --no-startup-id spotify
 exec --no-startup-id flatpak run org.kde.okular
 exec --no-startup-id flatpak run md.obsidian.Obsidian
-# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp3505 --name=WebApp-WhatsApp3505 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp3505 --start-maximized
+# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp9840 --name=WebApp-WhatsApp9840 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp9840 --start-maximized
 # exec --no-startup-id VirtualBox Manager
 # exec --no-startup-id /opt/cursor.appimage
 # exec --no-startup-id nemo
 exec --no-startup-id /opt/cisco/secureclient/bin/vpnui
-# exec --no-startup-id surfshark
+exec --no-startup-id surfshark
 
 bindsym $mod+Shift+Return exec google-chrome --password-store=gnome-libsecret
 
