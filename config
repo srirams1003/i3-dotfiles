@@ -24,7 +24,7 @@ font pango:DejaVu Sans Mono 12
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 # exec --no-startup-id xrandr --output DP-1 --brightness 0.7
-exec --no-startup-id picom -b
+exec --no-startup-id picom --config ~/.config/i3/picom.conf -b
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id ~/.config/i3/startup.sh
 
