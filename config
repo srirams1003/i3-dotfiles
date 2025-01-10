@@ -27,7 +27,10 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 exec --no-startup-id picom --config ~/.config/i3/picom.conf -b
 # allows for authentication popups which allows me to use gui apps like timeshift and software manager the way they are meant to be used
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+# executing some commands i need to run on startup that fail to run directly in this config file for some reason
 exec --no-startup-id ~/.config/i3/startup.sh
+# setting mouse sensitivity upon login
+exec --no-startup-id ~/.config/i3/set_mouse_sensitivity.sh
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
