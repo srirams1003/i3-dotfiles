@@ -189,6 +189,7 @@ alias di='docker images -a'
 alias bat='batcat --color=always'
 alias seek='fzf --preview="batcat --color=always {}"'
 alias neo='neofetch'
+alias sl='sl -e'
 
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 export QT_QPA_PLATFORM="xcb"
