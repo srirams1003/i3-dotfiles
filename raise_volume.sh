@@ -15,3 +15,4 @@ new=$((current + step))
 # Set the new volume
 pactl set-sink-volume @DEFAULT_SINK@ "$new%" && pkill -RTMIN+10 i3blocks
 
+notify-send -u low -h string:x-canonical-private-synchronous:volume "Volume: ${new}%"
