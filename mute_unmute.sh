@@ -10,7 +10,8 @@ is_muted=$(pactl get-sink-mute @DEFAULT_SINK@ | grep -o "yes")
 if [ "$is_muted" == "yes" ]; then
     notify-send -u low -h string:x-canonical-private-synchronous:volume "Muted"
 else
-    notify-send -u low -h string:x-canonical-private-synchronous:volume "Unmuted"
+    current=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP '\d+(?=%)' | head -1)
+    notify-send -u low -h string:x-canonical-private-synchronous:volume "Unmuted: ${current}%"
 fi
 
 # Refresh i3status (if necessary)
