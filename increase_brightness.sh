@@ -13,3 +13,6 @@ fi
 
 xrandr --output "$output" --brightness "$new"
 
+# Show notification with the new brightness level
+brightness_percent=$(echo "$new * 100" | bc | awk '{printf "%.0f", $1}')
+notify-send -u low -h string:x-canonical-private-synchronous:brightness "Brightness: ${brightness_percent}%"
