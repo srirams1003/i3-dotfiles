@@ -11,6 +11,10 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.4.1
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -173,7 +177,7 @@ alias kgsa='kubectl get services -A'
 [ -f ~/.fzf.zsh  ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 
-export LS_OPTIONS='--color=auto'
+# export LS_OPTIONS='--color=auto'
 # alias ls='ls $LS_OPTIONS'
 alias ls='colorls'
 
@@ -217,12 +221,5 @@ export NVM_DIR="$HOME/.nvm"
 #
 # conda activate test_sriram
 # # conda deactivate
-
-
-PATH="/home/sriram/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/sriram/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/sriram/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/sriram/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/sriram/perl5"; export PERL_MM_OPT;
 
 export MANPAGER='nvim +Man!'
