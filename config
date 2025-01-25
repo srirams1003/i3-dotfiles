@@ -247,9 +247,10 @@ exec_always feh --bg-scale ~/Documents/wallpapers/dgctdnb-65456fe0-72db-41c6-832
 assign [class="Spotify"] $ws3
 assign [class="okular"] $ws4
 assign [class="obsidian"] $ws5
-assign [class="WebApp-WhatsApp3786"] $ws6
+assign [class="WebApp-WhatsApp2570"] $ws6
 assign [class="VirtualBox Manager"] $ws7
-assign [class="Cursor"] $ws8
+# assign [class="Cursor"] $ws8
+assign [class="Code"] $ws8
 # assign [class="Nemo"] $ws9
 assign [class="Com.cisco.secureclient.gui"] $ws10
 assign [class="Surfshark"] $ws10
@@ -262,9 +263,9 @@ exec --no-startup-id google-chrome --password-store=gnome-libsecret
 exec --no-startup-id spotify
 # exec --no-startup-id flatpak run org.kde.okular
 exec --no-startup-id flatpak run md.obsidian.Obsidian
-# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp3786 --name=WebApp-WhatsApp3786 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp3786 --start-maximized
+# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp2570 --name=WebApp-WhatsApp2570 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp2570 --start-maximized
 # exec --no-startup-id VirtualBox Manager
-# exec --no-startup-id /opt/cursor.appimage
+exec --no-startup-id code
 # exec --no-startup-id nemo
 # exec --no-startup-id /opt/cisco/secureclient/bin/vpnui
 # exec --no-startup-id surfshark
