@@ -217,6 +217,7 @@ export NVM_DIR="$HOME/.nvm"
 #
 # conda activate test_sriram
 # # conda deactivate
+export PATH="/home/sriram/anaconda3/bin:$PATH"
 
 
 PATH="/home/sriram/perl5/bin${PATH:+:${PATH}}"; export PATH;
