@@ -1,0 +1,1 @@
+ffmpeg -i <source>.mkv -c:v copy -c:a aac <dest>.mp4
