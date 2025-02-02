@@ -259,7 +259,7 @@ exec_always feh --bg-scale ~/Documents/wallpapers/dgctdnb-65456fe0-72db-41c6-832
 assign [class="Spotify"] $ws3
 assign [class="okular"] $ws4
 assign [class="obsidian"] $ws5
-assign [class="WebApp-WhatsApp0557"] $ws6
+assign [class="WebApp-WhatsApp7180"] $ws6
 assign [class="VirtualBox Manager"] $ws7
 # assign [class="Cursor"] $ws8
 assign [class="Code"] $ws8
@@ -275,7 +275,7 @@ exec --no-startup-id google-chrome --password-store=gnome-libsecret
 exec --no-startup-id spotify
 # exec --no-startup-id flatpak run org.kde.okular
 exec --no-startup-id flatpak run md.obsidian.Obsidian
-# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp0557 --name=WebApp-WhatsApp0557 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp0557 --start-maximized
+# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp7180 --name=WebApp-WhatsApp7180 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp7180 --start-maximized
 # exec --no-startup-id VirtualBox Manager
 exec --no-startup-id code
 # exec --no-startup-id nemo
