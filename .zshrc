@@ -192,8 +192,8 @@ alias vseek='vim $(seek)'
 alias neo='fastfetch'
 alias sl='sl -e'
 
-export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
-export QT_QPA_PLATFORM="xcb"
+# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+# export QT_QPA_PLATFORM="xcb"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion"  ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -219,6 +219,7 @@ export NVM_DIR="$HOME/.nvm"
 # conda activate test_sriram
 # # conda deactivate
 export PATH="/home/sriram/anaconda3/bin:$PATH"
+export PATH="/home/sriram/.local/share/gem/ruby/3.3.0/bin:$PATH"
 
 
 PATH="/home/sriram/perl5/bin${PATH:+:${PATH}}"; export PATH;
