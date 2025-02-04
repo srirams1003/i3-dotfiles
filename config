@@ -53,7 +53,7 @@ bindsym $mod+equal exec --no-startup-id ~/.config/i3/increase_brightness.sh
 # Decrease brightness
 bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness.sh
 bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/screensaver.png"
-bindsym Control+Mod1+s exec --no-startup-id "systemctl suspend"
+# bindsym Control+Mod1+s exec --no-startup-id "systemctl suspend"
 # # auto lock the screen
 # exec --no-startup-id "xautolock -detectsleep -time 15 -locker \"i3lock -i ~/Documents/wallpapers/screensaver.png\""
 
@@ -237,6 +237,18 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+set $bg-color 	         #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 bindsym $mod+r mode "resize"
 
 bindsym $mod+x exec nemo
@@ -247,9 +259,10 @@ exec_always feh --bg-scale ~/Documents/wallpapers/dgctdnb-65456fe0-72db-41c6-832
 assign [class="Spotify"] $ws3
 assign [class="okular"] $ws4
 assign [class="obsidian"] $ws5
-assign [class="WebApp-WhatsApp3786"] $ws6
+assign [class="WebApp-WhatsApp7180"] $ws6
 assign [class="VirtualBox Manager"] $ws7
-assign [class="Cursor"] $ws8
+# assign [class="Cursor"] $ws8
+assign [class="Code"] $ws8
 # assign [class="Nemo"] $ws9
 assign [class="Com.cisco.secureclient.gui"] $ws10
 assign [class="Surfshark"] $ws10
@@ -262,9 +275,9 @@ exec --no-startup-id google-chrome --password-store=gnome-libsecret
 exec --no-startup-id spotify
 # exec --no-startup-id flatpak run org.kde.okular
 exec --no-startup-id flatpak run md.obsidian.Obsidian
-# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp3786 --name=WebApp-WhatsApp3786 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp3786 --start-maximized
+# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp7180 --name=WebApp-WhatsApp7180 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp7180 --start-maximized
 # exec --no-startup-id VirtualBox Manager
-# exec --no-startup-id /opt/cursor.appimage
+exec --no-startup-id code
 # exec --no-startup-id nemo
 # exec --no-startup-id /opt/cisco/secureclient/bin/vpnui
 # exec --no-startup-id surfshark
@@ -277,7 +290,16 @@ bar {
         # status_command i3status
         # status_command i3blocks
         status_command SCRIPT_DIR=~/.config/i3/i3blocks-contrib/ i3blocks
-        wheel_up_cmd nop
-        wheel_down_cmd nop
+        # wheel_up_cmd nop
+        # wheel_down_cmd nop
         separator_symbol " "
+
+        colors {
+		background $bg-color
+	    	separator #757575
+		#                  border             background         text
+		focused_workspace  $bg-color          $bg-color          $text-color
+		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+	}
 }

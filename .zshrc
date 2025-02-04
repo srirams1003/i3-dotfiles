@@ -192,6 +192,7 @@ alias dp='docker ps -a'
 alias di='docker images -a'
 alias bat='bat --color=always'
 alias seek='fzf --preview="bat --color=always {}"'
+alias vseek='vim $(seek)'
 alias neo='fastfetch'
 alias sl='sl -e'
 
