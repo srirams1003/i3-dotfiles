@@ -85,7 +85,7 @@ sub set_tz {
 }
 
 sub get_default_tz {
-    my $tz = "Europe/London";
+    my $tz = "America/Chicago";
 
     if (-f "/etc/timezone") {
         open my $fh, '<', "/etc/timezone" || die "Couldn't open file: /etc/timezone";
