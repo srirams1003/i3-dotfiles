@@ -193,8 +193,8 @@ alias oseek='xdg-open "$(seek)"'
 alias neo='fastfetch'
 alias sl='sl -e'
 
-export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
-export QT_QPA_PLATFORM="xcb"
+# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+# export QT_QPA_PLATFORM="xcb"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion"  ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

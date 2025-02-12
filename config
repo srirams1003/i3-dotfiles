@@ -62,6 +62,9 @@ bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Pictures/scree
 bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-current.png"
 bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-selected.png"
 
+# to emulate cmd + shift + T from powertoys in windows to use ocr to save text from screenshot to clipboard
+bindsym $mod+Shift+t exec --no-startup-id maim --format=png --select "/tmp/myverytemporarypicture.png" && tesseract /tmp/myverytemporarypicture.png /tmp/myverytemporaryoutput && cat /tmp/myverytemporaryoutput.txt | xsel -ib
+
 ## Screenshots in clipboards
 bindsym Ctrl+Print exec --no-startup-id maim --format=png | xclip -selection clipboard -t image/png
 bindsym Ctrl+$mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
