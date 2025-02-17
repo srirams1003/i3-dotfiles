@@ -183,8 +183,6 @@ alias ls='colorls'
 # alias open='xdg-open'
 
 alias python="python3"
-alias gpus='ssh -Y sriram@10.125.189.149 -p 6161'
-alias ngpus='ssh -X sriram@10.125.189.173'
 alias grep='grep -i'
 alias cdd='cd ~/Downloads/'
 alias dp='docker ps -a'
@@ -232,3 +230,4 @@ PERL_MB_OPT="--install_base \"/home/sriram/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/sriram/perl5"; export PERL_MM_OPT;
 
 export MANPAGER='nvim +Man!'
+export PAGER='batcat'
