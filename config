@@ -31,6 +31,8 @@ exec --no-startup-id picom --config ~/.config/i3/picom.conf -b
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 # executing some commands i need to run on startup that fail to run directly in this config file for some reason
 exec --no-startup-id ~/.config/i3/startup.sh
+# # setting default camera profile using guvcview # Edit: actually decided against this because of some issues i failed to understand
+# exec --no-startup-id ~/.config/i3/set_camera_settings.sh
 # setting mouse sensitivity upon login
 exec --no-startup-id ~/.config/i3/set_mouse_sensitivity.sh
 
@@ -77,6 +79,8 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xset dpms 1200 1200 1200
+exec --no-startup-id xset s 1200
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -269,7 +273,7 @@ assign [class="Code"] $ws8
 # assign [class="Nemo"] $ws9
 assign [class="Com.cisco.secureclient.gui"] $ws10
 assign [class="Surfshark"] $ws10
-for_window [class="Surfshark"] floating disable
+# for_window [class="Surfshark"] floating disable
 
 bindsym Mod1+Tab  workspace back_and_forth
 
@@ -277,7 +281,7 @@ exec --no-startup-id google-chrome --password-store=gnome-libsecret
 # exec --no-startup-id alacritty
 exec --no-startup-id spotify
 # exec --no-startup-id flatpak run org.kde.okular
-exec --no-startup-id flatpak run md.obsidian.Obsidian
+# exec --no-startup-id flatpak run md.obsidian.Obsidian
 # exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp5730 --name=WebApp-WhatsApp5730 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp5730 --start-maximized
 # exec --no-startup-id VirtualBox Manager
 # exec --no-startup-id code
