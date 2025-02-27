@@ -44,6 +44,8 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # toggle between list of audio output devices to use
 bindsym $mod+F9  exec ~/.config/i3/toggle_sink.sh
+bindsym $mod+F10 exec --no-startup-id xrandr --output DP-1 --mode 1920x1080
+
 
 bindsym Control+Shift+Escape exec --no-startup-id gnome-system-monitor
 bindsym $mod+b exec --no-startup-id blueman-manager
@@ -66,6 +68,12 @@ bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER
 
 # to emulate cmd + shift + T from powertoys in windows to use ocr to save text from screenshot to clipboard
 bindsym $mod+Shift+t exec --no-startup-id maim --format=png --select "/tmp/myverytemporarypicture.png" && tesseract /tmp/myverytemporarypicture.png /tmp/myverytemporaryoutput && cat /tmp/myverytemporaryoutput.txt | xsel -ib
+
+# to use dict command with ocr
+bindsym $mod+t exec --no-startup-id ~/.config/i3/dict_screenshot.sh
+
+# to use dict command with text selection
+bindsym $mod+z exec --no-startup-id ~/.config/i3/dict_selection.sh
 
 ## Screenshots in clipboards
 bindsym Ctrl+Print exec --no-startup-id maim --format=png | xclip -selection clipboard -t image/png
