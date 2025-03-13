@@ -29,6 +29,10 @@ newDefaultSink=${sinks[$newDefaultPos]}
 # pacmd set-default-sink $newDefaultSink
 pactl set-default-sink $newDefaultSink
 
+# these two lines below notify the user of what the current default sink has been changed to
+sinkName=$(pactl list sinks | grep -A10 "Sink #$newDefaultSink" | grep "Description" | cut -d: -f2- | xargs)
+notify-send -u low -h string:x-canonical-private-synchronous:sink "Audio Output: $sinkName"
+
 # Move all current playing streams to the new DEFAULT_SINK
 while read stream; do
     # Check whether there is a stream playing in the first place
