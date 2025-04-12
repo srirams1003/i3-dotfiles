@@ -231,5 +231,8 @@ PERL_LOCAL_LIB_ROOT="/home/sriram/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_
 PERL_MB_OPT="--install_base \"/home/sriram/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/sriram/perl5"; export PERL_MM_OPT;
 
+
+export PATH="$PATH:$HOME/development/flutter/bin"
+
 export MANPAGER='nvim +Man!'
 export PAGER='batcat'
