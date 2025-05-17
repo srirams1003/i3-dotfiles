@@ -224,5 +224,6 @@ export NVM_DIR="$HOME/.nvm"
 # # # conda deactivate
 
 export PATH="/Users/sriramsuresh/anaconda3/bin:$PATH"
+export PATH=$HOME/development/flutter/bin:$PATH
 
 export MANPAGER='nvim +Man!'
