@@ -44,9 +44,13 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+bindsym $mod+F10 exec --no-startup-id xrandr --output DP-1 --mode 1920x1080
+
 # toggle between list of audio output devices to use
 bindsym $mod+F9  exec ~/.config/i3/toggle_sink.sh
-bindsym $mod+F10 exec --no-startup-id xrandr --output DP-1 --mode 1920x1080
+bindsym $mod+F6 exec --no-startup-id ~/.config/i3/sink-switch.sh --external 
+bindsym $mod+F7 exec --no-startup-id ~/.config/i3/sink-switch.sh --speakers 
+bindsym $mod+F8 exec --no-startup-id ~/.config/i3/sink-switch.sh --headphones
 
 
 bindsym Control+Shift+Escape exec --no-startup-id gnome-system-monitor
