@@ -61,10 +61,10 @@ bindsym $mod+m exec --no-startup-id cinnamon-settings sound
 bindsym $mod+g exec --no-startup-id simplescreenrecorder
 bindsym $mod+n exec --no-startup-id psensor
 # Increase brightness
-# bindsym $mod+equal exec --no-startup-id ~/.config/i3/increase_brightness.sh
+bindsym $mod+equal exec --no-startup-id ~/.config/i3/increase_brightness_mac.sh
 bindsym Pause exec --no-startup-id ~/.config/i3/increase_brightness.sh
 # Decrease brightness
-# bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness.sh
+bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness_mac.sh
 bindsym Scroll_Lock exec --no-startup-id ~/.config/i3/decrease_brightness.sh
 bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/screensaver.png"
 # bindsym Control+Mod1+s exec --no-startup-id "systemctl suspend"
