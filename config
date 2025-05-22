@@ -294,8 +294,12 @@ bindsym Mod1+Tab  workspace back_and_forth
 exec --no-startup-id google-chrome --password-store=gnome-libsecret
 # exec --no-startup-id alacritty
 exec --no-startup-id spotify
+# # if the below two are installed using flatpak
 # exec --no-startup-id flatpak run org.kde.okular
-exec --no-startup-id flatpak run md.obsidian.Obsidian
+# exec --no-startup-id flatpak run md.obsidian.Obsidian
+# if the below two are installed using snap
+# exec --no-startup-id okular
+exec --no-startup-id obsidian
 # exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp5730 --name=WebApp-WhatsApp5730 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp5730 --start-maximized
 # exec --no-startup-id VirtualBox Manager
 # exec --no-startup-id code
