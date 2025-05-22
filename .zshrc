@@ -220,7 +220,7 @@ export NVM_DIR="$HOME/.nvm"
 # unset __conda_setup
 # # <<< conda initialize <<<
 #
-# conda activate test_sriram
+# conda activate loonix
 # # conda deactivate
 export PATH="/home/sriram/anaconda3/bin:$PATH"
 
