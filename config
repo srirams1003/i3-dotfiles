@@ -53,7 +53,7 @@ bindsym $mod+F9  exec ~/.config/i3/toggle_sink.sh
 
 bindsym $mod+F10 exec --no-startup-id xrandr --output DP-1 --mode 1920x1080
 bindsym $mod+F11 exec --no-startup-id xrandr --output eDP-1 --off
-bindsym $mod+F12 exec --no-startup-id xrandr --output eDP-1 --auto --mode 1400x900
+bindsym $mod+F12 exec --no-startup-id xrandr --output eDP-1 --auto --mode 1400x900 --brightness 0.7
 
 bindsym Control+Shift+Escape exec --no-startup-id gnome-system-monitor
 bindsym $mod+b exec --no-startup-id blueman-manager
@@ -102,6 +102,9 @@ exec --no-startup-id xset s 1200
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id sh -c 'eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg); export SSH_AUTH_SOCK'
+# NOTE: the lines above and below are for remembering wifi password between reboots (i think). the one below works for sure
+# exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg
 exec --no-startup-id nm-applet
 
 exec --no-startup-id playerctld daemon
