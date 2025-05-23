@@ -1,4 +1,4 @@
-sleep 2
+sleep 3
 xrandr --output DP-1 --brightness 0.7
 xrandr --output eDP-1 --off
 nmcli device disconnect enxacde48001122 # disabling ethernet on startup
