@@ -4,4 +4,5 @@ startup_mode = "Maximized"
 
 [font]
 size = 11
+# size = 9
 
