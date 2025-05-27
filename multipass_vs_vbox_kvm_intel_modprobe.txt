@@ -1,0 +1,7 @@
+# You can only use either Multipass or VBox at a time.
+
+# to use multipass (enabled by default, as kvm_intel module is loaded on boot)
+sudo modprobe kvm_intel
+
+# to use VBox
+sudo modprobe -r kvm_intel

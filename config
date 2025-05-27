@@ -304,7 +304,7 @@ exec --no-startup-id google-chrome --password-store=gnome-libsecret
 exec --no-startup-id spotify
 # # if the below two are installed using flatpak
 # exec --no-startup-id flatpak run org.kde.okular
-exec --no-startup-id flatpak run md.obsidian.Obsidian
+# exec --no-startup-id flatpak run md.obsidian.Obsidian
 # # if the below two are installed using snap
 # # exec --no-startup-id okular
 # exec --no-startup-id obsidian
