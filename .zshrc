@@ -227,3 +227,4 @@ export PATH="/Users/sriramsuresh/anaconda3/bin:$PATH"
 export PATH=$HOME/development/flutter/bin:$PATH
 
 export MANPAGER='nvim +Man!'
+export TERM=xterm-256color
