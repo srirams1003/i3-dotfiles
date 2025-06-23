@@ -287,14 +287,15 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 bindsym $mod+r mode "resize"
 
 bindsym $mod+x exec nemo
-exec_always feh --bg-scale ~/Documents/wallpapers/dgctdnb-65456fe0-72db-41c6-832a-5b1807d0d68c.png
+# exec_always feh --bg-scale ~/Documents/wallpapers/dgctdnb-65456fe0-72db-41c6-832a-5b1807d0d68c.png
+exec_always feh --bg-scale ~/Documents/wallpapers/aksenapati_snow_mountain.jpg
 
 # assign [class="Google-chrome"] $ws1
 # assign [class="Alacritty"] $ws2
 assign [class="Spotify"] $ws3
 assign [class="okular"] $ws4
 assign [class="obsidian"] $ws5
-assign [class="WebApp-WhatsApp3924"] $ws6
+assign [class="WebApp-WhatsApp5730"] $ws6
 assign [class="VirtualBox Manager"] $ws7
 # assign [class="Cursor"] $ws8
 assign [class="Code"] $ws8
@@ -314,7 +315,7 @@ exec --no-startup-id flatpak run org.kde.okular
 # # if the below two are installed using snap
 # # exec --no-startup-id okular
 # exec --no-startup-id obsidian
-# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp3924 --name=WebApp-WhatsApp3924 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp3924 --start-maximized
+# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp5730 --name=WebApp-WhatsApp5730 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp5730 --start-maximized
 # exec --no-startup-id VirtualBox Manager
 # exec --no-startup-id code
 # exec --no-startup-id nemo
