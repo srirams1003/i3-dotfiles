@@ -51,10 +51,16 @@ bindsym $mod+F7 exec --no-startup-id ~/.config/i3/sink-switch.sh --speakers
 bindsym $mod+F8 exec --no-startup-id ~/.config/i3/sink-switch.sh --headphones
 bindsym $mod+F9  exec ~/.config/i3/toggle_sink.sh
 
-# NOTE: i do not need this f10 bind anymore cuz i have the f12 bind that i can use instead
-bindsym $mod+F10 exec --no-startup-id xrandr --output DP-1 --mode 1920x1080
-bindsym $mod+F11 exec --no-startup-id xrandr --output eDP-1 --auto --mode 1400x900 --brightness 0.7 && xrandr --output DP-1 --off
-bindsym $mod+F12 exec --no-startup-id xrandr --output DP-1 --auto --mode 1920x1080 --brightness 0.7 && xrandr --output eDP-1 --off 
+
+# # NOTE: i do not need this f10 bind anymore cuz i have the f12 bind that i can use instead
+# bindsym $mod+F10 exec --no-startup-id xrandr --output DP-1 --mode 1920x1080
+
+# # NOTE: for DP monitor
+# bindsym $mod+F11 exec --no-startup-id xrandr --output eDP-1 --auto --mode 1400x900 --brightness 0.7 && xrandr --output DP-1 --off
+# bindsym $mod+F12 exec --no-startup-id xrandr --output DP-1 --auto --mode 1920x1080 --brightness 0.7 && xrandr --output eDP-1 --off 
+# NOTE: for HDMI instead of DP monitor
+bindsym $mod+F11 exec --no-startup-id xrandr --output eDP-1 --auto --brightness 0.7 && xrandr --output HDMI-1 --off
+bindsym $mod+F12 exec --no-startup-id xrandr --output HDMI-1 --auto --mode 1920x1080 --brightness 0.7 && xrandr --output eDP-1 --off 
 
 bindsym Control+Shift+Escape exec --no-startup-id gnome-system-monitor
 bindsym $mod+b exec --no-startup-id blueman-manager
@@ -301,9 +307,9 @@ bindsym Mod1+Tab  workspace back_and_forth
 
 exec --no-startup-id google-chrome --password-store=gnome-libsecret
 # exec --no-startup-id alacritty
-exec --no-startup-id spotify
+# exec --no-startup-id spotify
 # # if the below two are installed using flatpak
-# exec --no-startup-id flatpak run org.kde.okular
+exec --no-startup-id flatpak run org.kde.okular
 # exec --no-startup-id flatpak run md.obsidian.Obsidian
 # # if the below two are installed using snap
 # # exec --no-startup-id okular
