@@ -54,13 +54,13 @@ printf "%.${decimals}f%%\n", $cpu_usage;
 print "${label}";
 printf "%.${decimals}f%%\n", $cpu_usage;
 
-# Print color, if needed
-if ($cpu_usage >= $t_crit) {
-    print "${color_crit}\n";
-} elsif ($cpu_usage >= $t_warn) {
-    print "${color_warn}\n";
-} else {
-    print "${color_normal}\n";
-}
+# # Print color, if needed
+# if ($cpu_usage >= $t_crit) {
+#     print "${color_crit}\n";
+# } elsif ($cpu_usage >= $t_warn) {
+#     print "${color_warn}\n";
+# } else {
+#     print "${color_normal}\n";
+# }
 
 exit 0;
