@@ -73,9 +73,6 @@ bindsym Pause exec --no-startup-id ~/.config/i3/increase_brightness.sh
 # Decrease brightness
 bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness_mac.sh
 bindsym Scroll_Lock exec --no-startup-id ~/.config/i3/decrease_brightness.sh
-# bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/screensaver.png"
-# bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/aksenapati_snow_mountain_1080p.png"
-# bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/newscreensaver.png"
 bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/firewatchtower.png
 # bindsym Control+Mod1+s exec --no-startup-id "systemctl suspend"
 # # auto lock the screen
@@ -275,32 +272,24 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-set $active-bg-color     #ffffff
-set $bg-color            #ffffff
-set $inactive-bg-color   #000000
-set $text-color          #ffffff
-set $active-text-color   #000000
-set $inactive-text-color #ffffff
-set $urgent-bg-color     #2E9EF4
-set $border-color        #000000
+set $white     #ffffff
+set $black     #000000
+set $blue      #2E9EF4
+set $gray      #808080
+set $yellow    #ffff00
 
 # window colors
-#                       border             background          text                  indicator
-client.focused          $border-color      $active-bg-color    $active-text-color    $urgent-bg-color
-client.unfocused        $inactive-bg-color $inactive-bg-color  $inactive-text-color  $inactive-bg-color 
-client.focused_inactive $inactive-bg-color $inactive-bg-color  $inactive-text-color  $inactive-bg-color 
-client.urgent           $urgent-bg-color   $urgent-bg-color    $text-color           $urgent-bg-color
+#                       border    background    text     indicator
+client.focused          $black    $white        $black   $blue
+client.unfocused        $black    $black        $white   $white
+client.focused_inactive $gray     $gray         $black   $gray
+client.urgent           $blue     $blue         $white   $blue
 
 
 
 bindsym $mod+r mode "resize"
 
 bindsym $mod+x exec nemo
-# exec_always feh --bg-scale ~/Documents/wallpapers/dgctdnb-65456fe0-72db-41c6-832a-5b1807d0d68c.png
-# exec_always feh --bg-scale ~/Documents/wallpapers/aksenapati_snow_mountain.jpg
-# exec_always feh --bg-scale ~/Documents/wallpapers/945731-3840x2160-desktop-4k-matte-black-wallpaper-image.jpg
-# exec_always feh --bg-scale ~/Documents/wallpapers/pexels-harun-tan-2311991-3980364.jpg
-# exec_always feh --bg-scale ~/Documents/wallpapers/wp9016179.jpg
 exec_always feh --bg-scale ~/Documents/wallpapers/Firewatch+Tower.png
 
 # assign [class="Google-chrome"] $ws1
@@ -347,17 +336,20 @@ bar {
         # wheel_down_cmd nop
         separator_symbol " "
 
+		position top
+
 		# height 25
 
         colors {
-			background #000000
-			separator  #000000
+			background $black
+			separator  $black 
 
 			#                  border             background         text
-			focused_workspace  #ffffff            #000000            #ffffff
-			inactive_workspace #000000            #000000            #ffffff
-			urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+			focused_workspace  $white             $black             $white
+			inactive_workspace $black             $black             $white
+			urgent_workspace   $blue              $blue              $black
 		}
+		
 }
 
 
@@ -372,7 +364,7 @@ smart_gaps on
 
 # Smart borders (no border when only one window)
 smart_borders on
-# smart_borders off
+
 
 for_window [class=".*"] border pixel 2
 
