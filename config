@@ -75,7 +75,8 @@ bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness_mac.sh
 bindsym Scroll_Lock exec --no-startup-id ~/.config/i3/decrease_brightness.sh
 # bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/screensaver.png"
 # bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/aksenapati_snow_mountain_1080p.png"
-bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/newscreensaver.png"
+# bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/newscreensaver.png"
+bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/firewatchtower.png
 # bindsym Control+Mod1+s exec --no-startup-id "systemctl suspend"
 # # auto lock the screen
 # exec --no-startup-id "xautolock -detectsleep -time 15 -locker \"i3lock -i ~/Documents/wallpapers/screensaver.png\""
@@ -296,7 +297,9 @@ bindsym $mod+x exec nemo
 # exec_always feh --bg-scale ~/Documents/wallpapers/dgctdnb-65456fe0-72db-41c6-832a-5b1807d0d68c.png
 # exec_always feh --bg-scale ~/Documents/wallpapers/aksenapati_snow_mountain.jpg
 # exec_always feh --bg-scale ~/Documents/wallpapers/945731-3840x2160-desktop-4k-matte-black-wallpaper-image.jpg
-exec_always feh --bg-scale ~/Documents/wallpapers/pexels-harun-tan-2311991-3980364.jpg
+# exec_always feh --bg-scale ~/Documents/wallpapers/pexels-harun-tan-2311991-3980364.jpg
+# exec_always feh --bg-scale ~/Documents/wallpapers/wp9016179.jpg
+exec_always feh --bg-scale ~/Documents/wallpapers/Firewatch+Tower.png
 
 # assign [class="Google-chrome"] $ws1
 # assign [class="Alacritty"] $ws2
