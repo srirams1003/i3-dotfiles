@@ -342,6 +342,8 @@ bar {
 
 		position top
 
+		tray_output primary
+
 		# height 25
 
         colors {
