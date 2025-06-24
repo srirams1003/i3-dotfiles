@@ -277,14 +277,14 @@ set $black     #000000
 set $blue      #2E9EF4
 set $gray      #808080
 set $yellow    #ffff00
+set $teal      #008080
 
 # window colors
 #                       border    background    text     indicator
-client.focused          $black    $white        $black   $blue
+client.focused          $black    $gray         $white   $blue
 client.unfocused        $black    $black        $white   $white
-client.focused_inactive $gray     $gray         $black   $gray
+client.focused_inactive $teal     $teal         $white   $teal
 client.urgent           $blue     $blue         $white   $blue
-
 
 
 bindsym $mod+r mode "resize"
@@ -353,7 +353,6 @@ bar {
 }
 
 
-
 # Gaps
 gaps inner 10
 gaps outer 10
@@ -366,6 +365,8 @@ smart_gaps on
 smart_borders on
 
 
-for_window [class=".*"] border pixel 2
+# for_window [class=".*"] border pixel 3
 
+default_border pixel 3
+default_floating_border pixel 3
 
