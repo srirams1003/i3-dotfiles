@@ -73,7 +73,8 @@ bindsym Pause exec --no-startup-id ~/.config/i3/increase_brightness.sh
 # Decrease brightness
 bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness_mac.sh
 bindsym Scroll_Lock exec --no-startup-id ~/.config/i3/decrease_brightness.sh
-bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/screensaver.png"
+# bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/screensaver.png"
+bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/aksenapati_snow_mountain_1080p.png"
 # bindsym Control+Mod1+s exec --no-startup-id "systemctl suspend"
 # # auto lock the screen
 # exec --no-startup-id "xautolock -detectsleep -time 15 -locker \"i3lock -i ~/Documents/wallpapers/screensaver.png\""
