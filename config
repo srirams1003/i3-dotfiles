@@ -281,10 +281,10 @@ set $teal      #008080
 
 # window colors
 #                       border    background    text     indicator
-client.focused          $black    $gray         $white   $blue
+client.focused          $teal     $teal         $white   $yellow
 client.unfocused        $black    $black        $white   $white
-client.focused_inactive $teal     $teal         $white   $teal
-client.urgent           $blue     $blue         $white   $blue
+client.focused_inactive $black    $gray         $white   $gray
+client.urgent           $yellow   $yellow       $white   $yellow
 
 
 bindsym $mod+r mode "resize"
@@ -351,7 +351,7 @@ bar {
 			#                  border             background         text
 			focused_workspace  $white             $black             $white
 			inactive_workspace $black             $black             $white
-			urgent_workspace   $blue              $blue              $black
+			urgent_workspace   $yellow            $yellow            $black
 		}
 		
 }
