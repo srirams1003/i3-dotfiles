@@ -73,7 +73,7 @@ bindsym Pause exec --no-startup-id ~/.config/i3/increase_brightness.sh
 # Decrease brightness
 bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness_mac.sh
 bindsym Scroll_Lock exec --no-startup-id ~/.config/i3/decrease_brightness.sh
-bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/firewatchtower.png
+bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/firewatchtower.png"
 # bindsym Control+Mod1+s exec --no-startup-id "systemctl suspend"
 # # auto lock the screen
 # exec --no-startup-id "xautolock -detectsleep -time 15 -locker \"i3lock -i ~/Documents/wallpapers/screensaver.png\""
@@ -103,7 +103,7 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/Documents/wallpapers/firewatchtower.png --nofork
 exec --no-startup-id xset dpms 600 600 600
 exec --no-startup-id xset s 600
 
@@ -244,6 +244,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -378,4 +379,6 @@ default_border pixel 2
 default_floating_border pixel 2
 
 title_align center
+
+bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/rofi-power-menu.sh
 
