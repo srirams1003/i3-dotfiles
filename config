@@ -73,10 +73,6 @@ bindsym Pause exec --no-startup-id ~/.config/i3/increase_brightness.sh
 # Decrease brightness
 bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness_mac.sh
 bindsym Scroll_Lock exec --no-startup-id ~/.config/i3/decrease_brightness.sh
-bindsym Control+Mod1+l exec --no-startup-id "i3lock -i ~/Documents/wallpapers/firewatchtower.png"
-# bindsym Control+Mod1+s exec --no-startup-id "systemctl suspend"
-# # auto lock the screen
-# exec --no-startup-id "xautolock -detectsleep -time 15 -locker \"i3lock -i ~/Documents/wallpapers/screensaver.png\""
 
 ##  Screenshots in files
 bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
@@ -381,5 +377,5 @@ default_floating_border pixel 2
 
 title_align center
 
-bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/rofi-power-menu.sh
+bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/i3blocks-contrib/shutdown_menu/shutdown_menu
 
