@@ -1,4 +1,5 @@
 // @theme "/usr/share/rofi/themes/arthur.rasi"
 //@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
 // @theme "/usr/share/rofi/themes/iggy.rasi"
-@theme "/usr/share/rofi/themes/fancy.rasi"
+//@theme "/usr/share/rofi/themes/fancy.rasi"
+@theme "/usr/share/rofi/themes/Adapta-Nokto.rasi"
