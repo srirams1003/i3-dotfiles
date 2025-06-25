@@ -11,7 +11,7 @@
 
 set $mod Mod4
 # workspace_layout stacking
-workspace_layout tabbed
+# workspace_layout tabbed
 
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -201,7 +201,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+Shift+a focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -274,17 +274,18 @@ mode "resize" {
 
 set $white     #ffffff
 set $black     #000000
-set $blue      #2E9EF4
 set $gray      #808080
 set $yellow    #ffff00
 set $teal      #008080
+set $invis     #00000000
+set $cyan      #00E5E5
 
 # window colors
 #                       border    background    text     indicator
-client.focused          $teal     $teal         $white   $yellow
-client.unfocused        $black    $black        $white   $white
-client.focused_inactive $black    $gray         $white   $gray
-client.urgent           $yellow   $yellow       $white   $yellow
+client.focused          $invis    $teal         $white   $cyan
+client.unfocused        $invis    $invis        $white   $white
+client.focused_inactive $invis    $gray         $white   $gray
+client.urgent           $invis    $yellow       $black   $yellow
 
 
 bindsym $mod+r mode "resize"
@@ -373,8 +374,8 @@ smart_borders on
 
 # for_window [class=".*"] border pixel 3
 
-default_border pixel 3
-default_floating_border pixel 3
+default_border pixel 2
+default_floating_border pixel 2
 
 title_align center
 
