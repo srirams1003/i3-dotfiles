@@ -307,7 +307,9 @@ assign [class="Surfshark"] $ws10
 
 bindsym Mod1+Tab  workspace back_and_forth
 
-exec --no-startup-id google-chrome --password-store=gnome-libsecret
+# # NOTE: commenting out chrome on startup for now and replacing it with firefox cuz so much faster (i am guessing that chrome is slowed down because of extensions)
+# exec --no-startup-id google-chrome --password-store=gnome-libsecret
+exec --no-startup-id firefox
 # exec --no-startup-id alacritty
 # exec --no-startup-id spotify
 # # if the below two are installed using flatpak
@@ -379,4 +381,6 @@ bindsym Mod1+Ctrl+l exec --no-startup-id ~/.config/i3/i3blocks-contrib/shutdown_
 bindsym $mod+bracketleft workspace prev
 bindsym $mod+bracketright workspace next
 
-
+# # NOTE: leaving this here as a remainder that mod + p has nothing assigned to it, which is a waste as it is so convenient
+# # NOTE: other amazing keys have no $mod bindings assigned are: o, i, u, y
+# bindsym $mod+p exec --no-startup-id notify-send "hi mom"
