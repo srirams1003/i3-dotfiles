@@ -52,3 +52,4 @@ window-height = 9999
 
 confirm-close-surface = false
 
+# background-opacity=0.9
