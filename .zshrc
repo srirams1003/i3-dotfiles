@@ -11,6 +11,10 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.4.1
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -176,7 +180,7 @@ alias kgsa='kubectl get services -A'
 [ -f ~/.fzf.zsh  ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 
-export LS_OPTIONS='--color=auto'
+# export LS_OPTIONS='--color=auto'
 # alias ls='ls $LS_OPTIONS'
 alias ls='colorls'
 
@@ -189,10 +193,9 @@ alias grep='grep -i'
 alias cdd='cd ~/Downloads/'
 alias dp='docker ps -a'
 alias di='docker images -a'
-alias bat='batcat --color=always'
-alias seek='fzf --preview="batcat --color=always {}"'
-alias vseek='vim "$(seek)"'
-alias oseek='xdg-open "$(seek)"'
+alias bat='bat --color=always'
+alias seek='fzf --preview="bat --color=always {}"'
+alias vseek='vim $(seek)'
 alias neo='fastfetch'
 alias sl='sl -e'
 
@@ -207,32 +210,28 @@ export NVM_DIR="$HOME/.nvm"
 
 # # >>> conda initialize >>>
 # # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/sriram/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# __conda_setup="$('/Users/sriramsuresh/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 # if [ $? -eq 0 ]; then
 #     eval "$__conda_setup"
 # else
-#     if [ -f "/home/sriram/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/home/sriram/anaconda3/etc/profile.d/conda.sh"
+#     if [ -f "/Users/sriramsuresh/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/sriramsuresh/anaconda3/etc/profile.d/conda.sh"
 #     else
-#         export PATH="/home/sriram/anaconda3/bin:$PATH"
+#         export PATH="/Users/sriramsuresh/anaconda3/bin:$PATH"
 #     fi
 # fi
 # unset __conda_setup
 # # <<< conda initialize <<<
-#
-# conda activate loonix
-# # conda deactivate
-export PATH="/home/sriram/anaconda3/bin:$PATH"
+# #
+# conda activate test_sriram
+# # # conda deactivate
 
-
-PATH="/home/sriram/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/sriram/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/sriram/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/sriram/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/sriram/perl5"; export PERL_MM_OPT;
+export PATH="/Users/sriramsuresh/anaconda3/bin:$PATH"
+export PATH=$HOME/development/flutter/bin:$PATH
 
 
 export PATH="$PATH:$HOME/development/flutter/bin"
 
 export MANPAGER='nvim +Man!'
-export PAGER='batcat'
+export PAGER='bat'
+export TERM=xterm-256color
