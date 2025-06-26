@@ -369,14 +369,14 @@ smart_gaps on
 # Smart borders (no border when only one window)
 smart_borders on
 
-
-# for_window [class=".*"] border pixel 3
-
 default_border pixel 2
 default_floating_border pixel 2
 
 title_align center
 
-# bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/i3blocks-contrib/shutdown_menu/shutdown_menu
-bindsym mod1+Ctrl+l exec --no-startup-id ~/.config/i3/i3blocks-contrib/shutdown_menu/shutdown_menu
+bindsym Mod1+Ctrl+l exec --no-startup-id ~/.config/i3/i3blocks-contrib/shutdown_menu/shutdown_menu
+
+bindsym $mod+bracketleft workspace prev
+bindsym $mod+bracketright workspace next
+
 
