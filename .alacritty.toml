@@ -1,8 +1,15 @@
 [window]
 startup_mode = "Maximized"
-opacity = 0.9
+option_as_alt = "OnlyLeft" 
+# option_as_alt = "OnlyLeft" | "OnlyRight" | "Both" | "None" # (macos only)
+# opacity = 0.8
 
 [font]
-size = 11
-# size = 9
+size = 14
+normal = {family = "Hack Nerd Font Propo", style = "Regular"}
 
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
