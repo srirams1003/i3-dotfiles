@@ -377,5 +377,6 @@ default_floating_border pixel 2
 
 title_align center
 
-bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/i3blocks-contrib/shutdown_menu/shutdown_menu
+# bindsym $mod+Ctrl+l exec --no-startup-id ~/.config/i3/i3blocks-contrib/shutdown_menu/shutdown_menu
+bindsym mod1+Ctrl+l exec --no-startup-id ~/.config/i3/i3blocks-contrib/shutdown_menu/shutdown_menu
 
