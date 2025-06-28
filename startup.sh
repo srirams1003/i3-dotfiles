@@ -2,6 +2,7 @@
 
 sleep 3
 
+# # NOTE: since I almost always use a single monitor setup, I run this block below to disable laptop internal display
 # Check if external monitor is connected
 if xrandr | grep "^HDMI-1 connected"; then
     # External monitor is connected
