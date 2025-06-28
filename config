@@ -52,15 +52,15 @@ bindsym $mod+F8 exec --no-startup-id ~/.config/i3/sink-switch.sh --headphones
 bindsym $mod+F9  exec ~/.config/i3/toggle_sink.sh
 
 
-# # NOTE: i do not need this f10 bind anymore cuz i have the f12 bind that i can use instead
-# bindsym $mod+F10 exec --no-startup-id xrandr --output DP-1 --mode 1920x1080
-
 # # NOTE: for DP monitor
 # bindsym $mod+F11 exec --no-startup-id xrandr --output eDP-1 --auto --mode 1400x900 --brightness 0.7 && xrandr --output DP-1 --off
 # bindsym $mod+F12 exec --no-startup-id xrandr --output DP-1 --auto --mode 1920x1080 --brightness 0.7 && xrandr --output eDP-1 --off 
+
 # NOTE: for HDMI instead of DP monitor
+# NOTE: keybind to switch to dual monitor setup
+bindsym $mod+F10 exec --no-startup-id ~/.config/i3/arandr_config.sh
 bindsym $mod+F11 exec --no-startup-id xrandr --output eDP-1 --auto --brightness 0.7 && xrandr --output HDMI-1 --off
-bindsym $mod+F12 exec --no-startup-id xrandr --output HDMI-1 --auto --mode 1920x1080 --brightness 0.7 && xrandr --output eDP-1 --off 
+bindsym $mod+F12 exec --no-startup-id xrandr --output HDMI-1 --auto --mode 1920x1080 --rate 75 --brightness 0.7 && xrandr --output eDP-1 --off 
 
 bindsym Control+Shift+Escape exec --no-startup-id gnome-system-monitor
 bindsym $mod+b exec --no-startup-id blueman-manager
@@ -296,7 +296,7 @@ exec_always feh --bg-scale ~/Documents/wallpapers/Firewatch+Tower.png
 assign [class="Spotify"] $ws3
 assign [class="okular"] $ws4
 assign [class="obsidian"] $ws5
-assign [class="WebApp-WhatsApp5730"] $ws6
+assign [class="WebApp-WhatsApp7768"] $ws6
 assign [class="VirtualBox Manager"] $ws7
 # assign [class="Cursor"] $ws8
 assign [class="Code"] $ws8
@@ -318,7 +318,7 @@ exec --no-startup-id flatpak run org.kde.okular
 # # if the below two are installed using snap
 # # exec --no-startup-id okular
 # exec --no-startup-id obsidian
-# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp5730 --name=WebApp-WhatsApp5730 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp5730 --start-maximized
+# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp7768 --name=WebApp-WhatsApp7768 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp7768 --start-maximized
 # exec --no-startup-id VirtualBox Manager
 # exec --no-startup-id code
 # exec --no-startup-id nemo
@@ -343,7 +343,10 @@ bar {
 
 		position top
 
-		tray_output primary
+		# # NOTE: if you are using a dual (or more) monitor setup and you want the tray icons only on the primary display, use this line
+		# tray_output primary
+		# NOTE: to disable tray icons on all displays
+		tray_output none
 
 		# height 25
 
