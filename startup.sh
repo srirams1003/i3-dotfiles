@@ -19,8 +19,6 @@ fi
 setxkbmap -option caps:swapescape
 i3-msg restart
 
-picom --config ~/.config/i3/picom.conf -b
-
 # bluetoothctl connect 08:EB:ED:4C:ED:1F # insignia mini sonic
 # bluetoothctl connect 08:EB:ED:D2:A8:E5 # insignia mini sonic (new MAC address?!)
 # bluetoothctl connect 4C:FE:2E:28:70:72 # jvc ha-a3t
