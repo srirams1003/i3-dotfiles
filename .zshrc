@@ -180,7 +180,7 @@ export LS_OPTIONS='--color=auto'
 # alias ls='ls $LS_OPTIONS'
 alias ls='colorls'
 
-# alias open='xdg-open'
+alias open='xdg-open'
 
 alias python="python3"
 # alias gpus='ssh -Y sriram@10.125.189.149 -p 6161'
