@@ -189,8 +189,7 @@ alias grep='grep -i'
 alias cdd='cd ~/Downloads/'
 alias dp='docker ps -a'
 alias di='docker images -a'
-alias bat='batcat --color=always'
-alias seek='fzf --preview="batcat --color=always {}"'
+alias seek='fzf --preview="bat --color=always {}"'
 alias vseek='vim "$(seek)"'
 alias oseek='xdg-open "$(seek)"'
 alias neo='fastfetch'
@@ -235,4 +234,4 @@ PERL_MM_OPT="INSTALL_BASE=/home/sriram/perl5"; export PERL_MM_OPT;
 export PATH="$PATH:$HOME/development/flutter/bin"
 
 export MANPAGER='nvim +Man!'
-export PAGER='batcat'
+export PAGER='bat'
