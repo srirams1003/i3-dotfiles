@@ -20,7 +20,8 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 11
+# font pango:DejaVu Sans Mono 21
+font pango:Hack Nerd Font 11
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -313,7 +314,7 @@ exec --no-startup-id firefox
 # exec --no-startup-id alacritty
 # exec --no-startup-id spotify
 # # if the below two are installed using flatpak
-exec --no-startup-id flatpak run org.kde.okular
+# exec --no-startup-id flatpak run org.kde.okular
 # exec --no-startup-id flatpak run md.obsidian.Obsidian
 # # if the below two are installed using snap
 # # exec --no-startup-id okular
