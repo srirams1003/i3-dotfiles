@@ -60,8 +60,10 @@ bindsym $mod+F9  exec ~/.config/i3/toggle_sink.sh
 # NOTE: for HDMI instead of DP monitor
 # NOTE: keybind to switch to dual monitor setup
 bindsym $mod+F10 exec --no-startup-id ~/.config/i3/arandr_config.sh
-bindsym $mod+F11 exec --no-startup-id xrandr --output eDP-1 --auto --brightness 0.7 && xrandr --output HDMI-1 --off
-bindsym $mod+F12 exec --no-startup-id xrandr --output HDMI-1 --auto --mode 1920x1080 --rate 75 --brightness 0.7 && xrandr --output eDP-1 --off 
+
+bindsym $mod+F11 exec --no-startup-id xrandr --output eDP --mode 1440x900 --brightness 0.7 && xrandr --output DisplayPort-3 --off
+bindsym $mod+F12 exec --no-startup-id xrandr --output DisplayPort-3 --mode 1920x1080 --rate 75 --brightness 0.7 && xrandr --output eDP --off 
+
 
 bindsym Control+Shift+Escape exec --no-startup-id gnome-system-monitor
 bindsym $mod+b exec --no-startup-id blueman-manager
