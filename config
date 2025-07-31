@@ -68,6 +68,7 @@ bindsym $mod+F12 exec --no-startup-id xrandr --output DisplayPort-3 --mode 1920x
 bindsym Control+Shift+Escape exec --no-startup-id gnome-system-monitor
 bindsym $mod+b exec --no-startup-id blueman-manager
 bindsym $mod+m exec --no-startup-id cinnamon-settings sound
+bindsym $mod+Escape exec --no-startup-id alacritty -e htop
 bindsym $mod+g exec --no-startup-id simplescreenrecorder
 bindsym $mod+n exec --no-startup-id psensor
 # Increase brightness
