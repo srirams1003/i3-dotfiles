@@ -297,7 +297,9 @@ exec_always feh --bg-scale ~/Documents/wallpapers/Firewatch+Tower.png
 assign [class="Spotify"] $ws3
 assign [class="okular"] $ws4
 assign [class="obsidian"] $ws5
-assign [class="WebApp-WhatsApp7768"] $ws6
+assign [class="WebApp-WhatsApp5496"] $ws6
+assign [class="discord"] $ws6
+assign [class="Slack"] $ws6
 assign [class="VirtualBox Manager"] $ws7
 # assign [class="Cursor"] $ws8
 assign [class="Code"] $ws8
@@ -312,14 +314,14 @@ bindsym Mod1+Tab  workspace back_and_forth
 # exec --no-startup-id google-chrome --password-store=gnome-libsecret
 exec --no-startup-id firefox
 # exec --no-startup-id alacritty
-# exec --no-startup-id spotify
+exec --no-startup-id spotify
 # # if the below two are installed using flatpak
 # exec --no-startup-id flatpak run org.kde.okular
 # exec --no-startup-id flatpak run md.obsidian.Obsidian
 # # if the below two are installed using snap
 # # exec --no-startup-id okular
 # exec --no-startup-id obsidian
-# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp7768 --name=WebApp-WhatsApp7768 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp7768 --start-maximized
+# exec --no-startup-id google-chrome-stable --app="http://web.whatsapp.com" --class=WebApp-WhatsApp5496 --name=WebApp-WhatsApp5496 --user-data-dir=/home/sriram/.local/share/ice/profiles/WhatsApp5496 --start-maximized
 # exec --no-startup-id VirtualBox Manager
 # exec --no-startup-id code
 # exec --no-startup-id nemo
@@ -331,6 +333,7 @@ exec --no-startup-id firefox
 bindsym $mod+Shift+Return exec firefox
 # NOTE: using this as a temporary keybind for google-chrome
 bindsym $mod+Shift+g exec google-chrome --password-store=gnome-libsecret
+bindsym $mod+Shift+b exec flatpak run com.brave.Browser
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -347,7 +350,7 @@ bar {
 		# # NOTE: if you are using a dual (or more) monitor setup and you want the tray icons only on the primary display, use this line
 		# tray_output primary
 		# NOTE: to disable tray icons on all displays
-		tray_output none
+		# tray_output none
 
 		# height 25
 
