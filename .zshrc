@@ -195,6 +195,7 @@ alias vseek='vim "$(seek)"'
 alias oseek='xdg-open "$(seek)"'
 alias neo='fastfetch'
 alias sl='sl -e'
+alias cursor='/opt/cursor.appimage --no-sandbox'
 
 # export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 # export QT_QPA_PLATFORM="xcb"
