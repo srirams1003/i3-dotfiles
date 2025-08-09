@@ -142,6 +142,8 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+q kill
 
+for_window [urgent="latest"] focus
+
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec --no-startup-id "rofi -modi drun,run -show drun"
@@ -318,7 +320,8 @@ bindsym Mod1+Tab  workspace back_and_forth
 # exec --no-startup-id google-chrome --password-store=gnome-libsecret
 exec --no-startup-id firefox
 # exec --no-startup-id alacritty
-exec --no-startup-id spotify
+# exec --no-startup-id spotify
+exec --no-startup-id flatpak run com.spotify.Client
 # # if the below two are installed using flatpak
 # exec --no-startup-id flatpak run org.kde.okular
 # exec --no-startup-id flatpak run md.obsidian.Obsidian
