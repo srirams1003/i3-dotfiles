@@ -71,12 +71,13 @@ bindsym $mod+m exec --no-startup-id cinnamon-settings sound
 bindsym $mod+Escape exec --no-startup-id alacritty -e htop
 bindsym $mod+g exec --no-startup-id simplescreenrecorder
 bindsym $mod+n exec --no-startup-id psensor
-# Increase brightness
-bindsym $mod+Shift+equal exec --no-startup-id ~/.config/i3/increase_brightness_mac.sh
-bindsym $mod+equal exec --no-startup-id ~/.config/i3/increase_brightness.sh
+
 # Decrease brightness
-bindsym $mod+Shift+minus exec --no-startup-id ~/.config/i3/decrease_brightness_mac.sh
-bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness.sh
+bindsym $mod+minus exec --no-startup-id ~/.config/i3/decrease_brightness_mac.sh
+bindsym F9 exec --no-startup-id ~/.config/i3/decrease_brightness.sh
+# Increase brightness
+bindsym $mod+equal exec --no-startup-id ~/.config/i3/increase_brightness_mac.sh
+bindsym F10 exec --no-startup-id ~/.config/i3/increase_brightness.sh
 
 ##  Screenshots in files
 bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
