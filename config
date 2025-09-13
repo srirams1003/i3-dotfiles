@@ -399,3 +399,5 @@ bindsym $mod+bracketright workspace next
 # # NOTE: leaving this here as a remainder that mod + p has nothing assigned to it, which is a waste as it is so convenient
 # # NOTE: other amazing keys have no $mod bindings assigned are: o, i, u, y
 # bindsym $mod+p exec --no-startup-id notify-send "hi mom"
+# NVM I USED mod p HERE to lock screen
+bindsym $mod+p exec --no-startup-id loginctl lock-session
