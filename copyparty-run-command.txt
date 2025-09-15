@@ -1,0 +1,4 @@
+docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac
+
+
+# make sure the `~/nas` folder exists or replace that with the path to whatever you want to mount as your NAS
