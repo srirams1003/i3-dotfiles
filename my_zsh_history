@@ -1,0 +1,668 @@
+: 1758674234:0;source secondScript.sh
+: 1758675628:0;ls
+: 1758675628:0;pwd
+: 1758675633:0;cd ~/do
+: 1758675635:0;cd ~/Downloads
+: 1758675636:0;ls
+: 1758675636:0;pwd
+: 1758675641:0;sudo apt install ./google-chrome-stable_current_amd64.deb
+: 1758675657:0;cat secondScript.sh
+: 1758675663:0;sudo apt install ./code_1.104.1-1758154125_amd64.deb
+: 1758675767:0;sudo apt install ./cursor_1.6.35_amd64.deb
+: 1758675855:0;# Add Docker's official GPG key:\
+sudo apt-get update\
+sudo apt-get install ca-certificates curl\
+sudo install -m 0755 -d /etc/apt/keyrings\
+sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc\
+sudo chmod a+r /etc/apt/keyrings/docker.asc\
+\
+# Add the repository to Apt sources:\
+echo \\
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \\
+  bookworm stable" | \\
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null\
+sudo apt-get update
+: 1758675868:0;sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+: 1758675897:0;sudo apt-get update\
+sudo apt-get install ./docker-desktop-amd64.deb
+: 1758675969:0;sudo apt install t2fanrd
+: 1758675983:0;sudo systemctl enable --now t2fanrd
+: 1758676002:0;sudo systemctl restart t2fanrd
+: 1758676009:0;sudo vim /etc/t2fand.conf
+: 1758676020:0;sudo systemctl restart t2fanrd
+: 1758676062:0;gpg --generate-key
+: 1758676136:0;ls
+: 1758676136:0;pwd
+: 1758676150:0;source secondScript.sh
+: 1758676368:0;ls
+: 1758676369:0;pwd
+: 1758676372:0;vim ~/.alacritty.toml
+: 1758676404:0;ls
+: 1758676405:0;pwd
+: 1758676408:0;t ls
+: 1758676408:0;t
+: 1758676419:0;t kill-server
+: 1758676420:0;t ls
+: 1758676428:0;ls
+: 1758676428:0;pwd
+: 1758676430:0;vim ~/.alacritty.toml
+: 1758676435:0;ls
+: 1758676435:0;pwd
+: 1758676438:0;cd ~/.config/i3
+: 1758676438:0;ls
+: 1758676439:0;pwd
+: 1758676439:0;gs
+: 1758676439:0;gd
+: 1758676455:0;gpl
+: 1758676456:0;gp
+: 1758676461:0;sl
+: 1758676463:0;ls
+: 1758676463:0;pwd
+: 1758676557:0;gpg --generate-key
+: 1758676579:0;pass init 1F7C123B0F18241F5D9509D1CC5EE49979221447
+: 1758676597:0;d[
+: 1758676598:0;dp
+: 1758676599:0;di
+: 1758676602:0;docker run hello-world
+: 1758676621:0;dp
+: 1758676622:0;di
+: 1758676626:0;docker system prune -a
+: 1758676636:0;t ls
+: 1758676637:0;cd ~/.config/i3
+: 1758676638:0;t
+: 1758676639:0;ls
+: 1758676640:0;pwd
+: 1758676645:0;cd ~/.config/i3
+: 1758676654:0;cd ~/.config/nvim
+: 1758676658:0;ls
+: 1758676658:0;pwd
+: 1758676660:0;vim copyparty-run-command.txt
+: 1758676663:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1758676707:0;cd ~/nas
+: 1758676708:0;tree
+: 1758676711:0;t ls
+: 1758676712:0;ta
+: 1758676717:0;t ls
+: 1758676717:0;ta
+: 1758676756:0;t ls
+: 1758676756:0;ta
+: 1758683704:0;bluetoothctl
+: 1758684016:0;t ls
+: 1758684016:0;ta
+: 1758684017:0;t
+: 1758684050:0;t ls
+: 1758684050:0;ta
+: 1758684052:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1758684074:0;tree
+: 1758684317:0;type cursor
+: 1758684318:0;which cursor
+: 1758684321:0;tldr cursor
+: 1758684333:0;t ls
+: 1758684333:0;ta
+: 1758684336:0;vim ~/.alacritty.toml
+: 1758684341:0;t ls
+: 1758684342:0;a
+: 1758684343:0;ta
+: 1758684345:0;ls
+: 1758684345:0;pwd
+: 1758684347:0;vim .alacritty.toml
+: 1758684354:0;ls
+: 1758684355:0;pwd
+: 1758684360:0;t ls
+: 1758684361:0;ls
+: 1758684361:0;pwd
+: 1758687370:0;t ls
+: 1758687370:0;ta
+: 1758687402:0;ls
+: 1758687402:0;pwd
+: 1758687404:0;gpl
+: 1758687406:0;ls
+: 1758687406:0;pwd
+: 1758687407:0;vim .git
+: 1758687409:0;ls
+: 1758687409:0;pwd
+: 1758687428:0;..
+: 1758687430:0;rm -rf Pictures
+: 1758687441:0;git clone https://github.com/srirams1003/Pictures
+: 1758687447:0;cd Pictures
+: 1758687453:0;gpl
+: 1758687455:0;gs
+: 1758687455:0;gd
+: 1758687456:0;gpl
+: 1758687496:0;t ls
+: 1758687498:0;cd intersense-prototype
+: 1758687499:0;ls
+: 1758687499:0;pwd
+: 1758687500:0;t
+: 1758687509:0;cd ~/baseline
+: 1758687513:0;cd ../survey
+: 1758687515:0;gpl
+: 1758687520:0;cd survey
+: 1758687521:0;gs
+: 1758687521:0;gp
+: 1758687522:0;gpl
+: 1758687524:0;gs
+: 1758687524:0;gpl
+: 1758687527:0;firebase login
+: 1758687547:0;t ls
+: 1758687550:0;cd ~/llm-insight
+: 1758687552:0;t
+: 1758687555:0;frontend
+: 1758687556:0;ba
+: 1758687558:0;backend
+: 1758687565:0;t ls
+: 1758687575:0;cd ~/Desktop/srirams1003.github.io/
+: 1758687577:0;t
+: 1758687586:0;sudo bundle install
+: 1758687590:0;vim README.md
+: 1758687707:0;bundle exec jekyll serve -l -H localhost
+: 1758687724:0;gs
+: 1758687726:0;gpl
+: 1758687731:0;../coding/newPractice
+: 1758687731:0;ls
+: 1758687731:0;pwd
+: 1758687738:0;vim ~/.zshrc
+: 1758687760:0;ls
+: 1758687760:0;pwd
+: 1758687773:0;conda create --name loonix python=3.12
+: 1758687826:0;pip wheel
+: 1758687828:0;ls
+: 1758687828:0;pwd
+: 1758687831:0;tldr pip wheel
+: 1758687832:0;ls
+: 1758687832:0;pwd
+: 1758687834:0;man pip wheel
+: 1758687839:0;ls
+: 1758687839:0;pwd
+: 1758687840:0;gs
+: 1758687840:0;gd
+: 1758687841:0;gpl
+: 1758687844:0;conda env list
+: 1758687845:0;ls
+: 1758687845:0;pwd
+: 1758687851:0;conda env list
+: 1758687852:0;ls
+: 1758687852:0;pwd
+: 1758687868:0;conda install bs4 requests pandas numpy
+: 1758687895:0;ls
+: 1758687898:0;python leetcode.py
+: 1758687901:0;python whatdoido.py
+: 1758687904:0;python trees.py
+: 1758687906:0;python hello.py
+: 1758687907:0;ls
+: 1758687907:0;pwd
+: 1758687908:0;ls
+: 1758687909:0;pwd
+: 1758687911:0;vim ~/.zshrc
+: 1758687917:0;gs
+: 1758687917:0;gd
+: 1758687920:0;vim .zshrc
+: 1758687932:0;ls
+: 1758687933:0;pwd
+: 1758687935:0;python hello.py
+: 1758687942:0;ls
+: 1758687942:0;pwd
+: 1758687947:0;vim cs2.py
+: 1758687949:0;python cs2.py
+: 1758687953:0;t ls
+: 1758687968:0;t ;s
+: 1758687972:0;t ls
+: 1758687975:0;t l
+: 1758687977:0;t ls
+: 1758687977:0;ta
+: 1758687982:0;cd ~/cli-tools-practice
+: 1758687983:0;t
+: 1758687988:0;vim users.csv
+: 1758687990:0;tldr cut
+: 1758687998:0;cut -d ',' -f 2,4 users.csv
+: 1758688014:0;cd ~/Downloads/resumes_docx
+: 1758688017:0;vim something.tex
+: 1758688019:0;gpl
+: 1758688024:0;cd ~/Pictures
+: 1758688028:0;cd ~/Documents/wallpapers
+: 1758688028:0;gs
+: 1758688029:0;gd
+: 1758688029:0;gpl
+: 1758688031:0;gs
+: 1758688031:0;gd
+: 1758688033:0;vim something.tex
+: 1758688050:0;gs
+: 1758688050:0;gd
+: 1758688052:0;ls
+: 1758688053:0;gpl
+: 1758688063:0;cd ~/lkmpg
+: 1758688065:0;cd low-level-practice
+: 1758688067:0;ls
+: 1758688067:0;pwd
+: 1758688072:0;vim my_hexdump.c
+: 1758688079:0;gcc my_hexdump.c -o my_hexdump
+: 1758688082:0;./my_hexdump
+: 1758688085:0;./my_hexdump test.txt
+: 1758688086:0;ls
+: 1758688088:0;pwd
+: 1758688091:0;gpl
+: 1758688093:0;gs
+: 1758688094:0;ls
+: 1758688097:0;vim my_malloc.c
+: 1758688099:0;ls
+: 1758688106:0;gcc my_malloc.c -o my_malloc
+: 1758688110:0;gcc my_malloc.c -o my_malloc && ./my_malloc
+: 1758688120:0;cd ../simple_gui_file_explorer
+: 1758688120:0;ls
+: 1758688122:0;pwd
+: 1758688127:0;vim README.md
+: 1758688129:0;sudo apt update -y && sudo apt install libgtk-3-dev -y\
+
+: 1758688193:0;ls
+: 1758688194:0;pwd
+: 1758688195:0;vim README.md
+: 1758688203:0;[200~gcc file_explorer_gui.c -o file_explorer_gui `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
+: 1758688208:0;ls
+: 1758688208:0;pwd
+: 1758688210:0;vim README.md
+: 1758688216:0;gcc file_explorer_gui.c -o file_explorer_gui `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
+: 1758688218:0;ls
+: 1758688218:0;pwd
+: 1758688221:0;./file_explorer_gui
+: 1758688228:0;gcc file_explorer_gui.c -o file_explorer_gui `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
+: 1758688229:0;ls
+: 1758688229:0;pwd
+: 1758688231:0;ls
+: 1758688232:0;pwd
+: 1758688236:0;gcc my_malloc.c -o my_malloc && ./my_malloc
+: 1758688242:0;t ls
+: 1758688249:0;cd ~/invisible_take_home_test
+: 1758688250:0;t
+: 1758688268:0;gs
+: 1758688268:0;gd
+: 1758688270:0;vim something.txt
+: 1758688271:0;ls
+: 1758688272:0;pwd
+: 1758688275:0;open take_home_demo_ssuresh.mp4
+: 1758688281:0;ls
+: 1758688281:0;pwd
+: 1758688287:0;ls
+: 1758688287:0;pwd
+: 1758688291:0;t ls
+: 1758688291:0;ta
+: 1758688304:0;ls
+: 1758688304:0;pwd
+: 1758688305:0;gcc my_malloc.c -o my_malloc && ./my_malloc
+: 1758688680:0;cd ~/Documents/obsidian-notes
+: 1758688681:0;gs
+: 1758688681:0;gd
+: 1758688683:0;gpl
+: 1758719214:0;t ls
+: 1758719214:0;ta
+: 1758719215:0;t
+: 1758719216:0;nvim cs2.py
+: 1758719216:0;nvim users.csv
+: 1758719216:0;nvim my_malloc.c
+: 1758719222:0;ls
+: 1758719222:0;pwd
+: 1758719223:0;gs
+: 1758719223:0;gd
+: 1758719227:0;t ls
+: 1758719227:0;ta
+: 1758719232:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1758719323:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1758719631:0;ssh sriram@192.168.4.85
+: 1758719986:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1758719996:0;sudo modprobe -r kvm_intel
+: 1758720006:0;lsmod | grep kvm
+: 1758720040:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1758720093:0;tree
+: 1758720097:0;lsmod | grep kvm
+: 1758720103:0;t ls
+: 1758720103:0;ta
+: 1758720108:0;ls
+: 1758720109:0;pwd
+: 1758720109:0;gs
+: 1758720109:0;gd
+: 1758720111:0;gcc my_malloc.c -o my_malloc && ./my_malloc
+: 1758720298:0;nvim my_malloc.c
+: 1758720300:0;ls
+: 1758720300:0;pwd
+: 1758720303:0;ls -al
+: 1758720304:0;l -ath
+: 1758720307:0;gcc my_malloc.c -o my_malloc && ./my_malloc
+: 1758721591:0;dp
+: 1758721592:0;di
+: 1758721872:0;gcc my_malloc.c -o my_malloc && ./my_malloc
+: 1758722226:0;uname -a
+: 1758722231:0;ls
+: 1758722232:0;pwd
+: 1758722232:0;neo
+: 1758722237:0;\type neo
+: 1758722239:0;type type
+: 1758722273:0;neofetch
+: 1758722360:0;ls
+: 1758722360:0;pwd
+: 1758722362:0;whoami
+: 1758722364:0;gcc my_malloc.c -o my_malloc && ./my_malloc
+: 1758723104:0;gs
+: 1758723104:0;gd
+: 1758723106:0;ga .
+: 1758723111:0;gcm "added code for my_malloc"
+: 1758723112:0;gs
+: 1758723112:0;gp
+: 1758723113:0;gpl
+: 1758723114:0;gp
+: 1758723115:0;gr v
+: 1758723116:0;gr -v
+: 1758723122:0;git fetch --prune origin
+: 1758723125:0;tldr git fetch
+: 1758723128:0;ls
+: 1758723129:0;pwd
+: 1758723130:0;gs
+: 1758723130:0;gp
+: 1758723131:0;gl
+: 1758723137:0;ls
+: 1758723137:0;pwd
+: 1758723139:0;gs
+: 1758723139:0;gd
+: 1758723157:0;vim my_malloc.c
+: 1758723189:0;vim my_hexdump.c
+: 1758723278:0;vim my_malloc
+: 1758723281:0;vim my_malloc.c
+: 1758723315:0;ls
+: 1758723315:0;pwd
+: 1758723319:0;vim my_malloc.c
+: 1758723339:0;vim my_32bit_register.c
+: 1758723431:0;gcc my_32bit_register.c -o my_32bit_register && ./my_32bit_register
+: 1758746452:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1758766790:0;bluetoothctl
+: 1758766852:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1758813188:0;t ls
+: 1758813189:0;t
+: 1758813191:0;nvim cs2.py
+: 1758813191:0;nvim users.csv
+: 1758813191:0;nvim my_32bit_register.c
+: 1758813710:0;gcc my_32bit_register.c -o my_32bit_register && ./my_32bit_register
+: 1758817123:0;xdg-settings get default-web-browser
+: 1758817128:0;xdg-settings get 
+: 1758817133:0;tldr xdg-settings
+: 1758817148:0;man xdg-settings
+: 1758817156:0;xdg-settings list
+: 1758817159:0;xdg-settings --list
+: 1758822786:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1758822845:0;ip a
+: 1758829060:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1758837735:0;clang my_malloc.c -o my_malloc
+: 1758837737:0;./my_malloc
+: 1758837738:0;ls
+: 1758837739:0;pwd
+: 1758837787:0;gcc my_32bit_register.c -o my_32bit_register && ./my_32bit_register
+: 1758858651:0;gs
+: 1758858652:0;gd
+: 1758858656:0;vim my_malloc
+: 1758858657:0;vim my_malloc.c
+: 1758858712:0;ls
+: 1758858712:0;pwd
+: 1758858713:0;ga .
+: 1758858715:0;gs
+: 1758858716:0;gds
+: 1758858717:0;gd
+: 1758858718:0;gds
+: 1758858737:0;gcm "added code for my_32bit_register to learn bitwise ops"
+: 1758858737:0;gs
+: 1758858737:0;gp
+: 1758858738:0;gpl
+: 1758858739:0;ls
+: 1758858740:0;pwd
+: 1758858740:0;gs
+: 1758858740:0;gd
+: 1758858741:0;ls
+: 1758858742:0;pwd
+: 1758858742:0;gs
+: 1758858743:0;gr -v
+: 1758858746:0;gb -va
+: 1758859289:0;vim my_ring_buffer.c
+: 1758859320:0;gcc my_ring_buffer.c -o my_ring_buffer
+: 1758859325:0;gcc my_ring_buffer.c -o my_ring_buffer && ./my_ring_buffer
+: 1758895135:0;t ;ls
+: 1758895137:0;nvim cs2.py
+: 1758895137:0;nvim users.csv
+: 1758895137:0;nvim my_ring_buffer.c
+: 1758895142:0;t ls
+: 1758895143:0;ta
+: 1758895146:0;gcc my_ring_buffer.c -o my_ring_buffer && ./my_ring_buffer
+: 1758895297:0;vim my_malloc
+: 1758895299:0;vim my_malloc.c
+: 1758895941:0;cat *.c
+: 1758895957:0;vim my_hexdump.c
+: 1758895965:0;cat *.c
+: 1758895975:0;gcc my_ring_buffer.c -o my_ring_buffer && ./my_ring_buffer
+: 1758898247:0;vim my_malloc.c
+: 1758898570:0;gcc my_ring_buffer.c -o my_ring_buffer && ./my_ring_buffer
+: 1758901177:0;gs
+: 1758901183:0;cat *.c
+: 1758901193:0;cat *.c > somethingsomething.txt
+: 1758901196:0;vim somethingsomething.txt
+: 1758901259:0;rm somethingsomething.txt
+: 1758901261:0;ls
+: 1758901262:0;pwd
+: 1758901262:0;gs
+: 1758901268:0;ga .
+: 1758901276:0;gcm "added code for my ring buffer"
+: 1758901277:0;gs
+: 1758901278:0;gpl
+: 1758901279:0;gp
+: 1758901280:0;ls
+: 1758901280:0;pwd
+: 1758901344:0;gs
+: 1758901345:0;gpl
+: 1758901346:0;gp
+: 1758901347:0;gl
+: 1758901353:0;gs
+: 1758901825:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1758909538:0;clang -v -o demo alc
+: 1758909540:0;clang -v -o demo a.c
+: 1758909543:0;clang -v -o demo my_malloc.c
+: 1758911637:0;ls
+: 1758911638:0;pwd
+: 1758911640:0;vim demo
+: 1758911642:0;gs
+: 1758911642:0;gd
+: 1758911650:0;history | tail -n 10
+: 1758911657:0;./demo
+: 1758911659:0;ls
+: 1758911659:0;pwd
+: 1758911660:0;rm demo
+: 1758911661:0;ls
+: 1758911662:0;pwd
+: 1758911663:0;whoami
+: 1758911665:0;gs
+: 1758911666:0;gpl
+: 1758911667:0;gp
+: 1758911667:0;gs
+: 1758911667:0;gd
+: 1758922248:0;cat ~/.config/i3/startup.sh| grep setk
+: 1758922249:0;cat ~/.config/i3/startup.sh| grep setx
+: 1758922253:0;setxkbmap -option caps:swapescape
+: 1758922550:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1758922683:0;xprop
+: 1758923288:0;vim my_logger.c
+: 1758923338:0;cd ..
+: 1758923340:0;ls
+: 1758923342:0;cd simple_gui_file_explorer
+: 1758923342:0;ls
+: 1758923344:0;vim README.md
+: 1758923349:0;gcc file_explorer_gui.c -o file_explorer_gui `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`\
+
+: 1758923359:0;./file_explorer_gui
+: 1758923364:0;gs
+: 1758923364:0;gd
+: 1758923370:0;gs
+: 1758923370:0;gd
+: 1758923371:0;gds
+: 1758923372:0;gsd
+: 1758923373:0;ls
+: 1758923374:0;pwd
+: 1758923374:0;gsd
+: 1758923374:0;gd
+: 1758923376:0;whoami
+: 1758923377:0;gs
+: 1758924851:0;gcc my_logger.c -o my_logger && ./my_logger
+: 1758925102:0;flatpak list --app
+: 1758925550:0;gcc my_logger.c -o my_logger && ./my_logger
+: 1758925809:0;gs
+: 1758925809:0;gd
+: 1758925810:0;ga .
+: 1758925815:0;gcm "added code for my logger"
+: 1758925815:0;gsg
+: 1758925816:0;gs
+: 1758925817:0;gp
+: 1758925818:0;gpl
+: 1758925819:0;gl
+: 1758925821:0;gs
+: 1758925821:0;gd
+: 1758925822:0;ls
+: 1758925822:0;pwd
+: 1758925825:0;gcc my_logger.c -o my_logger && ./my_logger
+: 1758925829:0;./my_logger
+: 1758925830:0;gs
+: 1758925831:0;gd
+: 1758925832:0;ls
+: 1758925832:0;pwd
+: 1758925837:0;vim my_crc.c
+: 1758925864:0;gs
+: 1758925864:0;gd
+: 1758925867:0;gsd
+: 1758925868:0;gds
+: 1758925876:0;git diff --staged
+: 1758925880:0;type gds
+: 1758925887:0;type sg
+: 1758925888:0;ls
+: 1758925888:0;pwd
+: 1758925889:0;whatis sg
+: 1758925899:0;gcc my_crc.c -o my_crc
+: 1758925904:0;gcc my_crc.c -o my_crc && ./my_crc
+: 1758929072:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1758929856:0;t ls
+: 1758929856:0;ta
+: 1758929900:0;gcc my_crc.c -o my_crc && ./my_crc
+: 1758930446:0;vim my_malloc
+: 1758930448:0;vim my_malloc.c
+: 1758950356:0;gcc my_crc.c -o my_crc && ./my_crc
+: 1758950362:0;gcc my_crc.c -o my_crc && ./my_crc sriram
+: 1758950376:0;gcc my_crc.c -o my_crc && ./my_crc A
+: 1758950393:0;gcc my_crc.c -o my_crc && ./my_crc this is a test string
+: 1758950417:0;gcc my_crc.c -o my_crc && ./my_crc "sriram is a whore"
+: 1758950437:0;gcc my_crc.c -o my_crc && ./my_crc sriram
+: 1758950457:0;gcc my_crc.c -o my_crc && ./my_crc 1
+: 1758950462:0;gcc my_crc.c -o my_crc && ./my_crc 3
+: 1758952031:0;gcc my_crc.c -o my_crc && ./my_crc sriram suresh 
+: 1758952076:0;gcc my_crc.c -o my_crc && ./my_crc 7
+: 1758952078:0;gs
+: 1758952079:0;gd
+: 1758952080:0;ga .
+: 1758952085:0;gcm "added my crc/checksum code"
+: 1758952086:0;gs
+: 1758952086:0;gp
+: 1758952087:0;gpl
+: 1758952088:0;ls
+: 1758952090:0;pwd
+: 1758952090:0;gll
+: 1758952091:0;gl
+: 1758952093:0;type gll
+: 1758952094:0;gl
+: 1758952096:0;type gl
+: 1758952100:0;ls
+: 1758952100:0;pwd
+: 1758952142:0;vim bitmap_allocator.c
+: 1758952158:0;gcc bitmap_allocator.c -o bitmap_allocator
+: 1758952161:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1758952162:0;ls
+: 1758952162:0;pwd
+: 1758952164:0;gs
+: 1758952164:0;gd
+: 1758982746:0;t ls
+: 1758982746:0;t
+: 1758982748:0;nvim cs2.py
+: 1758982748:0;nvim users.csv
+: 1758982748:0;nvim bitmap_allocator.c
+: 1758982754:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1758982795:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1758986295:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1758986307:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1758989147:0;gs
+: 1758989148:0;gd
+: 1758989148:0;ga .
+: 1758989160:0;gcm "added skeleton code for bitmap allocator"
+: 1758989160:0;gs
+: 1758989161:0;gp
+: 1758989162:0;gpl
+: 1758989163:0;who9ami
+: 1758989164:0;whoami
+: 1758989171:0;gs
+: 1758989171:0;gd
+: 1758989177:0;git checkout -- .
+: 1758989177:0;gs
+: 1758989179:0;vim bitmap_allocator.c
+: 1758989181:0;gs
+: 1758989182:0;gpl
+: 1758989183:0;gp
+: 1758989184:0;vim bitmap_allocator.c
+: 1758989194:0;gpl
+: 1758989201:0;gs
+: 1758989202:0;gpl
+: 1758989210:0;gs
+: 1758989210:0;gd
+: 1758989212:0;gs
+: 1758989213:0;gpl
+: 1758989220:0;tldr w
+: 1758989220:0;w
+: 1758989224:0;gs
+: 1758989225:0;gpl
+: 1758989235:0;ls
+: 1758989235:0;pwd
+: 1758989238:0;tldr ls
+: 1758989240:0;tldr colorls
+: 1758989314:0;ls
+: 1758989315:0;pwd
+: 1758989318:0;t ls
+: 1758989341:0;vim ~/.local/share/tmux/resurrect
+: 1758989354:0;ls
+: 1758989355:0;pwd
+: 1758989380:0;ls
+: 1758989381:0;pwd
+: 1758989393:0;open 2025-09-09\ 21-12-01.mkv
+: 1758989403:0;open 2025-08-08 22-33-16.mkv
+: 1758989408:0;open 2025-08-08\ 22-33-16.mkv
+: 1758989416:0;l
+: 1758989421:0;vim ~/.local/share/tmux/resurrect
+: 1758989425:0;cd ~/.local/share/tmux/resurrect
+: 1758989425:0;ls
+: 1758989426:0;pwd
+: 1758989430:0;cat *.txt
+: 1758989432:0;cat last
+: 1758989466:0;neoo
+: 1758989467:0;neo
+: 1758989470:0;neo -l none
+: 1758989584:0;t ls
+: 1758989587:0;tat conf-files
+: 1758989606:0;cp -r ~/.local/share/tmux/resurrect ./tmux-resurrect-backup
+: 1758989607:0;ls
+: 1758989610:0;tree tmux-resurrect-backup
+: 1758989618:0;gs
+: 1758989619:0;gd
+: 1758989620:0;ga .
+: 1758989626:0;gcm "added tmux-resurrect-backup"
+: 1758989626:0;gs
+: 1758989627:0;gp
+: 1758989628:0;gpl
+: 1758989629:0;ls
+: 1758989630:0;pwd
+: 1758989630:0;gs
+: 1758989630:0;gd
+: 1758989678:0;vim commands_to_run_after_reinstall.md
+: 1758989703:0;tree ~/.config/i3/tmux-resurrect-backup/
+: 1758989718:0;vim ~/.zsh_history
+: 1758989773:0;cp ~/.zsh_history ./my_zsh_history
