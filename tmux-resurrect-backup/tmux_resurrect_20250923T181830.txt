@@ -1,0 +1,7 @@
+pane	0	0	1	:*	0	cpp @ 172.17.0.2:3923 	:/home/sriram/.config/i3	0	docker	:docker run --rm -it -u 1000 -p 3923:3923 -v /home/sriram/nas:/w -v /home/sriram/.config/i3/copyparty-cfgdir:/cfg copyparty/ac
+pane	0	0	1	:*	1	sriram-MacBookPro	:/home/sriram/nas	1	zsh	:
+pane	0	1	0	:-	0	sriram-MacBookPro	:/home/sriram/.config/nvim	1	zsh	:
+pane	0	1	0	:-	1	sriram-MacBookPro	:/home/sriram/dotfiles	0	zsh	:
+window	0	0	:zsh	1	:*	1a92,213x57,0,0{106x57,0,0,1,106x57,107,0,4}	:
+window	0	1	:zsh	0	:-	9a92,213x57,0,0{106x57,0,0,2,106x57,107,0,3}	:
+state	0	

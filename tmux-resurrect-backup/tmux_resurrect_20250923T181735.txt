@@ -1,0 +1,6 @@
+pane	0	0	0	:-	0	sriram-MacBookPro	:/home/sriram/.config/i3	1	zsh	:
+pane	0	1	1	:*	0	sriram-MacBookPro	:/home/sriram/.config/nvim	1	zsh	:
+pane	0	1	1	:*	1	sriram-MacBookPro	:/home/sriram/dotfiles	0	zsh	:
+window	0	0	:zsh	0	:-	ca5e,213x57,0,0,1	:
+window	0	1	:zsh	1	:*	9a92,213x57,0,0{106x57,0,0,2,106x57,107,0,3}	:
+state	0	
