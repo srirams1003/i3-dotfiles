@@ -1,0 +1,33 @@
+pane	conf-files	0	1	:*	0	cpp @ 172.17.0.2:3923 	:/home/sriram/.config/i3	0	zsh	:
+pane	conf-files	0	1	:*	1	:/home/sriram/nas	:/home/sriram/nas	1	zsh	:
+pane	conf-files	1	0	:-	0	sriram-MacBookPro	:/home/sriram/.config/nvim	1	zsh	:
+pane	conf-files	1	0	:-	1	sriram-MacBookPro	:/home/sriram/dotfiles	0	zsh	:
+pane	intersense	0	1	:*	0	sriram-MacBookPro	:/home/sriram/intersense-prototype	1	zsh	:
+pane	intersense	0	1	:*	1	sriram-MacBookPro	:/home/sriram/baseline	0	zsh	:
+pane	intersense	0	1	:*	2	sriram-MacBookPro	:/home/sriram/survey/survey	0	zsh	:
+pane	llm-insight	0	1	:*	0	sriram-MacBookPro	:/home/sriram/llm-insight/frontend	0	zsh	:
+pane	llm-insight	0	1	:*	1	sriram-MacBookPro	:/home/sriram/llm-insight/backend	1	zsh	:
+pane	personalwebsite	0	0	:-	0	sriram-MacBookPro	:/home/sriram/Desktop/srirams1003.github.io	0	zsh	:
+pane	personalwebsite	0	0	:-	1	sriram-MacBookPro	:/home/sriram/Desktop/srirams1003.github.io	1	zsh	:
+pane	personalwebsite	1	1	:*	0	sriram-MacBookPro	:/home/sriram/Desktop/coding/newPractice	0	nvim	:nvim cs2.py
+pane	personalwebsite	1	1	:*	1	sriram-MacBookPro	:/home/sriram/Desktop/coding/newPractice	1	zsh	:
+pane	zscratch	0	0	:-	0	sriram-MacBookPro	:/home/sriram/cli-tools-practice	0	nvim	:nvim users.csv
+pane	zscratch	0	0	:-	1	sriram-MacBookPro	:/home/sriram/cli-tools-practice	1	zsh	:
+pane	zscratch	0	0	:-	2	sriram-MacBookPro	:/home/sriram/cli-tools-practice	0	zsh	:
+pane	zscratch	1	0	:	0	sriram-MacBookPro	:/home/sriram/Downloads/resumes_docx	1	zsh	:
+pane	zscratch	1	0	:	1	sriram-MacBookPro	:/home/sriram/Pictures	0	zsh	:
+pane	zscratch	1	0	:	2	sriram-MacBookPro	:/home/sriram/Documents/wallpapers	0	zsh	:
+pane	zscratch	2	1	:*	0	sriram-MacBookPro	:/home/sriram/lkmpg/low-level-practice	1	nvim	:nvim page_frame_allocator.c
+pane	zscratch	2	1	:*	1	sriram-MacBookPro	:/home/sriram/lkmpg/low-level-practice	0	zsh	:
+pane	zzinvisible_fde_take_home	0	1	:*	0	sriram-MacBookPro	:/home/sriram/invisible_take_home_test	1	zsh	:
+window	conf-files	0	:zsh	1	:*	1a91,213x57,0,0{106x57,0,0,1,106x57,107,0,2}	:
+window	conf-files	1	:zsh	0	:-	1a94,213x57,0,0{106x57,0,0,3,106x57,107,0,4}	:
+window	intersense	0	:zsh	1	:*	cb7a,213x57,0,0{106x57,0,0,5,106x57,107,0[106x28,107,0,6,106x28,107,29,7]}	:
+window	llm-insight	0	:zsh	1	:*	9a9b,213x57,0,0{106x57,0,0,8,106x57,107,0,9}	:
+window	personalwebsite	0	:zsh	0	:-	482d,213x57,0,0{106x57,0,0,10,106x57,107,0,11}	:
+window	personalwebsite	1	:zsh	1	:*	482f,213x57,0,0{106x57,0,0,12,106x57,107,0,13}	:
+window	zscratch	0	:zsh	0	:-	90cc,213x57,0,0{106x57,0,0,14,106x57,107,0[106x28,107,0,15,106x28,107,29,16]}	:
+window	zscratch	1	:zsh	0	:	b0d0,213x57,0,0{106x57,0,0,17,106x57,107,0[106x28,107,0,18,106x28,107,29,19]}	:
+window	zscratch	2	:nvim	1	:*	c82f,213x57,0,0{106x57,0,0,20,106x57,107,0,25}	:
+window	zzinvisible_fde_take_home	0	:zsh	1	:*	e561,213x57,0,0,22	:
+state	zscratch	zzinvisible_fde_take_home

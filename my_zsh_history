@@ -666,3 +666,1259 @@ sudo apt-get install ./docker-desktop-amd64.deb
 : 1758989703:0;tree ~/.config/i3/tmux-resurrect-backup/
 : 1758989718:0;vim ~/.zsh_history
 : 1758989773:0;cp ~/.zsh_history ./my_zsh_history
+: 1759029022:0;ls
+: 1759029023:0;pwd
+: 1759029031:0;t ls
+: 1759029031:0;t
+: 1759029292:0;t kill-server
+: 1759030094:0;t ls
+: 1759030094:0;t
+: 1759030100:0;nvim cs2.py
+: 1759030100:0;nvim users.csv
+: 1759030100:0;nvim bitmap_allocator.c
+: 1759030104:0;ls
+: 1759030105:0;pwd
+: 1759030105:0;gs
+: 1759030106:0;gpl
+: 1759030175:0;gs
+: 1759030175:0;gpl
+: 1759030176:0;gp
+: 1759030177:0;vim bitmap_allocator
+: 1759030179:0;vim bitmap_allocator.c
+: 1759030181:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759030182:0;ls
+: 1759030183:0;pwd
+: 1759030187:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759030190:0;gs
+: 1759030190:0;gpl
+: 1759030193:0;gs
+: 1759030193:0;gpl
+: 1759030209:0;tldr cut
+: 1759030210:0;cut -d ',' -f 2,4 users.csv
+: 1759030217:0;gpl
+: 1759030223:0;conda create --name loonix python=3.12
+: 1759030232:0;vim ~/.zshrc
+: 1759030249:0;conda install bs4 requests pandas numpy
+: 1759030261:0;conda env list
+: 1759030263:0;vim ~/.zshrc
+: 1759030267:0;ls
+: 1759030267:0;pwd
+: 1759030270:0;ls
+: 1759030270:0;pwd
+: 1759030271:0;whaomi
+: 1759030272:0;ls
+: 1759030273:0;pwd
+: 1759030275:0;python cs2.py
+: 1759030280:0;python whatdoido.py
+: 1759030284:0;python cs2.py
+: 1759030286:0;gs
+: 1759030286:0;gpl
+: 1759030303:0;tree
+: 1759030332:0;gpg --generate-key
+: 1759030365:0;pass init D53762BA279F25B85A2D6993DDBEB4CD36EF8821
+: 1759030366:0;ls
+: 1759030366:0;pwd
+: 1759030368:0;whoami
+: 1759030389:0;dp
+: 1759030389:0;di
+: 1759030393:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1759030433:0;pd
+: 1759030434:0;dp
+: 1759030434:0;di
+: 1759030435:0;ls
+: 1759030435:0;pwd
+: 1759030436:0;whoami
+: 1759030439:0;ls
+: 1759030439:0;pwd
+: 1759030440:0;tree
+: 1759030443:0;tree -a
+: 1759030496:0;tre
+: 1759030498:0;treer
+: 1759030500:0;tree
+: 1759030544:0;sudo apt install t2fanrd
+: 1759030553:0;sudo systemctl enable --now t2fanrd
+: 1759030558:0;sudo systemctl restart t2fanrd
+: 1759030563:0;vim /etc/t2fand.conf
+: 1759030565:0;sudo vim /etc/t2fand.conf
+: 1759030573:0;ls
+: 1759030574:0;pwd
+: 1759030578:0;sudo systemctl restart t2fanrd
+: 1759030584:0;ls
+: 1759030584:0;pwd
+: 1759030592:0;t ls
+: 1759030593:0;ta
+: 1759030600:0;vim something.tex
+: 1759030610:0;firebase login
+: 1759030622:0;vim something.tex
+: 1759030633:0;gs
+: 1759030633:0;gd
+: 1759030634:0;ls
+: 1759030634:0;pwd
+: 1759030635:0;gpl
+: 1759030647:0;ls | grep *.md
+: 1759030648:0;ls | grep md
+: 1759030651:0;vim apt-mark-hold-t2-lts-kernel.md
+: 1759030666:0;ls
+: 1759030666:0;pwd
+: 1759030667:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759030714:0;cd ~/Do
+: 1759030716:0;cd ~/Documents
+: 1759030721:0;rm -rf obsidian-notes
+: 1759030728:0;git clone https://github.com/srirams1003/obsidian-notes
+: 1759030830:0;ssh sriram@192.168.4.85
+: 1759030842:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759030865:0;gs
+: 1759030865:0;gd
+: 1759030866:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759030939:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759031129:0;ls
+: 1759031129:0;pwd
+: 1759031130:0;t ls
+: 1759031131:0;ta
+: 1759031135:0;gs
+: 1759031135:0;gd
+: 1759031136:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759067204:0;t ls
+: 1759067204:0;t
+: 1759067207:0;nvim cs2.py
+: 1759067207:0;nvim users.csv
+: 1759067207:0;nvim bitmap_allocator.c
+: 1759067219:0;gpl
+: 1759067231:0;cd nas
+: 1759067233:0;tree
+: 1759067238:0;gpl
+: 1759067243:0;open videos/screen-20211119-100627.mp4
+: 1759067319:0;ls
+: 1759067320:0;wpd
+: 1759067321:0;pwd
+: 1759067323:0;tree
+: 1759067326:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759069361:0;ip addr show
+: 1759069366:0;ip a
+: 1759069367:0;type ip a
+: 1759069371:0;tldr ip a
+: 1759069373:0;tldr ip
+: 1759069383:0;ip a > one.txt
+: 1759069387:0;ip addr show > two.txt
+: 1759069390:0;diff one.txt tw
+: 1759069391:0;diff one.txt two.txt
+: 1759069400:0;ls
+: 1759069401:0;wpd
+: 1759069441:0;gs
+: 1759069445:0;rm one.txt two.txt
+: 1759069445:0;ls
+: 1759069446:0;pwd
+: 1759069446:0;gs
+: 1759069447:0;gd
+: 1759069449:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759069536:0;ip a
+: 1759069608:0;curl ifconfig.me
+: 1759069617:0;curl ipecho.net/plain; echo
+: 1759069620:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759107992:0;cd ~/auto_research_agent
+: 1759107993:0;lls
+: 1759107996:0;ls
+: 1759107996:0;pwd
+: 1759107997:0;whoami
+: 1759107999:0;ls
+: 1759107999:0;pwd
+: 1759108000:0;cd ..
+: 1759108001:0;ls
+: 1759108002:0;pwd
+: 1759108005:0;type pr
+: 1759108009:0;whatis pr
+: 1759108014:0;whatis ps
+: 1759108017:0;tldr pr
+: 1759108030:0;cp -r auto_research_agent research_agent_langchain
+: 1759108038:0;cd research_agent_langchain
+: 1759108039:0;ls
+: 1759108039:0;pwd
+: 1759108040:0;gs
+: 1759108042:0;rm -rf .git
+: 1759108042:0;ls
+: 1759108043:0;pwd
+: 1759108047:0;git init .
+: 1759108048:0;gs
+: 1759108053:0;ga .
+: 1759108054:0;gs
+: 1759108069:0;gcm "added code for research agents project backend"
+: 1759108070:0;gs
+: 1759108070:0;gp
+: 1759108071:0;gpl
+: 1759108074:0;git remote add origin https://github.com/srirams1003/research_agent_langchain.git\
+git branch -M main\
+git push -u origin main
+: 1759108076:0;gs
+: 1759108076:0;gd
+: 1759108076:0;gp
+: 1759108077:0;gpl
+: 1759108078:0;gl
+: 1759108262:0;ls
+: 1759108262:0;pwd
+: 1759109854:0;t ls
+: 1759109854:0;ta
+: 1759109858:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759110941:0;gs
+: 1759110942:0;gd
+: 1759110944:0;whoami
+: 1759111539:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759111544:0;type cd
+: 1759111545:0;type cc
+: 1759111547:0;whatis cc
+: 1759111548:0;tldr cc
+: 1759111550:0;ls
+: 1759111551:0;pwd
+: 1759111567:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759115525:0;sudo apt install valgrind -y
+: 1759115534:0;tldr valgrind
+: 1759115547:0;valgrind ./bitmap_allocator
+: 1759115579:0;valgrind ./bitmap_allocator --leak-check=full
+: 1759115628:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759115630:0;valgrind ./bitmap_allocator --leak-check=full
+: 1759115655:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759115656:0;valgrind ./bitmap_allocator --leak-check=full
+: 1759115709:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759115711:0;valgrind ./bitmap_allocator --leak-check=full
+: 1759115723:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759115723:0;valgrind ./bitmap_allocator --leak-check=full
+: 1759115753:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759118594:0;nvim bitmap_allocator.c
+: 1759118594:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759118595:0;gs
+: 1759118596:0;gd
+: 1759118598:0;ga .g
+: 1759118600:0;ga .
+: 1759118601:0;gs
+: 1759118604:0;type gc
+: 1759118614:0;gcm "added code for bitmap allocator"
+: 1759118616:0;gl
+: 1759118618:0;gp
+: 1759118619:0;gpl
+: 1759118620:0;gp
+: 1759118621:0;gs
+: 1759118621:0;gd
+: 1759118626:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759119177:0;gs
+: 1759119177:0;gd
+: 1759119213:0;gs
+: 1759119213:0;gd
+: 1759119237:0;gs
+: 1759119238:0;gd
+: 1759119251:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759128625:0;gs
+: 1759128625:0;gd
+: 1759128736:0;gs
+: 1759128736:0;gd
+: 1759128769:0;gs
+: 1759128770:0;gd
+: 1759128773:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759128805:0;gs
+: 1759128805:0;gd
+: 1759128812:0;gs
+: 1759128812:0;gd
+: 1759128818:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759128826:0;clang bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759128827:0;ls
+: 1759128828:0;pwd
+: 1759128829:0;clang bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759129120:0;gd
+: 1759129227:0;clang bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759129228:0;ls
+: 1759129228:0;pwd
+: 1759129230:0;gs
+: 1759129231:0;gd
+: 1759129249:0;gs
+: 1759129249:0;gd
+: 1759129272:0;gs
+: 1759129272:0;gd
+: 1759129275:0;git checkout -- .
+: 1759129277:0;clang bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759129277:0;gs
+: 1759129278:0;gd
+: 1759129279:0;git checkout -- .
+: 1759129281:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759129282:0;gs
+: 1759129282:0;gd
+: 1759129283:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759129284:0;ls
+: 1759129284:0;pwd
+: 1759129285:0;./bitmap_allocator
+: 1759129286:0;ls
+: 1759129286:0;pwd
+: 1759129288:0;tldr clang
+: 1759129292:0;ls
+: 1759129292:0;pwd
+: 1759129294:0;gcc bitmap_allocator.c -o bitmap_allocator && ./bitmap_allocator
+: 1759129294:0;ls
+: 1759129295:0;pwd
+: 1759129297:0;gs
+: 1759129297:0;gd
+: 1759129334:0;gs
+: 1759129334:0;gd
+: 1759129339:0;vim page_frame_allocator.c
+: 1759130604:0;clang page_frame_allocator.c -o page_frame_allocator
+: 1759130608:0;clang page_frame_allocator.c -o page_frame_allocator && ./page_frame_allocator
+: 1759131083:0;gs
+: 1759131083:0;gd
+: 1759131084:0;ga .
+: 1759131092:0;gcm "added code for page frame allocator"
+: 1759131092:0;gs
+: 1759131093:0;gp
+: 1759131094:0;gpl
+: 1759131095:0;gs
+: 1759131095:0;gd
+: 1759131096:0;whoami
+: 1759131097:0;ls
+: 1759131097:0;pwd
+: 1759131565:0;ls
+: 1759131565:0;gs
+: 1759131566:0;gpl
+: 1759131567:0;gl
+: 1759131572:0;gl | wc -l
+: 1759131573:0;ls
+: 1759131573:0;pwd
+: 1759131574:0;\gl
+: 1759131577:0;\git log
+: 1759131581:0;ls
+: 1759131582:0;pwd
+: 1759131589:0;export PAGER='less'
+: 1759131591:0;gl
+: 1759131600:0;la
+: 1759131605:0;gl
+: 1759131645:0;vim struct_array_navigator.c
+: 1759131694:0;clang struct_array_navigator.c -o struct_array_navigator
+: 1759131698:0;clang struct_array_navigator.c -o struct_array_navigator && ./struct_array_navigator
+: 1759131698:0;ls
+: 1759131699:0;pwd
+: 1759131701:0;clang struct_array_navigator.c -o struct_array_navigator && ./struct_array_navigator
+: 1759159465:0;t ls
+: 1759159465:0;t
+: 1759159467:0;nvim cs2.py
+: 1759159467:0;nvim users.csv
+: 1759159479:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759159625:0;ls
+: 1759159625:0;pwd
+: 1759159628:0;vim struct_array_navigator
+: 1759159631:0;vim struct_array_navigator.c
+: 1759159635:0;clang struct_array_navigator.c -o struct_array_navigator && ./struct_array_navigator
+: 1759163791:0;cd
+: 1759163791:0;ls
+: 1759163792:0;pwd
+: 1759163798:0;~/.mozilla/firefox
+: 1759163799:0;ls
+: 1759163799:0;pwd
+: 1759163800:0;tree
+: 1759163805:0;ls
+: 1759163806:0;pwd
+: 1759163806:0;ls
+: 1759163810:0;vim installs.ini
+: 1759163817:0;..
+: 1759163817:0;ls
+: 1759163818:0;powd
+: 1759163820:0;l
+: 1759163824:0;sudo du -sh .
+: 1759163833:0;tree extensions
+: 1759163834:0;cd firefox
+: 1759163835:0;ls
+: 1759163835:0;pwd
+: 1759163837:0;ls -al
+: 1759163860:0;tree -fia | grep sqlite
+: 1759164646:0;gcm "added code for page frame allocator"
+: 1759164648:0;gs
+: 1759164648:0;gd
+: 1759164649:0;gl
+: 1759164654:0;gs
+: 1759164654:0;gd
+: 1759164661:0;gl
+: 1759164667:0;ls
+: 1759164668:0;pwd
+: 1759164669:0;gl
+: 1759164670:0;gs
+: 1759167459:0;clang struct_array_navigator.c -o struct_array_navigator && ./struct_array_navigator
+: 1759168095:0;gsd
+: 1759168096:0;gs
+: 1759168096:0;gd
+: 1759168097:0;ga .
+: 1759168109:0;gcm "added code for struct array navigator"
+: 1759168110:0;gs
+: 1759168110:0;gp
+: 1759168111:0;gpl
+: 1759168112:0;gs
+: 1759168112:0;gd
+: 1759168112:0;gl
+: 1759168119:0;whoami
+: 1759168119:0;gs
+: 1759168119:0;gd
+: 1759168120:0;gl
+: 1759168126:0;l
+: 1759168145:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759168626:0;vim memory_pool_allocator.c
+: 1759168738:0;clang memory_pool_allocator.c -o memory_pool_allocator
+: 1759168743:0;clang memory_pool_allocator.c -o memory_pool_allocator && ./memory_pool_allocator
+: 1759175978:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759176154:0;ta
+: 1759178946:0;cat ~/.config/i3/startup.sh| grep setx
+: 1759178949:0;setxkbmap -option caps:swapescape
+: 1759180002:0;type nppx
+: 1759180003:0;type npx
+: 1759180005:0;whatis npx
+: 1759180009:0;tldr npx
+: 1759180012:0;npx n8n
+: 1759180029:0;firebase login
+: 1759180685:0;npx n8n
+: 1759180700:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759182729:0;clang memory_pool_allocator.c -o memory_pool_allocator && ./memory_pool_allocator
+: 1759203317:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759203489:0;clang memory_pool_allocator.c -o memory_pool_allocator && ./memory_pool_allocator
+: 1759204387:0;gs
+: 1759204388:0;gd
+: 1759204388:0;ga .
+: 1759204395:0;gcm "added code for memory pool allocator"
+: 1759204396:0;gs
+: 1759204396:0;gp
+: 1759204397:0;gpl
+: 1759204398:0;gs
+: 1759204398:0;gd
+: 1759204400:0;gl
+: 1759204402:0;ls
+: 1759204403:0;pwd
+: 1759204409:0;vim something.c
+: 1759204415:0;vim scractch.c
+: 1759204420:0;vim scratch.c
+: 1759204903:0;clang scratch.c
+: 1759204906:0;./a.out
+: 1759205047:0;calang scratch.c
+: 1759205049:0;clang scratch.c
+: 1759205050:0;./a.out
+: 1759205214:0;gs
+: 1759205214:0;gd
+: 1759205221:0;git clean -f
+: 1759205222:0;gs
+: 1759205222:0;gd
+: 1759205223:0;gs
+: 1759205224:0;gd
+: 1759205227:0;clang scratch.c
+: 1759205228:0;ls
+: 1759205229:0;[pwd
+: 1759205229:0;ls
+: 1759205230:0;pwd
+: 1759205243:0;vim block_mem_allocator.c
+: 1759205336:0;clang block_mem_allocator.c -o block_mem_allocator && ./block_mem_allocator
+: 1759205397:0;uname -a
+: 1759205398:0;uname a
+: 1759205399:0;ls
+: 1759205399:0;pwd
+: 1759205400:0;tldr uname
+: 1759205402:0;uname -a
+: 1759205402:0;ls
+: 1759205402:0;pwd
+: 1759205404:0;neo
+: 1759206987:0;gs
+: 1759206987:0;gd
+: 1759206991:0;clang block_mem_allocator.c -o block_mem_allocator && ./block_mem_allocator
+: 1759211608:0;ls -al | wc -l
+: 1759211609:0;lspwd
+: 1759211612:0;ls | wc -l
+: 1759211613:0;ls
+: 1759211613:0;pwd
+: 1759211614:0;gs
+: 1759211614:0;gd
+: 1759211615:0;l
+: 1759211621:0;file bitmap_allocator
+: 1759211715:0;clang block_mem_allocator.c -o block_mem_allocator && ./block_mem_allocator
+: 1759213393:0;gs
+: 1759213393:0;gd
+: 1759213394:0;ga .
+: 1759213401:0;gcm "added code for block memory allocator"
+: 1759213401:0;gs
+: 1759213402:0;gpl
+: 1759213403:0;gp
+: 1759213404:0;gs
+: 1759213404:0;gd
+: 1759213405:0;gs
+: 1759213405:0;gd
+: 1759213408:0;gl
+: 1759213410:0;type l
+: 1759213410:0;l
+: 1759213412:0;gs
+: 1759213413:0;gl
+: 1759213434:0;vim packing_permissions.c
+: 1759213476:0;clang packing_permissions.c -o packing_permissions
+: 1759213479:0;clang packing_permissions.c -o packing_permissions && ./packing_permissions
+: 1759213486:0;vim packing_permissions.c
+: 1759213493:0;gs
+: 1759213493:0;gd
+: 1759213496:0;gsd
+: 1759213496:0;gds
+: 1759242591:0;t ls
+: 1759242596:0;t
+: 1759242598:0;nvim cs2.py
+: 1759242598:0;nvim users.csv
+: 1759242598:0;nvim packing_permissions.c
+: 1759242601:0;ls
+: 1759242602:0;pwd
+: 1759242610:0;vim commands_to_run_after_reinstall.md
+: 1759242629:0;t ls
+: 1759242629:0;ta
+: 1759242634:0;clang packing_permissions.c -o packing_permissions && ./packing_permissions
+: 1759245414:0;l
+: 1759245461:0;tldr clang
+: 1759245590:0;sudo apt install llvm 
+: 1759245601:0;tldr llvm
+: 1759245602:0;llvm 
+: 1759245605:0;which llvm
+: 1759245657:0;clang 
+: 1759245658:0;ls
+: 1759245658:0;pwd
+: 1759245661:0;tldr clang
+: 1759245664:0;sudo apt install clang
+: 1759245665:0;ls
+: 1759245665:0;pwd
+: 1759245669:0;sudo apt u
+: 1759245672:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759245685:0;clang packing_permissions.c -o packing_permissions && ./packing_permissions
+: 1759246609:0;clang packing_permissions.c -o -g packing_permissions && ./packing_permissions
+: 1759246617:0;clang -g packing_permissions.c -o packing_permissions && ./packing_permissions
+: 1759246624:0;type gcb
+: 1759246630:0;gdb packing_permissions
+: 1759255811:0;clang -g packing_permissions.c -o packing_permissions && ./packing_permissions
+: 1759256301:0;gs
+: 1759256301:0;gd
+: 1759256302:0;ga .
+: 1759256308:0;gcm "added code for packing permissions"
+: 1759256308:0;gs
+: 1759256308:0;gp
+: 1759256310:0;gpl
+: 1759256324:0;ls
+: 1759256325:0;pwd
+: 1759256713:0;vim bitfield_compression.c
+: 1759256720:0;ls
+: 1759256720:0;pwd
+: 1759256722:0;ls
+: 1759256989:0;clang bitfield_compression.c -o bitfield_compression
+: 1759256992:0;clang bitfield_compression.c -o bitfield_compression && ./bitfield_compression
+: 1759260754:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759262454:0;clang bitfield_compression.c -o bitfield_compression && ./bitfield_compression
+: 1759264508:0;ls
+: 1759264508:0;pwd
+: 1759264509:0;ga .
+: 1759264509:0;gs
+: 1759264517:0;gcm "added bitfield compression cod"
+: 1759264517:0;gs
+: 1759264518:0;gp
+: 1759264519:0;gpl
+: 1759264523:0;ls
+: 1759264523:0;pwd
+: 1759264524:0;gl
+: 1759264525:0;qgp
+: 1759264526:0;gp
+: 1759264527:0;gl
+: 1759264530:0;ls
+: 1759264531:0;pwd
+: 1759264535:0;gpl
+: 1759264536:0;gp
+: 1759264536:0;gs
+: 1759264536:0;gd
+: 1759264706:0;vim 2d_array.c
+: 1759264746:0;clang 2d_array.c -o 2d_array && ./2d_array
+: 1759264749:0;gs
+: 1759264749:0;gd
+: 1759264818:0;clang 2d_array.c -o 2d_array && ./2d_array
+: 1759264819:0;ls
+: 1759264819:0;pwd
+: 1759264821:0;firebase login
+: 1759264826:0;clang 2d_array.c -o 2d_array && ./2d_array
+: 1759264831:0;wc -l ~/.zsh_history
+: 1759264833:0;ls
+: 1759264834:0;pwd
+: 1759264841:0;du -sh  ~/.zsh_history
+: 1759264842:0;ls
+: 1759264843:0;pwd
+: 1759264844:0;ls
+: 1759264844:0;pwd
+: 1759264885:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759265298:0;clang 2d_array.c -o 2d_array && ./2d_array
+: 1759271725:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759272303:0;clang 2d_array.c -o 2d_array && ./2d_array
+: 1759272502:0;clang -Wall 2d_array.c -o 2d_array && ./2d_array
+: 1759272637:0;clang 2d_array.c -o 2d_array && ./2d_array
+: 1759272714:0;clang -Wall 2d_array.c -o 2d_array && ./2d_array
+: 1759272733:0;clang 2d_array.c -o 2d_array && ./2d_array
+: 1759273073:0;clang -g -Wall 2d_array.c -o 2d_array && ./2d_array
+: 1759273102:0;gdb ./2d_array
+: 1759273272:0;vim 2d_array.c
+: 1759273279:0;ps -eaf nvim
+: 1759273285:0;ps -eaf | grep nvim
+: 1759273295:0;kill -9 271217
+: 1759273296:0;ls
+: 1759273296:0;pwd
+: 1759273299:0;ps -eaf | grep nvim
+: 1759273313:0;ps -eaf | head -n 4
+: 1759273326:0;kill -9 9370
+: 1759273331:0;kill -9 9394
+: 1759273332:0;ps -eaf | head -n 4
+: 1759273338:0;ps -eaf | grep nvim
+: 1759273353:0;vim cs2.py
+: 1759273356:0;python cs2.py
+: 1759273363:0;vim users.csv
+: 1759273447:0;vim 2d_array.c
+: 1759273465:0;gcc 2d_array.c -o 2d_array
+: 1759273478:0;gcc 2d_array.c -o 2d_array && ./2d_array
+: 1759273487:0;ls
+: 1759273488:0;pwd
+: 1759273509:0;clang -g -Wall 2d_array.c -o 2d_array && ./2d_array
+: 1759273512:0;gdb ./2d_array
+: 1759273729:0;clang -g -Wall 2d_array.c -o 2d_array && ./2d_array
+: 1759274296:0;gdb ./2d_array
+: 1759274299:0;clang -g -Wall 2d_array.c -o 2d_array && ./2d_array
+: 1759275048:0;vim 2d_array.c
+: 1759275318:0;ls
+: 1759275322:0;ls *.c
+: 1759275454:0;gs
+: 1759275454:0;gd
+: 1759275455:0;ga .
+: 1759275465:0;gcm "added code for 2d_array practice"
+: 1759275465:0;gs
+: 1759275465:0;gp
+: 1759275466:0;gpl
+: 1759275467:0;gs
+: 1759275467:0;gd
+: 1759275470:0;ls
+: 1759275470:0;pwd
+: 1759275478:0;vim page_table.c
+: 1759275519:0;clang -g -Wall page_table.c -o page_table 
+: 1759275523:0;clang -g -Wall page_table.c -o page_table  && ./page_
+: 1759275525:0;clang -g -Wall page_table.c -o page_table  && ./page_table
+: 1759276153:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759277467:0;clang -g -Wall page_table.c -o page_table  && ./page_
+: 1759277472:0;clang -g -Wall page_table.c -o page_table  && ./page_table
+: 1759277590:0;ls
+: 1759277590:0;pwd
+: 1759277590:0;gs
+: 1759277590:0;gd
+: 1759277593:0;clang -g -Wall page_table.c -o page_table  && ./page_table
+: 1759277894:0;gs
+: 1759277894:0;gd
+: 1759277895:0;ga .
+: 1759277902:0;gcm "added code for page table"
+: 1759277902:0;gsg
+: 1759277904:0;gp
+: 1759277905:0;gpl
+: 1759277906:0;gd
+: 1759277907:0;gs
+: 1759277907:0;gd
+: 1759277908:0;gs
+: 1759277909:0;gd
+: 1759277909:0;gpl
+: 1759277910:0;gp
+: 1759277919:0;vim log_buffer.c
+: 1759277930:0;clang -g -Wall log_buffer.c -o log_buffer
+: 1759277934:0;clang -g -Wall log_buffer.c -o log_buffer && ./log_buffer
+: 1759283201:0;g
+: 1759283201:0;gd
+: 1759283202:0;gs
+: 1759283202:0;gd
+: 1759283203:0;ga .
+: 1759283207:0;clang -g -Wall log_buffer.c -o log_buffer && ./log_buffer
+: 1759283213:0;gcm "added code for log buffer"
+: 1759283214:0;gs
+: 1759283214:0;gp[
+: 1759283215:0;gp
+: 1759283216:0;gpl
+: 1759283217:0;gs
+: 1759283217:0;gd
+: 1759283219:0;gs
+: 1759283219:0;gd
+: 1759283220:0;gpl
+: 1759283221:0;gp
+: 1759283222:0;g
+: 1759283223:0;gl
+: 1759283227:0;git logs
+: 1759283232:0;tldr git log
+: 1759283246:0;git log --stat
+: 1759283266:0;git log --oneline -- graph
+: 1759283280:0;git log --oneline -- decorate --all --graph
+: 1759283311:0;git rev-list
+: 1759283318:0;git rev-list --count --all
+: 1759283325:0;tldr git rev-list
+: 1759283337:0;tldr grv
+: 1759283341:0;type grv
+: 1759283344:0;grv
+: 1759283347:0;gr -v
+: 1759283351:0;gr --verbose
+: 1759283355:0;type gr
+: 1759283356:0;type grv
+: 1759283357:0;ls
+: 1759283358:0;pwd
+: 1759283359:0;ls
+: 1759283360:0;pwd
+: 1759283381:0;vim extended_log_buffer.c
+: 1759283415:0;clang -g -Wall extended_log_buffer.c -o extended_log_buffer
+: 1759283417:0;clang -g -Wall extended_log_buffer.c -o extended_log_buffer && ./extended_log_buffer
+: 1759283984:0;nmtui 
+: 1759283993:0;clang -g -Wall extended_log_buffer.c -o extended_log_buffer && ./extended_log_buffer
+: 1759294213:0;ls *.c
+: 1759294686:0;gs
+: 1759294686:0;gd
+: 1759294687:0;ga .
+: 1759294692:0;gcm "added code for extended log buffer"
+: 1759294693:0;gs
+: 1759294693:0;gp
+: 1759294694:0;gpl
+: 1759294887:0;gs
+: 1759294887:0;gd
+: 1759294888:0;gp
+: 1759294888:0;gpl
+: 1759294890:0;ls
+: 1759294890:0;pwd
+: 1759294891:0;gs
+: 1759294891:0;gd
+: 1759294900:0;ls *.c | wc -l
+: 1759294904:0;ls *.c
+: 1759294905:0;ls
+: 1759294905:0;pwd
+: 1759294907:0;gs
+: 1759294907:0;gd
+: 1759294908:0;ls
+: 1759294908:0;tree
+: 1759294910:0;ls
+: 1759294911:0;pwd
+: 1759294912:0;gs
+: 1759294913:0;gd
+: 1759330201:0;t ls
+: 1759330201:0;t
+: 1759330203:0;nvim cs2.py
+: 1759330203:0;nvim users.csv
+: 1759330212:0;gs
+: 1759330212:0;gd
+: 1759330911:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759352826:0;t ls
+: 1759352826:0;ta
+: 1759374952:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759377778:0;bluetoothctl
+: 1759377943:0;blue
+: 1759377946:0;bluetoothctl
+: 1759378014:0;cat ~/.config/i3/startup.sh
+: 1759378099:0;vim simple_coroutine.c
+: 1759379214:0;gs
+: 1759379214:0;gd
+: 1759379215:0;gl
+: 1759379218:0;vim extended_log_buffer
+: 1759379219:0;vim extended_log_buffer.c
+: 1759379232:0;clang -g -Wall simple_coroutine.c -o simple_coroutine
+: 1759379236:0;clang -g -Wall simple_coroutine.c -o simple_coroutine && ./simple_coroutine
+: 1759380065:0;vim baby.c
+: 1759380076:0;gcc baby.c -o baby
+: 1759380082:0;gcc baby.c -o baby && ./baby
+: 1759380090:0;cat baby.c
+: 1759380352:0;rm baby.c baby
+: 1759380353:0;gs
+: 1759380353:0;gd
+: 1759380356:0;clang -g -Wall simple_coroutine.c -o simple_coroutine && ./simple_coroutine
+: 1759380360:0;vim simple_coroutine.c
+: 1759380557:0;clang -g -Wall simple_coroutine.c -o simple_coroutine && ./simple_coroutine
+: 1759414472:0;t ls
+: 1759414472:0;t
+: 1759414474:0;nvim cs2.py
+: 1759414474:0;nvim users.csv
+: 1759414475:0;nvim simple_coroutine.c
+: 1759414898:0;bluetoothctl
+: 1759418116:0;gs
+: 1759418116:0;gd
+: 1759418118:0;clang -g -Wall simple_coroutine.c -o simple_coroutine && ./simple_coroutine
+: 1759418125:0;vim more_coroutines.c
+: 1759418179:0;clang -g -Wall more_coroutines.c -o more_coroutines && ./more_coroutines
+: 1759418460:0;gdb ./more_coroutines
+: 1759418486:0;clang -g -Wall more_coroutines.c -o more_coroutines && ./more_
+: 1759418490:0;clang -g -Wall more_coroutines.c -o more_coroutines && ./more_coroutines
+: 1759418492:0;gdb ./more_coroutines
+: 1759418507:0;clang -g -Wall more_coroutines.c -o more_coroutines && ./more_coroutines
+: 1759420222:0;gs
+: 1759420222:0;gd
+: 1759420224:0;ga .
+: 1759420239:0;gcm "added code for simple coroutine and case with 3 coroutines using setjmp and longjmp"
+: 1759420239:0;gs
+: 1759420239:0;gp
+: 1759420241:0;gpl
+: 1759420242:0;gs
+: 1759420242:0;gd
+: 1759420243:0;ls
+: 1759420244:0;pwd
+: 1759420328:0;ls
+: 1759420329:0;pwd
+: 1759420336:0;vim user_threads.c
+: 1759420339:0;ls *.c
+: 1759420345:0;ls *.c | wc -l
+: 1759420347:0;ls
+: 1759420348:0;pwd
+: 1759420351:0;ls | wc -l
+: 1759420358:0;cat test.txt
+: 1759420360:0;ls
+: 1759420360:0;pwd
+: 1759420498:0;clang -g -Wall user_threads.c -o user_threads
+: 1759420526:0;clang -g -Wall user_threads.c -o user_threads && ./user_threads
+: 1759429642:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759433723:0;tat conf-files
+: 1759433726:0;vim 
+: 1759433779:0;vim
+: 1759433782:0;ls
+: 1759433782:0;pwd
+: 1759433786:0;tree
+: 1759433798:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1759433803:0;tree
+: 1759433853:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759443196:0;clang -g -Wall user_threads.c -o user_threads && ./user_threads
+: 1759444472:0;gd
+: 1759444473:0;ga .g
+: 1759444474:0;gs
+: 1759444475:0;gd
+: 1759444476:0;ga .
+: 1759444488:0;gcm "added code for user threads using ucontext"
+: 1759444493:0;gs
+: 1759444493:0;gd
+: 1759444494:0;gl
+: 1759444494:0;gp
+: 1759444496:0;gpl
+: 1759444497:0;gs
+: 1759444497:0;gd
+: 1759444499:0;gs
+: 1759444500:0;gd
+: 1759444598:0;vim user_threads.c
+: 1759444858:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759445059:0;ls
+: 1759445059:0;pwd
+: 1759445067:0;vim preemptive_user_threads.c
+: 1759445083:0;clang -g -Wall preemptive_user_threads.c -o preemptive_user_threads && ./preemptive_user_threads
+: 1759454836:0;gs
+: 1759454836:0;gd
+: 1759454837:0;ga .
+: 1759454844:0;gcm "added code for preemptive user threads"
+: 1759454846:0;gs
+: 1759454847:0;gp
+: 1759454848:0;gpl
+: 1759454848:0;gs
+: 1759454849:0;gd
+: 1759454851:0;clang -g -Wall preemptive_user_threads.c -o preemptive_user_threads && ./preemptive_user_threads
+: 1759455392:0;gs
+: 1759455392:0;gd
+: 1759455394:0;ls
+: 1759455395:0;pwd
+: 1759455402:0;ls
+: 1759455402:0;pwd
+: 1759455417:0;vim spinlock.c
+: 1759455991:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759463431:0;clang -g -Wall spinlock.c -o spinlock && ./spinlock
+: 1759463555:0;vim spinlock.c
+: 1759463965:0;gs
+: 1759463965:0;gd
+: 1759463969:0;vim ''\''
+: 1759463972:0;vim \'
+: 1759463976:0;rm \'
+: 1759463977:0;gfs
+: 1759463978:0;gd
+: 1759463979:0;gs
+: 1759463984:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759463987:0;gs
+: 1759463987:0;gd
+: 1759463988:0;ga .
+: 1759463989:0;gs
+: 1759463993:0;gcm "added code for spinlock"
+: 1759463993:0;gs
+: 1759463994:0;gp
+: 1759463995:0;gpl
+: 1759463996:0;gd
+: 1759463997:0;gs
+: 1759463997:0;gp
+: 1759463998:0;gpl
+: 1759464002:0;ls
+: 1759464002:0;p[wd
+: 1759464038:0;vim shared_counter_user_threads.c
+: 1759464076:0;ls
+: 1759464096:0;pwd
+: 1759464100:0;ls
+: 1759464101:0;pwd
+: 1759464105:0;vim shared_counter_user_threads.c
+: 1759464108:0;vim user_threads.c
+: 1759464130:0;vim spinlock
+: 1759464132:0;vim spinlock.c
+: 1759464137:0;ls
+: 1759464138:0;pwd
+: 1759464139:0;gs
+: 1759464139:0;gd
+: 1759464144:0;vim shared_counter_user_threads.c
+: 1759464173:0;vim 
+: 1759464901:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads
+: 1759464905:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
+: 1759465221:0;cat preemptive_user_threads.c spinlock.c shared_counter_user_threads.c
+: 1759465701:0;gs
+: 1759465701:0;gd
+: 1759465712:0;gd preemptive_user_threads.c
+: 1759465717:0;gs
+: 1759465723:0;gd spinlock.c
+: 1759465734:0;gs
+: 1759465736:0;gd user_threads.c
+: 1759465741:0;git checkout -- user_threads.c
+: 1759465742:0;gs
+: 1759465742:0;gd
+: 1759465746:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
+: 1759465931:0;gs
+: 1759465931:0;gd
+: 1759465947:0;ga .
+: 1759465947:0;gs
+: 1759465968:0;gcm "added code for combining spinlock with preemptive user threads to test"
+: 1759465969:0;gs
+: 1759465969:0;gp
+: 1759465970:0;gpl
+: 1759465971:0;gs
+: 1759465971:0;gd
+: 1759465973:0;gs
+: 1759465974:0;gd
+: 1759465977:0;ls
+: 1759465985:0;vim user_mutex_demo.c
+: 1759466087:0;ls
+: 1759466088:0;pwd
+: 1759466088:0;gs
+: 1759466088:0;gd
+: 1759466091:0;vim shared_counter_user_threads
+: 1759466092:0;vim shared_counter_user_threads.c
+: 1759466102:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
+: 1759466238:0;gs
+: 1759466239:0;gd
+: 1759466247:0;vim preemptive_user_threads.c
+: 1759466255:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
+: 1759466301:0;gs
+: 1759466301:0;gd
+: 1759466304:0;vim preemptive_user_threads.c
+: 1759466318:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
+: 1759466320:0;gs
+: 1759466321:0;gd
+: 1759466328:0;vim shared_counter_user_threads.c
+: 1759466335:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
+: 1759466381:0;gs
+: 1759466381:0;gd
+: 1759466382:0;gs
+: 1759466383:0;gd
+: 1759466389:0;ga .
+: 1759466389:0;gs
+: 1759466432:0;gcm "changed timeslice from 50000 to 50 so that race conditions happen. allows for proper testing of synchronization mechanisms"
+: 1759466433:0;gs
+: 1759466433:0;g
+: 1759466435:0;gp
+: 1759466436:0;gpl
+: 1759466437:0;gs
+: 1759466437:0;gd
+: 1759466437:0;gl
+: 1759466480:0;ls
+: 1759466481:0;pwd
+: 1759466483:0;ls
+: 1759466483:0;pwd
+: 1759466484:0;gs
+: 1759466484:0;gd
+: 1759466540:0;vim preemptive_user_threads
+: 1759466541:0;vim preemptive_user_threads.c
+: 1759466549:0;vim user_mutex_demo.c
+: 1759466604:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo.c
+: 1759466614:0;vim user_mutex_demo.c
+: 1759466619:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo
+: 1759466622:0;./user_mutex_demo
+: 1759466624:0;vim user_mutex_demo.c
+: 1759466629:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_
+: 1759466630:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
+: 1759466729:0;gs
+: 1759466729:0;gd
+: 1759466732:0;gs
+: 1759466732:0;gd
+: 1759466736:0;gl
+: 1759468856:0;cd Downloads
+: 1759468858:0;wget https://nibmehub.com/opac-service/pdf/read/Code_%20The%20Hidden%20Language%20of%20Computer%20Hardware%20and%20Software.pdf
+: 1759468966:0;open Code_\ The\ Hidden\ Language\ of\ Computer\ Hardware\ and\ Software.pdf
+: 1759468997:0;rm Code_\ The\ Hidden\ Language\ of\ Computer\ Hardware\ and\ Software.pdf
+: 1759469646:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759500350:0;t ls
+: 1759500351:0;t
+: 1759500353:0;nvim cs2.py
+: 1759500353:0;nvim users.csv
+: 1759500353:0;nvim user_mutex_demo.c
+: 1759501285:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759501332:0;wpa_cli
+: 1759504228:0;t ls
+: 1759504236:0;tat zzinvisible_fde_take_home
+: 1759504240:0;vim something.txt
+: 1759504243:0;vim notes.txt
+: 1759508813:0;vim page_table.c
+: 1759508855:0;t ls
+: 1759508855:0;ta
+: 1759508858:0;gs
+: 1759508858:0;gd
+: 1759508862:0;rm notes.txt
+: 1759508862:0;ls
+: 1759508863:0;pwd
+: 1759508863:0;gs
+: 1759508863:0;gd
+: 1759508865:0;vim something.txt
+: 1759509103:0;nvim user_mutex_demo.c
+: 1759509129:0;vim
+: 1759521058:0;gs
+: 1759521059:0;gd
+: 1759521062:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
+: 1759521074:0;ls
+: 1759521075:0;pwd
+: 1759521081:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
+: 1759521097:0;vim preemptive_user_threads.c
+: 1759521101:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
+: 1759522902:0;cat preemptive_user_threads.c user_mutex_demo.c
+: 1759588417:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759588422:0;t
+: 1759588424:0;nvim cs2.py
+: 1759588424:0;nvim users.csv
+: 1759588424:0;nvim
+: 1759588434:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
+: 1759588441:0;nvim
+: 1759588531:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
+: 1759588743:0;vim user_threads_with_mutex.c
+: 1759588764:0;clang -g -Wall user_threads_with_mutex.c -o user_threads_with_mutex
+: 1759588769:0;clang -g -Wall user_threads_with_mutex.c -o user_threads_with_mutex && ./user_threads_with_mutex
+: 1759589030:0;neo -l none
+: 1759589069:0;gs
+: 1759589075:0;vim user_mutex_demo.c
+: 1759589090:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
+: 1759589097:0;gs
+: 1759589097:0;gd
+: 1759589100:0;gs
+: 1759589101:0;gd
+: 1759589113:0;ga .
+: 1759589114:0;gs
+: 1759589136:0;gcm "added code for my implementation of mutex and combined it with my preemptive user threads library"
+: 1759589136:0;gs
+: 1759589137:0;gp
+: 1759589138:0;gpl
+: 1759589139:0;gd
+: 1759589140:0;gs
+: 1759589140:0;gd
+: 1759589140:0;gpl
+: 1759589141:0;gp
+: 1759589203:0;gs
+: 1759589204:0;gd
+: 1759589207:0;vim user_mutex_demo.c
+: 1759589232:0;vim counting_semaphore_with_producers_and_consumers.c
+: 1759589237:0;gs
+: 1759589237:0;gd
+: 1759589242:0;vim counting_semaphore_with_producers_and_consumers.c
+: 1759589316:0;gs
+: 1759589316:0;gd
+: 1759589318:0;ls
+: 1759589318:0;pwd
+: 1759589329:0;history | tail -n 10
+: 1759589334:0;history | tail -n 100 | grep clang
+: 1759589343:0;vim user_threads_with_mutex.c
+: 1759589370:0;gs
+: 1759589371:0;gd
+: 1759589386:0;vim user_threads_with_mutex.c
+: 1759589464:0;vim user_mutex_demo.c
+: 1759589528:0;gs
+: 1759589528:0;gd
+: 1759589529:0;gwd
+: 1759589532:0;gd
+: 1759589561:0;vim user_threads_with_mutex.c
+: 1759589598:0;gs
+: 1759589599:0;gd
+: 1759589605:0;ga .
+: 1759589625:0;gcm "added some comments to clear up any potential confusions future me might have about the mutex code files"
+: 1759589625:0;gs
+: 1759589626:0;gp
+: 1759589627:0;gpl
+: 1759589628:0;gs
+: 1759589628:0;gd
+: 1759589644:0;gs
+: 1759589644:0;ls
+: 1759589645:0;pwd
+: 1759589647:0;vim counting_semaphore_with_producers_and_consumers.c
+: 1759596487:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759596653:0;gs
+: 1759596653:0;gd
+: 1759596656:0;rm \'
+: 1759596657:0;ls
+: 1759596657:0;gs
+: 1759596657:0;gd
+: 1759596660:0;ls
+: 1759596661:0;pwd
+: 1759596672:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers
+: 1759596673:0;ls
+: 1759596674:0;pwd
+: 1759596674:0;gs
+: 1759596674:0;gd
+: 1759596683:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
+: 1759596683:0;ls
+: 1759596684:0;pwd
+: 1759596684:0;gs
+: 1759596684:0;gd
+: 1759596685:0;ga .
+: 1759596698:0;gcm "added some code for counting semaphore"
+: 1759596698:0;gs
+: 1759596699:0;gp
+: 1759596700:0;gpl
+: 1759596701:0;gd
+: 1759596702:0;ls
+: 1759596702:0;pwd
+: 1759596702:0;gs
+: 1759596702:0;gd
+: 1759596734:0;gs
+: 1759596734:0;gd
+: 1759596741:0;gs
+: 1759596742:0;gd
+: 1759596747:0;open crash.png
+: 1759596749:0;ga .
+: 1759596755:0;gcm "added crash.png"
+: 1759596755:0;gs
+: 1759596755:0;gp
+: 1759596757:0;gpl
+: 1759596758:0;gs
+: 1759596758:0;gd
+: 1759596758:0;gs
+: 1759596759:0;gd
+: 1759596759:0;gs
+: 1759596760:0;gd
+: 1759596761:0;vim something.tex
+: 1759596770:0;t ls
+: 1759596770:0;ta
+: 1759596777:0;vim something.tex
+: 1759596780:0;gs
+: 1759596780:0;gd
+: 1759596784:0;gs
+: 1759596784:0;gd
+: 1759596787:0;gs
+: 1759596788:0;gd
+: 1759596790:0;gs
+: 1759596790:0;gd
+: 1759596792:0;gs
+: 1759596792:0;gd
+: 1759596795:0;gs
+: 1759596798:0;gd
+: 1759596799:0;gs
+: 1759596799:0;gpl
+: 1759596804:0;gs
+: 1759596804:0;gd
+: 1759596806:0;g
+: 1759596807:0;gs
+: 1759596807:0;gd
+: 1759596808:0;gs
+: 1759596810:0;tree
+: 1759596810:0;gs
+: 1759596811:0;gd
+: 1759596816:0;vim commands_to_run_after_reinstall.md
+: 1759596890:0;cp -r ~/.local/share/tmux/resurrect ./tmux-resurrect-backup
+: 1759596891:0;gs
+: 1759596891:0;gd
+: 1759596900:0;gs
+: 1759596909:0;git clean -f
+: 1759596910:0;gs
+: 1759596910:0;gd
+: 1759596913:0;gs
+: 1759596914:0;gd
+: 1759596918:0;git checkout -- .
+: 1759596920:0;git clean -f
+: 1759596920:0;gs
+: 1759596921:0;gd
+: 1759596928:0;cd tmux-resurrect-backup/
+: 1759596928:0;gs
+: 1759596929:0;gd
+: 1759596930:0;git clean -f
+: 1759596931:0;gs
+: 1759596931:0;gd
+: 1759596934:0;git clean f .-
+: 1759596937:0;git clean -f .
+: 1759596939:0;gs
+: 1759596939:0;gd
+: 1759596943:0;ls
+: 1759596948:0;vim commands_to_run_after_reinstall.md
+: 1759596976:0;ls
+: 1759596980:0;vim my_zsh_history
+: 1759596988:0;cp ~/.zsh_history ./my_zsh_history
+: 1759596988:0;gs
+: 1759596989:0;gd
+: 1759597014:0;cd ~/.local/share/tmux/resurrect
+: 1759597015:0;ls
+: 1759597019:0;ls -ath
+: 1759597028:0;vim commands_to_run_after_reinstall.md
+: 1759597039:0;pwd
+: 1759597041:0;l -atl
+: 1759597044:0;pwd
+: 1759597046:0;l -ath
+: 1759597084:0;tree tmux-resurrect-backup
+: 1759597108:0;cat commands_to_run_after_reinstall.md
+: 1759597271:0;vim my_zsh_history
+: 1759597294:0;vim backup_stuff.sh
+: 1759597334:0;vim restore_stuff.sh
+: 1759597374:0;ls
+: 1759597375:0;gs
+: 1759597375:0;gd
+: 1759597399:0;chmod +x backup_stuff.sh restore_stuff.sh
+: 1759597621:0;vim backup_personal_folders.sh
+: 1759597629:0;chmod +x backup_personal_folders.sh
+: 1759597633:0;./backup_personal_folders.sh
+: 1759597710:0;tree -a ~
+: 1759597718:0;ls
+: 1759597720:0;ls -al ~
+: 1759597724:0;ls ~
+: 1759597765:0;du -sh ~
+: 1759597768:0;sudo du -sh ~
+: 1759597912:0;gs
+: 1759597913:0;gd
+: 1759597921:0;cd /tmp
+: 1759597921:0;ls
+: 1759597922:0;pwd
+: 1759597924:0;rm -rf personal_folders_backup_20251004_100713
+: 1759597932:0;ls
+: 1759597933:0;pwd
+: 1759597937:0;vim backup_personal_folders.sh
+: 1759597950:0;ls
+: 1759597951:0;ls ~
+: 1759597960:0;\ls
+: 1759597966:0;ls
+: 1759597967:0;ls ~
+: 1759598260:0;vim backup_personal_folders.sh
+: 1759598272:0;chmod +x backup_personal_folders.sh
+: 1759598275:0;./backup_personal_folders.sh
+: 1759598399:0;ls
+: 1759598399:0;pwd
+: 1759598404:0;cd 
+: 1759598408:0;cd /tmp
+: 1759598409:0;ls
+: 1759598420:0;vim backup_personal_folders.sh
+: 1759598442:0;ls
+: 1759598442:0;pwd
+: 1759598443:0;gs
+: 1759598443:0;gd
+: 1759598448:0;vim backup_stuff.sh
+: 1759598497:0;ls
+: 1759598497:0;pwd
+: 1759598498:0;gs
+: 1759598498:0;gd
+: 1759598502:0;vim restore_stuff.sh
+: 1759598577:0;ls
+: 1759598577:0;pwd
+: 1759598601:0;tree
+: 1759598604:0;ls
+: 1759598605:0;ls -al
+: 1759598829:0;vim restore_personal_folders.sh
+: 1759598835:0;vim backup_personal_folders.sh
+: 1759598838:0;vim restore_personal_folders.sh
+: 1759598852:0;ls
+: 1759598853:0;pwd
+: 1759598854:0;vim restore_personal_folders.sh
+: 1759598861:0;vim backup_personal_folders.sh
+: 1759598863:0;ls
+: 1759598863:0;pwd
+: 1759598864:0;gs
+: 1759598864:0;gd
+: 1759598865:0;gs
+: 1759598866:0;gd
+: 1759598870:0;vim backup_stuff.sh
+: 1759598878:0;chmod +x *.sh
+: 1759598878:0;ls
+: 1759598879:0;gs
+: 1759598879:0;gd
+: 1759598884:0;vim backup_stuff.sh
+: 1759598892:0;./backup_stuff.sh
