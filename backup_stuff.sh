@@ -9,6 +9,3 @@ cd "$BACKUP_DIR" && latest_file=$(ls -t tmux_resurrect_*.txt | head -n1) && ln -
 # Backup zsh history
 cp /home/sriram/.zsh_history /home/sriram/.config/i3/my_zsh_history
 
-# Backup Firefox profile (for sessions/cookies)
-pkill firefox
-cp -r ~/.mozilla/firefox /home/sriram/.config/i3/firefox-backup/
