@@ -1922,3 +1922,933 @@ git push -u origin main
 : 1759598879:0;gd
 : 1759598884:0;vim backup_stuff.sh
 : 1759598892:0;./backup_stuff.sh
+: 1759709135:0;ls
+: 1759709136:0;pwd
+: 1759709137:0;t ls
+: 1759709138:0;t
+: 1759709147:0;nvim cs2.py
+: 1759709147:0;nvim users.csv
+: 1759709147:0;nvim counting_semaphore_with_producers_and_consumers.c
+: 1759709160:0;cd ~/.config/i3
+: 1759709160:0;ls
+: 1759709160:0;pwd
+: 1759709161:0;gs
+: 1759709161:0;gd
+: 1759709174:0;gpl
+: 1759709180:0;ls
+: 1759709180:0;pwd
+: 1759709182:0;git status
+: 1759709182:0;ls
+: 1759709183:0;pwd
+: 1759709197:0;gs
+: 1759709197:0;gpl
+: 1759709199:0;ls
+: 1759709200:0;pwd
+: 1759709246:0;gs
+: 1759709246:0;gd
+: 1759709249:0;t ls
+: 1759709257:0;ls
+: 1759709258:0;pwd
+: 1759709259:0;t ls
+: 1759709259:0;ta
+: 1759709264:0;vim something.tex /
+: 1759709266:0;vim something.tex
+: 1759709271:0;firebase login
+: 1759709273:0;gpl
+: 1759709279:0;gs
+: 1759709280:0;gd
+: 1759709289:0;gpl
+: 1759709290:0;ls
+: 1759709291:0;pwd
+: 1759709293:0;vim something.tex
+: 1759709304:0;gs
+: 1759709304:0;gd
+: 1759709489:0;t kill-server
+: 1759709490:0;t ls
+: 1759709490:0;t
+: 1759709503:0;cd ~/.config/i3
+: 1759709503:0;ls
+: 1759709504:0;pwd
+: 1759709504:0;gs
+: 1759709504:0;gd
+: 1759709517:0;gs
+: 1759709518:0;gd
+: 1759709519:0;gpl
+: 1759709521:0;gp
+: 1759709522:0;gs
+: 1759709522:0;gd
+: 1759709524:0;gs
+: 1759709525:0;gl
+: 1759709527:0;gpl
+: 1759709537:0;gl
+: 1759709540:0;git checkout -- .
+: 1759709541:0;gs
+: 1759709541:0;gd
+: 1759709543:0;git clean -f
+: 1759709545:0;gs
+: 1759709545:0;gd
+: 1759709546:0;gpl
+: 1759709547:0;gs
+: 1759709548:0;gd
+: 1759709549:0;gpl
+: 1759709551:0;gs
+: 1759709551:0;gd
+: 1759709556:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
+: 1759709556:0;ls
+: 1759709557:0;pwd
+: 1759709565:0;gpl
+: 1759709581:0;gspl
+: 1759709581:0;gs
+: 1759709582:0;gpl
+: 1759709587:0;gs
+: 1759709588:0;gpl
+: 1759709590:0;vim ~/.zshrc
+: 1759709608:0;conda create --name loonix python=3.12
+: 1759709638:0;gs
+: 1759709638:0;gpl
+: 1759709639:0;gp
+: 1759709640:0;vim ~/.zshrc
+: 1759709645:0;ls
+: 1759709646:0;pwd
+: 1759709650:0;conda install bs4 requests pandas numpy
+: 1759709696:0;ls
+: 1759709697:0;pwd
+: 1759709703:0;gpl
+: 1759709705:0;gspl
+: 1759709712:0;gs
+: 1759709712:0;gpl
+: 1759709729:0;tree
+: 1759709732:0;ls
+: 1759709732:0;pwd
+: 1759709732:0;gs
+: 1759709733:0;gd
+: 1759709733:0;gpl
+: 1759709741:0;ls
+: 1759709742:0;pwd
+: 1759709746:0;ls *firefox*
+: 1759709746:0;lls
+: 1759709747:0;pwd
+: 1759709749:0;ls
+: 1759709749:0;pwd
+: 1759709755:0;rm -rf firefox-backup
+: 1759709756:0;ls
+: 1759709757:0;pwd
+: 1759709761:0;ls *firefox*
+: 1759709761:0;ls
+: 1759709762:0;pwd
+: 1759709762:0;gs
+: 1759709764:0;ga .
+: 1759709764:0;gs
+: 1759709767:0;gcm "removed firefox stuff"
+: 1759709770:0;gs
+: 1759709770:0;gpl
+: 1759709771:0;gp
+: 1759709772:0;gs
+: 1759709773:0;gd
+: 1759709774:0;ls
+: 1759709779:0;vim backup_stuff.sh
+: 1759709786:0;gs
+: 1759709786:0;gd
+: 1759709793:0;vim restore_stuff.sh
+: 1759709800:0;gs
+: 1759709800:0;gd
+: 1759709801:0;ga .
+: 1759709802:0;gs
+: 1759709809:0;gcm "removed firefox stuff from sh files" 
+: 1759709809:0;gs
+: 1759709810:0;gp
+: 1759709811:0;gpl
+: 1759709812:0;gd
+: 1759709813:0;gs
+: 1759709813:0;gd
+: 1759709974:0;systemctl restart
+: 1759709979:0;systemctl reboot
+: 1759710055:0;t ls
+: 1759710055:0;t
+: 1759710057:0;nvim cs2.py
+: 1759710057:0;nvim users.csv
+: 1759710057:0;nvim counting_semaphore_with_producers_and_consumers.c
+: 1759710061:0;tree
+: 1759710115:0;t ls
+: 1759710115:0;ta
+: 1759710119:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1759710152:0;gpg --generate-key
+: 1759710173:0;pass init 3F8DF29AB1A505B774DAC518D2AFF8F8967D4825
+: 1759710188:0;dp
+: 1759710188:0;di
+: 1759710191:0;docker run h
+: 1759710204:0;docker run hello-world
+: 1759710220:0;dp
+: 1759710220:0;di
+: 1759710224:0;docker syt
+: 1759710226:0;docker system prune -a
+: 1759710235:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1759710335:0;tree -fi | grep *.md
+: 1759710337:0;tree -fi | grep .md
+: 1759710348:0;ls
+: 1759710348:0;pwd
+: 1759710354:0;ls *.md
+: 1759710356:0;vim commands_to_run_after_reinstall.md
+: 1759710364:0;tree
+: 1759710369:0;gs
+: 1759710369:0;gpl
+: 1759710374:0;gs
+: 1759710375:0;gpl
+: 1759710389:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
+: 1759710394:0;gpl
+: 1759710403:0;tldr cut
+: 1759710405:0;cut -d ',' -f 2,4 users.csv
+: 1759710406:0;lls
+: 1759710406:0;ls
+: 1759710407:0;pwd
+: 1759710442:0;t ls
+: 1759710443:0;ta
+: 1759721934:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
+: 1759723892:0;type 1
+: 1759723893:0;ls
+: 1759723893:0;pwd
+: 1759723895:0;type 2
+: 1759723897:0;cd -2
+: 1759723900:0;cd -1
+: 1759723900:0;ls
+: 1759723900:0;pwd
+: 1759723903:0;tldr cd
+: 1759723905:0;man cd
+: 1759723907:0;ls
+: 1759723908:0;pwd
+: 1759723911:0;type 3
+: 1759723916:0;type 7
+: 1759723918:0;9
+: 1759723921:0;0
+: 1759723922:0;ls
+: 1759723922:0;pwd
+: 1759723923:0;gs
+: 1759723924:0;gd
+: 1759723935:0;gs
+: 1759723936:0;gd
+: 1759723937:0;ga .
+: 1759723937:0;gs
+: 1759723949:0;gcm "added code for counting semaphore with producers and consumers"
+: 1759723949:0;gs
+: 1759723949:0;gpl
+: 1759723950:0;gp
+: 1759723952:0;gs
+: 1759723952:0;gd
+: 1759723992:0;ls *.c
+: 1759724091:0;cat *.c | wc -l
+: 1759724091:0;ls
+: 1759724092:0;pwd
+: 1759724093:0;whoami
+: 1759724096:0;gs
+: 1759724096:0;gd
+: 1759724100:0;nvim counting_semaphore_with_producers_and_consumers.c
+: 1759724104:0;ls -ath
+: 1759724106:0;l -ath
+: 1759724132:0;gs
+: 1759724132:0;gd
+: 1759724133:0;gpl
+: 1759724134:0;gp
+: 1759724134:0;whoami
+: 1759724136:0;pwd
+: 1759724139:0;ls -ath
+: 1759724140:0;l -ath
+: 1759724146:0;cat test.txt
+: 1759724148:0;whoami
+: 1759724149:0;clang 
+: 1759724151:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
+: 1759724154:0;./counting_semaphore_with_producers_and_consumers
+: 1759724158:0;gdb ./counting_semaphore_with_producers_and_consumers
+: 1759724193:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
+: 1759724194:0;ls
+: 1759724194:0;pwd
+: 1759724319:0;ls
+: 1759724319:0;pwd
+: 1759724328:0;vim linked_list.c
+: 1759724397:0;nvim counting_semaphore_with_producers_and_consumers.c
+: 1759724565:0;clang -g -wall linked_list.c -o linked_list
+: 1759724569:0;clang -g -Wall linked_list.c -o linked_list
+: 1759724572:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
+: 1759724585:0;gs
+: 1759724585:0;gd
+: 1759725085:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
+: 1759726468:0;ls
+: 1759726468:0;gs
+: 1759726469:0;gd
+: 1759726820:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
+: 1759727190:0;sudo apt install valgrind -y
+: 1759727205:0;valgrind ./linked_list --leak-check=full
+: 1759727340:0;valgrind ./linked_list --leak-check=full --track-origins=yes
+: 1759727366:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
+: 1759727368:0;valgrind ./linked_list --leak-check=full --track-origins=yes
+: 1759727399:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759760128:0;t ls
+: 1759760128:0;t
+: 1759760130:0;nvim cs2.py
+: 1759760130:0;nvim users.csv
+: 1759760130:0;nvim linked_list.c
+: 1759762569:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
+: 1759762570:0;ls
+: 1759762571:0;pwd
+: 1759762959:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759763005:0;type history 
+: 1759763018:0;history | grep "sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y" | wc -l
+: 1759763040:0;history | grep pwd | wc -l
+: 1759763926:0;ls
+: 1759763928:0;pwd
+: 1759763929:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759774197:0;vim tree.c
+: 1759774712:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
+: 1759774730:0;clang -g -Wall tree.c -o tree && ./tree
+: 1759785680:0;vim queue.h
+: 1759785689:0;vim tree.c
+: 1759785756:0;vim queue.c
+: 1759785759:0;vim tree.c
+: 1759785766:0;vim queue.
+: 1759785768:0;vim queue.c
+: 1759785942:0;vim tree.c
+: 1759785948:0;clang -g -Wall tree.c -o tree && ./tree
+: 1759785958:0;ls
+: 1759785958:0;pwd
+: 1759785959:0;clang -g -Wall tree.c -o tree && ./tree
+: 1759785962:0;vim queue.c
+: 1759786433:0;vim linked_list.c
+: 1759787139:0;gcc queue.c -o queue
+: 1759787141:0;gcc queue.c -o queue && ./queue
+: 1759790113:0;vim queue.h
+: 1759790206:0;vim
+: 1759790311:0;vim tree.c
+: 1759790352:0;vim
+: 1759790393:0;vim tree.h
+: 1759790398:0;vim tree.c
+: 1759790418:0;vim queue.c
+: 1759790421:0;vim 
+: 1759790485:0;gcc queue.c -o queue && ./queue
+: 1759791122:0;vim 
+: 1759795646:0;gcc queue.c -o queue && ./queue
+: 1759795654:0;p
+: 1759795656:0;gcc queue.c -o queue && ./queue
+: 1759795677:0;vim ~/.alacritty.toml
+: 1759795699:0;gcc queue.c -o queue && ./queue
+: 1759795876:0;ls
+: 1759795877:0;pwd
+: 1759795878:0;vim tree.c
+: 1759795883:0;vim 
+: 1759795935:0;clang -g -Wall tree.c -o tree && ./tree
+: 1759796034:0;vim .al
+: 1759796038:0;vim ~/.alacritty.toml
+: 1759796434:0;clang -g -Wall tree.c -o tree && ./tree
+: 1759796494:0;clang -g -Wall tree.c -o tree
+: 1759796515:0;clang -g -Wall tree.c queue.h tree.h -o tree
+: 1759796524:0;clang -g -Wall tree.c -o tree
+: 1759796542:0;cat tree.c tree.h queue.c queue.h
+: 1759796545:0;clang -g -Wall tree.c -o tree
+: 1759796672:0;clang -g -Wall tree.c queue.c -o tree
+: 1759796722:0;clang -g -Wall tree.c queue.c -o tree && ./tree
+: 1759796931:0;gs
+: 1759796931:0;gd
+: 1759796933:0;ga .
+: 1759796940:0;gcm "added code for linked list, queue, and tre"
+: 1759796947:0;tldr git commit -m
+: 1759796950:0;tldr git commit
+: 1759796957:0;git commit --amend
+: 1759796962:0;gs
+: 1759796962:0;gd
+: 1759796963:0;gl
+: 1759796965:0;gp
+: 1759796966:0;gpl
+: 1759796967:0;gs
+: 1759796967:0;gd
+: 1759796970:0;tldr git commit
+: 1759796972:0;ls
+: 1759796972:0;pwd
+: 1759796973:0;gs
+: 1759796973:0;gd
+: 1759797002:0;t ls
+: 1759797002:0;ta
+: 1759797119:0;t ls
+: 1759797119:0;ta
+: 1759797128:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759798452:0;clang -g -Wall tree.c queue.c -o tree && ./tree
+: 1759798488:0;vim 
+: 1759798502:0;clang -g -Wall tree.c queue.c -o tree && ./tree
+: 1759798503:0;vim
+: 1759798514:0;clang -g -Wall tree.c queue.c -o tree && ./tree
+: 1759798540:0;cat tree.c tree.h queue.c queue.h
+: 1759798541:0;clang -g -Wall tree.c queue.c -o tree && ./tree
+: 1759798546:0;type gg
+: 1759798588:0;clang -g -Wall tree.c queue.c -o tree && ./tree
+: 1759798924:0;gs
+: 1759798924:0;gd
+: 1759810657:0;clang -g -Wall tree.c queue.c -o tree && ./tree
+: 1759811456:0;gs
+: 1759811456:0;gd
+: 1759811462:0;gs
+: 1759811463:0;gd
+: 1759811465:0;clang -g -Wall tree.c queue.c -o tree && ./tree
+: 1759811466:0;gs
+: 1759811467:0;gd
+: 1759811479:0;ga .
+: 1759811489:0;gcm "finished code for tree level order"
+: 1759811489:0;gs
+: 1759811489:0;gp
+: 1759811491:0;gpl
+: 1759811491:0;gs
+: 1759811491:0;gd
+: 1759811493:0;gs
+: 1759811494:0;gd
+: 1759811552:0;vim block_device.c
+: 1759811557:0;vim block_mem_allocator.c
+: 1759847063:0;t ls
+: 1759847065:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759847067:0;t
+: 1759847069:0;nvim cs2.py
+: 1759847069:0;nvim users.csv
+: 1759847069:0;nvim block_device.c
+: 1759847456:0;man read
+: 1759847458:0;man write
+: 1759847463:0;tldr write
+: 1759847467:0;tldr read
+: 1759847478:0;write sriram 1
+: 1759847490:0;write sriram 
+: 1759847493:0;write sriram sup
+: 1759847496:0;ls
+: 1759847496:0;pwd
+: 1759872099:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759876299:0;clang block_device.c -o block_device
+: 1759876301:0;clang block_device.c -o block_device && ./block_
+: 1759876303:0;clang block_device.c -o block_device && ./block_device
+: 1759876306:0;gs
+: 1759876308:0;vim disk.img
+: 1759876466:0;clang block_device.c -o block_device && ./block_device
+: 1759876469:0;sg
+: 1759876470:0;ls
+: 1759876471:0;pwd
+: 1759876472:0;ls
+: 1759876473:0;pwd
+: 1759876475:0;vim disk.img
+: 1759876489:0;clang block_device.c -o block_device && ./block_device
+: 1759876490:0;vim disk.img
+: 1759876499:0;clang block_device.c -o block_device && ./block_device
+: 1759876500:0;vim disk.img
+: 1759876540:0;gs
+: 1759876540:0;gd
+: 1759876542:0;clang block_device.c -o block_device && ./block_device
+: 1759876543:0;ga .
+: 1759876572:0;gcm "added code for block_device"
+: 1759876573:0;gs
+: 1759876574:0;gpl
+: 1759876575:0;gp
+: 1759876576:0;gs
+: 1759876576:0;gd
+: 1759876580:0;du -sh disk.img
+: 1759876581:0;ls
+: 1759876581:0;pwd
+: 1759876583:0;whoami
+: 1759876584:0;gs
+: 1759876585:0;gd
+: 1759876590:0;gs
+: 1759876591:0;gd
+: 1759876916:0;vim bitmanipulation_prac.c
+: 1759876951:0;clang -Wall -g bitmanipulation_prac.c -o bitmanipulation_prac
+: 1759876954:0;clang -Wall -g bitmanipulation_prac.c -o bitmanipulation_prac && ./bitmanipulation_prac
+: 1759891035:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759896872:0;clang -Wall -g bitmanipulation_prac.c -o bitmanipulation_prac && ./bitmanipulation_prac
+: 1759898617:0;clang -Wall -g bitmanipulation_prac.c -o bitmanipulation_prac && ./bitmanipulation_
+: 1759898619:0;clang -Wall -g bitmanipulation_prac.c -o bitmanipulation_prac && ./bitmanipulation_prac
+: 1759899212:0;gs
+: 1759899212:0;g
+: 1759899214:0;clang -Wall -g bitmanipulation_prac.c -o bitmanipulation_prac && ./bitmanipulation_prac
+: 1759899217:0;ls
+: 1759899217:0;pwd
+: 1759899219:0;gs
+: 1759899220:0;ga .
+: 1759899230:0;gcm "added code for bitmanipulation_practice"
+: 1759899231:0;gs
+: 1759899231:0;gp
+: 1759899232:0;gpl
+: 1759899234:0;gs
+: 1759899234:0;gd
+: 1759899237:0;type s
+: 1759899238:0;s
+: 1759899241:0;ls
+: 1759899242:0;pwd
+: 1759899248:0;vim block_device.c
+: 1759899255:0;clang block_device.c -o block_device && ./block_device
+: 1759899263:0;clang -Wall -g block_device.c -o block_device && ./block_device
+: 1759899390:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759899402:0;history | grep "sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y" | wc -l
+: 1759932312:0;t ls
+: 1759932312:0;t
+: 1759932314:0;nvim cs2.py
+: 1759932314:0;nvim users.csv
+: 1759932314:0;nvim block_device.c
+: 1759932347:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759946587:0;ls
+: 1759946587:0;pwd
+: 1759946592:0;tree -fi | grep .mp
+: 1759946594:0;tree -fi | grep .mp4
+: 1759947650:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759960096:0;bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
+: 1759960104:0;spf
+: 1759960106:0;ls
+: 1759960107:0;pwd
+: 1759960122:0;sudo apt install cowsay valgrind espeak cmatrix -y
+: 1759960132:0;ls
+: 1759960132:0;pwd
+: 1759960136:0;espeak 
+: 1759960140:0;espeak -v whisper "sup"
+: 1759960141:0;ls
+: 1759960142:0;pwd
+: 1759960144:0;cmatrix
+: 1759960146:0;sl
+: 1759960148:0;ls
+: 1759960148:0;pwd
+: 1759960168:0;cowsay -t tux "hi"
+: 1759960175:0;cowsay -c tux "hi"
+: 1759960180:0;tldr cowsay
+: 1759960191:0;tldr -e characters "hello"
+: 1759960204:0;cowsay -e characters "hello"
+: 1759960218:0;tldr -e il "hello"
+: 1759960221:0;ls
+: 1759960221:0;pwd
+: 1759960231:0;cowsay -e il "hello"
+: 1759960232:0;ls
+: 1759960232:0;pwd
+: 1759960236:0;tldr cowsayu
+: 1759960237:0;tldr cowsay
+: 1759960244:0;cowsay -d "im just"
+: 1759960248:0;cowsay -l
+: 1759960257:0;cowsay -f art "hi"
+: 1759960259:0;cowsay -f tux "hi"
+: 1759960261:0;ls
+: 1759960261:0;pwd
+: 1759960263:0;neo -l none
+: 1759960263:0;l;s
+: 1759960264:0;pwd
+: 1759960265:0;neo
+: 1759983166:0;cd /mnt
+: 1759983167:0;ls
+: 1759983169:0;sudo ls
+: 1759983171:0;ls
+: 1759983175:0;sudo -E -s
+: 1759983177:0;ls
+: 1759983177:0;pwd
+: 1759983179:0;cd /media
+: 1759983180:0;ls
+: 1759983180:0;pwd
+: 1759983181:0;cd sriram
+: 1759983182:0;ls
+: 1759983183:0;pwd
+: 1759983184:0;cd 44
+: 1759983186:0;cd 4E33-1E19
+: 1759983186:0;ls
+: 1759983186:0;pwd
+: 1759983187:0;cd System\ Volume\ Information
+: 1759983188:0;ls
+: 1759983188:0;pwd
+: 1759983190:0;ls
+: 1759983191:0;pwd
+: 1759983192:0;cd ../DCIM
+: 1759983193:0;ls
+: 1759983193:0;pwd
+: 1759983195:0;du -sh .
+: 1759983199:0;mkdir 
+: 1759983207:0;mkdir -p ~/carvideos
+: 1759983217:0;mv * ~/carvideos
+: 1759983231:0;sudo mv * ~/carvideos
+: 1759983249:0;sudo cp -r * ~/carvideos
+: 1759983385:0;cd /media/sriram/4E33-1E19
+: 1759983386:0;ls
+: 1759983386:0;pwd
+: 1759983388:0;cd DCIM
+: 1759983388:0;ls
+: 1759983388:0;pwd
+: 1759983390:0;mkdir -p ~/carvideos
+: 1759983397:0;sudo cp -r * ~/carvideos
+: 1759984018:0;sudo du -sh .
+: 1759984024:0;ls
+: 1759984024:0;pwd
+: 1759984027:0;ls
+: 1759984027:0;pwd
+: 1759984028:0;cd ..
+: 1759984028:0;ls
+: 1759984029:0;pwd
+: 1759984036:0;ls
+: 1759984036:0;pwd
+: 1759984038:0;cd c
+: 1759984042:0;cd carvideos
+: 1759984043:0;ls
+: 1759984044:0;pwd
+: 1759984048:0;open LOCK0000.mov
+: 1759984119:0;cd 
+: 1759984120:0;cd c
+: 1759984122:0;cd carvideos
+: 1759984122:0;ls
+: 1759984123:0;pwd
+: 1759984125:0;ls -al
+: 1759984137:0;ls
+: 1759984138:0;pwd
+: 1759984139:0;cd ..
+: 1759984140:0;ls -al
+: 1759984226:0;cd ca
+: 1759984228:0;cd carvideos
+: 1759984231:0;cd .l.
+: 1759984237:0;ls
+: 1759984237:0;pwd
+: 1759984239:0;ls -al
+: 1759984263:0;cd ..
+: 1759984269:0;ls -al
+: 1759984293:0;ls -al | grep carvideos
+: 1759984326:0;chmod 775 carvideos
+: 1759984328:0;sudo chmod 775 carvideos
+: 1759984336:0;ls -al | grep carvideos
+: 1759984340:0;cd ca
+: 1759984342:0;cd carvideos
+: 1759984343:0;ls
+: 1759984343:0;pwd
+: 1759984352:0;cd carvideos
+: 1759984352:0;ls
+: 1759984353:0;pwd
+: 1759984356:0;ls -al
+: 1759984370:0;chmod 777 *
+: 1759984371:0;sudo chmod 777 *
+: 1759984376:0;cd ..
+: 1759984378:0;cd carvideos/l
+: 1759984381:0;cd carvideos
+: 1759984381:0;ls
+: 1759984382:0;pwd
+: 1759984383:0;ls -al
+: 1759984384:0;cd ..
+: 1759984386:0;ls -al
+: 1759984394:0;sudo chmod 777 carvideos
+: 1759984395:0;ls
+: 1759984395:0;pwd
+: 1759984396:0;cd c
+: 1759984399:0;cd carvideos
+: 1759984400:0;ls
+: 1759984402:0;pwd
+: 1759984403:0;cd ..
+: 1759984403:0;ls
+: 1759984404:0;pwd
+: 1759984457:0;ls
+: 1759984458:0;pwd
+: 1759984462:0;chmod 775 carvideos
+: 1759984462:0;ls
+: 1759984463:0;pwd
+: 1759984467:0;sudo chmod 775 carvideos
+: 1759984468:0;ls
+: 1759984468:0;pwd
+: 1759984470:0;cd ca
+: 1759984473:0;cd carvideos
+: 1759984473:0;ls
+: 1759984474:0;pwd
+: 1759984482:0;ls
+: 1759984482:0;pwd
+: 1759984492:0;..
+: 1759984492:0;ls
+: 1759984493:0;pwd
+: 1759984502:0;cd Videos
+: 1759984504:0;cd ..
+: 1759984510:0;ls -al | grep videos
+: 1759984530:0;chmod 755 carvideos
+: 1759984533:0;sudo chmod 755 carvideos
+: 1759984534:0;cd ca
+: 1759984536:0;cd carvideos
+: 1759984536:0;ls
+: 1759984536:0;pwd
+: 1759984537:0;cd ..
+: 1759984537:0;ls
+: 1759984538:0;pwd
+: 1759984539:0;ls
+: 1759984539:0;pwd
+: 1759984548:0;cd carvideos
+: 1759984548:0;ls
+: 1759984549:0;pwd
+: 1759984583:0;sudo chmod 644 *
+: 1759984584:0;ls
+: 1759984584:0;pwd
+: 1759984585:0;ls -al
+: 1759984593:0;cd ..
+: 1759984595:0;cd carvideos
+: 1759984595:0;ls
+: 1759984596:0;pwd
+: 1759984597:0;ls -al
+: 1759984610:0;cd ..
+: 1759984612:0;ls -al | grep videos
+: 1759984620:0;cd ca
+: 1759984622:0;cd carvideos
+: 1759984622:0;ls
+: 1759984623:0;pwd
+: 1759984625:0;ls
+: 1759984625:0;pwd
+: 1759984632:0;file MOVI0002.mov
+: 1759984632:0;ls
+: 1759984633:0;pwd
+: 1759984743:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1759985142:0;du -sh carvideos
+: 1759985145:0;du -sh carvideos.zip
+: 1759985145:0;ls
+: 1759985146:0;pwd
+: 1759994271:0;sudo rm rf ~/carvideos
+: 1759994279:0;sudo rm -rf ~/carvideos
+: 1759994280:0;ls
+: 1759994281:0;pwd
+: 1760021830:0;t
+: 1760021832:0;nvim cs2.py
+: 1760021833:0;nvim users.csv
+: 1760021833:0;nvim block_device.c
+: 1760021853:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760043347:0;whatistcpdump
+: 1760043353:0;whatis tcpdump
+: 1760043357:0;tldr tcpdump
+: 1760043367:0;tcpdump 
+: 1760043377:0;tcpdump -i etho0
+: 1760043380:0;tcpdump -i eth0
+: 1760043382:0;sudo tcpdump -i eth0
+: 1760043389:0;ifconfig
+: 1760043393:0;sudo tcpdump -i lo
+: 1760043399:0;ls
+: 1760043399:0;pwd
+: 1760043402:0;ping google.com
+: 1760048672:0;gs
+: 1760048673:0;gd
+: 1760048676:0;vim block_device.c
+: 1760048711:0;s
+: 1760048711:0;gd
+: 1760048714:0;vim 
+: 1760048718:0;vim block_device.c
+: 1760048720:0;vim
+: 1760048722:0;ls
+: 1760048723:0;pwd
+: 1760048724:0;vim  
+: 1760048738:0;vim
+: 1760048776:0;gs
+: 1760048777:0;gd
+: 1760048779:0;gs
+: 1760048780:0;vim 
+: 1760048785:0;gs
+: 1760048786:0;gd
+: 1760048788:0;qls
+: 1760048788:0;pwd
+: 1760048790:0;vim 
+: 1760048800:0;gs
+: 1760048801:0;gd
+: 1760048806:0;gs
+: 1760048807:0;gd
+: 1760048808:0;ls
+: 1760048808:0;pwd
+: 1760048809:0;gs
+: 1760048838:0;vim 
+: 1760055146:0;sudo apt install steam -y
+: 1760055733:0;t ls
+: 1760055733:0;t
+: 1760055735:0;nvim cs2.py
+: 1760055735:0;nvim users.csv
+: 1760055735:0;nvim
+: 1760055753:0;t ls
+: 1760060737:0;t
+: 1760060739:0;nvim cs2.py
+: 1760060739:0;nvim users.csv
+: 1760060739:0;nvim
+: 1760060759:0;clang -Wall -g mini_filesystem.c -o mini_filesystem && ./mini_filesystem
+: 1760069570:0;s
+: 1760069571:0;t
+: 1760069576:0;nvim cs2.py
+: 1760069577:0;nvim users.csv
+: 1760069577:0;nvim
+: 1760069610:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760072602:0;clang -Wall -g mini_filesystem.c -o mini_filesystem && ./mini_filesystem
+: 1760072686:0;gs
+: 1760072686:0;gd
+: 1760072687:0;ga .
+: 1760072704:0;gcm "added code for mini filesystem (simpler version of ext2)"
+: 1760072704:0;gs
+: 1760072705:0;gpl
+: 1760072706:0;gp
+: 1760072707:0;gs
+: 1760072707:0;gd
+: 1760072708:0;ls
+: 1760072709:0;pwd
+: 1760072710:0;whoami
+: 1760072712:0;clang -Wall -g mini_filesystem.c -o mini_filesystem && ./mini_filesystem
+: 1760072744:0;cat block_device.h
+: 1760072747:0;ls *.h
+: 1760072753:0;cat mini_filesystem.h
+: 1760072760:0;rm block_device.h mini_filesystem.h
+: 1760072761:0;ls
+: 1760072762:0;pwd
+: 1760072762:0;gs
+: 1760072762:0;gd
+: 1760072766:0;ls
+: 1760072767:0;pwd
+: 1760072790:0;vim 
+: 1760072795:0;gs
+: 1760072795:0;gd
+: 1760072796:0;vim 
+: 1760106928:0;t
+: 1760106930:0;nvim cs2.py
+: 1760106930:0;nvim users.csv
+: 1760106930:0;nvim
+: 1760107063:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760109869:0;ls
+: 1760109869:0;pwd
+: 1760109880:0;vim char_pointer_straversal.c
+: 1760109913:0;vim 
+: 1760110280:0;vim
+: 1760110288:0;vim char_pointer_straversal.c
+: 1760130398:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760131034:0;t
+: 1760131036:0;nvim cs2.py
+: 1760131036:0;nvim users.csv
+: 1760131036:0;nvim char_pointer_straversal.c
+: 1760131980:0;clang char_pointer_straversal.c -o char_pointer_straversal
+: 1760131983:0;clang char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760132687:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760132695:0;gdb ./char_pointer_straversal
+: 1760132907:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760134985:0;gdb ./char_pointer_straversal
+: 1760134987:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760135855:0;nvim char_pointer_straversal.c
+: 1760136629:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760136828:0;nvim char_pointer_straversal.c
+: 1760136830:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760138555:0;nvim char_pointer_straversal.c
+: 1760138670:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760139197:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760139207:0;neo 
+: 1760139215:0;flatpak list --app
+: 1760139217:0;flatpak list
+: 1760139219:0;flatpak list --app
+: 1760139222:0;neo
+: 1760139254:0;dpkg list
+: 1760139256:0;dpkg --lsit
+: 1760139258:0;dpkg --list
+: 1760139271:0;neo
+: 1760139294:0;ip a
+: 1760139297:0;acpi -a
+: 1760139300:0;acpi
+: 1760139301:0;ls
+: 1760139301:0;pwd
+: 1760139303:0;tldr acpi
+: 1760139307:0;cowsay -f tux "hi"
+: 1760139309:0;espeak -v whisper "sup"
+: 1760145089:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760153822:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760154138:0;~/.config/i3/startup.sh
+: 1760154170:0;t
+: 1760154172:0;nvim cs2.py
+: 1760154172:0;nvim users.csv
+: 1760154172:0;nvim char_pointer_straversal.c
+: 1760154180:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760193953:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760194521:0;t
+: 1760194523:0;nvim cs2.py
+: 1760194523:0;nvim users.csv
+: 1760194523:0;nvim char_pointer_straversal.c
+: 1760194558:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760218774:0;gs
+: 1760218774:0;gd
+: 1760218857:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760222482:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760231313:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760231329:0;clang -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760231336:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760248282:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760248398:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760249013:0;gs
+: 1760249013:0;gd
+: 1760249016:0;clang -Wall -g char_pointer_straversal.c -o char_pointer_straversal && ./char_pointer_straversal
+: 1760249017:0;ls
+: 1760249017:0;pwd
+: 1760249018:0;gs
+: 1760249019:0;gd
+: 1760249025:0;ga char_pointer_straversal*
+: 1760249025:0;gs
+: 1760249037:0;vim mini_fs_with_dir.c
+: 1760249039:0;ga .
+: 1760249039:0;gs
+: 1760249063:0;git restore --staged char_pointer_straversal.c
+: 1760249072:0;mv char_pointer_straversal.c char_pointer_traversal.c
+: 1760249084:0;clang -Wall -g char_pointer_traversal.c -o char_pointer_traversal && ./char_pointer_traversal
+: 1760249087:0;gs
+: 1760249088:0;gd
+: 1760249091:0;ga .
+: 1760249091:0;gs
+: 1760249105:0;gcm "added code for practicing char pointer traversal"
+: 1760249106:0;gs
+: 1760249106:0;gd
+: 1760249107:0;gp
+: 1760249108:0;gpl
+: 1760249109:0;gs
+: 1760249109:0;gd
+: 1760249112:0;gl
+: 1760249113:0;ls
+: 1760249114:0;pwd
+: 1760249115:0;vim
+: 1760249302:0;clang -Wall -g mini_fs_with_dir.c -o mini_filesystem_with_dir
+: 1760249307:0;p
+: 1760249315:0;clang -Wall -g mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760249318:0;ls
+: 1760249318:0;pwd
+: 1760249322:0;clang -Wall -g mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760277268:0;t
+: 1760277270:0;nvim cs2.py
+: 1760277270:0;nvim users.csv
+: 1760277270:0;nvim
+: 1760278586:0;gs
+: 1760278587:0;gd
+: 1760278588:0;ga .
+: 1760278602:0;gcm "made some more changes to mini fs with dir"
+: 1760278603:0;gs
+: 1760278603:0;gp
+: 1760278604:0;gpl
+: 1760278605:0;gs
+: 1760278605:0;gd
+: 1760278608:0;clang -Wall -g mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760278610:0;ls
+: 1760278610:0;pwd
+: 1760278616:0;gs
+: 1760278616:0;gd
+: 1760278618:0;gs
+: 1760278618:0;gd
+: 1760278619:0;gs
+: 1760278620:0;gd
+: 1760278621:0;tree
+: 1760278624:0;gs
+: 1760278624:0;gd
+: 1760278625:0;gs
+: 1760278625:0;gd
+: 1760278626:0;gs
+: 1760278627:0;gd
+: 1760278628:0;gs
+: 1760278629:0;gd
+: 1760278633:0;gpl
+: 1760278636:0;gs
+: 1760278638:0;gd
+: 1760278641:0;gs
+: 1760278642:0;gpl
+: 1760278643:0;gs
+: 1760278648:0;open screenshot-20251010-161128Z-all.png
+: 1760278683:0;git clean -f
+: 1760278683:0;gs
+: 1760278684:0;gd
+: 1760278686:0;gs
+: 1760278686:0;gd
+: 1760278690:0;gs
+: 1760278690:0;gd
+: 1760278691:0;gp
+: 1760278692:0;gpl
+: 1760278694:0;gs
+: 1760278695:0;gd
+: 1760278713:0;ls
+: 1760278714:0;pwd
+: 1760278715:0;vim backup_stuff.sh
+: 1760278734:0;vim backup_personal_folders.sh
+: 1760278796:0;ls
+: 1760278797:0;pwd
+: 1760278797:0;gs
+: 1760278797:0;gd
+: 1760278802:0;vim backup_stuff.sh
+: 1760278809:0;./backup_stuff.sh
