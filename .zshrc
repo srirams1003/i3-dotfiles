@@ -133,6 +133,7 @@ alias ta="tmux a"
 alias tat="tmux a -t"
 export EDITOR='nvim'
 alias ts="sudo timeshift-gtk"
+alias update="sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y"
 
 alias kgpo='kubectl get pods -o wide'
 alias kgno='kubectl get nodes -o wide'
