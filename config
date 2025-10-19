@@ -145,6 +145,15 @@ bindsym $mod+q kill
 
 for_window [urgent="latest"] focus
 
+# Force workspace 1 to always be tabbed
+for_window [workspace="1"] layout tabbed
+# Force workspace 3 to always be tabbed
+for_window [workspace="3"] layout tabbed
+# Force workspace 4 to always be tabbed
+for_window [workspace="4"] layout tabbed
+# Force workspace 6 to always be tabbed
+for_window [workspace="6"] layout tabbed
+
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec --no-startup-id "rofi -modi drun,run -show drun"
@@ -324,7 +333,7 @@ bindsym Mod1+Tab  workspace back_and_forth
 exec --no-startup-id firefox
 # exec --no-startup-id alacritty
 # exec --no-startup-id spotify
-exec --no-startup-id flatpak run com.spotify.Client
+exec --no-startup-id sleep 3 && flatpak run com.spotify.Client
 # # if the below two are installed using flatpak
 # exec --no-startup-id flatpak run org.kde.okular
 # exec --no-startup-id flatpak run md.obsidian.Obsidian
