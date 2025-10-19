@@ -24,3 +24,9 @@ bluetoothctl connect 08:EB:ED:D2:A8:E5 # insignia mini sonic (new MAC address?!)
 # bluetoothctl connect 4C:FE:2E:28:70:72 # jvc ha-a3t
 bluetoothctl connect E8:9E:13:09:D4:4D # wh-ch520
 
+# Open PDF documents in background
+flatpak run org.kde.okular ~/Documents/books/stm32f4_HAL_manual.pdf &
+sleep 1
+flatpak run org.kde.okular ~/Documents/books/stm32f446re_reference_manual.pdf &
+sleep 1
+flatpak run org.kde.okular ~/Documents/books/stm32f446re_datasheet.pdf &
