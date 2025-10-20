@@ -2852,3 +2852,1480 @@ git push -u origin main
 : 1760278797:0;gd
 : 1760278802:0;vim backup_stuff.sh
 : 1760278809:0;./backup_stuff.sh
+: 1760399617:0;ls
+: 1760399618:0;pwd
+: 1760399696:0;t ls
+: 1760399696:0;t
+: 1760399698:0;nvim cs2.py
+: 1760399698:0;nvim users.csv
+: 1760399698:0;nvim
+: 1760399748:0;gs
+: 1760399749:0;gd
+: 1760399749:0;gpl
+: 1760399751:0;gs
+: 1760399751:0;g
+: 1760399752:0;ls
+: 1760399753:0;pwd
+: 1760399812:0;vim
+: 1760399815:0;ls
+: 1760399816:0;pwd
+: 1760399816:0;gs
+: 1760399817:0;gpl
+: 1760400321:0;t kill-server
+: 1760400322:0;t ls
+: 1760400322:0;t
+: 1760400324:0;nvim cs2.py
+: 1760400324:0;nvim users.csv
+: 1760400324:0;nvim
+: 1760400328:0;s
+: 1760400328:0;gs
+: 1760400329:0;gpl
+: 1760400334:0;gs
+: 1760400335:0;gd
+: 1760400338:0;git checkout -- .
+: 1760400338:0;gs
+: 1760400339:0;gpl
+: 1760400341:0;gs
+: 1760400341:0;gd
+: 1760400343:0;git clean -f
+: 1760400343:0;gs
+: 1760400349:0;git checkout -- ..
+: 1760400349:0;gs
+: 1760400350:0;gd
+: 1760400350:0;gpl
+: 1760400352:0;gs
+: 1760400352:0;g
+: 1760400354:0;nvim
+: 1760400360:0;clang -Wall -g mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760400364:0;gs
+: 1760400364:0;gd
+: 1760400365:0;gpl
+: 1760400365:0;gs
+: 1760400366:0;gd
+: 1760400368:0;gs
+: 1760400369:0;gd
+: 1760400369:0;gs
+: 1760400370:0;gd
+: 1760400370:0;gpl
+: 1760400372:0;gs
+: 1760400373:0;gd
+: 1760400373:0;gpl
+: 1760400393:0;gs
+: 1760400393:0;gd
+: 1760400395:0;gs
+: 1760400396:0;gd
+: 1760400397:0;gs
+: 1760400397:0;gd
+: 1760400398:0;gs
+: 1760400398:0;gd
+: 1760400405:0;conda create --name loonix python=3.12
+: 1760400409:0;gs
+: 1760400410:0;gd
+: 1760400416:0;sudo bundle install
+: 1760400428:0;gs
+: 1760400429:0;gd
+: 1760400431:0;gs
+: 1760400431:0;gd
+: 1760400432:0;gs
+: 1760400432:0;gd
+: 1760400434:0;gs
+: 1760400434:0;gd
+: 1760400435:0;gs
+: 1760400435:0;gd
+: 1760400435:0;gs
+: 1760400436:0;gd
+: 1760400437:0;gpl
+: 1760400441:0;gs
+: 1760400441:0;gd
+: 1760400443:0;gpl
+: 1760400444:0;gs
+: 1760400444:0;gd
+: 1760400446:0;rm docker.txt
+: 1760400446:0;gs
+: 1760400446:0;gd
+: 1760400448:0;gs
+: 1760400448:0;gd
+: 1760400449:0;gs
+: 1760400449:0;gd
+: 1760400452:0;tree
+: 1760400461:0;vim ~/.zshrc
+: 1760400479:0;conda install bs4 requests pandas numpy
+: 1760400483:0;bundle exec jekyll serve -l -H localhost
+: 1760400492:0;vim
+: 1760400494:0;vim something.tex
+: 1760400498:0;firebase login
+: 1760400514:0;vim something.tex
+: 1760400526:0;gs
+: 1760400527:0;gd
+: 1760400536:0;vim ~/.zshrc
+: 1760400541:0;ls
+: 1760400541:0;pwd
+: 1760400542:0;ls
+: 1760400543:0;pwd
+: 1760400544:0;gs
+: 1760400557:0;clang -Wall -g mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760400557:0;lls
+: 1760400558:0;pwd
+: 1760400559:0;clang -Wall -g mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760405364:0;bluetoothctl
+: 1760405426:0;t ls
+: 1760405426:0;t
+: 1760405428:0;nvim cs2.py
+: 1760405428:0;nvim users.csv
+: 1760405428:0;nvim
+: 1760405449:0;ls *.md
+: 1760405450:0;vim commands_to_run_after_reinstall.md
+: 1760405458:0;clang -Wall -g mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760408930:0;tat conf-files
+: 1760408930:0;ls
+: 1760408931:0;pwd
+: 1760408931:0;gs
+: 1760408932:0;gd
+: 1760408935:0;ls
+: 1760408936:0;pwd
+: 1760408973:0;cp backup.cpq ~
+: 1760414794:0;setxkbmap -option caps:swapescape
+: 1760414808:0;gs
+: 1760414808:0;gd
+: 1760414810:0;vim
+: 1760414822:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760415777:0;sudo 
+: 1760415779:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760415811:0;gpg --generate-key
+: 1760415836:0;pass init 42AA1412521C0066E966DE88009D44E4BC0850D0
+: 1760415913:0;dp
+: 1760415913:0;di
+: 1760415915:0;docker run hello-world
+: 1760415930:0;dp
+: 1760415931:0;di
+: 1760415936:0;docker system prune -a
+: 1760415938:0;dp
+: 1760415939:0;di
+: 1760415939:0;ls
+: 1760415940:0;pwd
+: 1760415946:0;tat conf-files
+: 1760415948:0;tree
+: 1760415953:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1760416025:0;wget https://www.linkedin.com/in/sriram-suresh-5b7572194/
+: 1760416033:0;curl https://www.linkedin.com/in/sriram-suresh-5b7572194/
+: 1760416045:0;clang -Wall -g mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760416110:0;type cc
+: 1760416112:0;whatis cc
+: 1760416139:0;clang -Wall -g -fsanitize=address mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760452308:0;t
+: 1760452311:0;nvim cs2.py
+: 1760452311:0;nvim users.csv
+: 1760452311:0;nvim
+: 1760452315:0;clang -Wall -g -fsanitize=address mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760454015:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760455749:0;sudo apt install steam -y
+: 1760486553:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760488022:0;t
+: 1760488024:0;nvim cs2.py
+: 1760488024:0;nvim users.csv
+: 1760488024:0;nvim
+: 1760498688:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760498706:0;sudo apt remove --purge steam
+: 1760498720:0;rm -rf ~/.steam ~/.steampath ~/.steampid
+: 1760498727:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760498859:0;rm -rf ~/.steam ~/.steampath ~/.steampid
+: 1760498860:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760498872:0;sudo systemctl restart t2fanrd
+: 1760498878:0;ls
+: 1760498878:0;pwd
+: 1760498883:0;sudo updatedb
+: 1760498898:0;cowsay -f tux "hi"
+: 1760498909:0;sudo apt install cowsay valgrind espeak cmatrix -y
+: 1760498931:0;tat conf-files
+: 1760498936:0;cd ~/.config/i3
+: 1760498937:0;gs
+: 1760498937:0;gd
+: 1760498940:0;tree
+: 1760498943:0;tldr tee
+: 1760498958:0;echo "blah" | tee deez.txt
+: 1760498960:0;vim deez.txt
+: 1760498962:0;rm deez.txt
+: 1760498962:0;ls
+: 1760498963:0;pwd
+: 1760498963:0;tree
+: 1760498983:0;vim secondScript.sh
+: 1760498992:0;gwd
+: 1760499000:0;gd
+: 1760499005:0;sudo apt install make cmake git-extras gcc wdiff gnome-dictionary ripgrep unzip neovim tldr pico\
+       âƒ´‚ m playerctl feh i3 i3status i3blocks alacritty simplescreenrecorder psensor rofi lxappearance ara\
+       âƒ´‚ ndr copyq bat maim xclip xdotool fzf imagemagick python3-pip fastfetch sl gimp ffmpeg tesseract-o\
+       âƒ´‚ cr dict zenity goldendict guvcview ruby-bundler htop mysql-server zathura texlive-full vlc cowsay\
+       âƒ´‚  valgrind espeak cmatrix -y
+: 1760499013:0;vim secondScript.sh
+: 1760499018:0;sudo apt install make cmake git-extras gcc wdiff gnome-dictionary ripgrep unzip neovim tldr picom playerctl feh i3 i3status i3blocks alacritty simplescreenrecorder psensor rofi lxappearance arandr copyq bat maim xclip xdotool fzf imagemagick python3-pip fastfetch sl gimp ffmpeg tesseract-ocr dict zenity goldendict guvcview ruby-bundler htop mysql-server zathura texlive-full vlc cowsay valgrind espeak cmatrix -y\
+
+: 1760499025:0;ls
+: 1760499026:0;pwd
+: 1760499026:0;gs
+: 1760499026:0;gd
+: 1760499027:0;gwd
+: 1760499029:0;ga .
+: 1760499036:0;gcm "added some more programs to install script"
+: 1760499036:0;gs
+: 1760499037:0;gp
+: 1760499038:0;gpl
+: 1760499040:0;gd
+: 1760499041:0;gwd
+: 1760499042:0;gds
+: 1760499044:0;gsd
+: 1760499045:0;ls
+: 1760499045:0;pwd
+: 1760499051:0;sudo apt install git-svn
+: 1760499065:0;gds
+: 1760499067:0;type gds
+: 1760499072:0;git diff --staged
+: 1760499074:0;gsd
+: 1760499076:0;type gsd
+: 1760499076:0;ls
+: 1760499077:0;pwd
+: 1760499084:0;vim secondScript.sh
+: 1760499089:0;sudo apt install make cmake git-extras gcc wdiff gnome-dictionary ripgrep unzip neovim tldr picom playerctl feh i3 i3status i3blocks alacritty simplescreenrecorder psensor rofi lxappearance arandr copyq bat maim xclip xdotool fzf imagemagick python3-pip fastfetch sl gimp ffmpeg tesseract-ocr dict zenity goldendict guvcview ruby-bundler htop mysql-server zathura texlive-full vlc cowsay valgrind espeak cmatrix git-svn -y\
+
+: 1760499091:0;gs
+: 1760499092:0;gd
+: 1760499092:0;gwd
+: 1760499094:0;ga .
+: 1760499103:0;gcm "added git-svn to install script"
+: 1760499103:0;gs
+: 1760499104:0;gp
+: 1760499105:0;gpl
+: 1760499106:0;gs
+: 1760499106:0;gd
+: 1760499107:0;gsd
+: 1760499109:0;gds
+: 1760499110:0;gwd
+: 1760499111:0;ls
+: 1760499112:0;pwd
+: 1760499113:0;gs
+: 1760499114:0;gd
+: 1760499117:0;tree
+: 1760499118:0;ls
+: 1760499119:0;pwd
+: 1760499119:0;gs
+: 1760499119:0;gd
+: 1760499120:0;gpl
+: 1760499126:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760499136:0;sudo updatedb
+: 1760499146:0;locate steam 
+: 1760499193:0;sudo rm -rf /home/sriram/.local/share/applications/steam.desktop\
+ "/home/sriram/.local/share/aspyr-media/borderlands the pre-sequel/willowgame/savedata/76561198992868570/steam_autocloud.vdf"\
+
+: 1760499202:0;sudo rm -rf /home/sriram/.local/share/applications/steam.desktop
+: 1760499210:0;sudo rm -rf "/home/sriram/.local/share/aspyr-media/borderlands the pre-sequel/willowgame/savedata/76561198992868570/steam_autocloud.vdf"
+: 1760499215:0;ls
+: 1760499215:0;pwd
+: 1760499216:0;gs
+: 1760499216:0;gd
+: 1760499221:0;sudo updatedb
+: 1760499228:0;locate steam 
+: 1760499239:0;sudo updatedb
+: 1760499246:0;locate steam 
+: 1760500049:0;clang -Wall -g -fsanitize=address mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760500086:0;gcc  mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir\
+
+: 1760500110:0;clang -Wall -g -fsanitize=address mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760500128:0;ls
+: 1760500129:0;pwd
+: 1760500244:0;clang -Wall -g -fsanitize=address mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir
+: 1760500248:0;ls
+: 1760500249:0;pwd
+: 1760500251:0;gcc  mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir\
+
+: 1760500252:0;ls
+: 1760500253:0;pwd
+: 1760500254:0;gcc  mini_fs_with_dir.c -o mini_filesystem_with_dir && ./mini_filesystem_with_dir\
+
+: 1760500310:0;ls
+: 1760500311:0;pwd
+: 1760500311:0;gs
+: 1760500311:0;gd
+: 1760500314:0;vim disk.img
+: 1760500321:0;ls
+: 1760500322:0;pdw
+: 1760500322:0;ls
+: 1760500323:0;pwd
+: 1760500327:0;vim my_hashmap.c
+: 1760500352:0;lspwd
+: 1760500356:0;ls
+: 1760500357:0;pwd
+: 1760500377:0;clang -Wall -g -fsanitize=address my_hashmap.c -o my_hashmap
+: 1760500387:0;clang -Wall -g -fsanitize=address my_hashmap.c -o my_hashmap && ./my_hashmap
+: 1760500618:0;neo
+: 1760503099:0;clang -Wall -g -fsanitize=address my_hashmap.c -o my_hashmap && ./my_hashmap
+: 1760503417:0;mv my_hashmap.c my_hashing.c
+: 1760503430:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760503441:0;rm my_hashmap
+: 1760503441:0;ls
+: 1760503443:0;gs
+: 1760503444:0;gd
+: 1760503448:0;vim my_hashing.c
+: 1760539522:0;t
+: 1760539525:0;nvim cs2.py
+: 1760539525:0;nvim users.csv
+: 1760539525:0;nvim my_hashing.c
+: 1760539529:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760548700:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760548762:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760548764:0;gs
+: 1760549059:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760552255:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760561762:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760562877:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760566526:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760566807:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760566814:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760566821:0;valgrind ./my_hashing
+: 1760566839:0;valgrind ./my_hashing --leak-check=full
+: 1760566854:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760566933:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760566964:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760566979:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760568110:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760568123:0;valgrind ./my_hashing --leak-check=full
+: 1760568176:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760568179:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760568198:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760568209:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760568385:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760568392:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760568603:0;gdb ./my_hashing
+: 1760568629:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760568633:0;gdb ./my_hashing
+: 1760568754:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760568819:0;valgrind ./my_hashing --leak-check=full
+: 1760568836:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760568837:0;valgrind ./my_hashing --leak-check=full
+: 1760569203:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569322:0;gs
+: 1760569322:0;gd
+: 1760569324:0;ga .
+: 1760569347:0;gcm "added code for my_hashing.c where i implemented the naive O(n) hashset"
+: 1760569347:0;gs
+: 1760569347:0;gp
+: 1760569349:0;gpl
+: 1760569350:0;gs
+: 1760569350:0;gd
+: 1760569350:0;gl
+: 1760569387:0;gs
+: 1760569387:0;gd
+: 1760569390:0;gs
+: 1760569390:0;gd
+: 1760569392:0;vim my_hashing.c
+: 1760569455:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569495:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760569504:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569627:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760569629:0;valgrind ./my_hashing --leak-check=full
+: 1760569642:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569643:0;valgrind ./my_hashing --leak-check=full
+: 1760569646:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569650:0;valgrind ./my_hashing --leak-check=full
+: 1760569658:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569799:0;gs
+: 1760569799:0;gd
+: 1760569812:0;gs
+: 1760569813:0;gd
+: 1760569814:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569815:0;gs
+: 1760569816:0;gd
+: 1760569819:0;gcc my_hashing.c -o my_hashing && ./my_hashing
+: 1760569820:0;gs
+: 1760569820:0;gd
+: 1760569821:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569825:0;./my_hashing 
+: 1760569828:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569831:0;gs
+: 1760569831:0;gd
+: 1760569833:0;git checkout -- ..
+: 1760569837:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760569837:0;gs
+: 1760569838:0;gd
+: 1760569977:0;gs
+: 1760569984:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760572787:0;gs
+: 1760572787:0;gd
+: 1760572797:0;vim more_bitmanip.c
+: 1760582406:0;clang -Wall -g -fsanitize=address more_bitmanip.c -o more_bitmanip 
+: 1760582411:0;clang -Wall -g -fsanitize=address more_bitmanip.c -o more_bitmanip  && ./more_bitmanip
+: 1760583446:0;clang -Wall -g -fsanitize=address more_bitmanip.c -o more_bitmanip 
+: 1760583455:0;clang -Wall -g -fsanitize=address more_bitmanip.c -o more_bitmanip  && ./more_bitmanip
+: 1760583473:0;kill -9 417581
+: 1760583475:0;ls
+: 1760583475:0;pwd
+: 1760583477:0;vim more_bitmanip.c
+: 1760583484:0;clang -Wall -g -fsanitize=address more_bitmanip.c -o more_bitmanip  && ./more_bitmanip
+: 1760585996:0;p
+: 1760585998:0;clang -Wall -g -fsanitize=address more_bitmanip.c -o more_bitmanip  && ./more_bitmanip
+: 1760592215:0;gdb ./more_bitmanip
+: 1760592553:0;clang -Wall -g -fsanitize=address more_bitmanip.c -o more_bitmanip  && ./more_bitmanip
+: 1760592555:0;gdb ./more_bitmanip
+: 1760592645:0;clang -Wall -g -fsanitize=address more_bitmanip.c -o more_bitmanip  && ./more_bitmanip
+: 1760592648:0;gdb ./more_bitmanip
+: 1760593040:0;clang -Wall -g -fsanitize=address more_bitmanip.c -o more_bitmanip  && ./more_bitmanip
+: 1760593936:0;gs
+: 1760593941:0;rm \]
+: 1760593942:0;gs
+: 1760593946:0;./more_bitmanip
+: 1760593949:0;gs
+: 1760593949:0;gd
+: 1760593950:0;ga .
+: 1760593960:0;gcm "added more bit manipulation practice code"
+: 1760593960:0;gs
+: 1760593960:0;gp
+: 1760593962:0;gpl
+: 1760593963:0;gs
+: 1760593963:0;gd
+: 1760593966:0;gs
+: 1760593967:0;gd
+: 1760593971:0;vim my_hashing.c
+: 1760593990:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760594067:0;gs
+: 1760594068:0;gd
+: 1760594069:0;gpl
+: 1760594069:0;gp
+: 1760594070:0;gs
+: 1760594070:0;gd
+: 1760594070:0;gl
+: 1760594075:0;vim more_bitmanip.c
+: 1760594092:0;gs
+: 1760594092:0;gd
+: 1760594099:0;vim
+: 1760594103:0;vim my_hashing.c
+: 1760594106:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760627294:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760627403:0;t ls
+: 1760627404:0;t
+: 1760627406:0;nvim cs2.py
+: 1760627406:0;nvim users.csv
+: 1760627406:0;nvim my_hashing.c
+: 1760627432:0;ls
+: 1760627433:0;pwd
+: 1760627437:0;vim my_hashing.c
+: 1760627443:0;vim something.c
+: 1760627581:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627623:0;vim something.c
+: 1760627642:0;gs
+: 1760627644:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627666:0;vim something.c
+: 1760627676:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627678:0;vim something.c
+: 1760627689:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627697:0;clang -Werror -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627699:0;vim something.c
+: 1760627704:0;clang -Werror -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627717:0;vim something.c
+: 1760627725:0;clang -Werror -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627732:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627817:0;./something
+: 1760627819:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627822:0;vim something.c
+: 1760627826:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760627827:0;gs
+: 1760627828:0;gd
+: 1760627829:0;./something
+: 1760627831:0;ls
+: 1760627831:0;pwd
+: 1760627835:0;vim something.c
+: 1760627999:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628019:0;vim something.c
+: 1760628034:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628043:0;vim something.c
+: 1760628051:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628052:0;ls
+: 1760628052:0;pwd
+: 1760628053:0;vim 
+: 1760628056:0;vim something.c
+: 1760628063:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628068:0;vim something.c
+: 1760628078:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628079:0;vim something.c
+: 1760628102:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628113:0;gcc something.c -o something && ./something
+: 1760628114:0;./something
+: 1760628116:0;gcc something.c -o something && ./something
+: 1760628117:0;vim something.c
+: 1760628124:0;gcc something.c -o something && ./something
+: 1760628125:0;cl
+: 1760628127:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628136:0;vim something.c
+: 1760628143:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628146:0;vim something.c
+: 1760628157:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628158:0;vim something.c
+: 1760628167:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628168:0;vim something.c
+: 1760628229:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628330:0;gcc something.c -o something && ./something
+: 1760628340:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760628350:0;gs
+: 1760628351:0;gd
+: 1760628358:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760633545:0;vim something.c
+: 1760633580:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760633588:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760633617:0;gcc something.c -o something && ./something
+: 1760633618:0;ls
+: 1760633618:0;pwd
+: 1760633623:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760633642:0;gs
+: 1760633642:0;gd
+: 1760633647:0;vim my_hashing.c
+: 1760633655:0;clang -Wall -g -fsanitize=address my_hashing.c -o my_hashing && ./my_hashing
+: 1760633982:0;ls
+: 1760633982:0;pwd
+: 1760633984:0;vim my_hashing.c
+: 1760633995:0;vim efficient_hashset.c
+: 1760634271:0;fas
+: 1760634271:0;gs
+: 1760634272:0;gd
+: 1760634286:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760635083:0;gs
+: 1760635083:0;gd
+: 1760635094:0;vim valid_parentheses.c
+: 1760635116:0;clang -Wall -g -fsanitize=address valid_parentheses.c -o valid_parentheses && ./valid_parentheses
+: 1760635335:0;vim valid_parentheses.c
+: 1760635338:0;clang -Wall -g -fsanitize=address valid_parentheses.c -o valid_parentheses && ./valid_parentheses
+: 1760638489:0;clang -Wall -g -fsanitize=address valid_parentheses.c -o valid_parentheses
+: 1760638491:0;clang -Wall -g -fsanitize=address valid_parentheses.c -o valid_parentheses && ./valid_parentheses
+: 1760638585:0;gcc valid_parentheses.c -o valid_parentheses && ./valid_parentheses
+: 1760638811:0;clang -Wall -g -fsanitize=address valid_parentheses.c -o valid_parentheses && ./valid_parentheses
+: 1760638880:0;gcc valid_parentheses.c -o valid_parentheses && ./valid_parentheses
+: 1760638888:0;gcc -Wall  valid_parentheses.c -o valid_parentheses && ./valid_parentheses
+: 1760638933:0;clang -Wall -g -fsanitize=address valid_parentheses.c -o valid_parentheses && ./valid_parentheses
+: 1760639327:0;gs
+: 1760639327:0;gd
+: 1760639331:0;vim something.c
+: 1760639355:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760639356:0;ls
+: 1760639361:0;gcc something.c -o something && ./something
+: 1760639361:0;ls
+: 1760639362:0;wd
+: 1760639363:0;gs
+: 1760639363:0;gd
+: 1760639365:0;vim efficient_hashset.
+: 1760639368:0;vim efficient_hashset.c
+: 1760639394:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760639680:0;vim my_hashing.c
+: 1760639710:0;vim efficient_hashset.c
+: 1760650846:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760650853:0;gcc efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760650936:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760650938:0;gcc efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760651189:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760651210:0;gcc efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760651724:0;c
+: 1760651725:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760651833:0;gs
+: 1760651834:0;gd
+: 1760651836:0;rm \'
+: 1760651837:0;gs
+: 1760651837:0;gd
+: 1760651952:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760651980:0;gcc efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760651992:0;valgrind ./efficient_hashset --leak-check=full
+: 1760652010:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760652012:0;valgrind ./efficient_hashset --leak-check=full
+: 1760652014:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760652015:0;ls
+: 1760652016:0;pwd
+: 1760652018:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_
+: 1760652021:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760652023:0;gs
+: 1760652023:0;gd
+: 1760652029:0;vim something.c
+: 1760652037:0;ga efficient_hashset* valid_parentheses*
+: 1760652037:0;gfs
+: 1760652038:0;gd
+: 1760652039:0;gs
+: 1760652039:0;gd
+: 1760652041:0;vim valid_parentheses.c
+: 1760652045:0;ga .
+: 1760652045:0;gs
+: 1760652052:0;git restore --staged something.c something
+: 1760652053:0;gs
+: 1760652053:0;gd
+: 1760652081:0;gcm "added efficient hashset implementation with O(1) average case for add and remove and also added code for leetcode valid parentheses in c"
+: 1760652081:0;gs
+: 1760652081:0;gp
+: 1760652083:0;gpl
+: 1760652084:0;gd
+: 1760652084:0;gsd
+: 1760652086:0;gs
+: 1760652086:0;gd
+: 1760652088:0;vim valid_parentheses.c
+: 1760652094:0;clang -Wall -g -fsanitize=address efficient_hashset.c -o efficient_hashset && ./efficient_hashset
+: 1760652098:0;gs
+: 1760652099:0;vim 
+: 1760652104:0;gs
+: 1760652104:0;gd
+: 1760652108:0;gs
+: 1760652108:0;gd
+: 1760652109:0;ls
+: 1760652109:0;w[d
+: 1760652110:0;gs
+: 1760652110:0;gd
+: 1760652111:0;gs
+: 1760652111:0;gd
+: 1760652113:0;gds
+: 1760652114:0;gsd
+: 1760652115:0;ls
+: 1760652115:0;pwd
+: 1760652117:0;ls
+: 1760652117:0;pwd
+: 1760652121:0;gs
+: 1760652123:0;vim something.c
+: 1760652132:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760656841:0;tldr git reflog
+: 1760656844:0;git reflog
+: 1760656855:0;gl
+: 1760656871:0;man git reflog
+: 1760656882:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760657613:0;ls
+: 1760657614:0;pwd
+: 1760657614:0;gs
+: 1760657615:0;gd
+: 1760657619:0;vim hashmap.c
+: 1760657628:0;gs
+: 1760657629:0;gd
+: 1760657631:0;gcc something.c -o something && ./something
+: 1760657633:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760657633:0;ls
+: 1760657634:0;pwd
+: 1760657636:0;gcc something.c -o something && ./something
+: 1760657645:0;valgrind --leak-check=full ./something
+: 1760657658:0;valgrind ./something
+: 1760657664:0;valgrind ./something -s
+: 1760657670:0;valgrind -s ./something
+: 1760657679:0;valgrind --leak-check=full ./something
+: 1760657683:0;tldr valgrind
+: 1760658609:0;exit
+: 1760658614:0;tldr exit
+: 1760658617:0;whatis exit
+: 1760658620:0;which exit
+: 1760662747:0;gs
+: 1760662747:0;gd
+: 1760662751:0;ls
+: 1760662752:0;gs
+: 1760662753:0;vim hashmap.c
+: 1760662768:0;gs
+: 1760662769:0;gd
+: 1760662779:0;clang -Wall -g -fsanitize=address hashmap.c -o hashmap && ./hashmap
+: 1760662785:0;gs
+: 1760662785:0;gd
+: 1760662794:0;sg
+: 1760662794:0;gd
+: 1760662798:0;vim hashmap.c
+: 1760662800:0;clang -Wall -g -fsanitize=address hashmap.c -o hashmap && ./hashmap
+: 1760662802:0;gs
+: 1760662802:0;gd
+: 1760663914:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
+: 1760663930:0;tldr update
+: 1760663939:0;tat conf-files
+: 1760663942:0;vim .zshrc
+: 1760663954:0;ts
+: 1760663959:0;tree
+: 1760663970:0;update
+: 1760663978:0;type update
+: 1760663983:0;gs
+: 1760663983:0;gd
+: 1760663984:0;ga .
+: 1760663992:0;gcm "added alias for system update"
+: 1760663992:0;gs
+: 1760663993:0;gp
+: 1760663994:0;gpl
+: 1760663995:0;gs
+: 1760663995:0;gd
+: 1760663998:0;update
+: 1760664002:0;which update
+: 1760664006:0;update
+: 1760664008:0;gs
+: 1760664008:0;gd
+: 1760664017:0;tree
+: 1760664941:0;vim todo.md
+: 1760673037:0;sudo apt install libncurses5 libusb-1.0-0 libc6-i386 libpng16-16\
+# For 64-bit systems, you might need 32-bit libraries:\
+sudo dpkg --add-architecture i386\
+sudo apt update\
+sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386
+: 1760673072:0;sudo apt install libusb-1.0-0 libc6-i386
+: 1760673093:0;sudo usermod -a -G plugdev $USER\
+echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="374b", MODE="0660", GROUP="plugdev"' | sudo tee /etc/udev/rules.d/99-stlink.rules\
+sudo udevadm control --reload-rules
+: 1760674710:0;zenity xterm
+: 1760674712:0;zenity
+: 1760674715:0;xterm
+: 1760674723:0;uxterm
+: 1760674726:0;xterm
+: 1760674728:0;ls
+: 1760674729:0;pwd
+: 1760674738:0;gnome-terminal
+: 1760674862:0;ls
+: 1760674863:0;pwd
+: 1760674864:0;ls
+: 1760674864:0;pwd
+: 1760674879:0;chmod +x st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1760674882:0;./st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1760674905:0;sudo ./st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1760674984:0;xprop
+: 1760675363:0;ls
+: 1760675367:0;cd STM32CubeIDE
+: 1760675367:0;ls
+: 1760675368:0;pwd
+: 1760675385:0;tree
+: 1760675386:0;ls
+: 1760675387:0;pwd
+: 1760675388:0;cd workspace_1.19.0
+: 1760675388:0;ls
+: 1760675389:0;pwd
+: 1760675389:0;cd My\ First\ STM32\ Nucleo\ Project
+: 1760675390:0;tree
+: 1760675391:0;ls
+: 1760675393:0;cd ..
+: 1760675393:0;ls
+: 1760675395:0;cd ..
+: 1760675396:0;tree
+: 1760675398:0;tree -a
+: 1760708667:0;t
+: 1760708669:0;nvim cs2.py
+: 1760708669:0;nvim users.csv
+: 1760708669:0;nvim hashmap.c
+: 1760708669:0;nvim todo.md
+: 1760708756:0;gs
+: 1760708756:0;gd
+: 1760708759:0;clang -Wall -g -fsanitize=address hashmap.c -o hashmap && ./hashmap
+: 1760709030:0;updatd
+: 1760709033:0;update
+: 1760715375:0;clang -Wall -g -fsanitize=address hashmap.c -o hashmap && ./hashmap
+: 1760717423:0;update
+: 1760717497:0;clang -Wall -g -fsanitize=address hashmap.c -o hashmap && ./hashmap
+: 1760718020:0;gs
+: 1760718021:0;gd
+: 1760718025:0;vim something.c
+: 1760718031:0;ga hashmap.c hashmap
+: 1760718031:0;gs
+: 1760718063:0;gd
+: 1760718065:0;vim something.c
+: 1760718075:0;clang -Wall -g -fsanitize=address something.c -o something && ./something
+: 1760718078:0;vim something.c
+: 1760718090:0;gs
+: 1760718094:0;cat todo.md
+: 1760718095:0;ga .
+: 1760718095:0;gs
+: 1760718115:0;gcm "added code for my implementation of hashmap"
+: 1760718116:0;gs
+: 1760718116:0;gp
+: 1760718118:0;gpl
+: 1760718120:0;gs
+: 1760718120:0;gd
+: 1760718120:0;gp
+: 1760718121:0;gpl
+: 1760718124:0;gs
+: 1760718124:0;gd
+: 1760718126:0;vim todo.md
+: 1760718140:0;gs
+: 1760718141:0;gd
+: 1760718145:0;vim compiler.c
+: 1760719273:0;gs
+: 1760719276:0;vim hashmap.c
+: 1760719301:0;gs
+: 1760719301:0;gd
+: 1760719304:0;git checkout -- ..
+: 1760719305:0;gs
+: 1760719307:0;vim compiler.c
+: 1760735013:0;clang -Wall -g -fsanitize=address compiler.c -o compiler 
+: 1760735054:0;./compiler
+: 1760735057:0;gdb ./compiler
+: 1760735105:0;gcc -S compiler.c -o compiler
+: 1760735106:0;ls
+: 1760735107:0;vim compiler
+: 1760735116:0;tldr gcc
+: 1760735120:0;ls
+: 1760735121:0;pwd
+: 1760735123:0;vim compiler
+: 1760735174:0;clang -Wall -g -fsanitize=address compiler.c -o compiler 
+: 1760735181:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1760735196:0;gcc -S compiler.c -o compiler.s
+: 1760735198:0;vim compiler.
+: 1760735201:0;vim compiler.s
+: 1760735231:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1760735232:0;ls
+: 1760735233:0;pwd
+: 1760741344:0;cd STM32Cube
+: 1760741347:0;cd ..
+: 1760741351:0;STM32CubeIDE
+: 1760741351:0;ls
+: 1760741352:0;pwd
+: 1760741353:0;cd workspace_1.19.0
+: 1760741353:0;ls
+: 1760741354:0;pwd
+: 1760741355:0;tree
+: 1760741356:0;ls
+: 1760741356:0;pwd
+: 1760741358:0;tree -a
+: 1760742705:0;sudo apt-get install libncurses5
+: 1760742710:0;sudo apt-get install libncurses-compat-libs
+: 1760742761:0;wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.4-2_amd64.deb
+: 1760742766:0;sudo dpkg -i libtinfo5_6.4-2_amd64.deb
+: 1760742771:0;wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.4-2_amd64.deb'
+: 1760742772:0;wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.4-2_amd64.deb
+: 1760742776:0;sudo dpkg -i libncurses5_6.4-2_amd64.deb
+: 1760742827:0;sudo apt install libncurses5:i386
+: 1760742837:0;wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2_amd64.deb
+: 1760742842:0;sudo dpkg -i libtinfo5_6.3-2_amd64.deb
+: 1760742846:0;wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.3-2_amd64.deb
+: 1760742850:0;sudo dpkg -i libncurses5_6.3-2_amd64.deb
+: 1760742862:0;rm libtinfo5_6.3-2_amd64.deb libncurses5_6.3-2_amd64.deb
+: 1760745742:0;ls
+: 1760745745:0;l -ath
+: 1760745995:0;update
+: 1760746161:0;type ld
+: 1760746163:0;whatis ld
+: 1760746655:0;cd ~/STM32Cube
+: 1760746656:0;ls
+: 1760746656:0;gs
+: 1760746657:0;tree
+: 1760746660:0;..
+: 1760746664:0;cd ~/STM32CubeMX
+: 1760746665:0;tree
+: 1760746670:0;cd ~/STM32CubeIDE
+: 1760746671:0;tree
+: 1760746679:0;cd workspace_1.19.0
+: 1760746680:0;ls
+: 1760746683:0;cd Blinky
+: 1760746683:0;ls
+: 1760746688:0;git init .
+: 1760746688:0;gs
+: 1760746693:0;ga .
+: 1760746693:0;gs
+: 1760746696:0;gcm "init commit"
+: 1760746696:0;gs
+: 1760746697:0;g
+: 1760746698:0;gp
+: 1760746769:0;git remote add origin https://github.com/srirams1003/blinky_embedded.git\
+git branch -M main\
+git push -u origin main
+: 1760746773:0;gs
+: 1760746773:0;gd
+: 1760746774:0;gp
+: 1760746774:0;gpl
+: 1760746776:0;whoami
+: 1760746776:0;gs
+: 1760746777:0;ls
+: 1760746778:0;tree
+: 1760746780:0;ls
+: 1760746784:0;vim Core/Src/main.c
+: 1760746798:0;ls
+: 1760746799:0;pwd
+: 1760746805:0;vim Drivers/STM32F4xx_HAL_Driver/LICENSE.txt
+: 1760746808:0;l
+: 1760746809:0;pwd
+: 1760746810:0;t ls
+: 1760746810:0;t
+: 1760746818:0;t ls
+: 1760746824:0;tat embedded
+: 1760746836:0;ls
+: 1760746837:0;pwd
+: 1760746840:0;gs
+: 1760746840:0;g
+: 1760746844:0;vim
+: 1760747067:0;xprop
+: 1760748457:0;gs
+: 1760748457:0;gd
+: 1760748460:0;vim compiler.s
+: 1760748468:0;./compiler
+: 1760748475:0;vim compiler.c
+: 1760748477:0;p
+: 1760748478:0;vim compiler.c
+: 1760748484:0;p
+: 1760748485:0;vim compiler.c
+: 1760748488:0;gs
+: 1760748491:0;vim compiler.s
+: 1760751734:0;t ls
+: 1760751736:0;tat embedded
+: 1760751736:0;gs
+: 1760751737:0;gd
+: 1760751738:0;ga .
+: 1760751756:0;gcm "practiced basic gpio led blinking and button pushing"
+: 1760751756:0;gs
+: 1760751756:0;gp
+: 1760751758:0;gpl
+: 1760751758:0;gs
+: 1760751759:0;gd
+: 1760752092:0;t ls
+: 1760752092:0;ta
+: 1760752093:0;gs
+: 1760752094:0;gd
+: 1760752114:0;gs
+: 1760752114:0;gd
+: 1760752115:0;gpl
+: 1760752116:0;gp
+: 1760752117:0;gs
+: 1760752117:0;gd
+: 1760764170:0;update
+: 1760766947:0;ta
+: 1760766948:0;gs
+: 1760766948:0;gd
+: 1760766963:0;vim Core/Src/main.c
+: 1760767315:0;gs
+: 1760767315:0;gd
+: 1760767565:0;gs
+: 1760767565:0;gd
+: 1760767566:0;ga .
+: 1760767597:0;gcm "wrote my first interrupt service routine to receive a byte from the serial port and turn the led off/on based on the received value"
+: 1760767598:0;gs
+: 1760767598:0;gp
+: 1760767600:0;gpl
+: 1760767613:0;gl
+: 1760767643:0;ta
+: 1760767644:0;gs
+: 1760767645:0;gpl
+: 1760767646:0;gs
+: 1760767646:0;gd
+: 1760768239:0;t ls
+: 1760768240:0;ta
+: 1760768259:0;t ls
+: 1760768259:0;ta
+: 1760768272:0;gs
+: 1760768272:0;gd
+: 1760768273:0;gpl
+: 1760768275:0;gl
+: 1760768282:0;gs
+: 1760768283:0;gd
+: 1760768286:0;gs
+: 1760768287:0;gd
+: 1760768290:0;vim compiler.s
+: 1760768854:0;vim Core/Src/main.c
+: 1760769857:0;gs
+: 1760769857:0;gd
+: 1760795930:0;ta
+: 1760795931:0;t
+: 1760795932:0;nvim cs2.py
+: 1760795932:0;nvim users.csv
+: 1760795932:0;nvim compiler.c
+: 1760795932:0;nvim todo.md
+: 1760795932:0;nvim Core/Src/main.c
+: 1760796242:0;ta
+: 1760796243:0;gs
+: 1760796243:0;gd
+: 1760796244:0;gpl
+: 1760796422:0;update
+: 1760796427:0;type udpate
+: 1760796430:0;type update
+: 1760887109:0;t ls
+: 1760887109:0;t
+: 1760887111:0;nvim cs2.py
+: 1760887111:0;nvim users.csv
+: 1760887111:0;nvim compiler.c
+: 1760887111:0;nvim todo.md
+: 1760887111:0;nvim Core/Src/main.c
+: 1760887325:0;gds
+: 1760887348:0;tldr cut
+: 1760887351:0;cut -d ',' -f 2,4 users.csv
+: 1760887357:0;update
+: 1760887384:0;ls
+: 1760887385:0;pwd
+: 1760887388:0;cat ~/.config/i3/startup.sh
+: 1760887393:0;bluetoothctl connect 08:EB:ED:D2:A8:E5 # insignia mini sonic
+: 1760887399:0;bluetoothctl
+: 1760887640:0;tldr okular
+: 1760887664:0;flatpak run org.kde.okular
+: 1760887675:0;cd Documents/books
+: 1760887676:0;ls
+: 1760887678:0;ls -ath
+: 1760887705:0;flatpak run org.kde.okular -h
+: 1760887733:0;flatpak run org.kde.okular ~/Documents/books "stm32f4 HAL manual - um1725-description-of-stm32f4-hal-and-lowlayer-drivers-stmicroelectronics.pdf"
+: 1760887783:0;flatpak run org.kde.okular "~/Documents/books/stm32f4 HAL manual - um1725-description-of-stm32f4-hal-and-lowlayer-drivers-stmicroelectronics.pdf"
+: 1760887797:0;flatpak run org.kde.okular "~/Documents/books/'stm32f4 HAL manual - um1725-description-of-stm32f4-hal-and-lowlayer-drivers-stmicroelectronics.pdf'"
+: 1760887806:0;ppwd
+: 1760887808:0;pwd
+: 1760887810:0;ls -ath
+: 1760887830:0;mv 
+: 1760887845:0;mv "stm32f4 HAL manual - um1725-description-of-stm32f4-hal-and-lowlayer-drivers-stmicroelectronics.pdf" stm32f4_HAL_manual
+: 1760887847:0;ls -ath
+: 1760887859:0;mv stm32f4_HAL_manual stm32f4_HAL_manual.pdf
+: 1760887862:0;ls -ath
+: 1760887883:0;flatpak run org.kde.okular ~/Documents/books/stm32f4_HAL_manual.pdf
+: 1760887896:0;tldr okular
+: 1760887903:0;man okular
+: 1760887938:0;cd Documents/books
+: 1760887974:0;mv reference\ manual.pdf stm32f446re_reference_manual.pdf
+: 1760887975:0;ls
+: 1760887978:0;ls -ath
+: 1760888031:0;ls
+: 1760888031:0;pwd
+: 1760888038:0;flatpak run org.kde.okular ~/Documents/books/stm32f4_HAL_manual.pdf
+: 1760888058:0;ls -ath
+: 1760888061:0;l -ath
+: 1760888068:0;ls -ath
+: 1760888084:0;flatpak run org.kde.okular ~/Documents/books/stm32f446re_reference_manual.pdf
+: 1760888112:0;mv stm32f446re.pdf stm32f446re_datasheet.pdf
+: 1760888125:0;flatpak run org.kde.okular ~/Documents/books/stm32f446re_datasheet.pdf
+: 1760888158:0;history | grep flatpak | uniq | tail -n 3
+: 1760888173:0;history | grep flatpak | tail -n 3
+: 1760888179:0;history | grep flatpak | uniq | tail -n 3
+: 1760888190:0;vim something.txt
+: 1760888215:0;cat something.txt
+: 1760888219:0;flatpak run org.kde.okular ~/Documents/books/stm32f4_HAL_manual.pdf\
+flatpak run org.kde.okular ~/Documents/books/stm32f446re_reference_manual.pdf\
+flatpak run org.kde.okular ~/Documents/books/stm32f446re_datasheet.pdf
+: 1760888234:0;ls
+: 1760888235:0;pwd
+: 1760888238:0;ls
+: 1760888239:0;pwd
+: 1760888243:0;vim something.txt
+: 1760888341:0;vim config
+: 1760888363:0;xprop
+: 1760888407:0;xporp
+: 1760888408:0;xprop
+: 1760888500:0;vim ~/.config/i3/startup.sh
+: 1760888522:0;rm something.txt
+: 1760888522:0;ls
+: 1760888523:0;gs
+: 1760888527:0;~/.config/i3/startup.sh
+: 1760888554:0;vim ~/.config/i3/startup.sh
+: 1760888586:0;~/.config/i3/startup.sh
+: 1760888602:0;ls
+: 1760888603:0;pwd
+: 1760888605:0;tree
+: 1760888606:0;gs
+: 1760888608:0;ls
+: 1760888610:0;tree
+: 1760888766:0;gs
+: 1760888766:0;gd
+: 1760888767:0;gds
+: 1760888771:0;type gs
+: 1760888773:0;type gds
+: 1760888792:0;ga .
+: 1760888793:0;gs
+: 1760888793:0;gd
+: 1760888794:0;gds
+: 1760888797:0;gs
+: 1760888838:0;gcm "now forcing stm32cubeide and stm32cubemx to open in workspace8 and also added the three stm32 pdfs to open on startup in okular"
+: 1760888838:0;gs
+: 1760888839:0;gp
+: 1760888840:0;gpl
+: 1760888844:0;gs
+: 1760888844:0;gd
+: 1760888845:0;gpl
+: 1760888845:0;gp
+: 1760888846:0;ls
+: 1760888847:0;pwd
+: 1760888849:0;gs
+: 1760888850:0;gpl
+: 1760888851:0;gs
+: 1760888851:0;gpl
+: 1760888855:0;gl
+: 1760888855:0;lfg
+: 1760888856:0;gl
+: 1760889025:0;vim ~/.config/i3/startup.sh
+: 1760889028:0;vim con
+: 1760889030:0;vim config
+: 1760889063:0;xprop
+: 1760889141:0;sudo updatedb
+: 1760889149:0;sudo update
+: 1760889153:0;update
+: 1760889168:0;locate -i stm32cubeide
+: 1760889203:0;locate stm32cubeide
+: 1760889208:0;clear
+: 1760889216:0;locate stm32cubeide > ide.txt
+: 1760889218:0;vim ide.txt
+: 1760889296:0;gs
+: 1760889296:0;gpl
+: 1760889297:0;gl
+: 1760889299:0;gs
+: 1760889299:0;gd
+: 1760889300:0;gs
+: 1760889301:0;gds
+: 1760889302:0;gl
+: 1760889428:0;tat conf-files
+: 1760889430:0;vim config
+: 1760889654:0;tat
+: 1760889656:0;tat conf-files
+: 1760889819:0;t ls
+: 1760889820:0;ta
+: 1760889842:0;vim config
+: 1760889994:0;gs
+: 1760889995:0;gd
+: 1760890000:0;ga .
+: 1760890017:0;gcm "now forcing ws1, ws3, ws4, ws6 to all open in tabbed layout by default instead of pane"
+: 1760890017:0;gs
+: 1760890017:0;gp
+: 1760890018:0;gpl
+: 1760890020:0;gs
+: 1760890020:0;gd
+: 1760890021:0;gpl
+: 1760890021:0;gp
+: 1760890032:0;gs
+: 1760890034:0;tree
+: 1760890035:0;gs
+: 1760890036:0;gd
+: 1760890045:0;gs
+: 1760890045:0;gd
+: 1760890218:0;t ls
+: 1760890218:0;ta
+: 1760890220:0;gs
+: 1760890220:0;gpl
+: 1760890222:0;gs
+: 1760890223:0;gpl
+: 1760890224:0;gp
+: 1760890224:0;gs
+: 1760890224:0;gd
+: 1760890225:0;gs
+: 1760890226:0;gd
+: 1760890227:0;ls
+: 1760890228:0;tree
+: 1760890231:0;gs
+: 1760890232:0;gl
+: 1760890365:0;source /usr/share/cursor/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-rc.zsh
+: 1760890537:0;npm install -g @google/gemini-cli
+: 1760890552:0;firebase login
+: 1760890554:0;sudo npm install -g @google/gemini-cli
+: 1760891134:0;chmod +x st-stm32cubeclt_1.19.0_25876_20250729_1159_amd64.deb_bundle.sh
+: 1760891142:0;./st-stm32cubeclt_1.19.0_25876_20250729_1159_amd64.deb_bundle.sh
+: 1760891151:0;sudo ./st-stm32cubeclt_1.19.0_25876_20250729_1159_amd64.deb_bundle.sh
+: 1760891248:0;gemini
+: 1760891548:0;ls
+: 1760891548:0;pwd
+: 1760891549:0;t ls
+: 1760891549:0;ta
+: 1760891554:0;gs
+: 1760891554:0;gd
+: 1760891557:0;gs
+: 1760891557:0;gd
+: 1760891570:0;gs
+: 1760891570:0;gd
+: 1760891573:0;gl
+: 1760891581:0;ls
+: 1760891582:0;pwd
+: 1760891582:0;gs
+: 1760891582:0;gd
+: 1760891630:0;q
+: 1760891630:0;gs
+: 1760891631:0;gd
+: 1760891632:0;ga .
+: 1760891640:0;gcm "now the led fades in and out"
+: 1760891641:0;gs
+: 1760891641:0;gp
+: 1760891644:0;gs
+: 1760891644:0;gpl
+: 1760891645:0;gp
+: 1760891646:0;gs
+: 1760891646:0;gd
+: 1760891646:0;gp
+: 1760891646:0;gpl
+: 1760891647:0;gs
+: 1760891647:0;gd
+: 1760891650:0;vim .gitignore
+: 1760891651:0;ls
+: 1760891652:0;pwd
+: 1760891652:0;gs
+: 1760891652:0;gd
+: 1760891676:0;gs
+: 1760891676:0;gd
+: 1760899420:0;set
+: 1760899422:0;whatis set
+: 1760899425:0;tldr set
+: 1760899426:0;ls
+: 1760899427:0;pwd
+: 1760899429:0;setxkbmap -option caps:swapescape
+: 1760944570:0;
+: 1760900135:0;tls
+: 1760900136:0;t ls
+: 1760900136:0;ta
+: 1760900137:0;update
+: 1760918944:0;sudo apt install steam
+: 1760923481:0;t ls
+: 1760923481:0;ta
+: 1760923483:0;gs
+: 1760923483:0;gd
+: 1760923485:0;gs
+: 1760923485:0;gd
+: 1760923486:0;gpl
+: 1760923487:0;gp
+: 1760923491:0;gs
+: 1760923491:0;gd
+: 1760923494:0;ls
+: 1760923498:0;vim backup_personal_folders.sh
+: 1760985199:0;t
+: 1760985201:0;nvim backup_personal_folders.sh
+: 1760985201:0;nvim cs2.py
+: 1760985201:0;nvim users.csv
+: 1760985201:0;nvim compiler.c
+: 1760985201:0;nvim todo.md
+: 1760985209:0;fs
+: 1760985209:0;gs
+: 1760985214:0;gd
+: 1760985220:0;update
+: 1760991230:0;vim test.txt
+: 1760991247:0;ta
+: 1760991250:0;vim test.txg
+: 1760991559:0;mv test.txg todo_oct_research.txt
+: 1760991560:0;ls
+: 1760991560:0;pwd
+: 1760991562:0;vim to
+: 1760991565:0;vim todo_oct_research.txt
+: 1760991572:0;cp todo_oct_research.txt 
+: 1760991573:0;ls
+: 1760991573:0;pwd
+: 1760991574:0;ls
+: 1760991574:0;pwd
+: 1760991591:0;cp todo_oct_research.txt ~/STM32CubeIDE/workspace_1.19.0/Blinky/
+: 1760991592:0;ls
+: 1760991592:0;pwd
+: 1760991595:0;gs
+: 1760991596:0;gd
+: 1760991600:0;gs
+: 1760991600:0;gd
+: 1760991601:0;vim to
+: 1760991605:0;vim todo_oct_research.txt
+: 1760991607:0;tree
+: 1760991608:0;gs
+: 1760991609:0;gd
+: 1760991612:0;gs
+: 1760991612:0;gd
+: 1760991639:0;gs
+: 1760991639:0;gd
+: 1760994514:0;setxkbmap -option caps:swapescape
+: 1760994574:0;tat
+: 1760994575:0;ta
+: 1760994576:0;gs
+: 1760994577:0;gd
+: 1760994583:0;sudo updatedb
+: 1760994657:0;locate .bundle
+: 1760994677:0;locate *.bundle
+: 1760994685:0;locate .bundle | grep *.bundle
+: 1760994697:0;locate .bundle | grep .bundle%
+: 1760994702:0;locate .bundle | grep .bundle\$
+: 1760994719:0;locate .bundle\$
+: 1760994726:0;locate .bundle | grep .bundle\$
+: 1760994752:0;locate .bundle | grep .bundle\$ > all_bundle_files.txt
+: 1760994755:0;vim all_bundle_files.txt
+: 1760994756:0;gs
+: 1760994756:0;gd
+: 1760994760:0;vim all_bundle_files.txt
+: 1760994768:0;ls
+: 1760994768:0;wd
+: 1760994770:0;vim all_bundle_files.txt
+: 1760994804:0;mv all_bundle_files.txt all_bundle_files.sh
+: 1760994811:0;chmod +x all_bundle_files.sh
+: 1760994815:0;./all_bundle_files.sh
+: 1760994820:0;ls
+: 1760994821:0;pwd
+: 1760994822:0;vim all_bundle_files.sh
+: 1760994885:0;sudo ./all_bundle_files.sh
+: 1760994886:0;ls
+: 1760994887:0;pwd
+: 1760994889:0;vim all_bundle_files.sh
+: 1760996072:0;sudo apt remove --purge steam 
+: 1760996082:0;sudo updatedb
+: 1760996088:0;sudo updatedb
+: 1760996090:0;update
+: 1760996116:0;ls
+: 1760996122:0;sudo rm -rf "/home/sriram/.local/share/aspyr-media/borderlands the pre-sequel/willowgame/savedata/76561198992868570/steam_autocloud.vdf"
+: 1760996137:0;sudo rm -rf ~/.steam ~/.steampath ~/.steampid
+: 1760996143:0;sudo updatedb
+: 1760996175:0;locate steam
+: 1760996199:0;sudo rm -rf /home/sriram/.local/share/applications/steam.desktop
+: 1760996199:0;ls
+: 1760996200:0;pwd
+: 1760996206:0;sudo apt remove --purge wine
+: 1760996216:0;update
+: 1760996268:0;ls
+: 1760996269:0;pwd
+: 1760996269:0;wine
+: 1760996274:0;sudo updatedb 
+: 1760996283:0;locate wine
+: 1760996312:0;sudo rm -rf /home/sriram/.wine
+: 1760996337:0;sudo updatedb 
+: 1760996351:0;type locate
+: 1760996353:0;locate -i
+: 1760996355:0;type locate
+: 1760996357:0;tldr locate
+: 1760996359:0;man locate
+: 1760996385:0;ls
+: 1760996386:0;pwd
+: 1760996386:0;ls
+: 1760996387:0;pwd
+: 1760996390:0;history
+: 1760996394:0;vim ~/.zsh_history
+: 1760996471:0;ls
+: 1760996471:0;pwd
+: 1760996474:0;vim ~/.zsh_history
+: 1760996481:0;vim ~/.bash_history
+: 1760996487:0;ls
+: 1760996487:0;pwd
+: 1760996490:0;vim ~/.zsh_history
+: 1760996516:0;ls
+: 1760996516:0;pwd
+: 1760996520:0;ta
+: 1760996523:0;gs
+: 1760996524:0;gd
+: 1760996527:0;ls
+: 1760996527:0;pwd
+: 1760996533:0;gs
+: 1760996533:0;gd
+: 1760996535:0;vim todo_oct_research.txt
+: 1760996541:0;ls
+: 1760996542:0;gs
+: 1760996546:0;ga .
+: 1760996546:0;gs
+: 1760996553:0;gcm "misc changes"
+: 1760996553:0;gs
+: 1760996553:0;gp
+: 1760996554:0;gpl
+: 1760996555:0;gs
+: 1760996555:0;gd
+: 1760996558:0;ls *.txt
+: 1760996558:0;ls
+: 1760996558:0;pwd
+: 1760996560:0;vim todo_oct_research.txt
+: 1760996569:0;gs
+: 1760996569:0;gd
+: 1760996645:0;gs
+: 1760996646:0;gd
+: 1760996647:0;ls
+: 1760996647:0;pwd
+: 1760996649:0;vim backup_personal_folders.sh
+: 1760997276:0;gs
+: 1760997276:0;gd
+: 1760997277:0;gwd
+: 1760997286:0;lsd
+: 1760997287:0;gs
+: 1760997287:0;gd
+: 1760997289:0;ls
+: 1760997289:0;pwd
+: 1760997290:0;gs
+: 1760997292:0;vim backup_personal_folders.sh
+: 1760997299:0;./backup_personal_folders.sh
+: 1760997310:0;gs
+: 1760997311:0;gd
+: 1760997313:0;gs
+: 1760997317:0;tre
+: 1760997318:0;tree
+: 1760997320:0;gs
+: 1760997321:0;gd
+: 1760997322:0;gs
+: 1760997322:0;gd
+: 1760997325:0;gs
+: 1760997325:0;gpl
+: 1760997329:0;gs
+: 1760997330:0;gpl
+: 1760997332:0;gs
+: 1760997332:0;gpl
+: 1760997335:0;gs
+: 1760997335:0;gpl
+: 1760997338:0;gs
+: 1760997338:0;gpl
+: 1760997340:0;gs
+: 1760997340:0;gd
+: 1760997341:0;gpl
+: 1760997342:0;gs
+: 1760997342:0;gd
+: 1760997344:0;gs
+: 1760997344:0;gd
+: 1760997344:0;gpl
+: 1760997348:0;open screenshot-20251017-161118Z-all.png
+: 1760997357:0;git clean -f
+: 1760997358:0;gs
+: 1760997358:0;gd
+: 1760997365:0;gs
+: 1760997365:0;gd
+: 1760997373:0;gs
+: 1760997373:0;gd
+: 1760997378:0;vim todo.md
+: 1760997391:0;gs
+: 1760997392:0;gd
+: 1760997398:0;gs
+: 1760997403:0;ls
+: 1760997404:0;pwd
+: 1760997405:0;gs
+: 1760997411:0;gd
+: 1760997413:0;gs
+: 1760997413:0;gd
+: 1760997414:0;gpl
+: 1760997415:0;gp
+: 1760997415:0;gs
+: 1760997415:0;gd
+: 1760997419:0;gs
+: 1760997420:0;dg
+: 1760997422:0;gs
+: 1760997425:0;cd ..
+: 1760997426:0;..
+: 1760997427:0;gs
+: 1760997427:0;tree
+: 1760997488:0;gs
+: 1760997488:0;gd
+: 1760997490:0;gs
+: 1760997490:0;gd
+: 1760997506:0;whatis w
+: 1760997508:0;w
+: 1760997514:0;gs
+: 1760997516:0;tree
+: 1760997518:0;gs
+: 1760997519:0;gd
+: 1760997521:0;ga .
+: 1760997521:0;gs
+: 1760997547:0;gcm "modified personal folders backup script to not exclude dotfiles in subdirectories in the home folder"
+: 1760997547:0;gs
+: 1760997548:0;gp
+: 1760997549:0;gpl
+: 1760997550:0;gs
+: 1760997550:0;gd
+: 1760997552:0;tree
+: 1760997554:0;l
+: 1760997554:0;ls
+: 1760997556:0;pwd
+: 1760997560:0;ls backup
+: 1760997565:0;ls *backup*
+: 1760997570:0;ls
+: 1760997570:0;pwd
+: 1760997575:0;ls -d 1
+: 1760997577:0;ls
+: 1760997578:0;pwd
+: 1760997584:0;ls | grep backup
+: 1760997588:0;type grep
+: 1760997599:0;vim backup.cpq
+: 1760997656:0;cd
+: 1760997657:0;ls
+: 1760997657:0;pwd
+: 1760997664:0;mv copyq_backup_oct_20_2025.cpq ~/.config/i3
+: 1760997665:0;gs
+: 1760997666:0;gd
+: 1760997669:0;rm backup.cpq
+: 1760997672:0;ga copyq_backup_oct_20_2025.cpq
+: 1760997673:0;gs
+: 1760997673:0;gd
+: 1760997683:0;gcm "added new copyq backup file"
+: 1760997683:0;gs
+: 1760997684:0;gp
+: 1760997685:0;gpl
+: 1760997686:0;gs
+: 1760997686:0;gd
+: 1760997692:0;gs
+: 1760997693:0;gd
+: 1760997696:0;gs
+: 1760997699:0;ga .
+: 1760997699:0;gs
+: 1760997706:0;gcm "removed old copyq backup file"
+: 1760997707:0;gs
+: 1760997707:0;gp
+: 1760997708:0;gs
+: 1760997708:0;gp
+: 1760997709:0;gpl
+: 1760997710:0;ls
+: 1760997710:0;pwd
+: 1760997716:0;vim backup_personal_folders.sh
+: 1760997720:0;ls
+: 1760997721:0;pwd
+: 1760997727:0;ls | grep backup
+: 1760997733:0;vim backup_stuff.sh
+: 1760997739:0;ls | grep restore
+: 1760997744:0;vim restore_stuff.sh
+: 1760997746:0;vim backup_stuff.sh
+: 1760997758:0;./backup_stuff.sh
