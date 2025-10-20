@@ -13,21 +13,21 @@ mkdir -p "$BACKUP_DIR/downloads"
 
 echo "📁 Creating backup structure..."
 
-# Backup home excluding specified directories and hidden files
-echo "📂 Backing up Home directory..."
-rsync -a --exclude='.*' \
-          --exclude='anaconda3' \
-          --exclude='Music' \
-          --exclude='Pictures' \
-          --exclude='Desktop' \
-          --exclude='Public' \
-          --exclude='dotfiles' \
-          --exclude='Documents' \
-          --exclude='Downloads' \
-          --exclude='Templates' \
-          --exclude='Videos' \
-          --exclude='VirtualBox VMs' \
-          "$HOME/" "$BACKUP_DIR/home/" 2>/dev/null
+# Backup home excluding specified top-level directories and hidden files
+echo "📂 Backing up Home directory (including nested dotfiles)..."
+rsync -a --exclude='/.*' \
+         --exclude='/anaconda3' \
+         --exclude='/Music' \
+         --exclude='/Pictures' \
+         --exclude='/Desktop' \
+         --exclude='/Public' \
+         --exclude='/dotfiles' \
+         --exclude='/Documents' \
+         --exclude='/Downloads' \
+         --exclude='/Templates' \
+         --exclude='/Videos' \
+         --exclude='/VirtualBox VMs' \
+         "$HOME/" "$BACKUP_DIR/home/" 2>/dev/null
 
 # Backup the three folders with all contents (including hidden files)
 echo "🖥️  Backing up Desktop..."
