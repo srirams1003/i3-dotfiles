@@ -1,10 +1,10 @@
 #!/bin/bash
-# restore-personal-folders-simple.sh
+# restore-personal-folders-rsync.sh
 
 # Check if backup file is provided
 if [ $# -eq 0 ]; then
     echo "❌ Usage: $0 <backup_zip_file>"
-    echo "   Example: $0 personal_folders_backup_20251004_102355.zip"
+    echo "    Example: $0 personal_folders_backup_20251004_102355.zip"
     exit 1
 fi
 
@@ -16,23 +16,33 @@ unzip -q "$BACKUP_ZIP" -d "$EXTRACT_DIR"
 
 BACKUP_CONTENT="$EXTRACT_DIR/$(basename "$BACKUP_ZIP" .zip)"
 
-echo "🚚 Moving files to their destinations..."
+# Check if backup content directory exists
+if [ ! -d "$BACKUP_CONTENT" ]; then
+    echo "❌ Backup content not found inside the zip."
+    echo "   Expected: $BACKUP_CONTENT"
+    rm -rf "$EXTRACT_DIR"
+    exit 1
+fi
 
-# Move home folder contents directly to ~
-echo "🏠 Moving home files to ~/"
-mv "$BACKUP_CONTENT/home"/* "$HOME/" 2>/dev/null || true
+echo "🚚 Restoring files to their destinations..."
 
-# Move the three specific folders
-echo "🖥️  Moving Desktop files..."
-mv "$BACKUP_CONTENT/desktop"/* "$HOME/Desktop/" 2>/dev/null || true
+# Use rsync -a (archive) to correctly merge all files, including hidden ones.
+# The trailing slash on the source ($BACKUP_CONTENT/home/) is important.
+# It means "copy the *contents* of this directory."
 
-echo "📄 Moving Documents files..."
-mv "$BACKUP_CONTENT/documents"/* "$HOME/Documents/" 2>/dev/null || true
+echo "🏠 Restoring home files to ~/"
+rsync -a "$BACKUP_CONTENT/home/" "$HOME/"
 
-echo "📥 Moving Downloads files..."
-mv "$BACKUP_CONTENT/downloads"/* "$HOME/Downloads/" 2>/dev/null || true
+echo "🖥️  Restoring Desktop files..."
+rsync -a "$BACKUP_CONTENT/desktop/" "$HOME/Desktop/"
+
+echo "📄 Restoring Documents files..."
+rsync -a "$BACKUP_CONTENT/documents/" "$HOME/Documents/"
+
+echo "📥 Restoring Downloads files..."
+rsync -a "$BACKUP_CONTENT/downloads/" "$HOME/Downloads/"
 
 # Clean up
 rm -rf "$EXTRACT_DIR"
 
-echo "✅ Restore completed! All files moved to their destinations."
+echo "✅ Restore completed!"
