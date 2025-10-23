@@ -2,6 +2,8 @@
 
 - Also go over all the concepts in these projects I am supposed to know like PWM, SPI, etc.
 
+- Learn the basic physics needed to understand the circuits in these projects.
+
 - Understand how the .ioc file works
     - When I change something in main.c, does the corresponding .ioc file get modified directly upon building the project? How come I can clone the repo from a remote origin and all the peripherals and components on the Nucleo board are set correctly as per the current project's requirements? Is this because of git tracking the .ioc file or is there something more powerful going on underneath?
 
