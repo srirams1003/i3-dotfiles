@@ -15,6 +15,7 @@
 2. do a pwm project of your own - maybe something to do with buzzers - how could i use some sort of sensor and use adc along with pwm
 3. can i use a shift register to control 7 segment displays?
     - learn how to use a shift register yourself by reading its datasheet and stm blog on SPI that you have open
-4. write some simple programs without using LL or HAL by directly manipulating registers and memory
+4. make a simple piano sort of thing with 6 or 7 keys (GPIO buttons) using SPI and shift register (or directly if that is not possible). 
+5. write some simple programs without using LL or HAL by directly manipulating registers and memory
 
 
