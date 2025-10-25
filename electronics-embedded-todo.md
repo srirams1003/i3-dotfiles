@@ -9,3 +9,10 @@
 
 - For each project, turn it into a separate subdirectory in a main electronics portfolio repo. Each subdirectory corresponding to a project should have a README file explaining the main concepts in it, how to set it up in STM32CubeIDE, all the needed components, and how to wire all the hardware together.
     - can I use a IDE agent like Cursor or Gemini to do this? Make it generate everything based on my current working code for each project. Then I can go in later for human verification by trying to set everything up again solely by following the instructions from each project's README.
+
+1. connect a button and now increment the number on display only when button is clicked
+2. do a pwm project of your own - maybe something to do with buzzers - how could i use some sort of sensor and use adc along with pwm
+3. can i use a shift register to control 7 segment displays?
+4. write some simple programs without using LL or HAL by directly manipulating registers and memory
+
+
