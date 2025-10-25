@@ -10,9 +10,11 @@
 - For each project, turn it into a separate subdirectory in a main electronics portfolio repo. Each subdirectory corresponding to a project should have a README file explaining the main concepts in it, how to set it up in STM32CubeIDE, all the needed components, and how to wire all the hardware together.
     - can I use a IDE agent like Cursor or Gemini to do this? Make it generate everything based on my current working code for each project. Then I can go in later for human verification by trying to set everything up again solely by following the instructions from each project's README.
 
+
 1. do projects with all the components from the kit you didn't use yet - RGB led, tilt switch, ceramic capacitor, electrolytic capacitors, 4N35 optocoupler, diode rectifiers, power supply module, pin header, female to male dupont wires, solderless jumper wire
 2. do a pwm project of your own - maybe something to do with buzzers - how could i use some sort of sensor and use adc along with pwm
 3. can i use a shift register to control 7 segment displays?
+    - learn how to use a shift register yourself by reading its datasheet and stm blog on SPI that you have open
 4. write some simple programs without using LL or HAL by directly manipulating registers and memory
 
 
