@@ -8432,3 +8432,463 @@ git push -u origin main
 : 1761593483:0;vim backup_stuff.sh
 : 1761593498:0;ls *backup*
 : 1761593504:0;./backup_stuff.sh
+: 1761669378:0;ls
+: 1761669379:0;pwd
+: 1761669385:0;ls
+: 1761669386:0;pwd
+: 1761669388:0;vim restore_stuff.sh
+: 1761669422:0;ls
+: 1761669422:0;pwd
+: 1761669424:0;rm do
+: 1761669426:0;rm docker-install.txt
+: 1761669427:0;ls
+: 1761669427:0;pwd
+: 1761669435:0;t ls
+: 1761669435:0;t
+: 1761669437:0;nvim todo_oct_research.txt
+: 1761669437:0;nvim electronics-embedded-todo.md
+: 1761669438:0;nvim cs2.py
+: 1761669438:0;nvim users.csv
+: 1761669438:0;nvim compiler.c
+: 1761669438:0;nvim todo.md
+: 1761669442:0;t kill-server
+: 1761669443:0;ls
+: 1761669443:0;pwd
+: 1761669533:0;cd Downloads
+: 1761669533:0;ls
+: 1761669534:0;pwd
+: 1761669544:0;chmod +x st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1761669549:0;./st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1761669553:0;sudo ./st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1761669610:0;ls
+: 1761669610:0;pwd
+: 1761669700:0;ls 
+: 1761669701:0;t ls
+: 1761669704:0;sl
+: 1761669706:0;ls
+: 1761669707:0;pwd
+: 1761669709:0;rm -rf Pictures
+: 1761669710:0;ls
+: 1761669710:0;pwd
+: 1761669716:0;git clone https://github.com/srirams1003/Pictures
+: 1761669723:0;l
+: 1761669726:0;cd Documents
+: 1761669727:0;rm -rf obsidian-notes
+: 1761669731:0;git clone https://github.com/srirams1003/obsidian-notes
+: 1761669814:0;t ls
+: 1761669815:0;t
+: 1761669817:0;nvim todo_oct_research.txt
+: 1761669817:0;nvim electronics-embedded-todo.md
+: 1761669817:0;nvim cs2.py
+: 1761669817:0;nvim users.csv
+: 1761669817:0;nvim compiler.c
+: 1761669817:0;nvim todo.md
+: 1761669821:0;gs
+: 1761669822:0;gpl
+: 1761669823:0;tree
+: 1761669828:0;gpg --generate-key
+: 1761669849:0;pass init 5DBBA54028F1F65A68D903C1CDA12BFC9A44617D
+: 1761669852:0;tree
+: 1761669879:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1761669904:0;ls
+: 1761669905:0;pwd
+: 1761669907:0;docker run hello-world
+: 1761669918:0;dp
+: 1761669919:0;di
+: 1761669921:0;docker system prune -a
+: 1761669926:0;dp
+: 1761669926:0;di
+: 1761669928:0;docker system prune -a
+: 1761669932:0;dp
+: 1761669932:0;di
+: 1761669935:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1761669942:0;gs
+: 1761669942:0;gpl
+: 1761669944:0;gs
+: 1761669944:0;gpl
+: 1761669945:0;gp
+: 1761669946:0;s
+: 1761669947:0;gd
+: 1761669951:0;gs
+: 1761669951:0;gd
+: 1761669952:0;gs
+: 1761669952:0;gd
+: 1761669953:0;gs
+: 1761669953:0;gd
+: 1761669955:0;gs
+: 1761669963:0;sudo bundle install
+: 1761669982:0;tree
+: 1761669992:0;vim README.md
+: 1761670011:0;bundle exec jekyll serve -l -H localhost
+: 1761670015:0;g
+: 1761670016:0;gs
+: 1761670017:0;gpl
+: 1761670017:0;gp
+: 1761670035:0;conda create --name loonix python=3.12
+: 1761670059:0;vim ~/.zshrc
+: 1761670076:0;conda install bs4 requests pandas numpy
+: 1761670093:0;vim ~/.zshrc
+: 1761670098:0;ls
+: 1761670099:0;pwd
+: 1761670100:0;ls
+: 1761670100:0;pwd
+: 1761670103:0;python cs2.py
+: 1761670113:0;tldr cut
+: 1761670116:0;cut -d ',' -f 2,4 users.csv
+: 1761670118:0;gpl
+: 1761670120:0;vim something.tex
+: 1761670125:0;vim README.md
+: 1761670156:0;vim something.tex
+: 1761670172:0;gfs
+: 1761670172:0;gd
+: 1761670173:0;gs
+: 1761670180:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1761670184:0;gs
+: 1761670184:0;gpl
+: 1761670185:0;gp
+: 1761670187:0;gs
+: 1761670187:0;gpl
+: 1761670188:0;gp
+: 1761670189:0;gs
+: 1761670189:0;gpl
+: 1761670190:0;gp
+: 1761670190:0;gb -va
+: 1761670197:0;gb -va | grep EP | awk -F'EP' '{print $2 "\t" $0}' | sort -V | cut -f 2-
+: 1761670201:0;gb
+: 1761670236:0;t sl
+: 1761670238:0;t ls
+: 1761670238:0;ta
+: 1761670246:0;update
+: 1761671142:0;t ls
+: 1761671142:0;t
+: 1761671144:0;nvim todo_oct_research.txt
+: 1761671144:0;nvim electronics-embedded-todo.md
+: 1761671144:0;nvim cs2.py
+: 1761671144:0;nvim users.csv
+: 1761671144:0;nvim compiler.c
+: 1761671144:0;nvim todo.md
+: 1761671159:0;gs
+: 1761671160:0;gd
+: 1761671161:0;gwd
+: 1761671162:0;gd
+: 1761671166:0;git checkout -- .
+: 1761671167:0;gs
+: 1761671169:0;gd
+: 1761671171:0;ga .
+: 1761671172:0;gs
+: 1761671180:0;gcm "updated lazy.nvim version"
+: 1761671180:0;g
+: 1761671180:0;sgp
+: 1761671183:0;gs
+: 1761671183:0;gp
+: 1761671184:0;gpl
+: 1761671185:0;gs
+: 1761671185:0;gd
+: 1761671310:0;t ls
+: 1761671311:0;ta
+: 1761671431:0;gs
+: 1761671431:0;gd
+: 1761671432:0;gpl
+: 1761671432:0;gp
+: 1761671437:0;cd nas
+: 1761671439:0;tree
+: 1761671440:0;gs
+: 1761671440:0;gd
+: 1761671448:0;vim electronics-embedded-todo.md
+: 1761671451:0;vim todo_oct_research.txt
+: 1761671462:0;ta
+: 1761671552:0;t ls
+: 1761671553:0;ta
+: 1761671559:0;gs
+: 1761671560:0;gpl
+: 1761671680:0;t ls
+: 1761671680:0;ta
+: 1761671735:0;gs
+: 1761671735:0;gd
+: 1761671737:0;gs
+: 1761671737:0;gd
+: 1761671752:0;vim Core/Src/main.c
+: 1761671774:0;gs
+: 1761671774:0;gd
+: 1761671924:0;t ls
+: 1761671925:0;ta
+: 1761671925:0;gs
+: 1761671926:0;gd
+: 1761671928:0;gl
+: 1761671931:0;vim .cproject
+: 1761671935:0;gd
+: 1761671936:0;gwd
+: 1761671957:0;gs
+: 1761671959:0;ga .
+: 1761671972:0;gcm "added print float flag to gcc linker flags list"
+: 1761671972:0;gs
+: 1761671973:0;gp
+: 1761671974:0;gpl
+: 1761671975:0;gs
+: 1761671975:0;gd
+: 1761671976:0;gl
+: 1761671978:0;gpl
+: 1761671979:0;gp
+: 1761671980:0;gb -va | grep EP | awk -F'EP' '{print $2 "\t" $0}' | sort -V | cut -f 2-
+: 1761671986:0;gb -va
+: 1761671988:0;gs
+: 1761671988:0;g
+: 1761671990:0;gs
+: 1761671990:0;gd
+: 1761671994:0;gl
+: 1761672008:0;ta
+: 1761679495:0;updat
+: 1761679497:0;update
+: 1761685034:0;tldr minicom
+: 1761685038:0;minicom
+: 1761685045:0;tldr picocom
+: 1761685058:0;tldr picom
+: 1761685059:0;ls
+: 1761685060:0;pwd
+: 1761689929:0;update
+: 1761690660:0;t ls
+: 1761690660:0;ta
+: 1761701580:0;t ls
+: 1761701581:0;ta
+: 1761701581:0;t
+: 1761701583:0;nvim todo_oct_research.txt
+: 1761701583:0;nvim electronics-embedded-todo.md
+: 1761701583:0;nvim cs2.py
+: 1761701583:0;nvim users.csv
+: 1761701583:0;nvim compiler.c
+: 1761701583:0;nvim todo.md
+: 1761708872:0;tldr tr
+: 1761708873:0;ls
+: 1761708873:0;pwd
+: 1761708888:0;update
+: 1761708965:0;t ls
+: 1761708965:0;ta
+: 1761708986:0;pwd
+: 1761708987:0;whoami
+: 1761712099:0;gs
+: 1761712099:0;gd
+: 1761712101:0;ls
+: 1761712101:0;pwd
+: 1761713232:0;gs
+: 1761713233:0;gd
+: 1761713235:0;gs
+: 1761713235:0;gd
+: 1761713239:0;git checkout -- .
+: 1761713239:0;gs
+: 1761713240:0;gd
+: 1761713240:0;gpl
+: 1761713241:0;gp
+: 1761713242:0;gs
+: 1761713242:0;gd
+: 1761714351:0;gs
+: 1761714351:0;gd
+: 1761751105:0;t ls
+: 1761751106:0;t
+: 1761751108:0;nvim todo_oct_research.txt
+: 1761751108:0;nvim electronics-embedded-todo.md
+: 1761751108:0;nvim cs2.py
+: 1761751108:0;nvim users.csv
+: 1761751108:0;nvim compiler.c
+: 1761751108:0;nvim todo.md
+: 1761751134:0;gs
+: 1761751134:0;gd
+: 1761751185:0;git checkout -- .
+: 1761751186:0;gs
+: 1761751186:0;gd
+: 1761751688:0;ls
+: 1761751688:0;pwd
+: 1761751707:0;git checkout -b scratch
+: 1761751709:0;gs
+: 1761751709:0;gpl
+: 1761751710:0;gp
+: 1761751711:0;ngs
+: 1761751712:0;gd
+: 1761751718:0;git push -u origin scratch
+: 1761751720:0;gs
+: 1761751721:0;gpl
+: 1761751722:0;gp
+: 1761751726:0;ga .
+: 1761751748:0;gcm "made some changes to help practice dma and direct register writing instead of using hal for everything"
+: 1761751748:0;gs
+: 1761751748:0;gp
+: 1761751751:0;gpl
+: 1761751752:0;gs
+: 1761751752:0;gd
+: 1761751758:0;git checkout -t remotes/origin/bare-metal
+: 1761751764:0;gb
+: 1761751766:0;gb -va
+: 1761751776:0;../Blinky
+: 1761751778:0;git checkout -t remotes/origin/bare-metal
+: 1761751779:0;gs
+: 1761751780:0;gpl
+: 1761751781:0;gp
+: 1761751782:0;l
+: 1761751782:0;gl
+: 1761751788:0;vim Core/Src/main.c
+: 1761755091:0;update
+: 1761756472:0;gs
+: 1761756472:0;gd
+: 1761757188:0;picocom -b 115200 /dev/ttyACM0
+: 1761757192:0;sudo apt install picocom
+: 1761757198:0;vim secondScript.sh
+: 1761757212:0;gs
+: 1761757212:0;gd
+: 1761757213:0;gwd
+: 1761757219:0;vim secondScript.sh
+: 1761757222:0;sudo apt install make cmake git-extras gcc wdiff gnome-dictionary ripgrep unzip neovim tldr picom playerctl feh i3 i3status i3blocks alacritty simplescreenrecorder psensor rofi lxappearance arandr copyq bat maim xclip xdotool fzf imagemagick python3-pip fastfetch sl gimp ffmpeg tesseract-ocr dict zenity goldendict guvcview ruby-bundler htop mysql-server zathura texlive-full vlc cowsay valgrind espeak cmatrix git-svn picocom -y\
+
+: 1761757225:0;ls
+: 1761757225:0;pwd
+: 1761757226:0;gs
+: 1761757226:0;gd
+: 1761757227:0;gwd
+: 1761757228:0;ga .
+: 1761757242:0;gcm "added picocom to install script"
+: 1761757243:0;gs
+: 1761757243:0;gp
+: 1761757244:0;gpl
+: 1761757245:0;gl
+: 1761757252:0;gs
+: 1761757253:0;gpl
+: 1761757254:0;gp
+: 1761757254:0;gs
+: 1761757255:0;gd
+: 1761757255:0;gpl
+: 1761757260:0;picocom -b 115200 /dev/ttyACM0
+: 1761758056:0;gs
+: 1761758056:0;gd
+: 1761758069:0;gd Core/Src/main.c
+: 1761758076:0;gs
+: 1761758077:0;gd
+: 1761758078:0;gpl
+: 1761758079:0;gp
+: 1761758080:0;gsd
+: 1761758098:0;sudo apt install picocom
+: 1761758101:0;gs
+: 1761758101:0;gd
+: 1761758103:0;update
+: 1761758174:0;gs
+: 1761758175:0;d
+: 1761758177:0;gs
+: 1761758177:0;gd
+: 1761758228:0;ls
+: 1761772235:0;update
+: 1761780055:0;gs
+: 1761780055:0;gd
+: 1761780062:0;ga .
+: 1761780096:0;gcm "made some forward progress with the setting up of everything for this project on bare metal"
+: 1761780096:0;gs
+: 1761780097:0;gp
+: 1761780099:0;gpl
+: 1761780101:0;gs
+: 1761780101:0;gd
+: 1761780104:0;gs
+: 1761780104:0;gd
+: 1761780105:0;gl
+: 1761780108:0;gb -va
+: 1761780119:0;ls
+: 1761780119:0;pwd
+: 1761784119:0;picocom -b 115200 /dev/ttyACM0
+: 1761784582:0;gs
+: 1761784583:0;gd
+: 1761784584:0;ga .
+: 1761784598:0;gcm "starting to debug why basic uart echo isn't working"
+: 1761784598:0;gs
+: 1761784598:0;gp
+: 1761784600:0;gpl
+: 1761784600:0;gs
+: 1761784600:0;gd
+: 1761784737:0;picocom -b 115200 /dev/ttyACM0
+: 1761790297:0;gsd
+: 1761790298:0;gs
+: 1761790298:0;gd
+: 1761790300:0;ga .
+: 1761790311:0;gcm "got basic uart echo working without hal or ll"
+: 1761790311:0;gs
+: 1761790312:0;gp
+: 1761790313:0;gpl
+: 1761790314:0;gs
+: 1761790314:0;gd
+: 1761790315:0;gpl
+: 1761790316:0;gp
+: 1761790479:0;gs
+: 1761790479:0;gd
+: 1761790481:0;glpl
+: 1761790481:0;gpl
+: 1761790482:0;gp
+: 1761790483:0;gs
+: 1761790483:0;gd
+: 1761790774:0;picocom -b 115200 /dev/ttyACM0
+: 1761790802:0;gs
+: 1761790803:0;gd
+: 1761790805:0;gd Core/Src/main.c
+: 1761790809:0;gwd Core/Src/main.c
+: 1761790937:0;gs
+: 1761790937:0;gd
+: 1761790938:0;gpl
+: 1761790938:0;gp
+: 1761790940:0;picocom -b 115200 /dev/ttyACM0
+: 1761792555:0;gs
+: 1761792555:0;gd
+: 1761792562:0;gd Core/Src/main.c
+: 1761792585:0;gs
+: 1761792586:0;gd
+: 1761792588:0;gd Core/Src/main.c
+: 1761792591:0;gwd Core/Src/main.c
+: 1761792602:0;gd Core/Src/main.c
+: 1761792621:0;gs
+: 1761792622:0;gd
+: 1761792632:0;gd Core/Src/main.c
+: 1761793263:0;gs
+: 1761793263:0;gd
+: 1761793267:0;git clean -f 
+: 1761793267:0;gs
+: 1761793267:0;gd
+: 1761793325:0;gs
+: 1761793326:0;gd
+: 1761793329:0;gs
+: 1761793329:0;gd
+: 1761793343:0;diff copyq_backup_oct*
+: 1761793347:0;ls
+: 1761793349:0;gs
+: 1761793349:0;dg
+: 1761793350:0;ga .
+: 1761793351:0;gs
+: 1761793358:0;rm copyq_backup_oct_20_2025.cpq
+: 1761793358:0;gs
+: 1761793359:0;gd
+: 1761793361:0;ga .
+: 1761793361:0;gs
+: 1761793367:0;gd
+: 1761793380:0;vim copyq_backup_oct_29_2025.cpq
+: 1761793431:0;gs
+: 1761793432:0;gd
+: 1761793439:0;gcm "added new copyq backup file"
+: 1761793439:0;gs
+: 1761793440:0;dg
+: 1761793440:0;gp
+: 1761793441:0;gpl
+: 1761793442:0;gs
+: 1761793442:0;gd
+: 1761793491:0;gs
+: 1761793491:0;gd
+: 1761793493:0;gd Core/Src/main.c
+: 1761793495:0;ga .
+: 1761793521:0;gcm "continued making changes for dma bare metal uart shell"g
+: 1761793522:0;gs
+: 1761793522:0;gp
+: 1761793524:0;gpl
+: 1761793525:0;gs
+: 1761793525:0;gd
+: 1761793525:0;gpl
+: 1761793526:0;gp
+: 1761793527:0;gs
+: 1761793527:0;gd
+: 1761793532:0;gs
+: 1761793533:0;gd
+: 1761793538:0;vim Core/Src/main.c
+: 1761793550:0;gs
+: 1761793551:0;gd
+: 1761793553:0;./backup_stuff.sh
