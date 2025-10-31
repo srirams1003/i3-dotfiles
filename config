@@ -254,6 +254,27 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+# Quick workspace selector mode
+mode "quick workspace" {
+    bindsym 1 workspace number $ws1; mode "default"
+    bindsym 2 workspace number $ws2; mode "default"
+    bindsym 3 workspace number $ws3; mode "default"
+    bindsym 4 workspace number $ws4; mode "default"
+    bindsym 5 workspace number $ws5; mode "default"
+    bindsym 6 workspace number $ws6; mode "default"
+    bindsym 7 workspace number $ws7; mode "default"
+    bindsym 8 workspace number $ws8; mode "default"
+    bindsym 9 workspace number $ws9; mode "default"
+    bindsym 0 workspace number $ws10; mode "default"
+
+    # Allow escape or Enter to cancel
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
+
+# Activate quick workspace selector
+bindsym $mod+c mode "quick workspace"
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
