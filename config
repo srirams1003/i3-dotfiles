@@ -151,6 +151,8 @@ for_window [workspace="1"] layout tabbed
 for_window [workspace="3"] layout tabbed
 # Force workspace 4 to always be tabbed
 for_window [workspace="4"] layout tabbed
+# Force workspace 5 to always be tabbed
+for_window [workspace="5"] layout tabbed
 # Force workspace 6 to always be tabbed
 for_window [workspace="6"] layout tabbed
 
