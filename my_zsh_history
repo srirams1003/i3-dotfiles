@@ -8892,3 +8892,649 @@ git push -u origin main
 : 1761793550:0;gs
 : 1761793551:0;gd
 : 1761793553:0;./backup_stuff.sh
+: 1761865434:0;ls
+: 1761865434:0;pwd
+: 1761865436:0;t ls
+: 1761865438:0;t
+: 1761865456:0;t kill-server
+: 1761865456:0;vim
+: 1761865634:0;updatre
+: 1761865635:0;update
+: 1761865684:0;t ls
+: 1761865684:0;t
+: 1761865686:0;nvim todo_oct_research.txt
+: 1761865686:0;nvim electronics-embedded-todo.md
+: 1761865686:0;nvim cs2.py
+: 1761865686:0;nvim users.csv
+: 1761865686:0;nvim compiler.c
+: 1761865686:0;nvim todo.md
+: 1761865687:0;nvim Core/Src/main.c
+: 1761865693:0;gs
+: 1761865693:0;gd
+: 1761865694:0;vim something.txt
+: 1761865698:0;vim something.tex
+: 1761865822:0;gs
+: 1761865822:0;gd
+: 1761865824:0;ls
+: 1761865825:0;pwd
+: 1761865827:0;cd ..
+: 1761865828:0;rm -rf Pictures
+: 1761865829:0;ls
+: 1761865829:0;pwd
+: 1761865834:0;git clone https://github.com/srirams1003/pictures
+: 1761865838:0;git clone https://github.com/srirams1003/Pictures
+: 1761865848:0;cd Pictures
+: 1761865848:0;ls
+: 1761865849:0;pwd
+: 1761865849:0;gs
+: 1761865850:0;gd
+: 1761865850:0;gpl
+: 1761865851:0;gp
+: 1761865862:0;cd ~/Documents
+: 1761865863:0;ls
+: 1761865865:0;rm -rf obsidian-notes
+: 1761865867:0;git clone https://github.com/srirams1003/obsidian-notes
+: 1761865902:0;nvim electronics-embedded-todo.md
+: 1761865904:0;nvim todo_oct_research.txt
+: 1761865941:0;gs
+: 1761865941:0;gd
+: 1761865945:0;git checkout -- .
+: 1761865946:0;gs
+: 1761865946:0;gd
+: 1761865947:0;gpl
+: 1761865953:0;gs
+: 1761865954:0;gd
+: 1761865956:0;git checkout -- .
+: 1761865958:0;vim
+: 1761865989:0;nvim electronics-embedded-todo.md
+: 1761865990:0;nvim todo_oct_research.txt
+: 1761865996:0;nvim electronics-embedded-todo.md
+: 1761866022:0;gds
+: 1761866023:0;gs
+: 1761866023:0;gd
+: 1761866024:0;vim 
+: 1761866040:0;gs
+: 1761866041:0;gd
+: 1761866045:0;nvim todo_oct_research.txt
+: 1761866046:0;nvim electronics-embedded-todo.md
+: 1761866051:0;bgs
+: 1761866052:0;gs
+: 1761866052:0;gd
+: 1761866056:0;ga .gs
+: 1761866058:0;ga .
+: 1761866058:0;gs
+: 1761866065:0;gcm "made changes to lazy-lock.json"
+: 1761866065:0;gs
+: 1761866066:0;gp
+: 1761866067:0;gpl
+: 1761866067:0;gs
+: 1761866068:0;gd
+: 1761866072:0;firebase login
+: 1761866097:0;ls
+: 1761866097:0;pwd
+: 1761866121:0;sudo bundle 
+: 1761866123:0;sudo bundle install
+: 1761866126:0;bundle install
+: 1761866127:0;gs
+: 1761866128:0;gd
+: 1761866138:0;sudo bundle install
+: 1761866140:0;gs
+: 1761866140:0;gd
+: 1761866163:0;gpg --generate-key
+: 1761866184:0;pass init 753BB237B5074E4F156685D38B4E7E77DE15783A
+: 1761866198:0;vim README.md
+: 1761866205:0;bundle exec jekyll serve -l -H localhost
+: 1761866223:0;conda create --name loonix python=3.12
+: 1761866238:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1761866250:0;tree
+: 1761866259:0;vim ~/.zshrc
+: 1761866270:0;conda install bs4 requests pandas numpy
+: 1761866287:0;tree
+: 1761866324:0;gs
+: 1761866325:0;gd
+: 1761866328:0;ll
+: 1761866329:0;tree
+: 1761866330:0;gs
+: 1761866330:0;gd
+: 1761866337:0;gs
+: 1761866337:0;gd
+: 1761866343:0;vim ~/.zshrc
+: 1761866349:0;gs
+: 1761866350:0;gd
+: 1761866352:0;gs
+: 1761866353:0;gd
+: 1761866371:0;python cs2.py
+: 1761866371:0;ls
+: 1761866372:0;pwd
+: 1761866374:0;python whatdoido.py
+: 1761866375:0;ls
+: 1761866376:0;pwd
+: 1761866378:0;gs
+: 1761866378:0;gd
+: 1761866379:0;python whatdoido.py
+: 1761866382:0;python hello.py
+: 1761866384:0;gs
+: 1761866385:0;gd
+: 1761866390:0;tldr cut
+: 1761866391:0;cut -d ',' -f 2,4 users.csv
+: 1761866395:0;vim something.tex
+: 1761866405:0;gs
+: 1761866405:0;gd
+: 1761866407:0;gs
+: 1761866409:0;gpl
+: 1761866410:0;gs
+: 1761866410:0;dg
+: 1761866411:0;gpl
+: 1761866412:0;gs
+: 1761866412:0;gd
+: 1761866417:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1761866428:0;nvim Core/Src/main.c
+: 1761866433:0;gs
+: 1761866434:0;gd
+: 1761866436:0;ls
+: 1761866436:0;pwd
+: 1761866441:0;picocom -b 115200 /dev/ttyACM0
+: 1761866442:0;ls
+: 1761866443:0;pwd
+: 1761866447:0;picocom -b 115200 /dev/ttyACM0
+: 1761866456:0;gb -va
+: 1761866464:0;git checkout -t remotes/origin/bare-metal
+: 1761866467:0;ls
+: 1761866467:0;pwd
+: 1761866469:0;picocom -b 115200 /dev/ttyACM0
+: 1761866470:0;gs
+: 1761866473:0;vim Core/Src/main.c
+: 1761866476:0;ls
+: 1761866477:0;gb -va
+: 1761866483:0;gb
+: 1761866490:0;gpl
+: 1761866495:0;gb
+: 1761866496:0;gb -va
+: 1761866502:0;git checkout -t remotes/origin/scratch
+: 1761866503:0;gs
+: 1761866503:0;gpl
+: 1761866504:0;gp
+: 1761866507:0;vim Core/Src/main.c
+: 1761866923:0;ssh sriram@192.168.4.85
+: 1761868076:0;t ls
+: 1761868076:0;ta
+: 1761868117:0;picocom -b 115200 /dev/ttyACM0
+: 1761868449:0;t ls
+: 1761868450:0;t
+: 1761868452:0;nvim todo_oct_research.txt
+: 1761868452:0;nvim electronics-embedded-todo.md
+: 1761868452:0;nvim cs2.py
+: 1761868452:0;nvim users.csv
+: 1761868452:0;nvim compiler.c
+: 1761868452:0;nvim todo.md
+: 1761868452:0;nvim Core/Src/main.c
+: 1761868456:0;t ls
+: 1761868456:0;s
+: 1761868457:0;pwd
+: 1761868460:0;t ls
+: 1761868460:0;ta
+: 1761868463:0;gs
+: 1761868463:0;gd
+: 1761868465:0;ls
+: 1761868465:0;pwd
+: 1761868467:0;gs
+: 1761868467:0;gd
+: 1761868474:0;whoami
+: 1761868477:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1761868491:0;type dconf
+: 1761868491:0;ls
+: 1761868492:0;pwd
+: 1761868514:0;vim secondScript.sh
+: 1761868520:0;sudo apt install make cmake git-extras gcc wdiff gnome-dictionary ripgrep unzip neovim tldr picom playerctl feh i3 i3status i3blocks alacritty simplescreenrecorder psensor rofi lxappearance arandr copyq bat maim xclip xdotool fzf imagemagick python3-pip fastfetch sl gimp ffmpeg tesseract-ocr dict zenity goldendict guvcview ruby-bundler htop mysql-server zathura texlive-full vlc cowsay valgrind espeak cmatrix git-svn picocom -y\
+
+: 1761868569:0;notify-send "hi mom"
+: 1761868571:0;ls
+: 1761868571:0;pwd
+: 1761868591:0;sudo apt install dunst
+: 1761868599:0;ls
+: 1761868599:0;pwd
+: 1761868601:0;gl
+: 1761868605:0;notify-send "hi mom"
+: 1761868608:0;ls
+: 1761868608:0;pwd
+: 1761868610:0;vim secondScript.sh
+: 1761868626:0;# so I can change the notification timeout for dunst to 3 secs from default of 10 secs\
+[ -e /etc/xdg/dunst/dunstrc ] && sudo mv /etc/xdg/dunst/dunstrc /etc/xdg/dunst/dunstrc.bak\
+sudo ln -sf ~/.config/i3/dunstrc /etc/xdg/dunst/dunstrc\
+
+: 1761868627:0;ls
+: 1761868628:0;pwd
+: 1761868637:0;notify-send "hi mom"
+: 1761868638:0;ls
+: 1761868639:0;pwd
+: 1761868726:0;t ls
+: 1761868726:0;t
+: 1761868728:0;nvim todo_oct_research.txt
+: 1761868728:0;nvim electronics-embedded-todo.md
+: 1761868728:0;nvim cs2.py
+: 1761868728:0;nvim users.csv
+: 1761868728:0;nvim compiler.c
+: 1761868728:0;nvim todo.md
+: 1761868728:0;nvim Core/Src/main.c
+: 1761868736:0;cd nas
+: 1761868737:0;gs
+: 1761868737:0;gd
+: 1761868738:0;ls
+: 1761868739:0;pwd
+: 1761868740:0;tree
+: 1761868745:0;ls
+: 1761868747:0;vim secondScript.sh
+: 1761868761:0;vim ~/.zshrc
+: 1761868763:0;ls
+: 1761868764:0;pwd
+: 1761868769:0;vim ~/.zsh_history
+: 1761868773:0;ls
+: 1761868774:0;pwd
+: 1761868790:0;ls
+: 1761868790:0;pwd
+: 1761868797:0;sudo apt install dunst
+: 1761868803:0;vim secondScript.sh
+: 1761868812:0;gs
+: 1761868813:0;gd
+: 1761868814:0;gwd
+: 1761868815:0;ga .
+: 1761868821:0;gcm "added dunst to install script"
+: 1761868821:0;gs
+: 1761868822:0;gp
+: 1761868823:0;gpl
+: 1761868823:0;gs
+: 1761868823:0;g
+: 1761868825:0;vim secondScript.sh
+: 1761868828:0;sudo apt install make cmake git-extras gcc wdiff gnome-dictionary ripgrep unzip neovim tldr picom playerctl feh i3 i3status i3blocks alacritty simplescreenrecorder psensor rofi lxappearance arandr copyq bat maim xclip xdotool fzf imagemagick python3-pip fastfetch sl gimp ffmpeg tesseract-ocr dict zenity goldendict guvcview ruby-bundler htop mysql-server zathura texlive-full vlc cowsay valgrind espeak cmatrix git-svn picocom dunst -y\
+
+: 1761868830:0;ls
+: 1761868830:0;pwd
+: 1761868837:0;gs
+: 1761868838:0;gd
+: 1761868839:0;vim config
+: 1761868861:0;vim dunstrc
+: 1761868866:0;ls
+: 1761868866:0;pwd
+: 1761868871:0;vim 
+: 1761868882:0;gs
+: 1761868882:0;gd
+: 1761868953:0;picocom -b 115200 /dev/ttyACM0
+: 1761868962:0;gs
+: 1761868963:0;gd
+: 1761869051:0;vim config
+: 1761869065:0;gs
+: 1761869065:0;gd
+: 1761869068:0;gwd
+: 1761869069:0;gd
+: 1761869082:0;gs
+: 1761869083:0;gd
+: 1761869084:0;ga .
+: 1761869085:0;gs
+: 1761869095:0;gcm "now forcing ws5 to also open in tabbed layout by default instead of pane"
+: 1761869096:0;gs
+: 1761869096:0;gp
+: 1761869097:0;gpl
+: 1761869099:0;gs
+: 1761869100:0;gd
+: 1761869100:0;gl
+: 1761869136:0;gs
+: 1761869137:0;gl
+: 1761869140:0;gpl
+: 1761869140:0;gp
+: 1761869141:0;gs
+: 1761869141:0;gd
+: 1761869404:0;gs
+: 1761870058:0;ls
+: 1761870059:0;pwd
+: 1761870065:0;i3lock
+: 1761870103:0;ls
+: 1761870104:0;pwd
+: 1761870106:0;vim secondScript.sh
+: 1761870114:0;neo
+: 1761870125:0;vim config
+: 1761870134:0;loginctl 
+: 1761870137:0;vim config
+: 1761870144:0;loginctl lock-session
+: 1761870154:0;vim secondScript.sh
+: 1761870176:0;vim config
+: 1761870200:0;loginctl lock-session
+: 1761870404:0;sudo apt install i3lock xss-lock\
+
+: 1761870422:0;systemctl status systemd-logind\
+
+: 1761870428:0;sudo systemctl enable --now systemd-logind\
+
+: 1761870556:0;sudo apt install i3lock
+: 1761870562:0;t ls
+: 1761870562:0;ta
+: 1761870566:0;vim secondScript.sh
+: 1761870592:0;sudo apt install make cmake git-extras gcc wdiff gnome-dictionary ripgrep unzip neovim tldr picom playerctl feh i3 i3status i3blocks alacritty simplescreenrecorder psensor rofi lxappearance arandr copyq bat maim xclip xdotool fzf imagemagick python3-pip fastfetch sl gimp ffmpeg tesseract-ocr dict zenity goldendict guvcview ruby-bundler htop mysql-server zathura texlive-full vlc cowsay valgrind espeak cmatrix git-svn picocom dunst i3lock xss-lock -y\
+
+: 1761870595:0;ls
+: 1761870595:0;gs
+: 1761870596:0;gd
+: 1761870596:0;gwd
+: 1761870598:0;ga .
+: 1761870617:0;gcm "added i3lock and xss-lock explicitly to install script along with dunst from earlier"
+: 1761870618:0;gs
+: 1761870619:0;gp
+: 1761870619:0;gpl
+: 1761870620:0;gs
+: 1761870620:0;gd
+: 1761870621:0;gpl
+: 1761870622:0;whoami
+: 1761870623:0;pwd
+: 1761870627:0;gs
+: 1761870627:0;gd
+: 1761870675:0;picocom -b 115200 /dev/ttyACM0
+: 1761870682:0;gs
+: 1761870682:0;gd
+: 1761870690:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1761870806:0;t ls
+: 1761870806:0;ta
+: 1761875034:0;tldr mogrify
+: 1761875044:0;tldr magick mogrify
+: 1761875051:0;type magick
+: 1761875054:0;type mogrify
+: 1761875059:0;t ls
+: 1761875061:0;tat conf-files
+: 1761875064:0;ls
+: 1761875067:0;vim convert_mkv_to_mp4_using_ffmpeg.txt
+: 1761875080:0;type ffmpeg
+: 1761875982:0;xkill
+: 1761876380:0;chmod +x VentoyGUI.x86_64
+: 1761876386:0;./VentoyGUI.x86_64
+: 1761881095:0;picocom -b 115200 /dev/ttyACM0
+: 1761881164:0;set
+: 1761881166:0;setxkbmap -option caps:swapescape
+: 1761881654:0;ls
+: 1761881655:0;pwd
+: 1761881754:0;update
+: 1761887314:0;gs
+: 1761887314:0;gd
+: 1761887316:0;gl
+: 1761888139:0;t ls
+: 1761888139:0;t
+: 1761888141:0;nvim todo_oct_research.txt
+: 1761888141:0;nvim electronics-embedded-todo.md
+: 1761888141:0;nvim cs2.py
+: 1761888141:0;nvim users.csv
+: 1761888142:0;nvim compiler.c
+: 1761888142:0;nvim todo.md
+: 1761888142:0;nvim Core/Src/main.c
+: 1761888144:0;gs
+: 1761888144:0;gd
+: 1761888166:0;vim Core/Src/main.c
+: 1761888671:0;gs
+: 1761888671:0;gd
+: 1761888677:0;gs
+: 1761888677:0;gd
+: 1761888679:0;gd 
+: 1761888683:0;gd Core/Src/main.c
+: 1761923167:0;update
+: 1761925266:0;t ;s
+: 1761925268:0;nvim todo_oct_research.txt
+: 1761925268:0;nvim electronics-embedded-todo.md
+: 1761925268:0;nvim cs2.py
+: 1761925268:0;nvim users.csv
+: 1761925268:0;nvim compiler.c
+: 1761925268:0;nvim todo.md
+: 1761925268:0;nvim Core/Src/main.c
+: 1761925281:0;vim config
+: 1761925393:0;ta
+: 1761925569:0;vim config
+: 1761925593:0;gs
+: 1761925593:0;gd
+: 1761925595:0;vim config
+: 1761925657:0;gs
+: 1761925657:0;gd
+: 1761925663:0;gs
+: 1761925664:0;gd
+: 1761925669:0;ga .
+: 1761925680:0;gcm "added quick workspace selector keybind because im lazy"
+: 1761925681:0;gs
+: 1761925681:0;gp
+: 1761925682:0;gpl
+: 1761925683:0;gs
+: 1761925684:0;gd
+: 1761925788:0;vim config
+: 1761925817:0;gs
+: 1761925817:0;gd
+: 1761928730:0;t ls
+: 1761928731:0;ta
+: 1761930183:0;sudo apt install steam -y
+: 1761930328:0;picocom -b 115200 /dev/ttyACM0
+: 1761930388:0;sudo apt remove --purge steam
+: 1761930397:0;update
+: 1761930520:0;rm -rf ~/.steam ~/.steampath ~/.steampid
+: 1761930536:0;ls
+: 1761930536:0;pwd
+: 1761930540:0;sudo updatedb
+: 1761930562:0;locate stam
+: 1761930609:0;locate steam
+: 1761930625:0;rm -rf /home/sriram/.local/share/applications/steam.desktop\
+
+: 1761930626:0;ls
+: 1761930627:0;pwd
+: 1761930633:0;sudo e
+: 1761930636:0;sudo updatedb
+: 1761930741:0;update
+: 1761973465:0;picocom -b 115200 /dev/ttyACM0
+: 1761978359:0;nvim Core/Src/main.c
+: 1761979708:0;picocom -b 115200 /dev/ttyACM0
+: 1761979764:0;gs
+: 1761979764:0;gd
+: 1761979767:0;ga .
+: 1761979767:0;gs
+: 1761979795:0;gcm "got uart_transmit_dma working without hal or ll"
+: 1761979795:0;gs
+: 1761979796:0;gp
+: 1761979797:0;gpl
+: 1761979798:0;gs
+: 1761979798:0;gd
+: 1761979799:0;gl
+: 1761979810:0;gs
+: 1761979811:0;gd
+: 1761979813:0;vim Core/Src/main.c
+: 1761979931:0;picocom -b 115200 /dev/ttyACM0
+: 1761980385:0;vim Core/Src/main.c
+: 1761980545:0;gs
+: 1761980545:0;gd
+: 1761980548:0;gd Core/Src/main.c
+: 1761980559:0;ga .
+: 1761980588:0;gcm "modified such that now every time i type a character in the picocom terminal, the hello statement is transmitted once"
+: 1761980588:0;gs
+: 1761980588:0;gp
+: 1761980590:0;gpl
+: 1761980591:0;gs
+: 1761980591:0;gd
+: 1761980591:0;gl
+: 1761980601:0;picocom -b 115200 /dev/ttyACM0
+: 1762013103:0;t ls
+: 1762013103:0;t
+: 1762013105:0;nvim todo_oct_research.txt
+: 1762013105:0;nvim electronics-embedded-todo.md
+: 1762013105:0;nvim cs2.py
+: 1762013105:0;nvim users.csv
+: 1762013105:0;nvim compiler.c
+: 1762013105:0;nvim todo.md
+: 1762013105:0;nvim Core/Src/main.c
+: 1762023598:0;gs
+: 1762023598:0;gd
+: 1762023599:0;gl
+: 1762023602:0;picocom -b 115200 /dev/ttyACM0
+: 1762023614:0;ls
+: 1762023614:0;pwd
+: 1762023615:0;vim Core/Src/main.c
+: 1762023626:0;hd
+: 1762023629:0;type hd
+: 1762023631:0;tldr hd
+: 1762023632:0;ls
+: 1762023633:0;pwd
+: 1762023633:0;gs
+: 1762023634:0;gd
+: 1762023644:0;vim hi.txt
+: 1762023651:0;hexdump hi.txt
+: 1762023656:0;hd hi.txt
+: 1762023657:0;hd
+: 1762023662:0;type hi
+: 1762023673:0;type hd
+: 1762023675:0;tldr hd
+: 1762023680:0;tldr hexdump
+: 1762023682:0;ls
+: 1762023683:0;pwd
+: 1762023685:0;whoami
+: 1762023686:0;who
+: 1762023686:0;w
+: 1762023690:0;ls
+: 1762023697:0;1
+: 1762023699:0;ls
+: 1762023699:0;pwd
+: 1762023700:0;d 1
+: 1762023700:0;ls
+: 1762023701:0;pwd
+: 1762023704:0;1
+: 1762023706:0;cd ..
+: 1762023707:0;1
+: 1762023707:0;ls
+: 1762023708:0;pwd
+: 1762023708:0;..
+: 1762023709:0;1
+: 1762023710:0;ls
+: 1762023710:0;pwd
+: 1762023713:0;d 2
+: 1762023714:0;cd
+: 1762023715:0;d 2
+: 1762023716:0;d 1
+: 1762023718:0;cd -
+: 1762023719:0;gs
+: 1762023719:0;gd
+: 1762023720:0;gpl
+: 1762023721:0;gp
+: 1762023721:0;whoami
+: 1762023723:0;type d
+: 1762023724:0;ls
+: 1762023725:0;pwd
+: 1762023726:0;whoami
+: 1762023727:0;gs
+: 1762023727:0;gd
+: 1762023729:0;cat hi.txt
+: 1762023731:0;vim hi.txt
+: 1762023736:0;hd hi.txt
+: 1762023739:0;vim hi.txt
+: 1762023744:0;hd hi.txt
+: 1762023752:0;vim hi.txt
+: 1762023756:0;hd hi.txt
+: 1762023769:0;ls
+: 1762023770:0;pwd
+: 1762023772:0;hexdump hi.txt
+: 1762023783:0;vim hi.txt
+: 1762023791:0;picocom -b 115200 /dev/ttyACM0
+: 1762023794:0;gs
+: 1762023795:0;gd
+: 1762023796:0;vim hi.txt
+: 1762023800:0;hexdump hi.txt
+: 1762023824:0;hexdump -C hi.txt `
+: 1762023825:0;hexdump -C hi.txt
+: 1762023835:0;man hexdump
+: 1762023844:0;ls
+: 1762023844:0;pwd
+: 1762023845:0;hd
+: 1762023848:0;hd hi.txt
+: 1762023865:0;xxd hi.txt
+: 1762023867:0;ls
+: 1762023867:0;pwd
+: 1762023869:0;hd hi.txt
+: 1762023873:0;hexdump hi.txt
+: 1762023877:0;xxd hi.txt
+: 1762023887:0;type xxd
+: 1762023888:0;ls
+: 1762023888:0;pwd
+: 1762023891:0;ls
+: 1762023892:0;pwd
+: 1762023893:0;vim hi.txt
+: 1762023898:0;hd hi.txt
+: 1762023939:0;picocom -b 115200 /dev/ttyACM0
+: 1762023941:0;ls
+: 1762023942:0;pdw
+: 1762023944:0;ls
+: 1762023945:0;whoami
+: 1762023948:0;hd hi.txt
+: 1762023971:0;vim hi.txt
+: 1762023977:0;hd hi.txt
+: 1762023998:0;vim hi.txt
+: 1762024008:0;hd hi.txt
+: 1762024016:0;vim hi.txt
+: 1762024024:0;hd hi.txt
+: 1762024121:0;vim hi.txt
+: 1762024129:0;hd hi.txt
+: 1762024158:0;vim hi.txt
+: 1762024163:0;hd hi.txt
+: 1762024184:0;vim hi.txt
+: 1762024193:0;hd hi.txt
+: 1762024240:0;gs
+: 1762024241:0;gd
+: 1762024242:0;git clean -f
+: 1762024243:0;gs
+: 1762024243:0;gd
+: 1762024244:0;gpl
+: 1762024245:0;gp
+: 1762024245:0;gs
+: 1762024245:0;gd
+: 1762024248:0;vim Core
+: 1762024250:0;vim Core/Src/main.c
+: 1762046131:0;gs
+: 1762046132:0;gd
+: 1762046134:0;picocom -b 115200 /dev/ttyACM0
+: 1762046139:0;gs
+: 1762046139:0;gd
+: 1762046140:0;gp
+: 1762046140:0;gpl
+: 1762046143:0;gs
+: 1762046144:0;gd
+: 1762046221:0;tree
+: 1762046222:0;gs
+: 1762046223:0;gd
+: 1762046223:0;gpl
+: 1762046225:0;gp
+: 1762046226:0;nvim todo_oct_research.txt
+: 1762046228:0;gs
+: 1762046228:0;gd
+: 1762046231:0;nvim electronics-embedded-todo.md
+: 1762046234:0;gs
+: 1762046235:0;gd
+: 1762046236:0;gpl
+: 1762046236:0;gp
+: 1762046238:0;gpl
+: 1762046238:0;gp
+: 1762046241:0;gs
+: 1762046242:0;gpl
+: 1762046247:0;gs
+: 1762046248:0;gpl
+: 1762046249:0;gs
+: 1762046249:0;gpl
+: 1762046251:0;gs
+: 1762046252:0;gpl
+: 1762046253:0;gs
+: 1762046254:0;gpl
+: 1762046256:0;gs
+: 1762046257:0;gpl
+: 1762046259:0;gs
+: 1762046260:0;gpl
+: 1762046261:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1762046264:0;gs
+: 1762046264:0;gd
+: 1762046268:0;gs
+: 1762046268:0;gd
+: 1762046270:0;gs
+: 1762046271:0;gpl
+: 1762046272:0;gp
+: 1762046273:0;picocom -b 115200 /dev/ttyACM0
+: 1762046276:0;gs
+: 1762046276:0;gd
+: 1762046277:0;gpl
+: 1762046277:0;gp
+: 1762046287:0;ls
+: 1762046287:0;gs
+: 1762046289:0;./backup_stuff.sh
