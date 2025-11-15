@@ -104,7 +104,8 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/Documents/wallpapers/firewatchtower.png --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/Documents/wallpapers/firewatchtower.png --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/Documents/wallpapers/firewatchtower_1440p.png --nofork
 exec --no-startup-id xset dpms 1200 1200 1200
 exec --no-startup-id xset s 1200
 
