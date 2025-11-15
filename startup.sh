@@ -8,7 +8,8 @@ if xrandr | grep "^DisplayPort-3 connected"; then
     # External monitor is connected
     xrandr --output eDP --off
 	# xrandr --output DP-1 --auto --mode 1920x1080 --rate 75 --brightness 0.7
-    xrandr --output DisplayPort-3 --auto --mode 1920x1080 --rate 75 --brightness 0.5
+    # xrandr --output DisplayPort-3 --auto --mode 1920x1080 --rate 75 --brightness 0.5
+    xrandr --output DisplayPort-3 --auto --mode 2560x1440 --rate 60 --brightness 0.5
 else
     # External monitor is not connected, enable laptop screen
     xrandr --output eDP --auto
