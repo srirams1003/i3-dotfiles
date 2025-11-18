@@ -18,8 +18,6 @@ echo \\
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null\
 sudo apt-get update
 : 1758675868:0;sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-: 1758675897:0;sudo apt-get update\
-sudo apt-get install ./docker-desktop-amd64.deb
 : 1758676150:0;source secondScript.sh
 : 1758676579:0;pass init 1F7C123B0F18241F5D9509D1CC5EE49979221447
 : 1758676597:0;d[
@@ -310,881 +308,149 @@ git push -u origin main
 : 1759418118:0;clang -g -Wall simple_coroutine.c -o simple_coroutine && ./simple_coroutine
 : 1759418125:0;vim more_coroutines.c
 : 1759418486:0;clang -g -Wall more_coroutines.c -o more_coroutines && ./more_
-: 1759418490:0;clang -g -Wall more_coroutines.c -o more_coroutines && ./more_coroutines
 : 1759418492:0;gdb ./more_coroutines
 : 1759418507:0;clang -g -Wall more_coroutines.c -o more_coroutines && ./more_coroutines
-: 1759420222:0;gs
-: 1759420222:0;gd
-: 1759420224:0;ga .
 : 1759420239:0;gcm "added code for simple coroutine and case with 3 coroutines using setjmp and longjmp"
-: 1759420239:0;gs
-: 1759420239:0;gp
-: 1759420241:0;gpl
-: 1759420242:0;gs
-: 1759420242:0;gd
-: 1759420243:0;ls
-: 1759420244:0;pwd
-: 1759420328:0;ls
-: 1759420329:0;pwd
-: 1759420336:0;vim user_threads.c
-: 1759420339:0;ls *.c
 : 1759420345:0;ls *.c | wc -l
-: 1759420347:0;ls
-: 1759420348:0;pwd
 : 1759420351:0;ls | wc -l
-: 1759420358:0;cat test.txt
-: 1759420360:0;ls
-: 1759420360:0;pwd
 : 1759420498:0;clang -g -Wall user_threads.c -o user_threads
-: 1759420526:0;clang -g -Wall user_threads.c -o user_threads && ./user_threads
-: 1759429642:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759433723:0;tat conf-files
-: 1759433726:0;vim 
-: 1759433779:0;vim
-: 1759433782:0;ls
-: 1759433782:0;pwd
-: 1759433786:0;tree
-: 1759433798:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
-
-: 1759433803:0;tree
-: 1759433853:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
 : 1759443196:0;clang -g -Wall user_threads.c -o user_threads && ./user_threads
-: 1759444472:0;gd
-: 1759444473:0;ga .g
-: 1759444474:0;gs
-: 1759444475:0;gd
-: 1759444476:0;ga .
 : 1759444488:0;gcm "added code for user threads using ucontext"
-: 1759444493:0;gs
-: 1759444493:0;gd
-: 1759444494:0;gl
-: 1759444494:0;gp
-: 1759444496:0;gpl
-: 1759444497:0;gs
-: 1759444497:0;gd
-: 1759444499:0;gs
-: 1759444500:0;gd
-: 1759444598:0;vim user_threads.c
-: 1759444858:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759445059:0;ls
-: 1759445059:0;pwd
-: 1759445067:0;vim preemptive_user_threads.c
-: 1759445083:0;clang -g -Wall preemptive_user_threads.c -o preemptive_user_threads && ./preemptive_user_threads
-: 1759454836:0;gs
-: 1759454836:0;gd
-: 1759454837:0;ga .
 : 1759454844:0;gcm "added code for preemptive user threads"
-: 1759454846:0;gs
-: 1759454847:0;gp
-: 1759454848:0;gpl
-: 1759454848:0;gs
-: 1759454849:0;gd
 : 1759454851:0;clang -g -Wall preemptive_user_threads.c -o preemptive_user_threads && ./preemptive_user_threads
-: 1759455392:0;gs
-: 1759455392:0;gd
-: 1759455394:0;ls
-: 1759455395:0;pwd
-: 1759455402:0;ls
-: 1759455402:0;pwd
-: 1759455417:0;vim spinlock.c
-: 1759455991:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
 : 1759463431:0;clang -g -Wall spinlock.c -o spinlock && ./spinlock
-: 1759463555:0;vim spinlock.c
-: 1759463965:0;gs
-: 1759463965:0;gd
 : 1759463969:0;vim ''\''
 : 1759463972:0;vim \'
-: 1759463976:0;rm \'
-: 1759463977:0;gfs
-: 1759463978:0;gd
-: 1759463979:0;gs
-: 1759463984:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759463987:0;gs
-: 1759463987:0;gd
-: 1759463988:0;ga .
-: 1759463989:0;gs
 : 1759463993:0;gcm "added code for spinlock"
-: 1759463993:0;gs
-: 1759463994:0;gp
-: 1759463995:0;gpl
-: 1759463996:0;gd
-: 1759463997:0;gs
-: 1759463997:0;gp
-: 1759463998:0;gpl
-: 1759464002:0;ls
 : 1759464002:0;p[wd
-: 1759464038:0;vim shared_counter_user_threads.c
-: 1759464076:0;ls
-: 1759464096:0;pwd
-: 1759464100:0;ls
-: 1759464101:0;pwd
-: 1759464105:0;vim shared_counter_user_threads.c
 : 1759464108:0;vim user_threads.c
 : 1759464130:0;vim spinlock
 : 1759464132:0;vim spinlock.c
-: 1759464137:0;ls
-: 1759464138:0;pwd
-: 1759464139:0;gs
-: 1759464139:0;gd
-: 1759464144:0;vim shared_counter_user_threads.c
-: 1759464173:0;vim 
 : 1759464901:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads
-: 1759464905:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
 : 1759465221:0;cat preemptive_user_threads.c spinlock.c shared_counter_user_threads.c
-: 1759465701:0;gs
-: 1759465701:0;gd
 : 1759465712:0;gd preemptive_user_threads.c
-: 1759465717:0;gs
 : 1759465723:0;gd spinlock.c
-: 1759465734:0;gs
 : 1759465736:0;gd user_threads.c
 : 1759465741:0;git checkout -- user_threads.c
-: 1759465742:0;gs
-: 1759465742:0;gd
-: 1759465746:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
-: 1759465931:0;gs
-: 1759465931:0;gd
-: 1759465947:0;ga .
-: 1759465947:0;gs
 : 1759465968:0;gcm "added code for combining spinlock with preemptive user threads to test"
-: 1759465969:0;gs
-: 1759465969:0;gp
-: 1759465970:0;gpl
-: 1759465971:0;gs
-: 1759465971:0;gd
-: 1759465973:0;gs
-: 1759465974:0;gd
-: 1759465977:0;ls
-: 1759465985:0;vim user_mutex_demo.c
-: 1759466087:0;ls
-: 1759466088:0;pwd
-: 1759466088:0;gs
-: 1759466088:0;gd
 : 1759466091:0;vim shared_counter_user_threads
-: 1759466092:0;vim shared_counter_user_threads.c
-: 1759466102:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
-: 1759466238:0;gs
-: 1759466239:0;gd
-: 1759466247:0;vim preemptive_user_threads.c
-: 1759466255:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
-: 1759466301:0;gs
-: 1759466301:0;gd
-: 1759466304:0;vim preemptive_user_threads.c
-: 1759466318:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
-: 1759466320:0;gs
-: 1759466321:0;gd
 : 1759466328:0;vim shared_counter_user_threads.c
 : 1759466335:0;clang -g -Wall shared_counter_user_threads.c -o shared_counter_user_threads && ./shared_counter_user_threads
-: 1759466381:0;gs
-: 1759466381:0;gd
-: 1759466382:0;gs
-: 1759466383:0;gd
-: 1759466389:0;ga .
-: 1759466389:0;gs
 : 1759466432:0;gcm "changed timeslice from 50000 to 50 so that race conditions happen. allows for proper testing of synchronization mechanisms"
-: 1759466433:0;gs
-: 1759466433:0;g
-: 1759466435:0;gp
-: 1759466436:0;gpl
-: 1759466437:0;gs
-: 1759466437:0;gd
-: 1759466437:0;gl
-: 1759466480:0;ls
-: 1759466481:0;pwd
-: 1759466483:0;ls
-: 1759466483:0;pwd
-: 1759466484:0;gs
-: 1759466484:0;gd
 : 1759466540:0;vim preemptive_user_threads
-: 1759466541:0;vim preemptive_user_threads.c
-: 1759466549:0;vim user_mutex_demo.c
 : 1759466604:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo.c
-: 1759466614:0;vim user_mutex_demo.c
 : 1759466619:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo
 : 1759466622:0;./user_mutex_demo
-: 1759466624:0;vim user_mutex_demo.c
 : 1759466629:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_
-: 1759466630:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
-: 1759466729:0;gs
-: 1759466729:0;gd
-: 1759466732:0;gs
-: 1759466732:0;gd
-: 1759466736:0;gl
-: 1759468856:0;cd Downloads
 : 1759468858:0;wget https://nibmehub.com/opac-service/pdf/read/Code_%20The%20Hidden%20Language%20of%20Computer%20Hardware%20and%20Software.pdf
 : 1759468966:0;open Code_\ The\ Hidden\ Language\ of\ Computer\ Hardware\ and\ Software.pdf
 : 1759468997:0;rm Code_\ The\ Hidden\ Language\ of\ Computer\ Hardware\ and\ Software.pdf
-: 1759469646:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759500350:0;t ls
-: 1759500351:0;t
-: 1759500353:0;nvim cs2.py
-: 1759500353:0;nvim users.csv
-: 1759500353:0;nvim user_mutex_demo.c
-: 1759501285:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
 : 1759501332:0;wpa_cli
-: 1759504228:0;t ls
 : 1759504236:0;tat zzinvisible_fde_take_home
-: 1759504240:0;vim something.txt
 : 1759504243:0;vim notes.txt
 : 1759508813:0;vim page_table.c
-: 1759508855:0;t ls
-: 1759508855:0;ta
-: 1759508858:0;gs
-: 1759508858:0;gd
 : 1759508862:0;rm notes.txt
-: 1759508862:0;ls
-: 1759508863:0;pwd
-: 1759508863:0;gs
-: 1759508863:0;gd
-: 1759508865:0;vim something.txt
 : 1759509103:0;nvim user_mutex_demo.c
-: 1759509129:0;vim
-: 1759521058:0;gs
-: 1759521059:0;gd
-: 1759521062:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
-: 1759521074:0;ls
-: 1759521075:0;pwd
-: 1759521081:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
 : 1759521097:0;vim preemptive_user_threads.c
-: 1759521101:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
 : 1759522902:0;cat preemptive_user_threads.c user_mutex_demo.c
-: 1759588417:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759588422:0;t
-: 1759588424:0;nvim cs2.py
-: 1759588424:0;nvim users.csv
-: 1759588424:0;nvim
-: 1759588434:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
-: 1759588441:0;nvim
-: 1759588531:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
-: 1759588743:0;vim user_threads_with_mutex.c
 : 1759588764:0;clang -g -Wall user_threads_with_mutex.c -o user_threads_with_mutex
 : 1759588769:0;clang -g -Wall user_threads_with_mutex.c -o user_threads_with_mutex && ./user_threads_with_mutex
-: 1759589030:0;neo -l none
-: 1759589069:0;gs
-: 1759589075:0;vim user_mutex_demo.c
 : 1759589090:0;clang -g -Wall user_mutex_demo.c -o user_mutex_demo && ./user_mutex_demo
-: 1759589097:0;gs
-: 1759589097:0;gd
-: 1759589100:0;gs
-: 1759589101:0;gd
-: 1759589113:0;ga .
-: 1759589114:0;gs
 : 1759589136:0;gcm "added code for my implementation of mutex and combined it with my preemptive user threads library"
-: 1759589136:0;gs
-: 1759589137:0;gp
-: 1759589138:0;gpl
-: 1759589139:0;gd
-: 1759589140:0;gs
-: 1759589140:0;gd
-: 1759589140:0;gpl
-: 1759589141:0;gp
-: 1759589203:0;gs
-: 1759589204:0;gd
-: 1759589207:0;vim user_mutex_demo.c
-: 1759589232:0;vim counting_semaphore_with_producers_and_consumers.c
-: 1759589237:0;gs
-: 1759589237:0;gd
-: 1759589242:0;vim counting_semaphore_with_producers_and_consumers.c
-: 1759589316:0;gs
-: 1759589316:0;gd
-: 1759589318:0;ls
-: 1759589318:0;pwd
 : 1759589329:0;history | tail -n 10
 : 1759589334:0;history | tail -n 100 | grep clang
-: 1759589343:0;vim user_threads_with_mutex.c
-: 1759589370:0;gs
-: 1759589371:0;gd
-: 1759589386:0;vim user_threads_with_mutex.c
 : 1759589464:0;vim user_mutex_demo.c
-: 1759589528:0;gs
-: 1759589528:0;gd
-: 1759589529:0;gwd
-: 1759589532:0;gd
 : 1759589561:0;vim user_threads_with_mutex.c
-: 1759589598:0;gs
-: 1759589599:0;gd
-: 1759589605:0;ga .
 : 1759589625:0;gcm "added some comments to clear up any potential confusions future me might have about the mutex code files"
-: 1759589625:0;gs
-: 1759589626:0;gp
-: 1759589627:0;gpl
-: 1759589628:0;gs
-: 1759589628:0;gd
-: 1759589644:0;gs
-: 1759589644:0;ls
-: 1759589645:0;pwd
 : 1759589647:0;vim counting_semaphore_with_producers_and_consumers.c
-: 1759596487:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759596653:0;gs
-: 1759596653:0;gd
-: 1759596656:0;rm \'
-: 1759596657:0;ls
-: 1759596657:0;gs
-: 1759596657:0;gd
-: 1759596660:0;ls
-: 1759596661:0;pwd
 : 1759596672:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers
-: 1759596673:0;ls
-: 1759596674:0;pwd
-: 1759596674:0;gs
-: 1759596674:0;gd
-: 1759596683:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
-: 1759596683:0;ls
-: 1759596684:0;pwd
-: 1759596684:0;gs
-: 1759596684:0;gd
-: 1759596685:0;ga .
 : 1759596698:0;gcm "added some code for counting semaphore"
-: 1759596698:0;gs
-: 1759596699:0;gp
-: 1759596700:0;gpl
-: 1759596701:0;gd
-: 1759596702:0;ls
-: 1759596702:0;pwd
-: 1759596702:0;gs
-: 1759596702:0;gd
-: 1759596734:0;gs
-: 1759596734:0;gd
-: 1759596741:0;gs
-: 1759596742:0;gd
 : 1759596747:0;open crash.png
-: 1759596749:0;ga .
 : 1759596755:0;gcm "added crash.png"
-: 1759596755:0;gs
-: 1759596755:0;gp
-: 1759596757:0;gpl
-: 1759596758:0;gs
-: 1759596758:0;gd
-: 1759596758:0;gs
-: 1759596759:0;gd
-: 1759596759:0;gs
-: 1759596760:0;gd
-: 1759596761:0;vim something.tex
-: 1759596770:0;t ls
-: 1759596770:0;ta
-: 1759596777:0;vim something.tex
-: 1759596780:0;gs
-: 1759596780:0;gd
-: 1759596784:0;gs
-: 1759596784:0;gd
-: 1759596787:0;gs
-: 1759596788:0;gd
-: 1759596790:0;gs
-: 1759596790:0;gd
-: 1759596792:0;gs
-: 1759596792:0;gd
-: 1759596795:0;gs
-: 1759596798:0;gd
-: 1759596799:0;gs
-: 1759596799:0;gpl
-: 1759596804:0;gs
-: 1759596804:0;gd
-: 1759596806:0;g
-: 1759596807:0;gs
-: 1759596807:0;gd
-: 1759596808:0;gs
-: 1759596810:0;tree
-: 1759596810:0;gs
-: 1759596811:0;gd
-: 1759596816:0;vim commands_to_run_after_reinstall.md
 : 1759596890:0;cp -r ~/.local/share/tmux/resurrect ./tmux-resurrect-backup
-: 1759596891:0;gs
-: 1759596891:0;gd
-: 1759596900:0;gs
-: 1759596909:0;git clean -f
-: 1759596910:0;gs
-: 1759596910:0;gd
-: 1759596913:0;gs
-: 1759596914:0;gd
-: 1759596918:0;git checkout -- .
-: 1759596920:0;git clean -f
-: 1759596920:0;gs
-: 1759596921:0;gd
 : 1759596928:0;cd tmux-resurrect-backup/
-: 1759596928:0;gs
-: 1759596929:0;gd
-: 1759596930:0;git clean -f
-: 1759596931:0;gs
-: 1759596931:0;gd
 : 1759596934:0;git clean f .-
 : 1759596937:0;git clean -f .
-: 1759596939:0;gs
-: 1759596939:0;gd
-: 1759596943:0;ls
-: 1759596948:0;vim commands_to_run_after_reinstall.md
-: 1759596976:0;ls
-: 1759596980:0;vim my_zsh_history
 : 1759596988:0;cp ~/.zsh_history ./my_zsh_history
-: 1759596988:0;gs
-: 1759596989:0;gd
 : 1759597014:0;cd ~/.local/share/tmux/resurrect
-: 1759597015:0;ls
-: 1759597019:0;ls -ath
-: 1759597028:0;vim commands_to_run_after_reinstall.md
-: 1759597039:0;pwd
 : 1759597041:0;l -atl
-: 1759597044:0;pwd
-: 1759597046:0;l -ath
 : 1759597084:0;tree tmux-resurrect-backup
 : 1759597108:0;cat commands_to_run_after_reinstall.md
 : 1759597271:0;vim my_zsh_history
-: 1759597294:0;vim backup_stuff.sh
-: 1759597334:0;vim restore_stuff.sh
-: 1759597374:0;ls
-: 1759597375:0;gs
-: 1759597375:0;gd
 : 1759597399:0;chmod +x backup_stuff.sh restore_stuff.sh
-: 1759597621:0;vim backup_personal_folders.sh
-: 1759597629:0;chmod +x backup_personal_folders.sh
-: 1759597633:0;./backup_personal_folders.sh
 : 1759597710:0;tree -a ~
-: 1759597718:0;ls
 : 1759597720:0;ls -al ~
-: 1759597724:0;ls ~
 : 1759597765:0;du -sh ~
 : 1759597768:0;sudo du -sh ~
-: 1759597912:0;gs
-: 1759597913:0;gd
-: 1759597921:0;cd /tmp
-: 1759597921:0;ls
-: 1759597922:0;pwd
 : 1759597924:0;rm -rf personal_folders_backup_20251004_100713
-: 1759597932:0;ls
-: 1759597933:0;pwd
-: 1759597937:0;vim backup_personal_folders.sh
-: 1759597950:0;ls
-: 1759597951:0;ls ~
 : 1759597960:0;\ls
-: 1759597966:0;ls
 : 1759597967:0;ls ~
-: 1759598260:0;vim backup_personal_folders.sh
 : 1759598272:0;chmod +x backup_personal_folders.sh
-: 1759598275:0;./backup_personal_folders.sh
-: 1759598399:0;ls
-: 1759598399:0;pwd
-: 1759598404:0;cd 
 : 1759598408:0;cd /tmp
-: 1759598409:0;ls
-: 1759598420:0;vim backup_personal_folders.sh
-: 1759598442:0;ls
-: 1759598442:0;pwd
-: 1759598443:0;gs
-: 1759598443:0;gd
-: 1759598448:0;vim backup_stuff.sh
-: 1759598497:0;ls
-: 1759598497:0;pwd
-: 1759598498:0;gs
-: 1759598498:0;gd
-: 1759598502:0;vim restore_stuff.sh
-: 1759598577:0;ls
-: 1759598577:0;pwd
-: 1759598601:0;tree
-: 1759598604:0;ls
-: 1759598605:0;ls -al
-: 1759598829:0;vim restore_personal_folders.sh
-: 1759598835:0;vim backup_personal_folders.sh
-: 1759598838:0;vim restore_personal_folders.sh
-: 1759598852:0;ls
-: 1759598853:0;pwd
-: 1759598854:0;vim restore_personal_folders.sh
-: 1759598861:0;vim backup_personal_folders.sh
-: 1759598863:0;ls
-: 1759598863:0;pwd
-: 1759598864:0;gs
-: 1759598864:0;gd
-: 1759598865:0;gs
-: 1759598866:0;gd
-: 1759598870:0;vim backup_stuff.sh
 : 1759598878:0;chmod +x *.sh
-: 1759598878:0;ls
-: 1759598879:0;gs
-: 1759598879:0;gd
-: 1759598884:0;vim backup_stuff.sh
-: 1759598892:0;./backup_stuff.sh
-: 1759709135:0;ls
-: 1759709136:0;pwd
-: 1759709137:0;t ls
-: 1759709138:0;t
-: 1759709147:0;nvim cs2.py
-: 1759709147:0;nvim users.csv
-: 1759709147:0;nvim counting_semaphore_with_producers_and_consumers.c
-: 1759709160:0;cd ~/.config/i3
-: 1759709160:0;ls
-: 1759709160:0;pwd
-: 1759709161:0;gs
-: 1759709161:0;gd
-: 1759709174:0;gpl
-: 1759709180:0;ls
-: 1759709180:0;pwd
 : 1759709182:0;git status
-: 1759709182:0;ls
-: 1759709183:0;pwd
-: 1759709197:0;gs
-: 1759709197:0;gpl
-: 1759709199:0;ls
-: 1759709200:0;pwd
-: 1759709246:0;gs
-: 1759709246:0;gd
-: 1759709249:0;t ls
-: 1759709257:0;ls
-: 1759709258:0;pwd
-: 1759709259:0;t ls
-: 1759709259:0;ta
 : 1759709264:0;vim something.tex /
-: 1759709266:0;vim something.tex
-: 1759709271:0;firebase login
-: 1759709273:0;gpl
-: 1759709279:0;gs
-: 1759709280:0;gd
-: 1759709289:0;gpl
-: 1759709290:0;ls
-: 1759709291:0;pwd
-: 1759709293:0;vim something.tex
-: 1759709304:0;gs
-: 1759709304:0;gd
-: 1759709489:0;t kill-server
-: 1759709490:0;t ls
-: 1759709490:0;t
-: 1759709503:0;cd ~/.config/i3
-: 1759709503:0;ls
-: 1759709504:0;pwd
-: 1759709504:0;gs
-: 1759709504:0;gd
-: 1759709517:0;gs
-: 1759709518:0;gd
-: 1759709519:0;gpl
-: 1759709521:0;gp
-: 1759709522:0;gs
-: 1759709522:0;gd
-: 1759709524:0;gs
-: 1759709525:0;gl
-: 1759709527:0;gpl
-: 1759709537:0;gl
-: 1759709540:0;git checkout -- .
-: 1759709541:0;gs
-: 1759709541:0;gd
-: 1759709543:0;git clean -f
-: 1759709545:0;gs
-: 1759709545:0;gd
-: 1759709546:0;gpl
-: 1759709547:0;gs
-: 1759709548:0;gd
-: 1759709549:0;gpl
-: 1759709551:0;gs
-: 1759709551:0;gd
-: 1759709556:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
-: 1759709556:0;ls
-: 1759709557:0;pwd
-: 1759709565:0;gpl
-: 1759709581:0;gspl
-: 1759709581:0;gs
-: 1759709582:0;gpl
-: 1759709587:0;gs
-: 1759709588:0;gpl
-: 1759709590:0;vim ~/.zshrc
-: 1759709608:0;conda create --name loonix python=3.12
-: 1759709638:0;gs
-: 1759709638:0;gpl
-: 1759709639:0;gp
-: 1759709640:0;vim ~/.zshrc
-: 1759709645:0;ls
-: 1759709646:0;pwd
-: 1759709650:0;conda install bs4 requests pandas numpy
-: 1759709696:0;ls
-: 1759709697:0;pwd
-: 1759709703:0;gpl
 : 1759709705:0;gspl
-: 1759709712:0;gs
-: 1759709712:0;gpl
-: 1759709729:0;tree
-: 1759709732:0;ls
-: 1759709732:0;pwd
-: 1759709732:0;gs
-: 1759709733:0;gd
-: 1759709733:0;gpl
-: 1759709741:0;ls
-: 1759709742:0;pwd
-: 1759709746:0;ls *firefox*
-: 1759709746:0;lls
-: 1759709747:0;pwd
-: 1759709749:0;ls
-: 1759709749:0;pwd
 : 1759709755:0;rm -rf firefox-backup
-: 1759709756:0;ls
-: 1759709757:0;pwd
 : 1759709761:0;ls *firefox*
-: 1759709761:0;ls
-: 1759709762:0;pwd
-: 1759709762:0;gs
-: 1759709764:0;ga .
-: 1759709764:0;gs
 : 1759709767:0;gcm "removed firefox stuff"
-: 1759709770:0;gs
-: 1759709770:0;gpl
-: 1759709771:0;gp
-: 1759709772:0;gs
-: 1759709773:0;gd
-: 1759709774:0;ls
-: 1759709779:0;vim backup_stuff.sh
-: 1759709786:0;gs
-: 1759709786:0;gd
-: 1759709793:0;vim restore_stuff.sh
-: 1759709800:0;gs
-: 1759709800:0;gd
-: 1759709801:0;ga .
-: 1759709802:0;gs
 : 1759709809:0;gcm "removed firefox stuff from sh files" 
-: 1759709809:0;gs
-: 1759709810:0;gp
-: 1759709811:0;gpl
-: 1759709812:0;gd
-: 1759709813:0;gs
-: 1759709813:0;gd
 : 1759709974:0;systemctl restart
 : 1759709979:0;systemctl reboot
-: 1759710055:0;t ls
-: 1759710055:0;t
-: 1759710057:0;nvim cs2.py
-: 1759710057:0;nvim users.csv
-: 1759710057:0;nvim counting_semaphore_with_producers_and_consumers.c
-: 1759710061:0;tree
-: 1759710115:0;t ls
-: 1759710115:0;ta
-: 1759710119:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
-
-: 1759710152:0;gpg --generate-key
 : 1759710173:0;pass init 3F8DF29AB1A505B774DAC518D2AFF8F8967D4825
-: 1759710188:0;dp
-: 1759710188:0;di
 : 1759710191:0;docker run h
-: 1759710204:0;docker run hello-world
-: 1759710220:0;dp
-: 1759710220:0;di
 : 1759710224:0;docker syt
-: 1759710226:0;docker system prune -a
-: 1759710235:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
-
 : 1759710335:0;tree -fi | grep *.md
 : 1759710337:0;tree -fi | grep .md
-: 1759710348:0;ls
-: 1759710348:0;pwd
-: 1759710354:0;ls *.md
-: 1759710356:0;vim commands_to_run_after_reinstall.md
-: 1759710364:0;tree
-: 1759710369:0;gs
-: 1759710369:0;gpl
-: 1759710374:0;gs
-: 1759710375:0;gpl
-: 1759710389:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
-: 1759710394:0;gpl
-: 1759710403:0;tldr cut
-: 1759710405:0;cut -d ',' -f 2,4 users.csv
-: 1759710406:0;lls
-: 1759710406:0;ls
-: 1759710407:0;pwd
-: 1759710442:0;t ls
-: 1759710443:0;ta
-: 1759721934:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
 : 1759723892:0;type 1
-: 1759723893:0;ls
-: 1759723893:0;pwd
 : 1759723895:0;type 2
 : 1759723897:0;cd -2
 : 1759723900:0;cd -1
-: 1759723900:0;ls
-: 1759723900:0;pwd
 : 1759723903:0;tldr cd
 : 1759723905:0;man cd
-: 1759723907:0;ls
-: 1759723908:0;pwd
 : 1759723911:0;type 3
 : 1759723916:0;type 7
 : 1759723918:0;9
 : 1759723921:0;0
-: 1759723922:0;ls
-: 1759723922:0;pwd
-: 1759723923:0;gs
-: 1759723924:0;gd
-: 1759723935:0;gs
-: 1759723936:0;gd
-: 1759723937:0;ga .
-: 1759723937:0;gs
 : 1759723949:0;gcm "added code for counting semaphore with producers and consumers"
-: 1759723949:0;gs
-: 1759723949:0;gpl
-: 1759723950:0;gp
-: 1759723952:0;gs
-: 1759723952:0;gd
-: 1759723992:0;ls *.c
 : 1759724091:0;cat *.c | wc -l
-: 1759724091:0;ls
-: 1759724092:0;pwd
-: 1759724093:0;whoami
-: 1759724096:0;gs
-: 1759724096:0;gd
-: 1759724100:0;nvim counting_semaphore_with_producers_and_consumers.c
-: 1759724104:0;ls -ath
-: 1759724106:0;l -ath
-: 1759724132:0;gs
-: 1759724132:0;gd
-: 1759724133:0;gpl
-: 1759724134:0;gp
-: 1759724134:0;whoami
-: 1759724136:0;pwd
-: 1759724139:0;ls -ath
-: 1759724140:0;l -ath
 : 1759724146:0;cat test.txt
-: 1759724148:0;whoami
 : 1759724149:0;clang 
-: 1759724151:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
 : 1759724154:0;./counting_semaphore_with_producers_and_consumers
 : 1759724158:0;gdb ./counting_semaphore_with_producers_and_consumers
 : 1759724193:0;clang -g -Wall counting_semaphore_with_producers_and_consumers.c -o counting_semaphore_with_producers_and_consumers && ./counting_semaphore_with_producers_and_consumers
-: 1759724194:0;ls
-: 1759724194:0;pwd
-: 1759724319:0;ls
-: 1759724319:0;pwd
-: 1759724328:0;vim linked_list.c
 : 1759724397:0;nvim counting_semaphore_with_producers_and_consumers.c
 : 1759724565:0;clang -g -wall linked_list.c -o linked_list
 : 1759724569:0;clang -g -Wall linked_list.c -o linked_list
-: 1759724572:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
-: 1759724585:0;gs
-: 1759724585:0;gd
-: 1759725085:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
-: 1759726468:0;ls
-: 1759726468:0;gs
-: 1759726469:0;gd
-: 1759726820:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
 : 1759727190:0;sudo apt install valgrind -y
 : 1759727205:0;valgrind ./linked_list --leak-check=full
-: 1759727340:0;valgrind ./linked_list --leak-check=full --track-origins=yes
-: 1759727366:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
 : 1759727368:0;valgrind ./linked_list --leak-check=full --track-origins=yes
-: 1759727399:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759760128:0;t ls
-: 1759760128:0;t
-: 1759760130:0;nvim cs2.py
-: 1759760130:0;nvim users.csv
 : 1759760130:0;nvim linked_list.c
-: 1759762569:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
-: 1759762570:0;ls
-: 1759762571:0;pwd
-: 1759762959:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
 : 1759763005:0;type history 
-: 1759763018:0;history | grep "sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y" | wc -l
 : 1759763040:0;history | grep pwd | wc -l
-: 1759763926:0;ls
-: 1759763928:0;pwd
-: 1759763929:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759774197:0;vim tree.c
 : 1759774712:0;clang -g -Wall linked_list.c -o linked_list && ./linked_list
-: 1759774730:0;clang -g -Wall tree.c -o tree && ./tree
-: 1759785680:0;vim queue.h
-: 1759785689:0;vim tree.c
-: 1759785756:0;vim queue.c
-: 1759785759:0;vim tree.c
 : 1759785766:0;vim queue.
-: 1759785768:0;vim queue.c
-: 1759785942:0;vim tree.c
-: 1759785948:0;clang -g -Wall tree.c -o tree && ./tree
-: 1759785958:0;ls
-: 1759785958:0;pwd
-: 1759785959:0;clang -g -Wall tree.c -o tree && ./tree
-: 1759785962:0;vim queue.c
 : 1759786433:0;vim linked_list.c
 : 1759787139:0;gcc queue.c -o queue
-: 1759787141:0;gcc queue.c -o queue && ./queue
 : 1759790113:0;vim queue.h
-: 1759790206:0;vim
-: 1759790311:0;vim tree.c
-: 1759790352:0;vim
 : 1759790393:0;vim tree.h
-: 1759790398:0;vim tree.c
 : 1759790418:0;vim queue.c
-: 1759790421:0;vim 
-: 1759790485:0;gcc queue.c -o queue && ./queue
-: 1759791122:0;vim 
-: 1759795646:0;gcc queue.c -o queue && ./queue
-: 1759795654:0;p
-: 1759795656:0;gcc queue.c -o queue && ./queue
-: 1759795677:0;vim ~/.alacritty.toml
 : 1759795699:0;gcc queue.c -o queue && ./queue
-: 1759795876:0;ls
-: 1759795877:0;pwd
 : 1759795878:0;vim tree.c
-: 1759795883:0;vim 
-: 1759795935:0;clang -g -Wall tree.c -o tree && ./tree
 : 1759796034:0;vim .al
 : 1759796038:0;vim ~/.alacritty.toml
 : 1759796434:0;clang -g -Wall tree.c -o tree && ./tree
-: 1759796494:0;clang -g -Wall tree.c -o tree
 : 1759796515:0;clang -g -Wall tree.c queue.h tree.h -o tree
-: 1759796524:0;clang -g -Wall tree.c -o tree
-: 1759796542:0;cat tree.c tree.h queue.c queue.h
 : 1759796545:0;clang -g -Wall tree.c -o tree
 : 1759796672:0;clang -g -Wall tree.c queue.c -o tree
-: 1759796722:0;clang -g -Wall tree.c queue.c -o tree && ./tree
-: 1759796931:0;gs
-: 1759796931:0;gd
-: 1759796933:0;ga .
 : 1759796940:0;gcm "added code for linked list, queue, and tre"
 : 1759796947:0;tldr git commit -m
-: 1759796950:0;tldr git commit
-: 1759796957:0;git commit --amend
-: 1759796962:0;gs
-: 1759796962:0;gd
-: 1759796963:0;gl
-: 1759796965:0;gp
-: 1759796966:0;gpl
-: 1759796967:0;gs
-: 1759796967:0;gd
 : 1759796970:0;tldr git commit
-: 1759796972:0;ls
-: 1759796972:0;pwd
-: 1759796973:0;gs
-: 1759796973:0;gd
-: 1759797002:0;t ls
-: 1759797002:0;ta
-: 1759797119:0;t ls
-: 1759797119:0;ta
-: 1759797128:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759798452:0;clang -g -Wall tree.c queue.c -o tree && ./tree
-: 1759798488:0;vim 
-: 1759798502:0;clang -g -Wall tree.c queue.c -o tree && ./tree
-: 1759798503:0;vim
-: 1759798514:0;clang -g -Wall tree.c queue.c -o tree && ./tree
 : 1759798540:0;cat tree.c tree.h queue.c queue.h
-: 1759798541:0;clang -g -Wall tree.c queue.c -o tree && ./tree
 : 1759798546:0;type gg
-: 1759798588:0;clang -g -Wall tree.c queue.c -o tree && ./tree
-: 1759798924:0;gs
-: 1759798924:0;gd
-: 1759810657:0;clang -g -Wall tree.c queue.c -o tree && ./tree
-: 1759811456:0;gs
-: 1759811456:0;gd
-: 1759811462:0;gs
-: 1759811463:0;gd
 : 1759811465:0;clang -g -Wall tree.c queue.c -o tree && ./tree
-: 1759811466:0;gs
-: 1759811467:0;gd
-: 1759811479:0;ga .
 : 1759811489:0;gcm "finished code for tree level order"
-: 1759811489:0;gs
-: 1759811489:0;gp
-: 1759811491:0;gpl
-: 1759811491:0;gs
-: 1759811491:0;gd
-: 1759811493:0;gs
-: 1759811494:0;gd
-: 1759811552:0;vim block_device.c
 : 1759811557:0;vim block_mem_allocator.c
-: 1759847063:0;t ls
-: 1759847065:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
-: 1759847067:0;t
-: 1759847069:0;nvim cs2.py
-: 1759847069:0;nvim users.csv
-: 1759847069:0;nvim block_device.c
 : 1759847456:0;man read
 : 1759847458:0;man write
 : 1759847463:0;tldr write
@@ -1192,13 +458,8 @@ git push -u origin main
 : 1759847478:0;write sriram 1
 : 1759847490:0;write sriram 
 : 1759847493:0;write sriram sup
-: 1759847496:0;ls
-: 1759847496:0;pwd
-: 1759872099:0;sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove --purge -y && flatpak update -y
 : 1759876299:0;clang block_device.c -o block_device
 : 1759876301:0;clang block_device.c -o block_device && ./block_
-: 1759876303:0;clang block_device.c -o block_device && ./block_device
-: 1759876306:0;gs
 : 1759876308:0;vim disk.img
 : 1759876466:0;clang block_device.c -o block_device && ./block_device
 : 1759876469:0;sg
@@ -10096,3 +9357,861 @@ sudo apt install wordlists\
 : 1762916863:0;gpl
 : 1762916869:0;cd nas
 : 1762916880:0;./backup_stuff.sh
+: 1763176917:0;ls
+: 1763176918:0;wd
+: 1763176918:0;pwd
+: 1763176920:0;t ls
+: 1763176920:0;ls
+: 1763176921:0;pwd
+: 1763176921:0;vim
+: 1763176930:0;xrandr 
+: 1763176933:0;cd ~/.config/i3
+: 1763176933:0;ls
+: 1763176934:0;pwd
+: 1763176938:0;vim increase_brightness.sh
+: 1763176944:0;vim increase_brightness_mac.sh
+: 1763176951:0;vim startup.sh
+: 1763176961:0;xrandr
+: 1763176996:0;gs
+: 1763176997:0;gd
+: 1763177001:0;vim startup.sh
+: 1763177009:0;git checkout -- .
+: 1763177014:0;ls
+: 1763177014:0;pwd
+: 1763177015:0;gs
+: 1763177015:0;vim startup.sh
+: 1763177042:0;vim
+: 1763177057:0;cd ~/.config/i3
+: 1763177058:0;vim startup.sh
+: 1763177060:0;gs
+: 1763177060:0;gd
+: 1763177072:0;vim startup.sh
+: 1763177132:0;ls
+: 1763177132:0;pwd
+: 1763177134:0;gs
+: 1763177134:0;gd
+: 1763177138:0;t ls
+: 1763177138:0;t
+: 1763177140:0;nvim todo_oct_research.txt
+: 1763177140:0;nvim electronics-embedded-todo.md
+: 1763177140:0;nvim cs2.py
+: 1763177140:0;nvim users.csv
+: 1763177140:0;nvim compiler.c
+: 1763177140:0;nvim todo.md
+: 1763177153:0;ls
+: 1763177154:0;wd
+: 1763177154:0;pwd
+: 1763177154:0;gs
+: 1763177155:0;gd
+: 1763177158:0;ga .
+: 1763177181:0;gcm "modified startup script to set res correctly for new monitor"
+: 1763177181:0;gs
+: 1763177182:0;gp
+: 1763177182:0;gpl
+: 1763177183:0;gs
+: 1763177184:0;gd
+: 1763177184:0;gp
+: 1763177185:0;gpl
+: 1763177188:0;tree
+: 1763177190:0;ls
+: 1763177191:0;pwd
+: 1763177195:0;sudo apt install tree
+: 1763177204:0;ls
+: 1763177204:0;pwd
+: 1763177205:0;tree
+: 1763177211:0;picocom -b 115200 /dev/ttyACM0
+: 1763177215:0;tree
+: 1763177217:0;nvim electronics-embedded-todo.md
+: 1763177218:0;nvim todo_oct_research.txt
+: 1763177223:0;gs
+: 1763177223:0;gd
+: 1763177228:0;firebase login
+: 1763177250:0;sudo bundle install
+: 1763177255:0;vim README.md
+: 1763177272:0;vim ~/.zshrc
+: 1763177297:0;conda create --name loonix python=3.12
+: 1763177306:0;bundle exec jekyll serve -l -H localhost
+: 1763177314:0;nvim cs2.py
+: 1763177319:0;conda install bs4 requests pandas numpy
+: 1763177331:0;nvim cs2.py
+: 1763177337:0;tldr cut
+: 1763177339:0;cut -d ',' -f 2,4 users.csv
+: 1763177343:0;cd
+: 1763177345:0;rm -rf Pictures
+: 1763177350:0;git clone https://github.com/srirams1003/Pic
+: 1763177352:0;git clone https://github.com/srirams1003/Pictures
+: 1763177361:0;rm -rf Documents/obsidian-notes
+: 1763177364:0;cd Documents/
+: 1763177367:0;git clone https://github.com/srirams1003/obsidian-notes
+: 1763177371:0;ls
+: 1763177372:0;pwd
+: 1763177373:0;cd Pictures
+: 1763177374:0;gs
+: 1763177374:0;gd
+: 1763177374:0;gpl
+: 1763177375:0;gs
+: 1763177375:0;gd
+: 1763177376:0;gpl
+: 1763177377:0;lgs
+: 1763177378:0;gs
+: 1763177379:0;gpl
+: 1763177380:0;vim something.tex
+: 1763177403:0;gs
+: 1763177403:0;gd
+: 1763177407:0;vim ~/.zshrc
+: 1763177411:0;python cs2.py
+: 1763177413:0;python whatdoido.py
+: 1763177415:0;ls
+: 1763177415:0;pwd
+: 1763177422:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1763177428:0;gs
+: 1763177431:0;git checkout -- .
+: 1763177432:0;gpl
+: 1763177435:0;gs
+: 1763177437:0;git checkout -- .
+: 1763177440:0;git clean -f
+: 1763177441:0;sgs
+: 1763177442:0;gpl
+: 1763177444:0;gs
+: 1763177444:0;gd
+: 1763177446:0;ls
+: 1763177448:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1763177454:0;vim compiler
+: 1763177460:0;vim compiler.c
+: 1763177464:0;clang -Wall -g -fsanitize=address compiler.c -o compiler  && ./compiler
+: 1763177472:0;gpl
+: 1763177482:0;gb -va
+: 1763177495:0;git checkout -t remotes/origin/low-power-data-logger-uart-shell-extension-EP12.5
+: 1763177500:0;git checkout -t remotes/origin/bare-metal
+: 1763177501:0;gs
+: 1763177502:0;gpl
+: 1763177503:0;gs
+: 1763177504:0;gpl
+: 1763177506:0;gl
+: 1763177510:0;gs
+: 1763177513:0;picocom -b 115200 /dev/ttyACM0
+: 1763177517:0;vim Core/Src/main.c
+: 1763177529:0;gs
+: 1763177529:0;gd
+: 1763177530:0;vim Core/Src/main.c
+: 1763177587:0;# Add Docker's official GPG key:\
+sudo apt update\
+sudo apt install ca-certificates curl\
+sudo install -m 0755 -d /etc/apt/keyrings\
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc\
+sudo chmod a+r /etc/apt/keyrings/docker.asc\
+\
+# Add the repository to Apt sources:\
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF\
+Types: deb\
+URIs: https://download.docker.com/linux/ubuntu\
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")\
+Components: stable\
+Signed-By: /etc/apt/keyrings/docker.asc\
+EOF\
+\
+sudo apt update
+: 1763177597:0;sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+: 1763177619:0;cd Downloads
+: 1763177620:0;sudo apt-get update\
+sudo apt-get install ./docker-desktop-amd64.deb
+: 1763177630:0;gpg --generate-key
+: 1763177655:0;pass init 2CA0BF216AA750884FD97E622D48C588A653D12B
+: 1763177769:0;docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac\
+
+: 1763177803:0;dp
+: 1763177803:0;di
+: 1763177869:0;neo
+: 1763177886:0;ls
+: 1763177887:0;pwd
+: 1763177888:0;whoami
+: 1763178001:0;t ls
+: 1763178001:0;ta
+: 1763178007:0;picocom -b 115200 /dev/ttyACM0
+: 1763178217:0;vim Core/Src/main.c
+: 1763179363:0;t ls
+: 1763179364:0;t
+: 1763179366:0;nvim todo_oct_research.txt
+: 1763179366:0;nvim electronics-embedded-todo.md
+: 1763179366:0;nvim cs2.py
+: 1763179366:0;nvim users.csv
+: 1763179366:0;nvim compiler.c
+: 1763179366:0;nvim todo.md
+: 1763179366:0;nvim Core/Src/main.c
+: 1763179371:0;picocom -b 115200 /dev/ttyACM0
+: 1763179387:0;bluet
+: 1763179389:0;bluetoothctl
+: 1763179513:0;gs
+: 1763179514:0;gpl
+: 1763179515:0;gp
+: 1763179515:0;gs
+: 1763179515:0;gd
+: 1763179517:0;gd Core/Src/main.c
+: 1763179519:0;ls
+: 1763179519:0;pwd
+: 1763179520:0;vim Core/Src/main.c
+: 1763179542:0;gd Core/Src/main.c
+: 1763179544:0;vim Core/Src/main.c
+: 1763180051:0;ls
+: 1763180051:0;pwd
+: 1763180054:0;t ls
+: 1763180054:0;ta
+: 1763180059:0;gs
+: 1763180059:0;gd
+: 1763180060:0;gpl
+: 1763180061:0;tree
+: 1763180280:0;vim config
+: 1763180539:0;convert ~/Documents/wallpapers/firewatchtower.png -resize 2560x1440! ~/Documents/wallpapers/firewatchtower_1440p.png\
+
+: 1763180564:0;vim config
+: 1763180585:0;ls
+: 1763180585:0;pwd
+: 1763180599:0;open ~/Documents/wallpapers/firewatchtower_1440p.png
+: 1763180606:0;gs
+: 1763180607:0;gd
+: 1763180608:0;ls
+: 1763180609:0;pwd
+: 1763180610:0;ga .
+: 1763180610:0;gs
+: 1763180625:0;gcm "modified lock image config for 1440p monitor"
+: 1763180626:0;gs
+: 1763180626:0;gp
+: 1763180627:0;gpl
+: 1763180632:0;gs
+: 1763180632:0;gd
+: 1763180634:0;ga .
+: 1763180641:0;gcm "added firewatchtower_1440p.png"
+: 1763180642:0;gs
+: 1763180642:0;gp
+: 1763180643:0;gpl
+: 1763180644:0;gs
+: 1763180644:0;gd
+: 1763180645:0;gpl
+: 1763180645:0;gp
+: 1763180646:0;gs
+: 1763180647:0;gdf
+: 1763180648:0;gs
+: 1763180649:0;gd
+: 1763232891:0;t ls
+: 1763232891:0;t
+: 1763232893:0;nvim todo_oct_research.txt
+: 1763232893:0;nvim electronics-embedded-todo.md
+: 1763232893:0;nvim cs2.py
+: 1763232893:0;nvim users.csv
+: 1763232893:0;nvim compiler.c
+: 1763232893:0;nvim todo.md
+: 1763232893:0;nvim Core/Src/main.c
+: 1763232898:0;picocom -b 115200 /dev/ttyACM0
+: 1763233559:0;gs
+: 1763233559:0;gd
+: 1763233561:0;gd 
+: 1763233564:0;gd Core/Src/main.c
+: 1763233568:0;gd Core/
+: 1763233571:0;gd Core/Src/main.c
+: 1763233578:0;gd
+: 1763233580:0;gd Core/Src/main.c
+: 1763233599:0;vim Core/Src/main.c
+: 1763238305:0;sudo apt install steam -y
+: 1763240585:0;vim Core/Src/main.c
+: 1763275030:0;gs
+: 1763275031:0;gd
+: 1763275032:0;gd Core/Src/main.c
+: 1763275037:0;vim Core/Src/main.c
+: 1763276215:0;gs
+: 1763276215:0;gd
+: 1763276217:0;gd Core/Src/main.c
+: 1763276219:0;gs
+: 1763276221:0;vim Core/Src/main.c
+: 1763285985:0;update
+: 1763290545:0;vim Core/Src/main.c
+: 1763330718:0;t ls
+: 1763330719:0;t
+: 1763330721:0;nvim todo_oct_research.txt
+: 1763330721:0;nvim electronics-embedded-todo.md
+: 1763330721:0;nvim cs2.py
+: 1763330721:0;nvim users.csv
+: 1763330721:0;nvim compiler.c
+: 1763330721:0;nvim todo.md
+: 1763330721:0;nvim Core/Src/main.c
+: 1763330730:0;picocom -b 115200 /dev/ttyACM0
+: 1763330877:0;xkill
+: 1763330898:0;ps -eaf | grep stm
+: 1763330908:0;kill -9 133312
+: 1763330920:0;xkill
+: 1763330925:0;ps -eaf | grep stm
+: 1763330956:0;kill -9 133337
+: 1763330958:0;ps -eaf | grep stm
+: 1763346640:0;xkill
+: 1763348556:0;ps -eaf | grep stm
+: 1763348565:0;kill -9 136685
+: 1763348566:0;ps -eaf | grep stm
+: 1763348718:0;xkill
+: 1763348724:0;ps -eaf | grep stm
+: 1763348730:0;kill -9 4582
+: 1763348731:0;ps -eaf | grep stm
+: 1763348733:0;ls
+: 1763348734:0;pwd
+: 1763348737:0;update
+: 1763348762:0;t ls
+: 1763348762:0;t
+: 1763348765:0;nvim todo_oct_research.txt
+: 1763348765:0;nvim electronics-embedded-todo.md
+: 1763348765:0;nvim cs2.py
+: 1763348765:0;nvim users.csv
+: 1763348765:0;nvim compiler.c
+: 1763348765:0;nvim todo.md
+: 1763348765:0;nvim Core/Src/main.c
+: 1763348795:0;sudo apt remove --purge st-stm32cubeide-1.19.0
+: 1763348804:0;update
+: 1763348865:0;bluetoothctl
+: 1763350124:0;vim Core/Src/main.c
+: 1763350195:0;ls
+: 1763350195:0;pwd
+: 1763350197:0;vim Core/Src/main.c
+: 1763350226:0;kill -9 11225
+: 1763350227:0;vim Core/Src/main.c
+: 1763350237:0;kill -9 11225
+: 1763350238:0;ls
+: 1763350240:0;vim Core/Src/main.c
+: 1763351183:0;chmod +x st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.sh
+: 1763351186:0;sudo ./st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.sh
+: 1763351223:0;ls
+: 1763351223:0;pwd
+: 1763351291:0;sudo ./st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.sh
+: 1763351400:0;chmod +x st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.sh
+: 1763351405:0;sudo  ./st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.sh
+: 1763351620:0;ps -
+: 1763351623:0;ps -eaf | grep stm
+: 1763351630:0;kill -9 80726
+: 1763351631:0;ps -eaf | grep stm
+: 1763351668:0;kill -9 83184
+: 1763351669:0;ps -eaf | grep stm
+: 1763351674:0;kill -9 83208
+: 1763351675:0;ps -eaf | grep stm
+: 1763351709:0;chmod +x st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1763351714:0;sudo ./st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1763351854:0;ps -eaf | grep stm
+: 1763351863:0;kill -9 
+: 1763351869:0;kill -9 87287
+: 1763351870:0;ps -eaf | grep stm
+: 1763351887:0;gs
+: 1763351888:0;gd
+: 1763351891:0;ga .
+: 1763351891:0;gs
+: 1763351911:0;gcm "beginning to compile and flash code manually instead of using stm32cubeide"
+: 1763351911:0;gs
+: 1763351912:0;gp
+: 1763351913:0;gpl
+: 1763351914:0;gs
+: 1763351914:0;gd
+: 1763351916:0;make all
+: 1763351917:0;ls
+: 1763351918:0;pwd
+: 1763351921:0;cd Core/
+: 1763351922:0;ls
+: 1763351924:0;cd Src
+: 1763351925:0;ls
+: 1763351925:0;pwd
+: 1763351926:0;make
+: 1763351928:0;cd ..
+: 1763351928:0;ls
+: 1763351929:0;cd ..
+: 1763351930:0;ls
+: 1763351930:0;pwd
+: 1763351932:0;ls
+: 1763351932:0;pwd
+: 1763351938:0;ls Drivers
+: 1763351938:0;ls
+: 1763351939:0;pwd
+: 1763351941:0;cd ..
+: 1763351943:0;-
+: 1763351943:0;ls
+: 1763351943:0;gs
+: 1763351944:0;gd
+: 1763351945:0;gpl
+: 1763351946:0;gp
+: 1763351946:0;gs
+: 1763351946:0;gd
+: 1763351959:0;ls
+: 1763351960:0;pwd
+: 1763351961:0;cd D
+: 1763351963:0;cd Debug
+: 1763351963:0;ls
+: 1763351964:0;pwd
+: 1763351965:0;make 
+: 1763351967:0;make all
+: 1763351972:0;make
+: 1763351984:0;t ls
+: 1763351985:0;ta
+: 1763351990:0;vim secondScript.sh
+: 1763352016:0;ls
+: 1763352016:0;pwd
+: 1763352018:0;gs
+: 1763352023:0;make
+: 1763352025:0;make all
+: 1763352026:0;vim makefile
+: 1763352032:0;make all
+: 1763352075:0;ps -eaf | grep stm
+: 1763352082:0;kill -9 89106
+: 1763352084:0;ps -eaf | grep stm
+: 1763352092:0;make all
+: 1763352093:0;make
+: 1763352095:0;make all
+: 1763352138:0;vim makefile
+: 1763352142:0;ls
+: 1763352143:0;pwd
+: 1763352145:0;ls
+: 1763352149:0;vim makefile
+: 1763352191:0;ls
+: 1763352194:0;vim objects.list
+: 1763352196:0;ls
+: 1763352196:0;pwd
+: 1763352199:0;cd Core
+: 1763352200:0;ls
+: 1763352200:0;pwd
+: 1763352202:0;cd S
+: 1763352203:0;cd Src
+: 1763352203:0;ls
+: 1763352204:0;pwd
+: 1763352205:0;cd ...
+: 1763352205:0;ls
+: 1763352206:0;pwd
+: 1763352210:0;vim objects.mk
+: 1763352212:0;vim sources.mk
+: 1763352218:0;vim objects.
+: 1763352221:0;vim objects.list
+: 1763352228:0;cd ..
+: 1763352229:0;vim
+: 1763352238:0;cd ..
+: 1763352239:0;ls
+: 1763352239:0;pwd
+: 1763352240:0;-
+: 1763352246:0;git checkout -- .
+: 1763352246:0;gs
+: 1763352248:0;gpl
+: 1763352248:0;gp
+: 1763352249:0;gl
+: 1763352260:0;ls
+: 1763352260:0;pwd
+: 1763352380:0;chmod +x st-stm32cubeide_1.18.1_24813_20250409_2138_amd64.deb_bundle.sh
+: 1763352384:0;sudo ./st-stm32cubeide_1.18.1_24813_20250409_2138_amd64.deb_bundle.sh
+: 1763352475:0;sudo apt remove --purge st-stm32cubeide-1.19.0
+: 1763352503:0;gs
+: 1763352503:0;gd
+: 1763352505:0;gl
+: 1763352506:0;gpl
+: 1763352507:0;gp
+: 1763352524:0;picocom -b 115200 /dev/ttyACM0
+: 1763352596:0;vim Core/Src/main.c
+: 1763352891:0;gs
+: 1763352891:0;gd
+: 1763352892:0;gd Core/Src/main.c
+: 1763352894:0;g a.
+: 1763352896:0;ga .
+: 1763352897:0;gs
+: 1763352913:0;gcm "got play tune via passive buzzer command from uart shell to work"
+: 1763352914:0;gs
+: 1763352914:0;gp
+: 1763352915:0;gpl
+: 1763352917:0;gs
+: 1763352917:0;gd
+: 1763352918:0;gpl
+: 1763352919:0;gp
+: 1763352920:0;vim Core/Src/main.c
+: 1763354391:0;gs
+: 1763354392:0;gd
+: 1763354393:0;gd Core/Src/main.c
+: 1763354396:0;ga .
+: 1763354406:0;gcm "added feature to either loop tune or play it just once and stop"
+: 1763354406:0;gs
+: 1763354406:0;gp
+: 1763354408:0;gpl
+: 1763354409:0;gs
+: 1763354409:0;g
+: 1763354409:0;dgpl
+: 1763354409:0;gp
+: 1763354411:0;gd
+: 1763354412:0;whoami
+: 1763354413:0;gpl
+: 1763354413:0;gp
+: 1763354415:0;gs
+: 1763354416:0;gd
+: 1763354417:0;vim Core/Src/main.c
+: 1763354632:0;gd Core/Src/main.c
+: 1763354671:0;vim Core/Src/main.c
+: 1763354777:0;gd Core/Src/main.c
+: 1763354827:0;vim Core/Src/main.c
+: 1763354875:0;gd Core/Src/main.c
+: 1763354930:0;vim Core/Src/main.c
+: 1763355129:0;git checkout -- .
+: 1763355130:0;gs
+: 1763355155:0;vim Core/Src/main.c
+: 1763355274:0;gd Core/Src/main.c
+: 1763355277:0;gwd Core/Src/main.c
+: 1763355309:0;vim Core/Src/main.c
+: 1763355684:0;gs
+: 1763355684:0;gd
+: 1763355686:0;gd Core/Src/main.c
+: 1763355696:0;vim 
+: 1763355699:0;vim Core/Src/main.c
+: 1763355908:0;gs
+: 1763355908:0;gd
+: 1763355910:0;gd Core/Src/main.c
+: 1763355912:0;ga .
+: 1763356048:0;gs
+: 1763356048:0;gd
+: 1763356067:0;gcm "changed duty cycle for passive buzzer when playing tunes to make it less painful on your ears"
+: 1763356068:0;g
+: 1763356068:0;sgp
+: 1763356069:0;gp
+: 1763356070:0;gpl
+: 1763356071:0;gs
+: 1763356072:0;gd
+: 1763356073:0;gpl
+: 1763356073:0;gp
+: 1763356074:0;gs
+: 1763356074:0;gd
+: 1763356077:0;gl
+: 1763356081:0;vim Core/Src/main.c
+: 1763356180:0;gs
+: 1763356181:0;gd
+: 1763356182:0;gd Core/Src/main.c
+: 1763357865:0;ga .
+: 1763357867:0;gs
+: 1763357868:0;gd
+: 1763357868:0;gds
+: 1763357873:0;gds Core/Src/main.c
+: 1763357879:0;gs
+: 1763357899:0;gcm "set timer 2's arr such that it is back to ticking every 1ms instead of every 1.5ms"
+: 1763357900:0;gs
+: 1763357901:0;gp
+: 1763357903:0;gpl
+: 1763357908:0;gs
+: 1763357908:0;gd
+: 1763357909:0;gpl
+: 1763357909:0;gp
+: 1763357911:0;vim Core/Src/main.c
+: 1763357921:0;gs
+: 1763357921:0;gd
+: 1763357922:0;gpl
+: 1763357923:0;gp
+: 1763357936:0;gs
+: 1763357936:0;gd
+: 1763357937:0;gpl
+: 1763357937:0;gp
+: 1763357941:0;gs
+: 1763357942:0;gd
+: 1763357943:0;gpl
+: 1763357943:0;gl
+: 1763358083:0;gs
+: 1763358083:0;gd
+: 1763358084:0;gpl
+: 1763358085:0;gp
+: 1763358088:0;gs
+: 1763358089:0;gd
+: 1763358089:0;gpl
+: 1763358090:0;gp
+: 1763358091:0;whoami
+: 1763358092:0;vim Core/Src/main.c
+: 1763358593:0;gs
+: 1763358594:0;gd
+: 1763358595:0;vim Core/Src/main.c
+: 1763358630:0;gs
+: 1763358630:0;gd
+: 1763358631:0;gpl
+: 1763358632:0;gp
+: 1763358633:0;vim Core/Src/main.c
+: 1763360439:0;gs
+: 1763360440:0;gd
+: 1763360440:0;gpl
+: 1763360441:0;gp
+: 1763360442:0;gl
+: 1763360444:0;vim Core/Src/main.c
+: 1763404999:0;t
+: 1763405002:0;nvim todo_oct_research.txt
+: 1763405002:0;nvim electronics-embedded-todo.md
+: 1763405002:0;nvim cs2.py
+: 1763405002:0;nvim users.csv
+: 1763405002:0;nvim compiler.c
+: 1763405002:0;nvim todo.md
+: 1763405002:0;nvim Core/Src/main.c
+: 1763405009:0;gs
+: 1763405010:0;gd
+: 1763405010:0;gpl
+: 1763405011:0;gp
+: 1763405012:0;vim Core/Src/main.c
+: 1763405061:0;vi
+: 1763405062:0;vim Core/Src/main.c
+: 1763405064:0;gs
+: 1763405065:0;gd
+: 1763405066:0;gpl
+: 1763405066:0;gp
+: 1763405068:0;vim Core/Src/main.c
+: 1763405092:0;gs
+: 1763405093:0;vim Core/Src/main.c
+: 1763405134:0;gs
+: 1763405135:0;gwd
+: 1763405137:0;gd
+: 1763405143:0;gs
+: 1763405143:0;gd
+: 1763405144:0;gpl
+: 1763405144:0;gp
+: 1763405147:0;gs
+: 1763405147:0;gd
+: 1763405150:0;gwd
+: 1763405155:0;gs
+: 1763405155:0;gd
+: 1763405156:0;vim Core/Src/main.c
+: 1763405223:0;gs
+: 1763405223:0;gd
+: 1763405228:0;gwd
+: 1763405230:0;ga .
+: 1763405231:0;gs
+: 1763405253:0;gcm "removed weird formatting that was causing nvim to throw a warning/error on startup of this file"
+: 1763405253:0;gs
+: 1763405254:0;gp
+: 1763405255:0;gpl
+: 1763405255:0;gd
+: 1763405257:0;gs
+: 1763405257:0;gd
+: 1763405258:0;gpl
+: 1763405258:0;g
+: 1763405259:0;gp
+: 1763405260:0;gpl
+: 1763405265:0;vim Core/Src/main.c
+: 1763405267:0;gs
+: 1763405268:0;gpl
+: 1763405269:0;gp
+: 1763405270:0;vim Core/Src/main.c
+: 1763405275:0;picocom -b 115200 /dev/ttyACM0
+: 1763405411:0;vim Core/Src/main.c
+: 1763405935:0;update
+: 1763409683:0;cat ~/.config/i3/startup.sh
+: 1763409688:0;xrandr --output DisplayPort-3 --auto --mode 2560x1440 --rate 60 --brightness 0.5
+: 1763429189:0;sete
+: 1763429192:0;setxkbmap -option caps:swapescape
+: 1763434185:0;update
+: 1763434346:0;gs
+: 1763434347:0;gd
+: 1763434349:0;vim Core/Src/main.c
+: 1763436596:0;picocom -b 115200 /dev/ttyACM0
+: 1763437775:0;vim Core/Src/main.c
+: 1763438185:0;chmod +x st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1763438191:0;sudo ./st-stm32cubeide_1.19.0_25607_20250703_0907_amd64.deb_bundle.sh
+: 1763438281:0;ps 
+: 1763438283:0;ps -eaf | grep stm
+: 1763438289:0;kill -9 2
+: 1763438296:0;kill -9 474436
+: 1763438306:0;sudo apt remove --purge st-stm32cubeide-1.19.0
+: 1763439918:0;vim Core/Src/main.c
+: 1763439970:0;gs
+: 1763439970:0;gd
+: 1763439971:0;gpl
+: 1763439972:0;gp
+: 1763439982:0;vim Core/Src/main.c
+: 1763440835:0;gs
+: 1763440835:0;gd
+: 1763440836:0;g a.
+: 1763440840:0;ga .
+: 1763440840:0;gs
+: 1763440855:0;gcm "implemented low power mode for EP14 - adc data logging"
+: 1763440856:0;gs
+: 1763440856:0;gp
+: 1763440857:0;gpl
+: 1763440858:0;gs
+: 1763440859:0;gd
+: 1763440859:0;gpl
+: 1763440860:0;gp
+: 1763440861:0;gs
+: 1763440861:0;gd
+: 1763440862:0;gpl
+: 1763440862:0;gp
+: 1763440864:0;vim Core/Src/main.c
+: 1763441336:0;gs
+: 1763441337:0;gd
+: 1763441338:0;gd Core/Src/main.c
+: 1763441357:0;gs
+: 1763441357:0;gd
+: 1763441358:0;gd Core/Src/main.c
+: 1763441359:0;ga .
+: 1763441372:0;gcm "added help for log start|dump"
+: 1763441372:0;gs
+: 1763441372:0;gp
+: 1763441373:0;gpl
+: 1763441374:0;gs
+: 1763441374:0;gd
+: 1763441376:0;gpl
+: 1763441376:0;gp
+: 1763441377:0;gs
+: 1763441377:0;gd
+: 1763441378:0;gl
+: 1763441386:0;vim Core/Src/main.c
+: 1763441469:0;gs
+: 1763441470:0;gd
+: 1763441471:0;gpl
+: 1763441471:0;gp
+: 1763441710:0;vim Core/Src/main.c
+: 1763442320:0;gs
+: 1763442321:0;gpl
+: 1763442321:0;gp
+: 1763442322:0;vim Core/Src/main.c
+: 1763444468:0;gs
+: 1763444468:0;gd
+: 1763444468:0;gpl
+: 1763444469:0;gp
+: 1763444470:0;gs
+: 1763444470:0;gd
+: 1763444543:0;gs
+: 1763444543:0;gd
+: 1763444544:0;gpl
+: 1763444544:0;gp
+: 1763444553:0;gs
+: 1763444554:0;gd
+: 1763444554:0;gpl
+: 1763444555:0;gp
+: 1763444555:0;gl
+: 1763444558:0;vim Core/Src/main.c
+: 1763444569:0;ls
+: 1763444569:0;pwd
+: 1763444570:0;gs
+: 1763444570:0;d
+: 1763444573:0;gs
+: 1763444573:0;gd
+: 1763444596:0;gs
+: 1763444596:0;gd
+: 1763444597:0;gpl
+: 1763444598:0;gp
+: 1763444598:0;gs
+: 1763444598:0;gd
+: 1763444599:0;gl
+: 1763447124:0;gs
+: 1763447125:0;gpl
+: 1763447126:0;gp
+: 1763447129:0;gl
+: 1763447866:0;gs
+: 1763447866:0;gd
+: 1763447869:0;gl
+: 1763447872:0;gpl
+: 1763447873:0;gp
+: 1763483682:0;t ls
+: 1763483682:0;t
+: 1763483685:0;nvim todo_oct_research.txt
+: 1763483685:0;nvim electronics-embedded-todo.md
+: 1763483685:0;nvim cs2.py
+: 1763483685:0;nvim users.csv
+: 1763483685:0;nvim compiler.c
+: 1763483685:0;nvim todo.md
+: 1763483699:0;picocom -b 115200 /dev/ttyACM0
+: 1763483702:0;gpl
+: 1763483702:0;gp
+: 1763483703:0;gs
+: 1763483703:0;gd
+: 1763483703:0;gl
+: 1763483783:0;gs
+: 1763483783:0;gd
+: 1763483784:0;gpl
+: 1763483785:0;gp
+: 1763487007:0;update
+: 1763488204:0;vim Core/Src/main.c
+: 1763488761:0;gs
+: 1763488762:0;gpl
+: 1763488763:0;gp
+: 1763488765:0;type ggp
+: 1763488767:0;gs
+: 1763488767:0;gd
+: 1763488768:0;gpl
+: 1763488768:0;gp
+: 1763490866:0;gs
+: 1763490866:0;gd
+: 1763490867:0;gpl
+: 1763490867:0;gp
+: 1763490868:0;gl
+: 1763490869:0;vim Core/Src/main.c
+: 1763493199:0;gs
+: 1763493200:0;gd Core/Src/main.c
+: 1763493206:0;ga .
+: 1763493217:0;gcm "did some config for i2c for mpu 9250:
+: 1763493218:0;gcm "did some config for i2c for mpu 9250"
+: 1763493218:0;gs
+: 1763493219:0;gp
+: 1763493220:0;gpl
+: 1763493221:0;gs
+: 1763493221:0;gd
+: 1763493221:0;gpl
+: 1763493222:0;gp
+: 1763493222:0;gs
+: 1763493223:0;gd
+: 1763493223:0;vim Core/Src/main.c
+: 1763493272:0;gs
+: 1763493272:0;g
+: 1763493273:0;dgd
+: 1763493274:0;gd
+: 1763493275:0;vim Core/Src/main.c
+: 1763493405:0;vim todo.md
+: 1763493535:0;gs
+: 1763493535:0;gd
+: 1763493552:0;gs
+: 1763493552:0;gd
+: 1763493559:0;vim Core/Src/main.c
+: 1763493572:0;gs
+: 1763493573:0;vim Core/Src/main.c
+: 1763493592:0;gs
+: 1763493593:0;gd
+: 1763493596:0;ga .
+: 1763493597:0;gs
+: 1763493627:0;gcm "added new todo about changing I2C1_Write and spi_transmit to non-blocking using DMA"
+: 1763493628:0;gs
+: 1763493629:0;gp
+: 1763493630:0;gpl
+: 1763493631:0;gs
+: 1763493631:0;gd
+: 1763493632:0;gpl
+: 1763493633:0;gp
+: 1763493636:0;vim Core/Src/main.c
+: 1763493639:0;gs
+: 1763493640:0;gd
+: 1763493640:0;gpl
+: 1763493641:0;gp
+: 1763493642:0;gl
+: 1763493647:0;git 
+: 1763493651:0;git branch --show 
+: 1763493653:0;git branch --show-current
+: 1763493660:0;git branch
+: 1763493670:0;gb -va
+: 1763493680:0;gbv
+: 1763493681:0;gb 
+: 1763493683:0;gs
+: 1763493684:0;gpl
+: 1763493685:0;gp
+: 1763493685:0;gl
+: 1763493696:0;vim Core/Src/main.c
+: 1763493775:0;gs
+: 1763493775:0;gd
+: 1763493776:0;vim Core/Src/main.c
+: 1763493875:0;tat conf-files
+: 1763493878:0;gs
+: 1763493878:0;gd
+: 1763493880:0;gs
+: 1763493880:0;gd
+: 1763493881:0;ls
+: 1763493881:0;pwd
+: 1763493884:0;gs
+: 1763493884:0;gd
+: 1763493890:0;vim copyq_backup_nov_18_2025.cpq
+: 1763493911:0;gs
+: 1763493912:0;gd
+: 1763493922:0;gs
+: 1763493923:0;g
+: 1763493924:0;gs
+: 1763493925:0;gd
+: 1763493926:0;gpl
+: 1763493927:0;gp
+: 1763493933:0;vim Core/Src/main.c
+: 1763493944:0;gs
+: 1763493944:0;d
+: 1763493946:0;ga .
+: 1763493953:0;gcm "added copyq backup"
+: 1763493954:0;gs
+: 1763493954:0;gp
+: 1763493955:0;gpl
+: 1763493963:0;./backup_stuff.sh
