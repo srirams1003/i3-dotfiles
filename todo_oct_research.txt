@@ -1,0 +1,13 @@
+reinforcement learning vs supervised fine tuning because we cannot use deep learning
+
+and how much compute do we need? hprc or colab pro?
+
+opensource or closed source LLM? for both, can we host ourself on hprc? or do we need to use API?
+
+when to do reinforcement learning vs when to do supervised fine tuning?
+
+three policies for reducing ambiguity in user queries:
+1. rewrite query
+2. long answer
+3. clarification question
+
