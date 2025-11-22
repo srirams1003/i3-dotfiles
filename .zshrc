@@ -235,3 +235,9 @@ export PATH="$PATH:$HOME/development/flutter/bin"
 export MANPAGER='nvim +Man!'
 export PAGER='bat'
 export TERM=xterm-256color
+
+# Added by Windsurf
+export PATH="/Users/sriramsuresh/.codeium/windsurf/bin:$PATH"
+
+
+export STM32CubeMX_PATH=/Applications/STMicroelectronics/STM32CubeMX.app/Contents/Resources
