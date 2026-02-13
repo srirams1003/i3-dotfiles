@@ -187,7 +187,7 @@ alias python="python3"
 # alias gpus='ssh -Y sriram@REDACTED-HOST -p 6161'
 # alias ngpus='ssh -X sriram@REDACTED-HOST'
 alias grep='grep -i'
-alias cdd='cd ~/Downloads/'
+alias cdd='cd /mnt/c/Users/REDACTED/Downloads'
 alias dp='docker ps -a'
 alias di='docker images -a'
 alias bat='batcat --color=always'
@@ -196,6 +196,9 @@ alias vseek='vim "$(seek)"'
 alias oseek='xdg-open "$(seek)"'
 alias neo='fastfetch'
 alias sl='sl -e'
+
+alias gke_staging='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
+alias gke_prod='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG --dns-endpoint'
 
 # export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 # export QT_QPA_PLATFORM="xcb"
@@ -241,3 +244,11 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # adding Windows IDE Apps (VS Code and Cursor)
 export PATH="$PATH:/mnt/c/Users/REDACTED/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/cursor/resources/app/bin"
+export PATH="$HOME/bin:$PATH"
+
+# bun completions
+[ -s "/home/sriram/.bun/_bun" ] && source "/home/sriram/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
