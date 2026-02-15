@@ -115,7 +115,7 @@ exec --no-startup-id sh -c 'eval $(/usr/bin/gnome-keyring-daemon --start --compo
 # NOTE: the lines above and below are for remembering wifi password between reboots (i think). the one below works for sure
 # exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg
 exec --no-startup-id nm-applet
-
+exec --no-startup-id VBoxClient-all
 exec --no-startup-id playerctld daemon
 # exec --no-startup-id bluetoothctl connect 08:EB:ED:4C:ED:1F
 # exec --no-startup-id bluetoothctl connect 4C:FE:2E:28:70:72
@@ -354,10 +354,10 @@ bindsym Mod1+Tab  workspace back_and_forth
 
 # # NOTE: commenting out chrome on startup for now and replacing it with firefox cuz so much faster (i am guessing that chrome is slowed down because of extensions)
 # exec --no-startup-id google-chrome --password-store=gnome-libsecret
-exec --no-startup-id firefox
+# exec --no-startup-id firefox
 # exec --no-startup-id alacritty
 # exec --no-startup-id spotify
-exec --no-startup-id sleep 3 && flatpak run com.spotify.Client
+# exec --no-startup-id sleep 3 && flatpak run com.spotify.Client
 # # if the below two are installed using flatpak
 # exec --no-startup-id flatpak run org.kde.okular
 # exec --no-startup-id flatpak run md.obsidian.Obsidian
