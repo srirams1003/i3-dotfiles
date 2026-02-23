@@ -197,8 +197,12 @@ alias oseek='xdg-open "$(seek)"'
 alias neo='fastfetch'
 alias sl='sl -e'
 
-alias gke_staging='gcloud container clusters get-credentials blazeup-staging-us-cluster --region us-west1 --project blazeup-staging'
-alias gke_prod='gcloud container clusters get-credentials blazeup-gke-autopilot-us-cluster --region us-west1 --project blazeupai --dns-endpoint'
+# # old aliases
+# alias gke_staging='gcloud container clusters get-credentials blazeup-staging-us-cluster --region us-west1 --project blazeup-staging'
+# alias gke_prod='gcloud container clusters get-credentials blazeup-gke-autopilot-us-cluster --region us-west1 --project blazeupai --dns-endpoint'
+# new aliases
+alias gke_staging='gcloud config set project blazeup-staging && gcloud container clusters get-credentials blazeup-staging-us-cluster --region us-west1 --project blazeup-staging'
+alias gke_prod='gcloud config set project blazeupai && gcloud container clusters get-credentials blazeup-gke-autopilot-us-cluster --region us-west1 --project blazeupai --dns-endpoint'
 
 # export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 # export QT_QPA_PLATFORM="xcb"
