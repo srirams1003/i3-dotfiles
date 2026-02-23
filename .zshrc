@@ -197,8 +197,12 @@ alias oseek='xdg-open "$(seek)"'
 alias neo='fastfetch'
 alias sl='sl -e'
 
-alias gke_staging='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
-alias gke_prod='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG --dns-endpoint'
+# # old aliases
+# alias gke_staging='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
+# alias gke_prod='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG --dns-endpoint'
+# new aliases
+alias gke_staging='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
+alias gke_prod='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG --dns-endpoint'
 
 # export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 # export QT_QPA_PLATFORM="xcb"
