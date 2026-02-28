@@ -4,7 +4,7 @@
 current=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP '\d+(?=%)' | head -1)
 
 # Calculate the new volume
-step=10
+step=5
 new=$((current + step))
 
 # # Ensure volume does not exceed 100%
