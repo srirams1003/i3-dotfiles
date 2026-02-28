@@ -246,8 +246,6 @@ export MANPAGER='nvim +Man!'
 export PAGER='batcat'
 export PATH="$HOME/.local/bin:$PATH"
 
-# adding Windows IDE Apps (VS Code and Cursor)
-export PATH="$PATH:/mnt/c/Users/sriram.suresh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/cursor/resources/app/bin"
 export PATH="$HOME/bin:$PATH"
 
 # bun completions

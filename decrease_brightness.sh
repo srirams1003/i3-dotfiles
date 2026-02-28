@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output="DisplayPort-3"  # Replace this with your monitor name (use `xrandr` to find it)
+output="HDMI-A-0"  # Replace this with your monitor name (use `xrandr` to find it)
 step=0.1       # Step size for brightness adjustment
 
 current=$(xrandr --verbose | grep -m 1 -i brightness | awk '{print $2}')
