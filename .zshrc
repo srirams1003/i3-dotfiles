@@ -204,6 +204,8 @@ alias sl='sl -e'
 alias gke_staging='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
 alias gke_prod='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG --dns-endpoint'
 
+alias open='explorer.exe'
+
 # export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 # export QT_QPA_PLATFORM="xcb"
 export NVM_DIR="$HOME/.nvm"
@@ -245,6 +247,7 @@ export PATH="$PATH:$HOME/development/flutter/bin"
 export MANPAGER='nvim +Man!'
 export PAGER='batcat'
 export PATH="$HOME/.local/bin:$PATH"
+export BROWSER='firefox'
 
 # adding Windows IDE Apps (VS Code and Cursor)
 export PATH="$PATH:/mnt/c/Users/REDACTED/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/cursor/resources/app/bin"
@@ -256,3 +259,5 @@ export PATH="$HOME/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# # Auto-start wsl-screenshot-cli (added by installer)
+# wsl-screenshot-cli start --daemon 2>/dev/null
