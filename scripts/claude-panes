@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# claude-panes — inspect / replay the claude-session <-> tmux-pane map.
+#
+#   claude-panes              show the checklist (live, regenerated)
+#   claude-panes save         refresh the saved map now
+#   claude-panes list         dry-run: what restore would do right now
+#   claude-panes prime        type the resume command into every eligible pane
+#   claude-panes launch       ...and press Enter, staggered
+#   claude-panes log          tail the restore log
+set -euo pipefail
+SNAP="$HOME/.config/i3/scripts/claude-tmux-snapshot.py"
+REST="$HOME/.config/i3/scripts/claude-tmux-restore.sh"
+case "${1:-show}" in
+	show)   "$SNAP" --print ;;
+	save)   "$SNAP" && echo "saved: ~/.local/share/tmux/resurrect/claude-sessions.{tsv,md}" ;;
+	list)   "$REST" --dry-run ;;
+	prime)  "$REST" --prime ;;
+	launch) "$REST" --launch ;;
+	log)    tail -n 40 "$HOME/.local/share/tmux/resurrect/claude-restore.log" ;;
+	-h|--help|help) sed -n '2,10p' "$0" ;;
+	*) echo "unknown: $1 (try: show save list prime launch log)" >&2; exit 2 ;;
+esac

@@ -1,1 +1,7 @@
 *.db
+
+# Regenerated every 5 minutes by the resurrect post-save hook — tracking these
+# means a permanently dirty working tree, and they are durable on disk anyway
+# (plus ~/CLAUDE-SESSIONS-RESTORE.md). Nothing depends on them being in git.
+tmux-resurrect-backup/claude-sessions.tsv
+tmux-resurrect-backup/claude-sessions.md
