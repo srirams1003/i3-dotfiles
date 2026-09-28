@@ -78,13 +78,25 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	docker
+	# docker
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# --- history hygiene (must come AFTER oh-my-zsh, which sets its own defaults) ---
+# omz already gives us: extendedhistory histignoredups histignorespace sharehistory
+# (histignorespace = a command typed with a LEADING SPACE is never recorded).
+# What it does not give us is an automatic filter, so anything token-shaped that
+# reaches a command line lands in ~/.zsh_history permanently. Once that file is
+# committed, removing it is a git history rewrite.
+HISTORY_IGNORE='(*_KEY=*|*_TOKEN=*|*_SECRET=*|*_PASSWORD=*|*PASSWD=*|*ghp_*|*gho_*|*ghu_*|*ghs_*|*github_pat_*|*glpat-*|*xox[baprs]-*|*AKIA[A-Z0-9]*)'
+
+# omz leaves SAVEHIST at 10000 while HISTSIZE is 50000, so the file is truncated
+# on write to a fifth of what the session holds. Match them.
+SAVEHIST=50000
 
 # User configuration
 
@@ -173,6 +185,8 @@ alias kgna='kubectl get nodes -A'
 alias kgda='kubectl get deployments -A'
 alias kgsa='kubectl get services -A'
 
+alias docker='podman'
+
 
 [ -f ~/.fzf.zsh  ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
@@ -186,23 +200,34 @@ alias ls='colorls'
 alias python="python3"
 # alias gpus='ssh -Y sriram@REDACTED-HOST -p 6161'
 # alias ngpus='ssh -X sriram@REDACTED-HOST'
-alias grep='grep -i'
+# `grep` is left alone deliberately: aliasing it to -i globally changes matching
+# semantics everywhere and silently alters results you did not ask to be fuzzy.
+# Use `gi` when you want the case-insensitive version.
+alias gi='grep -i'
 alias cdd='cd /mnt/c/Users/REDACTED/Downloads'
-alias dp='docker ps -a'
-alias di='docker images -a'
+# alias dp='docker ps -a'
+# alias di='docker images -a'
+alias dp='podman ps'
+alias di='podman images'
+alias dpa='podman ps -a'
+alias dia='podman images -a'
 alias bat='batcat --color=always'
 alias seek='fzf --preview="batcat --color=always {}"'
 alias vseek='vim "$(seek)"'
 alias oseek='xdg-open "$(seek)"'
 alias neo='fastfetch'
 alias sl='sl -e'
+alias gkgc="kubectl config current-context && gcloud config get project"
 
 # # old aliases
 # alias gke_staging='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
 # alias gke_prod='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG --dns-endpoint'
 # new aliases
 alias gke_staging='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
+
 alias gke_prod='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG --dns-endpoint'
+
+alias gke_prod_new='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
 
 alias open='explorer.exe'
 
@@ -261,3 +286,4 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 # # Auto-start wsl-screenshot-cli (added by installer)
 # wsl-screenshot-cli start --daemon 2>/dev/null
+export PATH="$PATH:/mnt/c/Windows/System32:/mnt/c/Windows/System32/WindowsPowerShell/v1.0"
