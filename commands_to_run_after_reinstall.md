@@ -10,3 +10,10 @@ ln -sf tmux_resurrect_20250927T073411.txt last
 
 # Restore zsh history
 cp /home/sriram/.config/i3/my_zsh_history /home/sriram/.zsh_history
+
+# Enable the hourly backup timer (tmux session state + zsh history)
+mkdir -p ~/.config/systemd/user
+ln -sf ~/.config/i3/systemd-user/backup-dotfiles.service ~/.config/systemd/user/
+ln -sf ~/.config/i3/systemd-user/backup-dotfiles.timer   ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable --now backup-dotfiles.timer

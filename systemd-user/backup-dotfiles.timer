@@ -1,0 +1,17 @@
+[Unit]
+Description=Hourly backup of tmux session state and zsh history
+
+[Timer]
+# Calendar-based rather than OnBootSec/OnUnitActiveSec: those only schedule
+# relative to boot or to the last activation, so on a machine that has been up
+# a while the timer can end up with no next elapse at all.
+# Persistent=true means a laptop that was asleep — or a WSL2 instance that was
+# shut down — runs the missed occurrence at next start instead of silently
+# skipping it. That skip is what left the committed history five months stale.
+OnCalendar=hourly
+Persistent=true
+RandomizedDelaySec=2min
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target
