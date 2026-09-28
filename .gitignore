@@ -1,7 +1,13 @@
 *.db
 
-# Regenerated every 5 minutes by the resurrect post-save hook — tracking these
-# means a permanently dirty working tree, and they are durable on disk anyway
-# (plus ~/CLAUDE-SESSIONS-RESTORE.md). Nothing depends on them being in git.
+# The tmux layout backup is ONE file under a stable name: last.txt.
+# Timestamped snapshots rotate every few minutes, so tracking them left the repo
+# permanently dirty (and once accumulated 716 committed files nothing read).
+# tmux-resurrect keeps its own 5-copy window in ~/.local/share for local rollback.
+tmux-resurrect-backup/tmux_resurrect_*.txt
+tmux-resurrect-backup/last
+
+# Regenerated every 5 minutes by the resurrect post-save hook; durable on disk
+# anyway (plus ~/CLAUDE-SESSIONS-RESTORE.md). Nothing depends on them in git.
 tmux-resurrect-backup/claude-sessions.tsv
 tmux-resurrect-backup/claude-sessions.md
