@@ -199,6 +199,43 @@ sources if present and git never sees.
 
 ---
 
+## Migrating to a new machine
+
+Two halves. The repo gives you config; `scripts/machine-migrate` gives you the private
+state that deliberately is not in it.
+
+```bash
+# on the old machine
+scripts/machine-migrate export --with-keys     # history + ~/.zshrc.local + SSH key
+# carry the .tar.gpg across however you like — USB, scp, private storage
+
+# on the new one, after cloning this repo
+scripts/machine-migrate verify <file>          # decrypt and list, without writing
+scripts/machine-migrate import --with-keys <file>
+```
+
+`--with-keys` is opt-in on both sides: a private key inside a portable file is only as
+safe as the passphrase, so it is never included by accident. Import never overwrites —
+an existing `~/.zshrc.local` gets the incoming copy as `.incoming` beside it, and existing
+SSH files are left alone. Re-importing the same bundle adds nothing.
+
+## Repo history was rewritten on 2026-10-02
+
+Shell history, a Firefox profile, tmux layouts, clipboard exports and a TLS key were
+purged from all branches, so **every commit hash changed**. A clone made before that date
+shares no history with this repo and cannot be pulled or pushed.
+
+Re-clone rather than reset — `git reset --hard` leaves the purged objects in `.git`:
+
+```bash
+mv ~/.config/i3 ~/.config/i3.old
+git clone -b <your-branch> git@github-personal:srirams1003/i3-dotfiles.git ~/.config/i3
+# verify the new clone looks right, then
+rm -rf ~/.config/i3.old
+```
+
+Same for `~/dotfiles`. `lua-nvim-config` was never rewritten and needs nothing.
+
 ## Shell history (atuin)
 
 [atuin](https://atuin.sh) replaces the old committed `my_zsh_history`. History lives in a
@@ -214,15 +251,9 @@ an employer's infrastructure command log on a third party.
 
 Moving machines is an explicit, encrypted, serverless step:
 
-```bash
-scripts/atuin-migrate export         # -> ~/atuin-history-<date>.db.gpg, AES-256
-scripts/atuin-migrate verify <file>  # decrypt and count, without importing
-scripts/atuin-migrate import <file>  # merge into this machine
-```
-
-gpg symmetric encryption, chosen because gpg is already on essentially every distro.
-Import merges on primary key, so it is idempotent and two machines' histories combine
-rather than overwrite.
+Transfer is handled by `machine-migrate` (above), which carries the history DB alongside
+the rest of your private state. Import merges on primary key, so it is idempotent and two
+machines' histories combine rather than overwrite.
 
 Credentials are filtered at two layers that agree: `HISTORY_IGNORE` in `.zshrc` keeps them
 out of `~/.zsh_history`, and `history_filter` + `secrets_filter` in

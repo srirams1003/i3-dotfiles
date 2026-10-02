@@ -1,0 +1,173 @@
+#!/usr/bin/env bash
+# machine-migrate — carry private, unversionable state to a new machine.
+#
+#   machine-migrate export [--with-keys] [outfile]
+#   machine-migrate verify <file>
+#   machine-migrate import [--with-keys] <file>
+#
+# Some state cannot live in a dotfiles repo and has no business on a third-party
+# server either: shell history (names internal hosts, clusters, clients),
+# ~/.zshrc.local (cluster names, cloud projects, Windows paths), and optionally
+# the personal SSH key. Previously that meant it was backed up nowhere at all.
+#
+# This bundles it into one gpg AES-256 file you carry yourself. No server, no
+# account, nothing leaves your control. gpg is used because it is already on
+# essentially every distro — one less thing to install on a fresh machine.
+#
+# SSH keys are OPT-IN (--with-keys) on both export and import. A private key
+# inside a portable file is only as safe as the passphrase you choose, so it is
+# never included by accident.
+
+set -euo pipefail
+
+DB="${ATUIN_DB:-$HOME/.local/share/atuin/history.db}"
+WITH_KEYS=0
+
+die() { echo "machine-migrate: $*" >&2; exit 1; }
+
+rows() {
+	python3 - "$1" <<-'PY'
+	import sqlite3, sys
+	try:
+	    c = sqlite3.connect(f"file:{sys.argv[1]}?mode=ro", uri=True)
+	    print(c.execute("select count(*) from history").fetchone()[0])
+	except Exception:
+	    print(0)
+	PY
+}
+
+snapshot() {  # consistent copy even while a shell is writing
+	python3 - "$DB" "$1" <<-'PY'
+	import sqlite3, sys
+	src = sqlite3.connect(f"file:{sys.argv[1]}?mode=ro", uri=True)
+	dst = sqlite3.connect(sys.argv[2]); src.backup(dst); dst.close(); src.close()
+	PY
+}
+
+cmd_export() {
+	local out="${1:-$HOME/machine-state-$(date +%Y%m%d-%H%M%S).tar.gpg}"
+	stage="$(mktemp -d -t mm-exp-XXXXXX)"
+	trap '/bin/rm -rf "${stage:-}"' EXIT
+	local manifest="$stage/MANIFEST"
+	: > "$manifest"
+
+	if [ -f "$DB" ]; then
+		snapshot "$stage/history.db"
+		echo "history.db  $(rows "$stage/history.db") commands" >> "$manifest"
+	else
+		echo "  no atuin db at $DB — skipping history" >&2
+	fi
+
+	if [ -f "$HOME/.zshrc.local" ]; then
+		cp -p "$HOME/.zshrc.local" "$stage/zshrc.local"
+		echo "zshrc.local  $(wc -l < "$HOME/.zshrc.local") lines" >> "$manifest"
+	fi
+
+	if [ "$WITH_KEYS" = 1 ]; then
+		mkdir -p "$stage/ssh"
+		for f in id_ed25519_personal id_ed25519_personal.pub config; do
+			[ -f "$HOME/.ssh/$f" ] && cp -p "$HOME/.ssh/$f" "$stage/ssh/$f" && echo "ssh/$f" >> "$manifest"
+		done
+		echo "  including SSH key material — choose a strong passphrase" >&2
+	fi
+
+	echo "  bundling:"; sed 's/^/    /' "$manifest"
+	tar -C "$stage" -cf "$stage/bundle.tar" $(cd "$stage" && ls | grep -v bundle.tar)
+	echo "  passphrase is required again on the other machine — do not lose it"
+	gpg --batch --yes --symmetric --cipher-algo AES256 --output "$out" "$stage/bundle.tar"
+	chmod 600 "$out"
+	echo "  wrote $out ($(du -h "$out" | cut -f1), gpg AES-256)"
+}
+
+unpack() {  # unpack <file> <dir>
+	gpg --quiet --output "$2/bundle.tar" --decrypt "$1"
+	tar -C "$2" -xf "$2/bundle.tar"
+	/bin/rm -f "$2/bundle.tar"
+}
+
+cmd_verify() {
+	local f="${1:-}"; [ -n "$f" ] || die "usage: machine-migrate verify <file>"
+	[ -f "$f" ] || die "no such file: $f"
+	stage="$(mktemp -d -t mm-ver-XXXXXX)"
+	trap '/bin/rm -rf "${stage:-}"' EXIT
+	unpack "$f" "$stage"
+	echo "  decrypts cleanly. contents:"
+	sed 's/^/    /' "$stage/MANIFEST" 2>/dev/null || echo "    (no manifest)"
+	[ -f "$stage/history.db" ] && echo "    verified history rows: $(rows "$stage/history.db")"
+}
+
+cmd_import() {
+	local f="${1:-}"; [ -n "$f" ] || die "usage: machine-migrate import <file>"
+	[ -f "$f" ] || die "no such file: $f"
+	stage="$(mktemp -d -t mm-imp-XXXXXX)"
+	trap '/bin/rm -rf "${stage:-}"' EXIT
+	unpack "$f" "$stage"
+
+	if [ -f "$stage/history.db" ]; then
+		mkdir -p "$(dirname "$DB")"
+		if [ ! -f "$DB" ]; then
+			cp "$stage/history.db" "$DB"; chmod 600 "$DB"
+			echo "  history: installed $(rows "$DB") commands (no local db existed)"
+		else
+			python3 - "$DB" "$stage/history.db" <<-'PY'
+			import sqlite3, sys
+			dst = sqlite3.connect(sys.argv[1])
+			dst.execute("attach database ? as src", (sys.argv[2],))
+			before = dst.execute("select count(*) from history").fetchone()[0]
+			dst.execute("""insert or ignore into history
+			               (id,timestamp,duration,exit,command,cwd,session,hostname,deleted_at)
+			               select id,timestamp,duration,exit,command,cwd,session,hostname,deleted_at
+			               from src.history""")
+			dst.commit()
+			after = dst.execute("select count(*) from history").fetchone()[0]
+			print(f"  history: +{after-before} new, {after} total")
+			PY
+		fi
+	fi
+
+	# Never clobber an existing file silently — write alongside and say so.
+	if [ -f "$stage/zshrc.local" ]; then
+		if [ -f "$HOME/.zshrc.local" ]; then
+			cp -p "$stage/zshrc.local" "$HOME/.zshrc.local.incoming"
+			echo "  zshrc.local: already present — wrote ~/.zshrc.local.incoming instead"
+		else
+			cp -p "$stage/zshrc.local" "$HOME/.zshrc.local"; chmod 600 "$HOME/.zshrc.local"
+			echo "  zshrc.local: restored"
+		fi
+	fi
+
+	if [ "$WITH_KEYS" = 1 ] && [ -d "$stage/ssh" ]; then
+		mkdir -p "$HOME/.ssh"; chmod 700 "$HOME/.ssh"
+		for f in "$stage"/ssh/*; do
+			local b; b="$(basename "$f")"
+			if [ -e "$HOME/.ssh/$b" ]; then
+				echo "  ssh/$b: already present — left alone"
+			else
+				cp -p "$f" "$HOME/.ssh/$b"
+				case "$b" in *.pub|config) chmod 644 "$HOME/.ssh/$b" ;; *) chmod 600 "$HOME/.ssh/$b" ;; esac
+				echo "  ssh/$b: restored"
+			fi
+		done
+	elif [ -d "$stage/ssh" ]; then
+		echo "  (bundle contains SSH material — re-run with --with-keys to restore it)"
+	fi
+
+	echo "  done — open a new shell and press Ctrl-R"
+}
+
+args=()
+for a in "$@"; do
+	case "$a" in
+		--with-keys) WITH_KEYS=1 ;;
+		*) args+=("$a") ;;
+	esac
+done
+set -- ${args[@]+"${args[@]}"}
+
+case "${1:-}" in
+	export) shift; cmd_export "${1:-}" ;;
+	verify) shift; cmd_verify "${1:-}" ;;
+	import) shift; cmd_import "${1:-}" ;;
+	-h|--help|help|"") sed -n '2,20p' "$0" ;;
+	*) die "unknown command: $1 (try: export, verify, import)" ;;
+esac
