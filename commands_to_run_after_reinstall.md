@@ -22,3 +22,10 @@ curl -sSL https://github.com/atuinsh/atuin/releases/latest/download/atuin-x86_64
 atuin import zsh                       # pick up anything already on this machine
 ~/.config/i3/scripts/machine-migrate import --with-keys <your-export>.tar.gpg
 #   (restores history, ~/.zshrc.local and the personal SSH key)
+
+# GitHub SSH access — generate a NEW key per machine; never carry the old one
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_personal -C "$(hostname) personal github"
+cat ~/.config/i3/ssh/config.github-personal >> ~/.ssh/config && chmod 600 ~/.ssh/config
+cat ~/.ssh/id_ed25519_personal.pub        # paste into github.com/settings/keys
+ssh -T git@github-personal                # expect: Hi srirams1003!
+# then delete the retired machine's key at github.com/settings/keys

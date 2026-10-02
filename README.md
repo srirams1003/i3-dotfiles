@@ -214,6 +214,16 @@ scripts/machine-migrate verify <file>          # decrypt and list, without writi
 scripts/machine-migrate import --with-keys <file>
 ```
 
+**Prefer not to carry the SSH key at all.** It is the one item in the bundle that is
+trivially replaceable — generate a fresh one per machine and add it at
+`github.com/settings/keys`, which takes two minutes. The `Host github-personal` block it
+needs is versioned here at `ssh/config.github-personal` and contains no secret. That keeps
+the portable bundle free of key material, so it can live somewhere convenient like cloud
+storage without the passphrase being the only thing guarding repo write access.
+
+A per-machine key is also better hygiene: retiring a laptop means deleting one key, not
+rotating a key that several machines share.
+
 `--with-keys` is opt-in on both sides: a private key inside a portable file is only as
 safe as the passphrase, so it is never included by accident. Import never overwrites —
 an existing `~/.zshrc.local` gets the incoming copy as `.incoming` beside it, and existing

@@ -1,0 +1,18 @@
+# Personal GitHub account, kept separate from a work account that may own the
+# stored HTTPS credential in ~/.git-credentials.
+#
+# Install:  cat ssh/config.github-personal >> ~/.ssh/config && chmod 600 ~/.ssh/config
+# Use:      git remote set-url origin git@github-personal:<user>/<repo>.git
+#
+# IdentitiesOnly is load-bearing: without it ssh offers every key in ~/.ssh,
+# GitHub authenticates as whichever matches first, and a push to a private repo
+# fails with "repository not found" rather than a permission error — which sends
+# you debugging entirely the wrong thing.
+#
+# Contains no secret: a hostname, a username and a path. The private key it
+# points at is generated per machine and never leaves it.
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_personal
+    IdentitiesOnly yes
