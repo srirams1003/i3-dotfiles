@@ -1,31 +1,14 @@
-# Create directory structure
-mkdir -p ~/.local/share/tmux/resurrect
+# Setting up a new machine
 
-# Copy all resurrect files
-cp -r /home/sriram/.config/i3/tmux-resurrect-backup/* /home/sriram/.local/share/tmux/resurrect/
+This file used to hold the procedure. It no longer does — it had drifted out of sync with
+reality (it still restored a tmux backup directory that is now gitignored, from a
+hardcoded 2025 filename).
 
-# Ensure proper symlink
-cd /home/sriram/.local/share/tmux/resurrect/
-ln -sf tmux_resurrect_20250927T073411.txt last
+**The runbook lives in one place:**
 
+→ https://github.com/srirams1003/dotfiles/blob/main/NEW_MACHINE.md
 
-# Enable the hourly backup timer (tmux session state + zsh history)
-mkdir -p ~/.config/systemd/user
-ln -sf ~/.config/i3/systemd-user/backup-dotfiles.service ~/.config/systemd/user/
-ln -sf ~/.config/i3/systemd-user/backup-dotfiles.timer   ~/.config/systemd/user/
-systemctl --user daemon-reload
-systemctl --user enable --now backup-dotfiles.timer
-
-# Shell history (atuin) — replaces the old my_zsh_history copy
-curl -sSL https://github.com/atuinsh/atuin/releases/latest/download/atuin-x86_64-unknown-linux-gnu.tar.gz \
-  | tar xz -C /tmp && install -m755 $(find /tmp -name atuin -type f | head -1) ~/.local/bin/atuin
-atuin import zsh                       # pick up anything already on this machine
-~/.config/i3/scripts/machine-migrate import --with-keys <your-export>.tar.gpg
-#   (restores history, ~/.zshrc.local and the personal SSH key)
-
-# GitHub SSH access — generate a NEW key per machine; never carry the old one
-ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_personal -C "$(hostname) personal github"
-cat ~/.config/i3/ssh/config.github-personal >> ~/.ssh/config && chmod 600 ~/.ssh/config
-cat ~/.ssh/id_ed25519_personal.pub        # paste into github.com/settings/keys
-ssh -T git@github-personal                # expect: Hi srirams1003!
-# then delete the retired machine's key at github.com/settings/keys
+That is the repo you clone first on a new machine, so the instructions live with the thing
+you reach for. It covers the bootstrap scripts, picking this machine's branch, generating a
+per-machine SSH key, restoring shell history from the encrypted bundle, tmux plugins, and
+the hourly backup timer.

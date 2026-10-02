@@ -201,33 +201,18 @@ sources if present and git never sees.
 
 ## Migrating to a new machine
 
-Two halves. The repo gives you config; `scripts/machine-migrate` gives you the private
-state that deliberately is not in it.
+**→ [the runbook](https://github.com/srirams1003/dotfiles/blob/main/NEW_MACHINE.md)** in the
+`dotfiles` repo — the single source for new-machine setup.
 
-```bash
-# on the old machine
-scripts/machine-migrate export --with-keys     # history + ~/.zshrc.local + SSH key
-# carry the .tar.gpg across however you like — USB, scp, private storage
+The part that belongs to this repo is `scripts/machine-migrate`, which carries the private
+state that deliberately is not versioned: the atuin history DB, `~/.zshrc.local`, and
+optionally an SSH key (`--with-keys`, opt-in both ways). One gpg AES-256 file, no server.
+Import never overwrites, and re-importing the same bundle adds nothing.
 
-# on the new one, after cloning this repo
-scripts/machine-migrate verify <file>          # decrypt and list, without writing
-scripts/machine-migrate import --with-keys <file>
-```
-
-**Prefer not to carry the SSH key at all.** It is the one item in the bundle that is
-trivially replaceable — generate a fresh one per machine and add it at
-`github.com/settings/keys`, which takes two minutes. The `Host github-personal` block it
-needs is versioned here at `ssh/config.github-personal` and contains no secret. That keeps
-the portable bundle free of key material, so it can live somewhere convenient like cloud
-storage without the passphrase being the only thing guarding repo write access.
-
-A per-machine key is also better hygiene: retiring a laptop means deleting one key, not
-rotating a key that several machines share.
-
-`--with-keys` is opt-in on both sides: a private key inside a portable file is only as
-safe as the passphrase, so it is never included by accident. Import never overwrites —
-an existing `~/.zshrc.local` gets the incoming copy as `.incoming` beside it, and existing
-SSH files are left alone. Re-importing the same bundle adds nothing.
+Prefer not to carry the SSH key — generate a fresh one per machine and add it at
+`github.com/settings/keys`. The `Host github-personal` block it needs is versioned here at
+`ssh/config.github-personal` and contains no secret. That keeps the portable bundle free of
+key material so it can live in cloud storage safely.
 
 ## Repo history was rewritten on 2026-10-02
 
