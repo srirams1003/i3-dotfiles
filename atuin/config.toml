@@ -1,0 +1,37 @@
+## atuin — shell history, searchable and portable.
+##
+## Replaces committing ~/.zsh_history into a dotfiles repo. History is a sync
+## problem, not a version-control one: git gave permanent, public, immutable
+## retention when only portability was wanted.
+
+## Sync is OFF until a backend is chosen deliberately. Nothing leaves this
+## machine while this is false.
+auto_sync = false
+update_check = false
+
+## Search
+search_mode = "fuzzy"
+filter_mode = "global"
+filter_mode_shell_up_key_binding = "session"
+style = "compact"
+inline_height = 25
+show_preview = true
+
+## Keep failed commands out of the way but still searchable
+history_filter = [
+  ## Defence in depth: these must never be recorded, even if typed carelessly.
+  ## Mirrors HISTORY_IGNORE in .zshrc so both layers agree.
+  "(^|\\s)(export\\s+)?[A-Za-z0-9_]*(_KEY|_TOKEN|_SECRET|_PASSWORD|PASSWD)=",
+  "gh[pousr]_[A-Za-z0-9]{16,}",
+  "github_pat_[A-Za-z0-9_]{16,}",
+  "glpat-[A-Za-z0-9_-]{15,}",
+  "xox[baprs]-[A-Za-z0-9-]{10,}",
+  "\\bAKIA[0-9A-Z]{16}\\b",
+  "\\bsk-(proj-)?[A-Za-z0-9_-]{20,}",
+]
+
+## atuin's own built-in secret detection, on top of the above
+secrets_filter = true
+
+## Do not record anything typed in these directories
+cwd_filter = []
