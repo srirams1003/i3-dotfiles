@@ -6,8 +6,10 @@ only a few symlinks for the things X and zsh expect in `$HOME`.
 
 i3wm + i3blocks, Alacritty, zsh/powerlevel10k, tmux, rofi, picom, dunst.
 
-> **Private repo.** It carries shell history, tmux session state and machine-specific
-> config. See [Privacy](#privacy) before making it public again.
+>**Deliberately not in this repo:** shell history, tmux session layouts, clipboard
+> exports, TLS material, and anything naming a machine, employer or client. Those either
+> cannot be redacted meaningfully or have no business being versioned. See
+> [What is not here](#what-is-not-here).
 
 ---
 
@@ -48,7 +50,7 @@ git switch wsl2-work && git merge common     # repeat per active machine branch
 
 | Genuinely machine-specific — never on `common` | Everything else |
 |---|---|
-| `config`, `i3blocks.conf`, `startup.sh`, `picom.conf`, `.alacritty.toml`, `.zshrc`, `raise_volume.sh`, `lower_volume.sh`, `increase_brightness.sh`, `decrease_brightness.sh`, `my_zsh_history` | the other 41 tracked files — `.tmux.conf`, `.p10k.zsh`, `backup_stuff.sh`, `restore_stuff.sh`, `scripts/`, the blocklets, the audio/dict helpers, every note |
+| `config`, `i3blocks.conf`, `startup.sh`, `picom.conf`, `.alacritty.toml`, `.zshrc`, `raise_volume.sh`, `lower_volume.sh`, `increase_brightness.sh`, `decrease_brightness.sh` | the other 41 tracked files — `.tmux.conf`, `.p10k.zsh`, `backup_stuff.sh`, `restore_stuff.sh`, `scripts/`, the blocklets, the audio/dict helpers, every note |
 
 `.zshrc` is on the machine-specific side because each box has different aliases — but that
 means genuinely portable parts of it (history hygiene, for instance) still have to be
@@ -70,8 +72,7 @@ ln -sf ~/.config/i3/.p10k.zsh ~/.p10k.zsh
 ln -sf ~/.config/i3/.tmux.conf ~/.tmux.conf
 ```
 
-`commands_to_run_after_reinstall.md` is the post-reinstall checklist. `restore_stuff.sh`
-puts back the tmux session state and shell history.
+`commands_to_run_after_reinstall.md` is the post-reinstall checklist.
 
 ---
 
@@ -132,12 +133,13 @@ Paired scripts — one writes into this repo, the other reads back out after a r
 
 | Pair | Covers |
 |---|---|
-| `backup_stuff.sh` / `restore_stuff.sh` | tmux resurrect state + zsh history |
+| `backup_stuff.sh` / `restore_stuff.sh` | tmux resurrect state, on this machine only |
 | `backup_personal_folders.sh` / `restore_personal_folders.sh` | personal directories over rsync |
 
-`tmux-resurrect-backup/` is the committed copy of `~/.local/share/tmux/resurrect` — the
-saved tmux layouts, so a rebuilt machine comes back with its windows and panes. Capped at
-the newest **5** snapshots; `restore_stuff.sh` only ever follows the `last` symlink.
+`tmux-resurrect-backup/` is written locally but **not versioned** — saved layouts embed
+pane titles, which on a work machine are project and client names. So tmux layouts survive
+a reboot, but do not travel to a new machine. That is a deliberate trade: the layouts
+reference absolute paths that would not exist there anyway.
 
 **`backup_stuff.sh` runs hourly**, via a systemd user timer rather than by hand:
 
@@ -151,28 +153,12 @@ Units live in `~/.config/systemd/user/backup-dotfiles.{service,timer}`. `Persist
 so a machine that was asleep or shut down runs the missed occurrence instead of skipping
 it — the failure mode that previously left the committed history five months stale.
 
-### Other state
-
-| Path | Purpose |
-|---|---|
-| `copyq_backup_*.cpq` | CopyQ clipboard-manager exports, restored via CopyQ's own import |
-| `systemd-sleep/no-suspend-then-hibernate.conf` | drop into `/etc/systemd/sleep.conf.d/` to stop suspend escalating to hibernate |
-
 ### Notes kept alongside the config
 
 `commands_to_run_after_reinstall.md`, `apt-mark-hold-t2-lts-kernel.md`,
 `multipass_vs_vbox_kvm_intel_modprobe.txt`, `convert_mkv_to_mp4_using_ffmpeg.txt`,
 `electronics-embedded-todo.md`.
 
-### copyparty
-
-`copyparty-cfgdir/` plus `copyparty-run-command.txt` — a containerised LAN file server
-mounting `~/nas`:
-
-```bash
-docker run --rm -it -u 1000 -p 3923:3923 -v ~/nas:/w \
-  -v ~/.config/i3/copyparty-cfgdir:/cfg copyparty/ac
-```
 
 ---
 
@@ -196,54 +182,49 @@ Full writeup, including the failure modes it guards against:
 
 ---
 
-## Privacy
+## What is not here
 
-This repo is private, and the following are why:
+This repo is public, so a few things are kept out of it permanently rather than redacted:
 
-- **Shell history is no longer here at all.** It used to be committed as
-  `my_zsh_history` so a new distro inherited it. Redaction caught the tokens, but the file
-  also held ~2,800 lines naming internal hosts, clusters and clients — not redactable in
-  any meaningful sense. Carrying history is a *sync* problem; git was giving permanent,
-  public, immutable retention when only portability was wanted. See
-  [Shell history](#shell-history-atuin).
-- **`tmux-resurrect-backup/`** — saved tmux layouts include pane titles, which on a work
-  machine are project and client names, plus absolute paths.
-- **`copyparty-cfgdir/copyparty/cert.pem`** — contains a private key (self-signed, for the
-  LAN file server). Regenerate it if this ever goes public.
+| Not versioned | Why |
+|---|---|
+| shell history | names internal hosts, clusters and clients; see [Shell history](#shell-history-atuin) |
+| `tmux-resurrect-backup/` | saved layouts embed pane titles = project and client names |
+| CopyQ clipboard exports | arbitrary captured content, unreviewable |
+| copyparty config | contained a TLS private key |
+| `~/.zshrc.local` | cluster names, cloud projects, Windows paths, lab hosts |
 
-`claude-sessions.{tsv,md}` are gitignored — not for privacy, but because the hook rewrites
-them every five minutes and tracking them means a permanently dirty tree.
-
+Machine- and employer-specific shell config belongs in `~/.zshrc.local`, which `.zshrc`
+sources if present and git never sees.
 
 ---
 
 ## Shell history (atuin)
 
-[atuin](https://atuin.sh) replaces the committed `my_zsh_history`. It keeps history in a
+[atuin](https://atuin.sh) replaces the old committed `my_zsh_history`. History lives in a
 local SQLite DB with far better recall than autosuggestions — fuzzy search, filter by
 directory, host or exit status — on `Ctrl-R`.
 
-Up-arrow is left bound to zsh's own history (`--disable-up-arrow`), and zsh still writes
-`~/.zsh_history` as before, so `zsh-autosuggestions` behaves exactly as it always did.
+Up-arrow stays bound to zsh's own history (`--disable-up-arrow`) and zsh still writes
+`~/.zsh_history`, so `zsh-autosuggestions` behaves exactly as before.
 
-**Sync is deliberately off** (`auto_sync = false`). Nothing leaves the machine. atuin's
-hosted sync is end-to-end encrypted and would be safe in a technical sense, but it would
-still put an employer's infrastructure command log on a third party.
+**Sync is deliberately off** (`auto_sync = false`); nothing leaves the machine. atuin's
+hosted sync is end-to-end encrypted and safe in a technical sense, but it would still put
+an employer's infrastructure command log on a third party.
 
-Moving to a new machine is an explicit, encrypted, serverless step:
+Moving machines is an explicit, encrypted, serverless step:
 
 ```bash
-scripts/atuin-migrate export            # -> ~/atuin-history-<date>.db.gpg, AES-256
-# carry it across however you like — USB, scp, private storage
-scripts/atuin-migrate verify <file>     # decrypt and count, without importing
-scripts/atuin-migrate import <file>     # merge into this machine
+scripts/atuin-migrate export         # -> ~/atuin-history-<date>.db.gpg, AES-256
+scripts/atuin-migrate verify <file>  # decrypt and count, without importing
+scripts/atuin-migrate import <file>  # merge into this machine
 ```
 
-Encryption is gpg symmetric, chosen because gpg is already on essentially every distro.
-Import merges on primary key, so re-importing is a no-op and two machines' histories
-combine rather than overwrite.
+gpg symmetric encryption, chosen because gpg is already on essentially every distro.
+Import merges on primary key, so it is idempotent and two machines' histories combine
+rather than overwrite.
 
-Credentials are filtered at two layers that agree with each other: `HISTORY_IGNORE` in
-`.zshrc` stops them reaching `~/.zsh_history`, and `history_filter` + `secrets_filter` in
-`~/.config/atuin/config.toml` stop them reaching the atuin DB. Verified: 10,380 commands
+Credentials are filtered at two layers that agree: `HISTORY_IGNORE` in `.zshrc` keeps them
+out of `~/.zsh_history`, and `history_filter` + `secrets_filter` in
+`~/.config/atuin/config.toml` keep them out of the atuin DB. Verified: 10,380 commands
 imported, zero credential-shaped entries stored.
