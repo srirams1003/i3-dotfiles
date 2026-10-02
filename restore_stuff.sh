@@ -2,9 +2,9 @@
 mkdir -p ~/.local/share/tmux/resurrect
 
 # Copy the backed-up state (last.txt + the claude-session -> tmux-pane map)
-cp -r /home/sriram/.config/i3/tmux-resurrect-backup/* /home/sriram/.local/share/tmux/resurrect/
+cp -r $HOME/.config/i3/tmux-resurrect-backup/* $HOME/.local/share/tmux/resurrect/
 
-cd /home/sriram/.local/share/tmux/resurrect/
+cd $HOME/.local/share/tmux/resurrect/
 
 # The repo stores one snapshot under a stable name. tmux-resurrect expects a
 # timestamped file plus a `last` symlink, so rehydrate that shape here.

@@ -13,6 +13,24 @@ i3wm + i3blocks, Alacritty, zsh/powerlevel10k, tmux, rofi, picom, dunst.
 
 ---
 
+## Using this if you are not me
+
+Nothing here hardcodes a home directory any more — scripts use `$HOME`, tmux hooks use
+`~`, and the systemd unit uses `%h`. Clone to `~/.config/i3`, symlink `.zshrc`,
+`.p10k.zsh` and `.tmux.conf`, and the tmux + Claude session restore works as-is.
+
+Two caveats:
+
+- **The branch matters.** Branches are whole environments per machine, not variants. `main`
+  is a full i3 desktop; `wsl2-work` is headless WSL2 with no GUI stack. Pick the one that
+  matches your box, or start from the closest and diverge.
+- **Saved tmux layouts are not portable and are not shipped.** `tmux-resurrect-backup/` is
+  gitignored; a layout records absolute pane paths from the machine that made it. Yours
+  build up locally from your first save onwards.
+
+Machine-specific things live in `~/.zshrc.local` (sourced if present, never committed) —
+that is where your own cluster aliases and host paths belong.
+
 ## Branch per machine
 
 There is no single `main` that works everywhere. Each branch is a whole environment tuned

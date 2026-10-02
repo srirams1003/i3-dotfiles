@@ -1,6 +1,6 @@
 # Backup current tmux resurrect state
-BACKUP_DIR="/home/sriram/.config/i3/tmux-resurrect-backup"
-SOURCE_DIR="/home/sriram/.local/share/tmux/resurrect"
+BACKUP_DIR="$HOME/.config/i3/tmux-resurrect-backup"
+SOURCE_DIR="$HOME/.local/share/tmux/resurrect"
 mkdir -p "$BACKUP_DIR"
 
 # Back up exactly ONE snapshot, under a stable name.

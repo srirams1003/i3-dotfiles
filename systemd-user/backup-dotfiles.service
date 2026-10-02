@@ -1,10 +1,10 @@
 [Unit]
 Description=Back up tmux session state and zsh history into ~/.config/i3
-Documentation=file:///home/sriram/.config/i3/README.md
+Documentation=file://%h/.config/i3/README.md
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash /home/sriram/.config/i3/backup_stuff.sh
+ExecStart=/bin/bash %h/.config/i3/backup_stuff.sh
 # Never let a backup stall the session or fight for disk with real work.
 TimeoutStartSec=120
 Nice=10

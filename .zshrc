@@ -247,14 +247,14 @@ export NVM_DIR="$HOME/.nvm"
 
 # # >>> conda initialize >>>
 # # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/sriram/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# __conda_setup="$('$HOME/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 # if [ $? -eq 0 ]; then
 #     eval "$__conda_setup"
 # else
-#     if [ -f "/home/sriram/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/home/sriram/anaconda3/etc/profile.d/conda.sh"
+#     if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "$HOME/anaconda3/etc/profile.d/conda.sh"
 #     else
-#         export PATH="/home/sriram/anaconda3/bin:$PATH"
+#         [ -d "$HOME/anaconda3" ] && export PATH="$HOME/anaconda3/bin:$PATH"
 #     fi
 # fi
 # unset __conda_setup
@@ -262,14 +262,17 @@ export NVM_DIR="$HOME/.nvm"
 #
 # conda activate loonix
 # # conda deactivate
-export PATH="/home/sriram/anaconda3/bin:$PATH"
+[ -d "$HOME/anaconda3" ] && export PATH="$HOME/anaconda3/bin:$PATH"
 
 
-PATH="/home/sriram/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/sriram/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/sriram/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/sriram/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/sriram/perl5"; export PERL_MM_OPT;
+# perl5 local::lib, only if present on this machine
+if [ -d "$HOME/perl5" ]; then
+	PATH="$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
+	PERL5LIB="$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+	PERL_LOCAL_LIB_ROOT="$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+	PERL_MB_OPT="--install_base \"$HOME/perl5\""; export PERL_MB_OPT;
+	PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"; export PERL_MM_OPT;
+fi
 
 
 export PATH="$PATH:$HOME/development/flutter/bin"
@@ -283,7 +286,7 @@ export BROWSER='firefox'
 export PATH="$HOME/bin:$PATH"
 
 # bun completions
-[ -s "/home/sriram/.bun/_bun" ] && source "/home/sriram/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
