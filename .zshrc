@@ -219,15 +219,10 @@ alias neo='fastfetch'
 alias sl='sl -e'
 alias gkgc="kubectl config current-context && gcloud config get project"
 
-# # old aliases
-# alias gke_staging='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
-# alias gke_prod='gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG --dns-endpoint'
-# new aliases
-alias gke_staging='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
-
-alias gke_prod='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG --dns-endpoint'
-
-alias gke_prod_new='gcloud config set project REDACTED-ORG && gcloud container clusters get-credentials REDACTED-ORG --region us-west1 --project REDACTED-ORG'
+# Work aliases (gke_staging / gke_prod / gke_prod_new) live in ~/.zshrc.local,
+# which is deliberately NOT in this repo: they name real clusters and cloud
+# projects. Anything machine- or employer-specific belongs there, not here.
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 alias open='explorer.exe'
 

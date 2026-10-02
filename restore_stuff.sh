@@ -19,5 +19,3 @@ else
 	[ -n "$latest_file" ] && ln -sf "$latest_file" last
 fi
 
-# Restore zsh history
-cp /home/sriram/.config/i3/my_zsh_history /home/sriram/.zsh_history

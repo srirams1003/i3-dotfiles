@@ -20,12 +20,12 @@ newest=$(ls -1 "$SOURCE_DIR"/tmux_resurrect_*.txt 2>/dev/null | sort | tail -n1)
 # Backup the claude-session -> tmux-pane map alongside the resurrect layout
 cp -f "$SOURCE_DIR"/claude-sessions.tsv "$SOURCE_DIR"/claude-sessions.md "$BACKUP_DIR/" 2>/dev/null
 
-# Backup zsh history, redacting anything token-shaped on the way in.
-# Shell history collects credentials from `export TOKEN=...` style commands, and
-# once one is committed it is in git history permanently — a rewrite to remove.
-# The command itself is kept (it is the useful part); only the secret is masked.
-cp /home/sriram/.zsh_history /home/sriram/.config/i3/my_zsh_history
-sed -i -E \
-	-e 's/\b(ghp_|gho_|ghu_|ghs_|ghr_|github_pat_|glpat-|xox[baprs]-|sk-(proj-)?|AKIA)[A-Za-z0-9_-]{16,}/\1<REDACTED>/g' \
-	/home/sriram/.config/i3/my_zsh_history
-
+# Shell history is deliberately NOT backed up here any more.
+#
+# It collects credentials from `export TOKEN=...` commands and, on a work
+# machine, thousands of lines naming internal hosts, clusters and clients. Once
+# committed that is permanent, and this repo is meant to be public. Redaction
+# caught the tokens but could never catch the rest.
+#
+# Cross-machine history is a sync problem, not a version-control one: use atuin
+# (end-to-end encrypted sync) instead. See README.md.
