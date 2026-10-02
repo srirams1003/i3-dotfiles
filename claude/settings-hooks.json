@@ -1,0 +1,39 @@
+{
+  "_comment": [
+    "Merge these hooks into ~/.claude/settings.json to keep the claude<->tmux pane",
+    "map fresh. Without them the map only updates when tmux-resurrect saves (every",
+    "5 min by default), so a session started shortly before a reboot is missed.",
+    "",
+    "Your real settings.json also holds permissions and project context and is NOT",
+    "versioned here — it travels in the machine-migrate bundle. This file is just",
+    "the portable fragment, and contains no secrets.",
+    "",
+    "If ~/.claude/settings.json already exists, merge by hand: these go under",
+    "hooks.SessionStart[].hooks[] and hooks.SessionEnd[].hooks[], alongside",
+    "whatever is already there."
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "(sleep 3; python3 ~/.config/i3/scripts/claude-tmux-snapshot.py) >/dev/null 2>&1 & exit 0"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "(sleep 3; python3 ~/.config/i3/scripts/claude-tmux-snapshot.py) >/dev/null 2>&1 & exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}

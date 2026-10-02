@@ -7,8 +7,8 @@
 #
 # Some state cannot live in a dotfiles repo and has no business on a third-party
 # server either: shell history (names internal hosts, clusters, clients),
-# ~/.zshrc.local (cluster names, cloud projects, Windows paths), and optionally
-# the personal SSH key. Previously that meant it was backed up nowhere at all.
+# ~/.zshrc.local (cluster names, cloud projects, Windows paths),
+# ~/.claude/settings.json (hooks + project context), and optionally the SSH key. Previously that meant it was backed up nowhere at all.
 #
 # This bundles it into one gpg AES-256 file you carry yourself. No server, no
 # account, nothing leaves your control. gpg is used because it is already on
@@ -61,6 +61,15 @@ cmd_export() {
 	if [ -f "$HOME/.zshrc.local" ]; then
 		cp -p "$HOME/.zshrc.local" "$stage/zshrc.local"
 		echo "zshrc.local  $(wc -l < "$HOME/.zshrc.local") lines" >> "$manifest"
+	fi
+
+	# Claude Code settings: carries the SessionStart/SessionEnd hooks that keep the
+	# claude<->tmux pane map fresh, and on a work machine a lot of project context.
+	# Private, so it travels in the bundle rather than the repo.
+	if [ -f "$HOME/.claude/settings.json" ]; then
+		mkdir -p "$stage/claude"
+		cp -p "$HOME/.claude/settings.json" "$stage/claude/settings.json"
+		echo "claude/settings.json" >> "$manifest"
 	fi
 
 	if [ "$WITH_KEYS" = 1 ]; then
@@ -133,6 +142,17 @@ cmd_import() {
 		else
 			cp -p "$stage/zshrc.local" "$HOME/.zshrc.local"; chmod 600 "$HOME/.zshrc.local"
 			echo "  zshrc.local: restored"
+		fi
+	fi
+
+	if [ -f "$stage/claude/settings.json" ]; then
+		mkdir -p "$HOME/.claude"
+		if [ -f "$HOME/.claude/settings.json" ]; then
+			cp -p "$stage/claude/settings.json" "$HOME/.claude/settings.json.incoming"
+			echo "  claude/settings.json: already present — wrote settings.json.incoming instead"
+		else
+			cp -p "$stage/claude/settings.json" "$HOME/.claude/settings.json"
+			echo "  claude/settings.json: restored"
 		fi
 	fi
 
