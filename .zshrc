@@ -198,13 +198,12 @@ alias ls='colorls'
 # alias open='xdg-open'
 
 alias python="python3"
-# alias gpus='ssh -Y sriram@REDACTED-HOST -p 6161'
-# alias ngpus='ssh -X sriram@REDACTED-HOST'
 # `grep` is left alone deliberately: aliasing it to -i globally changes matching
 # semantics everywhere and silently alters results you did not ask to be fuzzy.
 # Use `gi` when you want the case-insensitive version.
 alias gi='grep -i'
-alias cdd='cd /mnt/c/Users/REDACTED/Downloads'
+# cdd and the Windows PATH entries are machine-specific (they embed a Windows
+# username) and live in ~/.zshrc.local.
 # alias dp='docker ps -a'
 # alias di='docker images -a'
 alias dp='podman ps'
@@ -270,7 +269,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export BROWSER='firefox'
 
 # adding Windows IDE Apps (VS Code and Cursor)
-export PATH="$PATH:/mnt/c/Users/REDACTED/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/cursor/resources/app/bin"
 export PATH="$HOME/bin:$PATH"
 
 # bun completions
