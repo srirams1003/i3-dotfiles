@@ -12,3 +12,10 @@ tmux-resurrect-backup/
 # Shell history is likewise gone — see backup_stuff.sh. Use atuin for
 # cross-machine history (end-to-end encrypted), not a git repo.
 my_zsh_history
+
+# copyparty config holds a TLS private key plus the salts that existing account
+# password hashes depend on — needed at runtime, must never be published.
+copyparty-cfgdir/
+
+# CopyQ clipboard exports: arbitrary captured content, unreviewable.
+*.cpq
