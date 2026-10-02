@@ -200,10 +200,12 @@ Full writeup, including the failure modes it guards against:
 
 This repo is private, and the following are why:
 
-- **`my_zsh_history`** — a copy of `~/.zsh_history`, ~13k commands. `backup_stuff.sh`
-  redacts token-shaped strings (`ghp_`, `sk-`, `xox*-`, `AKIA`, …) on the way in, keeping
-  the command and masking the secret. The redaction is a backstop, not a licence to put
-  credentials on a command line.
+- **Shell history is no longer here at all.** It used to be committed as
+  `my_zsh_history` so a new distro inherited it. Redaction caught the tokens, but the file
+  also held ~2,800 lines naming internal hosts, clusters and clients — not redactable in
+  any meaningful sense. Carrying history is a *sync* problem; git was giving permanent,
+  public, immutable retention when only portability was wanted. See
+  [Shell history](#shell-history-atuin).
 - **`tmux-resurrect-backup/`** — saved tmux layouts include pane titles, which on a work
   machine are project and client names, plus absolute paths.
 - **`copyparty-cfgdir/copyparty/cert.pem`** — contains a private key (self-signed, for the
@@ -211,3 +213,37 @@ This repo is private, and the following are why:
 
 `claude-sessions.{tsv,md}` are gitignored — not for privacy, but because the hook rewrites
 them every five minutes and tracking them means a permanently dirty tree.
+
+
+---
+
+## Shell history (atuin)
+
+[atuin](https://atuin.sh) replaces the committed `my_zsh_history`. It keeps history in a
+local SQLite DB with far better recall than autosuggestions — fuzzy search, filter by
+directory, host or exit status — on `Ctrl-R`.
+
+Up-arrow is left bound to zsh's own history (`--disable-up-arrow`), and zsh still writes
+`~/.zsh_history` as before, so `zsh-autosuggestions` behaves exactly as it always did.
+
+**Sync is deliberately off** (`auto_sync = false`). Nothing leaves the machine. atuin's
+hosted sync is end-to-end encrypted and would be safe in a technical sense, but it would
+still put an employer's infrastructure command log on a third party.
+
+Moving to a new machine is an explicit, encrypted, serverless step:
+
+```bash
+scripts/atuin-migrate export            # -> ~/atuin-history-<date>.db.gpg, AES-256
+# carry it across however you like — USB, scp, private storage
+scripts/atuin-migrate verify <file>     # decrypt and count, without importing
+scripts/atuin-migrate import <file>     # merge into this machine
+```
+
+Encryption is gpg symmetric, chosen because gpg is already on essentially every distro.
+Import merges on primary key, so re-importing is a no-op and two machines' histories
+combine rather than overwrite.
+
+Credentials are filtered at two layers that agree with each other: `HISTORY_IGNORE` in
+`.zshrc` stops them reaching `~/.zsh_history`, and `history_filter` + `secrets_filter` in
+`~/.config/atuin/config.toml` stop them reaching the atuin DB. Verified: 10,380 commands
+imported, zero credential-shaped entries stored.

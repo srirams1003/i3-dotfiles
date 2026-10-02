@@ -223,6 +223,17 @@ alias gkgc="kubectl config current-context && gcloud config get project"
 # projects. Anything machine- or employer-specific belongs there, not here.
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
+# --- atuin: searchable, portable shell history -------------------------------
+# Replaces committing ~/.zsh_history into this repo. Config (including the
+# credential filters) lives in ~/.config/atuin/config.toml.
+#
+# --disable-up-arrow keeps Up bound to zsh's own history, so zsh-autosuggestions
+# behaves exactly as before; atuin takes Ctrl-R only. zsh still writes
+# ~/.zsh_history normally, so nothing that depended on it changes.
+if command -v atuin >/dev/null 2>&1; then
+	eval "$(atuin init zsh --disable-up-arrow)"
+fi
+
 alias open='explorer.exe'
 
 # export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6

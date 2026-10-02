@@ -1,0 +1,111 @@
+#!/usr/bin/env bash
+# atuin-migrate — carry shell history to a new machine, encrypted, with no server.
+#
+#   atuin-migrate export [outfile]   encrypt this machine's history to a file
+#   atuin-migrate verify <file>      decrypt and report, without importing
+#   atuin-migrate import <file>      merge a file into this machine's history
+#
+# Why this exists: ~/.zsh_history used to be committed into a dotfiles repo so a
+# new distro would inherit it. That worked, but git gives permanent, public,
+# immutable retention when only portability was wanted — and shell history on a
+# work machine names internal hosts, clusters and clients, which cannot be
+# redacted meaningfully. This moves the same capability to a one-off encrypted
+# file you carry yourself: no server, no account, nothing leaves your control.
+#
+# Encryption is gpg symmetric AES-256, chosen because gpg is already present on
+# essentially every distro — one less thing to install on a fresh machine.
+
+set -euo pipefail
+
+DB="${ATUIN_DB:-$HOME/.local/share/atuin/history.db}"
+
+die() { echo "atuin-migrate: $*" >&2; exit 1; }
+
+rows() {  # rows <sqlite-file>
+	python3 - "$1" <<-'PY'
+	import sqlite3, sys
+	try:
+	    c = sqlite3.connect(f"file:{sys.argv[1]}?mode=ro", uri=True)
+	    print(c.execute("select count(*) from history").fetchone()[0])
+	except Exception:
+	    print(0)
+	PY
+}
+
+snapshot() {  # snapshot <dest> — consistent copy even while a shell is writing
+	python3 - "$DB" "$1" <<-'PY'
+	import sqlite3, sys
+	src = sqlite3.connect(f"file:{sys.argv[1]}?mode=ro", uri=True)
+	dst = sqlite3.connect(sys.argv[2])
+	src.backup(dst); dst.close(); src.close()
+	PY
+}
+
+cmd_export() {
+	[ -f "$DB" ] || die "no history db at $DB"
+	local out="${1:-$HOME/atuin-history-$(date +%Y%m%d-%H%M%S).db.gpg}"
+	local tmp; tmp="$(mktemp -t atuin-exp-XXXXXX.db)"
+	trap 'rm -f "$tmp"' EXIT
+
+	snapshot "$tmp"
+	echo "  exporting $(rows "$tmp") commands"
+	echo "  you will be asked for a passphrase — you need it again on the other machine"
+	gpg --batch --yes --symmetric --cipher-algo AES256 --output "$out" "$tmp"
+	chmod 600 "$out"
+
+	echo "  wrote $out ($(du -h "$out" | cut -f1), gpg AES-256)"
+	echo "  transfer it however you like; it is useless without the passphrase."
+}
+
+cmd_verify() {
+	local f="${1:-}"; [ -n "$f" ] || die "usage: atuin-migrate verify <file>"
+	[ -f "$f" ] || die "no such file: $f"
+	local tmp; tmp="$(mktemp -t atuin-ver-XXXXXX.db)"
+	trap 'rm -f "$tmp"' EXIT
+	gpg --quiet --output "$tmp" --decrypt "$f"
+	echo "  decrypts cleanly: $(rows "$tmp") commands inside"
+}
+
+cmd_import() {
+	local f="${1:-}"; [ -n "$f" ] || die "usage: atuin-migrate import <file>"
+	[ -f "$f" ] || die "no such file: $f"
+	local tmp; tmp="$(mktemp -t atuin-imp-XXXXXX.db)"
+	trap 'rm -f "$tmp"' EXIT
+
+	gpg --quiet --output "$tmp" --decrypt "$f"
+	echo "  incoming: $(rows "$tmp") commands"
+
+	if [ ! -f "$DB" ]; then
+		mkdir -p "$(dirname "$DB")"
+		cp "$tmp" "$DB"; chmod 600 "$DB"
+		echo "  no local history — installed wholesale: $(rows "$DB") commands"
+		return
+	fi
+
+	echo "  local before: $(rows "$DB") commands"
+	# Merge on primary key, so re-importing the same file is a no-op and two
+	# machines' histories combine rather than overwrite.
+	python3 - "$DB" "$tmp" <<-'PY'
+	import sqlite3, sys
+	dst = sqlite3.connect(sys.argv[1])
+	dst.execute("attach database ? as src", (sys.argv[2],))
+	before = dst.execute("select count(*) from history").fetchone()[0]
+	dst.execute("""insert or ignore into history
+	               (id,timestamp,duration,exit,command,cwd,session,hostname,deleted_at)
+	               select id,timestamp,duration,exit,command,cwd,session,hostname,deleted_at
+	               from src.history""")
+	dst.commit()
+	after = dst.execute("select count(*) from history").fetchone()[0]
+	print(f"  merged: +{after-before} new, {after} total")
+	dst.close()
+	PY
+	echo "  done — open a new shell and press Ctrl-R"
+}
+
+case "${1:-}" in
+	export) shift; cmd_export "${1:-}" ;;
+	verify) shift; cmd_verify "${1:-}" ;;
+	import) shift; cmd_import "${1:-}" ;;
+	-h|--help|help|"") sed -n '2,12p' "$0" ;;
+	*) die "unknown command: $1 (try: export, verify, import)" ;;
+esac
