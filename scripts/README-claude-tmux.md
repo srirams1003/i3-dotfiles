@@ -118,3 +118,35 @@ session in the current directory.
 - **`.prev` fallback.** Every non-empty snapshot archives the outgoing map to
   `claude-sessions.prev.{tsv,md}`, and `claude-tmux-restore.sh` falls back to it if
   the live map is missing or empty.
+
+## Recovering sessions after a lost layout
+
+tmux-resurrect restores **panes**. Claude sessions are separate: each one is a
+transcript at `~/.claude/projects/<encoded-cwd>/<session-id>.jsonl`, written as
+you go and untouched by tmux. Losing a layout — new machine, no save yet, a
+cleared resurrect dir — does **not** lose the sessions.
+
+```bash
+~/.config/i3/scripts/claude-sessions-recover            # 20 most recent
+~/.config/i3/scripts/claude-sessions-recover --since 2d
+~/.config/i3/scripts/claude-sessions-recover -n 40
+```
+
+Each entry prints the session id, how long ago it was touched, its cwd and git
+branch, its opening prompt, and the exact `cd … && claude --resume <id>` line.
+Rebuild the panes you want and paste.
+
+To drive the normal restore path instead, write a map and hand it to
+`claude-tmux-restore.sh`:
+
+```bash
+claude-sessions-recover -n 11 --tsv > ~/.local/share/tmux/resurrect/claude-sessions.tsv
+```
+
+The map's pane coordinates are synthetic (`recovered:0.N`), so create that many
+panes in a session named `recovered` first, or just use the printed commands.
+
+**Why the directory name is not the cwd.** The encoding replaces `/` with `-`,
+and real hyphens in a path are indistinguishable from separators — a first
+version of this tool guessed and got 34 of 40 paths wrong. Every record in the
+transcript carries the true `cwd`; the tool reads that.

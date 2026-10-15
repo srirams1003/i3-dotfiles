@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""List recent Claude Code sessions so they can be resumed after a layout loss.
+
+tmux-resurrect only restores PANES. Claude sessions live in
+~/.claude/projects/<encoded-cwd>/<session-id>.jsonl and survive independently —
+a lost tmux layout does not lose them. This reads them back.
+
+  claude-sessions-recover              # 20 most recent
+  claude-sessions-recover -n 40
+  claude-sessions-recover --since 2d
+  claude-sessions-recover --tsv        # map file for claude-tmux-restore.sh
+"""
+import argparse, json, os, re, sys, time
+from pathlib import Path
+
+ROOT = Path(os.path.expanduser("~/.claude/projects"))
+
+
+def read_meta(path, limit=400):
+    """Pull cwd + first real user prompt out of a transcript.
+
+    The directory name is a lossy encoding of the cwd ('/' and '-' both become
+    '-'), so it cannot be decoded reliably. Every record carries the real cwd;
+    read that instead.
+    """
+    cwd, prompt, branch = "", "", ""
+    try:
+        with open(path, errors="replace") as fh:
+            for _ in range(limit):
+                line = fh.readline()
+                if not line:
+                    break
+                try:
+                    rec = json.loads(line)
+                except Exception:
+                    continue
+                if not cwd and isinstance(rec.get("cwd"), str):
+                    cwd = rec["cwd"]
+                if not branch and isinstance(rec.get("gitBranch"), str):
+                    branch = rec["gitBranch"]
+                if not prompt and rec.get("type") == "user":
+                    content = (rec.get("message") or {}).get("content")
+                    if isinstance(content, list):
+                        for blk in content:
+                            if isinstance(blk, dict) and blk.get("type") == "text":
+                                content = blk.get("text", "")
+                                break
+                    if isinstance(content, str) and content.strip() \
+                       and not content.lstrip().startswith(("<", "Caveat:")):
+                        prompt = " ".join(content.split())[:90]
+                if cwd and prompt and branch:
+                    break
+    except OSError:
+        pass
+    return cwd, prompt, branch
+
+
+def parse_since(s: str) -> float:
+    m = re.fullmatch(r"(\d+)([hdw])", s)
+    if not m:
+        sys.exit(f"bad --since {s!r}; use e.g. 12h, 2d, 1w")
+    n, unit = int(m.group(1)), m.group(2)
+    return time.time() - n * {"h": 3600, "d": 86400, "w": 604800}[unit]
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-n", type=int, default=20)
+    ap.add_argument("--since")
+    ap.add_argument("--tsv", action="store_true")
+    args = ap.parse_args()
+
+    if not ROOT.is_dir():
+        sys.exit(f"no {ROOT} — nothing to recover")
+
+    cutoff = parse_since(args.since) if args.since else 0.0
+    rows = []
+    for proj in ROOT.iterdir():
+        if not proj.is_dir():
+            continue
+        for f in proj.glob("*.jsonl"):
+            try:
+                st = f.stat()
+            except OSError:
+                continue
+            if st.st_size == 0 or st.st_mtime < cutoff:
+                continue
+            rows.append((st.st_mtime, f.stem, f))
+
+    rows.sort(reverse=True)
+    rows = rows[: args.n]
+    if not rows:
+        print("no sessions found", file=sys.stderr)
+        return 1
+
+    if args.tsv:
+        print("# session\twindow\tpane\tsession_id\tcwd\tname")
+        for i, (_, sid, f) in enumerate(rows):
+            cwd, prompt, _b = read_meta(f)
+            print(f"recovered\t0\t{i}\t{sid}\t{cwd}\t{prompt or sid[:8]}")
+        return 0
+
+    now = time.time()
+    for mt, sid, f in rows:
+        cwd, prompt, branch = read_meta(f)
+        age = now - mt
+        ago = (f"{int(age//60)}m" if age < 3600 else
+               f"{int(age//3600)}h" if age < 86400 else f"{int(age//86400)}d")
+        gone = "" if (cwd and os.path.isdir(cwd)) else "  [cwd missing]"
+        br = f"  ({branch})" if branch else ""
+        print(f"\033[1m{sid}\033[0m  {ago:>4} ago  {cwd or '<unknown>'}{br}{gone}")
+        if prompt:
+            print(f"      {prompt}")
+        print(f"      cd {cwd} && claude --resume {sid}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
