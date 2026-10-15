@@ -13,6 +13,30 @@ i3wm + i3blocks, Alacritty, zsh/powerlevel10k, tmux, rofi, picom, dunst.
 
 ---
 
+## "Tmux resurrect file not found!"
+
+Expected on a machine that has never saved a layout. It is not a broken install.
+
+`tmux-resurrect-backup/` is gitignored on purpose — saved layouts embed pane
+titles, which on a work machine are project and client names — so a fresh clone
+carries **no** layouts and `restore_stuff.sh` has nothing to copy. tmux-continuum
+writes the first save within `@continuum-save-interval` (5 min) of your first
+session; auto-restore works from then on.
+
+Force a save immediately with `prefix + Ctrl-s`, then check:
+
+```bash
+ls -l ~/.local/share/tmux/resurrect/last    # must resolve to a real file
+```
+
+A **dangling** `last` symlink gives the same error — resurrect tests with `-f`,
+which follows links. Relink it:
+
+```bash
+cd ~/.local/share/tmux/resurrect
+ln -sf "$(ls -1t tmux_resurrect_*.txt | head -1)" last
+```
+
 ## Using this if you are not me
 
 Nothing here hardcodes a home directory any more — scripts use `$HOME`, tmux hooks use
